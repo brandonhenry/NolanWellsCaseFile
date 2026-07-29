@@ -21,6 +21,20 @@
   }
 
   function buildStaticIndex() {
+    add(
+      'Case guide',
+      'What happened to Nolan Wells?',
+      'Plain-language sourced summary of the July 4 Horn Island trip, verified 9:56, 11:14, 4:31, 5:25, and 5:44 vessel GPS milestones, witness accounts, search, recovery, and the unresolved 3:45 to 4:31 PM window.',
+      './case-summary.html',
+      'Case summary · Last reviewed July 28, 2026'
+    );
+    add(
+      'Editorial standards',
+      'Methodology and corrections',
+      'Evidence classifications, source hierarchy, independence statement, claim discipline, public revision history, machine-readable access, and documented correction process.',
+      './about.html',
+      'Methodology · Independence · Corrections'
+    );
     evidence.events.forEach(event => add(
       'Timeline event',
       `${event.time} · ${event.title}`,

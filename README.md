@@ -4,6 +4,8 @@ A dependency-free static evidence timeline adapted from the public Subtxt Press 
 
 The project’s own Master Investigation Notes control every factual claim. Subtxt is used as a visual and media-index reference, not as the evidentiary authority.
 
+Production canonical origin: `https://nolan-wells-case-file.netlify.app`
+
 ## Run locally
 
 ```bash
@@ -24,7 +26,8 @@ The project is ready to publish without a build command:
 Clean routes are included for the timeline, event log, master notes, archive,
 documents, people, boats, last-contact matrix, contradictions, evidence
 tracker, coordinate explorer, question tracker, timeline gaps, and global
-search.
+search. The plain-language case summary is available at `/case-summary`, and
+editorial methodology and corrections are available at `/about`.
 
 ## Evidence architecture
 
@@ -45,6 +48,23 @@ search.
 - `documents/MDMR-MP2607-0016-report.pdf` — obtained official MDMR report
 - `transcripts/` — bundled public interview and call transcripts
 - `media/` — selected evidence media tied to retained entries
+
+## Search and machine-readable discovery
+
+- `sitemap.xml` — canonical page and evidence-record URLs
+- `robots.txt` — open crawl policy and sitemap discovery
+- `assets/seo.js` — unique rendered titles, descriptions, canonical URLs,
+  social metadata, robots controls, and schema.org JSON-LD
+- `assets/social-card.png` — 1200×630 social search/share preview
+- `llms.txt` — concise AI-readable site and citation guide
+- `llms-full.txt` — extended chronology, evidence vocabulary, source links, and
+  warnings against overstating uncertain claims
+- `case-summary.html` — static semantic HTML overview for users and crawlers
+- `about.html` — source hierarchy, independence, revision history, and
+  documented correction process
+
+Internal search-result URLs are marked `noindex,follow`; underlying evidence
+pages remain indexable.
 
 ## Editorial rules
 

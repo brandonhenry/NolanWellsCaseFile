@@ -122,7 +122,7 @@
         <h1 class="step-title">${escapeHtml(data.meta.title)}</h1>
         <p class="step-summary">${escapeHtml(data.meta.description)}</p>
         <p class="intro-note">The opening marker shows the approximate publicly reported recovery time. Scroll to move through the record. This site does not attempt to prove a theory; each claim is labeled by evidence type and confidence.</p>
-        <div class="source-block"><p class="source-label">Start with the evidence file</p><div class="source-links"><a class="source-link" href="./documents/master-investigation-notes.html">Open master investigation notes</a><a class="source-link" href="./event-timeline.html">Open full event log</a><a class="source-link" href="./archive.html">Explore the evidence archive</a><a class="source-link" href="./search.html">Search everything</a></div></div>
+        <div class="source-block"><p class="source-label">Start with the evidence file</p><div class="source-links"><a class="source-link" href="./case-summary.html">Read the case summary</a><a class="source-link" href="./documents/master-investigation-notes.html">Open master investigation notes</a><a class="source-link" href="./event-timeline.html">Open full event log</a><a class="source-link" href="./archive.html">Explore the evidence archive</a><a class="source-link" href="./search.html">Search everything</a></div></div>
       </article>
     </section>`;
     const ending = `<section class="step" data-event-id="ending" style="--tone:${data.types.verified.color}">
@@ -130,7 +130,7 @@
         <p class="step-time">Living evidence file</p>
         <h2 class="step-title">What do we actually know?</h2>
         <p class="step-summary">This reconstruction should change when stronger primary evidence becomes available. The unresolved questions are part of the record—not gaps to fill with certainty.</p>
-        <div class="end-links"><a class="source-link" href="./event-timeline.html">Full evidence log →</a><a class="source-link" href="./archive.html">Evidence archive →</a><a class="source-link" href="./evidence-tracker.html">Missing evidence →</a><a class="source-link" href="./questions.html">Open questions →</a></div>
+        <div class="end-links"><a class="source-link" href="./case-summary.html">Case summary →</a><a class="source-link" href="./event-timeline.html">Full evidence log →</a><a class="source-link" href="./archive.html">Evidence archive →</a><a class="source-link" href="./evidence-tracker.html">Missing evidence →</a><a class="source-link" href="./about.html">Methodology →</a></div>
         <p class="end-attribution">Visual interaction adapted from the public Subtxt Press Nolan timeline at reference commit ${escapeHtml(data.meta.referenceCommit)}. Map data © OpenStreetMap contributors © CARTO.</p>
       </article>
     </section>`;

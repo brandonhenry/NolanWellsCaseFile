@@ -17,6 +17,16 @@
   status = 200
 
 [[redirects]]
+  from = "/case-summary"
+  to = "/case-summary.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
   from = "/archive"
   to = "/archive.html"
   status = 200
@@ -98,3 +108,24 @@
   for = "/transcripts/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms*.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/documents/MDMR-MP2607-0016-report.pdf"
+  [headers.values]
+    Link = "<https://nolan-wells-case-file.netlify.app/documents/MDMR-MP2607-0016-report.pdf>; rel=\"canonical\""
+    X-Robots-Tag = "index, follow"

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Nolan Wells Evidence File</title>
+  <desc id="description">A public evidence timeline for the July 3 through July 6, 2026 Nolan Wells case at Horn Island, Mississippi.</desc>
+  <rect width="1200" height="630" fill="#060b14"/>
+  <path d="M0 470C145 444 237 476 357 458c144-22 201-82 354-56 154 26 259 11 489-82v310H0Z" fill="#0d1826"/>
+  <path d="M0 514c135-35 245-5 360-25 138-24 218-72 357-44 160 33 273 1 483-72" fill="none" stroke="#20364a" stroke-width="2"/>
+  <path d="M694 439c52 8 91 14 132 5 55-12 110-7 164-27 48-18 78-43 126-60 28-10 55-7 84-7v99c-51-6-90-1-132 15-45 17-91 43-146 46-77 5-151-17-228-10Z" fill="#111f2d"/>
+  <circle cx="752" cy="459" r="11" fill="#d36d2a"/>
+  <circle cx="752" cy="459" r="20" fill="none" stroke="#d36d2a" stroke-opacity=".28" stroke-width="2"/>
+  <text x="86" y="105" fill="#d36d2a" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="22" font-weight="600" letter-spacing="4">JULY 3–6, 2026 · HORN ISLAND, MISSISSIPPI</text>
+  <text x="82" y="225" fill="#f4f6f8" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700">Nolan Wells</text>
+  <text x="86" y="298" fill="#f4f6f8" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="600">Evidence File &amp; Timeline</text>
+  <text x="86" y="372" fill="#aeb8c2" font-family="Inter, Arial, sans-serif" font-size="25">Official records · witness accounts · media · unresolved questions</text>
+  <rect x="86" y="431" width="375" height="50" rx="8" fill="#111a25" stroke="#2a3a4b"/>
+  <text x="111" y="464" fill="#d7dee5" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="18" font-weight="600">FACT ≠ INTERPRETATION</text>
+  <text x="86" y="558" fill="#6ea7c9" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="18">nolan-wells-case-file.netlify.app</text>
+</svg>

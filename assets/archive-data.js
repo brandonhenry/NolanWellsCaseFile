@@ -3,6 +3,7 @@
 
   window.NOLAN_ARCHIVE = {
     sections: [
+      { id: 'case-summary', title: 'Case Summary', description: 'Start with a sourced, plain-language account of what happened, what official GPS establishes, and what remains unresolved.', href: './case-summary.html', tone: 'verified' },
       { id: 'search', title: 'Search everything', description: 'Search events, transcript lines, documents, people, boats, questions, contradictions, and master-note sections.', href: './search.html', tone: 'verified' },
       { id: 'documents', title: 'Documents', description: 'Open every obtained source as a record with its status, contents, references, and missing companion files.', href: './documents.html', tone: 'media' },
       { id: 'last-contact', title: 'Last Contact Matrix', description: 'Compare reported last sightings, last words, times, listeners, and confidence without collapsing them into one claim.', href: './last-contact.html', tone: 'firsthand' },
@@ -12,7 +13,8 @@
       { id: 'questions', title: 'Question Tracker', description: 'Keep each unresolved question attached to the evidence that frames it and the record needed to answer it.', href: './questions.html', tone: 'unknown' },
       { id: 'people', title: 'People', description: 'Person-centered timelines, interviews, evidence links, and open questions.', href: './people.html', tone: 'firsthand' },
       { id: 'boats', title: 'Boats', description: 'Vessel-centered timelines separating GPS facts, passenger claims, photos, and unresolved assignments.', href: './boats.html', tone: 'verified' },
-      { id: 'gaps', title: 'Timeline Gaps', description: 'A dedicated view of the unresolved intervals between known anchors.', href: './gaps.html', tone: 'unknown' }
+      { id: 'gaps', title: 'Timeline Gaps', description: 'A dedicated view of the unresolved intervals between known anchors.', href: './gaps.html', tone: 'unknown' },
+      { id: 'methodology', title: 'Methodology & Corrections', description: 'Review the evidence rules, source hierarchy, independence statement, revision history, and correction process.', href: './about.html', tone: 'media' }
     ],
 
     documents: [

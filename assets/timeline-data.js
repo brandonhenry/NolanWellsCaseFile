@@ -15,7 +15,7 @@
         markerLabel: 'Body found · ~8:40 AM',
         markerColor: '#c04e01',
         tooltipDirection: 'left',
-        viewportOffset: { x: 0.39, y: 0.34 }
+        mapPlacement: 'below-intro'
       },
       referenceCommit: '3f5771b37259c6990badfc5a2d42a2471656e4f6'
     },

@@ -251,16 +251,26 @@
       activeRoute = L.polyline(route.coords, { color: route.color, weight: 3, opacity: .8, dashArray: '7 6', lineCap: 'round' }).addTo(map);
     }
     activeMarker = L.circleMarker([location.lat, location.lng], { radius: 8, color: tone, fillColor: tone, weight: 2, opacity: 1, fillOpacity: .72 }).addTo(map);
-    const tooltipDirection = event.tooltipDirection || 'right';
-    const tooltipOffset = tooltipDirection === 'left' ? [-12, 0] : [12, 0];
+    const tooltipDirection = event.mapPlacement === 'below-intro' && window.innerWidth <= 340
+      ? 'top'
+      : (event.tooltipDirection || 'right');
+    const tooltipOffset = {
+      left: [-12, 0],
+      right: [12, 0],
+      top: [0, -12],
+      bottom: [0, 12]
+    }[tooltipDirection] || [12, 0];
     activeMarker.bindTooltip(escapeHtml(event.markerLabel || location.label), { permanent: true, direction: tooltipDirection, offset: tooltipOffset, className: 'map-label' }).openTooltip();
     const move = reduceMotion ? 'setView' : 'flyTo';
     const zoom = event.zoom || location.zoom;
-    if (event.viewportOffset) {
+    if (event.mapPlacement === 'below-intro') {
+      const introCard = document.querySelector('.intro-content');
+      const cardBottom = introCard ? introCard.getBoundingClientRect().bottom : window.innerHeight * .55;
+      const targetY = Math.min(window.innerHeight - 92, cardBottom + 54);
       map.setView([location.lat, location.lng], zoom, { animate: false });
       map.panBy([
-        -Math.round(window.innerWidth * event.viewportOffset.x),
-        -Math.round(window.innerHeight * event.viewportOffset.y)
+        0,
+        -Math.round(targetY - (window.innerHeight / 2))
       ], { animate: false });
     } else {
       map[move]([location.lat, location.lng], zoom, reduceMotion ? undefined : { duration: 1.1, easeLinearity: .25 });

@@ -1,0 +1,45 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/timeline"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/event-timeline"
+  to = "/event-timeline.html"
+  status = 200
+
+[[redirects]]
+  from = "/master-notes"
+  to = "/documents/master-investigation-notes.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/documents/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/transcripts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The full sourced event log for the Nolan Wells evidence timeline.">
+  <meta name="theme-color" content="#060b14">
+  <title>Full Event Log · Nolan Wells Evidence File</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/event-log.css">
+</head>
+<body>
+  <a class="skip-link" href="#event-log">Skip to evidence log</a>
+  <header class="page-header">
+    <nav class="page-nav" aria-label="Evidence file pages">
+      <a href="./index.html">← Interactive map</a>
+      <a href="./documents/master-investigation-notes.html">Master notes</a>
+      <a href="./documents/MDMR-MP2607-0016-report.pdf" target="_blank" rel="noopener">MDMR report</a>
+    </nav>
+    <p class="eyebrow">Nolan Wells Evidence File</p>
+    <h1>Full Event Log</h1>
+    <p class="page-meta">July 3–6, 2026 · Source-led chronology</p>
+    <p class="page-intro">Each entry identifies its evidence type, confidence, time precision, and supporting basis. A timeline position is not proof that disputed events occurred in that exact order.</p>
+  </header>
+
+  <section class="key-info" aria-label="Evidence rules">
+    <div><p class="key-label">Canonical source</p><p><a href="./documents/master-investigation-notes.html">Master Investigation Notes · Version 1.1</a></p></div>
+    <div><p class="key-label">Critical window</p><p>Approximately 3:45–4:31 PM · ordering unresolved</p></div>
+    <div><p class="key-label">Tracked vessel</p><p>MI4088BU · official GPS summary</p></div>
+    <div><p class="key-label">Evidence rule</p><p>No mixing objective records, recollections, secondhand summaries, and hypotheses.</p></div>
+  </section>
+
+  <section class="log-controls" aria-label="Event log controls">
+    <div class="filter-group" aria-label="Filter by evidence type">
+      <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="verified" aria-pressed="false"><i class="verified"></i>Verified</button>
+      <button class="filter" type="button" data-filter="firsthand" aria-pressed="false"><i class="firsthand"></i>Witness</button>
+      <button class="filter" type="button" data-filter="secondhand" aria-pressed="false"><i class="secondhand"></i>Secondhand</button>
+      <button class="filter" type="button" data-filter="hypothesis" aria-pressed="false"><i class="hypothesis"></i>Hypothesis</button>
+    </div>
+    <div class="search-field">
+      <label for="timeline-search">Search event log</label>
+      <div><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><input id="timeline-search" type="search" autocomplete="off" placeholder="person, time, boat, source…"><button id="clear-search" type="button" aria-label="Clear search" hidden>×</button></div>
+    </div>
+  </section>
+
+  <div class="results-row"><p id="results-status" role="status" aria-live="polite">Loading evidence log…</p><p><span id="verified-total">0</span> verified entries</p></div>
+
+  <main id="event-log" tabindex="-1">
+    <noscript><p class="empty">JavaScript is required to render and filter the full event log. The <a href="./documents/master-investigation-notes.html">master notes</a> remain available without it.</p></noscript>
+  </main>
+
+  <footer>
+    <p>This working evidence file should be corrected when stronger primary evidence becomes available.</p>
+    <p>Visual system adapted from the public Subtxt Press Nolan timeline. Facts and classifications are controlled by the project’s master investigation notes.</p>
+  </footer>
+
+  <script src="./assets/timeline-data.js"></script>
+  <script src="./assets/event-log.js"></script>
+</body>
+</html>

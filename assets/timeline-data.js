@@ -8,7 +8,7 @@
     meta: {
       title: 'Nolan Wells',
       range: 'July 3–6, 2026',
-      description: 'Nolan Wells, 18, was reported missing after a July 4 gathering at Horn Island. His body was recovered near the island’s northwest tip on the morning of July 6. This timeline follows the official GPS record, search activity, witness accounts, and the unresolved period before his boat left the island.',
+      description: 'Nolan Wells, 18, was reported missing after a gathering at Horn Island on July 4, 2026. His body was recovered near the island’s northwest tip on the morning of July 6, 2026. This timeline follows the official GPS record, search activity, witness accounts, and the unresolved period before his boat left the island.',
       opening: {
         location: 'recovery',
         zoom: 15,
@@ -79,12 +79,12 @@
     ],
     confirmedTimes: [
       {
-        date: 'July 3',
+        date: 'July 3, 2026',
         note: 'No confirmed public clock time is available.',
         hours: []
       },
       {
-        date: 'July 4',
+        date: 'July 4, 2026',
         hours: [
           {
             hour: '9 AM',
@@ -120,7 +120,7 @@
         ]
       },
       {
-        date: 'July 5',
+        date: 'July 5, 2026',
         hours: [
           {
             hour: '8 AM',
@@ -143,7 +143,7 @@
         ]
       },
       {
-        date: 'July 6',
+        date: 'July 6, 2026',
         hours: [
           {
             hour: '8 AM',
@@ -156,7 +156,7 @@
     ],
     events: [
       {
-        id: 'last-evening-home', date: 'July 3', dateLong: 'Friday · July 3, 2026', time: 'Evening', precision: 'No exact public time',
+        id: 'last-evening-home', date: 'July 3, 2026', dateLong: 'Friday · July 3, 2026', time: 'Evening', precision: 'No exact public time',
         title: 'Nolan leaves home before the trip', type: 'firsthand', confidence: 'Medium', masterAnchor: 'reconstruction', location: 'overview',
         summary: 'Family accounts place Nolan leaving home and staying with friends before the Horn Island trip.',
         claims: ['Nolan made dinner for his parents, hugged his mother, and left to spend the night with friends.'],
@@ -166,7 +166,7 @@
         ]
       },
       {
-        id: 'gps-departure', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '9:56 AM', precision: 'Minute-level GPS timestamp',
+        id: 'gps-departure', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '9:56 AM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU departs the mainland', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'elCamino', route: 'outbound',
         summary: 'The official MDMR Garmin extraction summary places the tracked Triton leaving El Camino Real Road at 9:56 AM.',
         claims: ['The vessel identity is MI4088BU.', 'The GPS record establishes vessel movement, not the identity of every passenger.'],
@@ -177,7 +177,7 @@
         ]
       },
       {
-        id: 'anchoring-calls', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00 AM', precision: 'Approximate witness time',
+        id: 'anchoring-calls', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00 AM', precision: 'Approximate witness time',
         title: 'Nolan calls Tracestin about anchoring', type: 'firsthand', confidence: 'Medium', masterAnchor: 'tracestin', location: 'hornIsland',
         summary: 'Tracestin says he was already at Horn Island when Nolan called for help finding where the group should anchor.',
         claims: ['The time is approximate and comes from Tracestin’s public account, not released call metadata.'],
@@ -187,7 +187,7 @@
         ]
       },
       {
-        id: 'gps-arrival', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '11:14 AM', precision: 'Minute-level GPS timestamp',
+        id: 'gps-arrival', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '11:14 AM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU arrives at Horn Island', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'hornIsland', route: 'outbound',
         summary: 'The official GPS summary places the tracked Triton at the west tip of Horn Island at 11:14 AM.',
         claims: ['The boat remains stationary in the GPS summary from approximately 11:15 AM until 4:30 PM.'],
@@ -198,18 +198,18 @@
         ]
       },
       {
-        id: 'early-afternoon', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Early afternoon', precision: 'Broad witness placement',
+        id: 'early-afternoon', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Early afternoon', precision: 'Broad witness placement',
         title: 'Nolan socializes among the boats', type: 'firsthand', confidence: 'Medium', masterAnchor: 'reconstruction', location: 'hornIsland',
         summary: 'Public witness accounts and circulated media place Nolan swimming and socializing with the larger group during the early afternoon.',
         claims: ['The available image does not authenticate an exact capture time.'],
-        media: { type: 'image', src: './media/2026-07-04-Nolan-on-boat-with-bros.png', alt: 'Nolan with friends on a boat on July 4', caption: 'Circulated image · exact capture time not authenticated' },
+        media: { type: 'image', src: './media/2026-07-04-Nolan-on-boat-with-bros.png', alt: 'Nolan with friends on a boat on July 4, 2026', caption: 'Circulated image · exact capture time not authenticated' },
         sources: [
           { label: 'Master reconstruction', href: `${master}#reconstruction` },
           { label: 'Tracestin interview · Part 5', href: './transcripts/tracestin-part-5.html' }
         ]
       },
       {
-        id: 'warren-last-sighting', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:00 PM', precision: 'Approximate witness recollection',
+        id: 'warren-last-sighting', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:00 PM', precision: 'Approximate witness recollection',
         title: 'Warren’s reported last personal sighting', type: 'firsthand', confidence: 'Medium', masterAnchor: 'warren', location: 'hornIsland',
         summary: 'Warren later placed his own last sighting of Nolan at about 3:00 PM and described Nolan interacting with Katie.',
         claims: ['This is Warren’s last sighting, not necessarily Nolan’s final confirmed sighting by anyone.'],
@@ -219,7 +219,7 @@
         ]
       },
       {
-        id: 'altercation', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:30 PM', precision: 'Approximate witness reconstruction',
+        id: 'altercation', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:30 PM', precision: 'Approximate witness reconstruction',
         title: 'Tracestin describes an altercation', type: 'firsthand', confidence: 'Medium', masterAnchor: 'tracestin', location: 'hornIsland',
         summary: 'Tracestin says he became involved in an altercation with another man on the island.',
         claims: ['The exact start time has not been independently authenticated.'],
@@ -229,7 +229,7 @@
         ]
       },
       {
-        id: 'forced-aboard', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Immediately afterward', precision: 'Sequence reported by witness; no objective time',
+        id: 'forced-aboard', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Immediately afterward', precision: 'Sequence reported by witness; no objective time',
         title: 'Tracestin says his uncle forced him aboard', type: 'firsthand', confidence: 'Medium', masterAnchor: 'tracestin', location: 'hornIsland',
         summary: 'Tracestin says his uncle required him to return to the family boat after the altercation.',
         claims: ['The available public record does not establish an exact minute for this transition.'],
@@ -239,7 +239,7 @@
         ]
       },
       {
-        id: 'nolan-nearby-account', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Reportedly nearby', precision: 'Witness placement only',
+        id: 'nolan-nearby-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Reportedly nearby', precision: 'Witness placement only',
         title: 'Tracestin places Nolan nearby', type: 'firsthand', confidence: 'Low', masterAnchor: 'tracestin', location: 'hornIsland',
         summary: 'Tracestin has said Nolan was in the water nearby during this general period but was not visible in the viral video.',
         claims: ['No released objective timestamp independently fixes Nolan’s position during the altercation.'],
@@ -249,7 +249,7 @@
         ]
       },
       {
-        id: 'sea-tow-call', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Around 4:00 PM', precision: 'Call occurred before 4:31 PM; exact start unresolved',
+        id: 'sea-tow-call', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 4:00 PM', precision: 'Call occurred before 4:31 PM; exact start unresolved',
         title: 'Sea Tow receives a distress call', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'hornIsland',
         summary: 'Released audio establishes a call about a boat taking on water after bilge-pump failure, with approximately seven people reported aboard.',
         claims: ['The caller reports that everyone aboard is okay.', 'Public labels of 3:48 PM or approximately 4:00 PM are not authenticated by released original metadata.'],
@@ -283,20 +283,20 @@
         ]
       },
       {
-        id: 'viral-video', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Reposted label; original metadata not obtained',
+        id: 'viral-video', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Reposted label; original metadata not obtained',
         title: 'The circulated altercation video', type: 'media', confidence: 'Medium', masterAnchor: 'viral-video', location: 'hornIsland',
         summary: 'Tracestin publicly identifies himself as the person yelling in the circulated clip and says Nolan is not visible in it.',
         claims: ['The clip’s contents are public; the reported 4:01 PM timestamp remains unauthenticated.', 'The video does not establish Nolan’s location.'],
         media: { type: 'video', src: './media/2026-07-04-tracetin-fighting.mp4', alt: 'Circulated altercation video from Horn Island', caption: 'Circulated video · reported time not authenticated' },
         sources: [
           { label: 'Tracestin interview · Part 5', href: './transcripts/tracestin-part-5.html' },
-          { label: 'Original public X post · July 6', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
+          { label: 'Original public X post · July 6, 2026', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
           { label: 'TMZ · original owner’s account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' },
           { label: 'Master viral-video notes', href: `${master}#viral-video` }
         ]
       },
       {
-        id: 'anna-videographer-attribution', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Identity confirmed from the supplied profile; recording time remains unauthenticated',
+        id: 'anna-videographer-attribution', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Identity confirmed from the supplied profile; recording time remains unauthenticated',
         title: 'Anna C. Moore records the circulated video', type: 'firsthand', confidence: 'Medium', masterAnchor: 'anna', location: 'hornIsland',
         summary: 'Anna C. Moore is identified as the owner of the circulated recording. TMZ reports that the original owner was on Horn Island and posted the clip hoping someone might identify Nolan.',
         claims: [
@@ -307,13 +307,13 @@
         ],
         sources: [
           { label: 'Anna C. Moore · supplied Facebook profile', href: 'https://www.facebook.com/share/19EttKhMgq/?mibextid=wwXIfr' },
-          { label: 'Original public X post · July 6', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
+          { label: 'Original public X post · July 6, 2026', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
           { label: 'TMZ · original owner’s account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' },
           { label: 'Master Anna notes', href: `${master}#anna` }
         ]
       },
       {
-        id: 'tracestin-leaves', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Shortly afterward', precision: 'Witness sequence; exact minute unresolved',
+        id: 'tracestin-leaves', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Shortly afterward', precision: 'Witness sequence; exact minute unresolved',
         title: 'Tracestin says he leaves the island', type: 'firsthand', confidence: 'Medium', masterAnchor: 'tracestin', location: 'hornIsland',
         summary: 'Tracestin says he departed with his family after being forced back onto their boat.',
         claims: ['The exact relationship between this departure, the video, and the Sea Tow call is not independently established.'],
@@ -323,7 +323,7 @@
         ]
       },
       {
-        id: 'accounts-nolan-stays', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Before 4:31 PM', precision: 'No authenticated exact time',
+        id: 'accounts-nolan-stays', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Before 4:31 PM', precision: 'No authenticated exact time',
         title: 'Accounts say Nolan chose to remain', type: 'secondhand', confidence: 'Low', masterAnchor: 'warren', location: 'hornIsland',
         summary: 'The official report records a police summary that friends said Nolan remained with an unknown woman; Warren has also publicly said friends urged Nolan to leave.',
         claims: ['The obtained report does not identify each speaker, preserve Nolan’s exact words, or timestamp the alleged decision.', 'Katie has reportedly said she believed Nolan was returning on his original boat.'],
@@ -335,7 +335,7 @@
         ]
       },
       {
-        id: 'private-assistance', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Before departure', precision: 'Established sequence; exact minute unresolved',
+        id: 'private-assistance', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Before departure', precision: 'Established sequence; exact minute unresolved',
         title: 'Private assistance replaces Sea Tow response', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'hornIsland',
         summary: 'The released call records that private assistance had been arranged and the Sea Tow response was canceled.',
         claims: ['The public call does not itself authenticate the later tow’s full participant list.'],
@@ -345,7 +345,7 @@
         ]
       },
       {
-        id: 'gps-movement-431', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '4:31 PM', precision: 'Minute-level GPS timestamp',
+        id: 'gps-movement-431', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '4:31 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU begins slow movement', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'slowTow',
         summary: 'The tracked Triton begins moving north from the west tip at approximately 0.06–4.2 knots.',
         claims: ['MDMR summarizes approximately 2.75 miles of slow movement through 5:24 PM.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
@@ -355,7 +355,7 @@
         ]
       },
       {
-        id: 'phone-and-passenger-account', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'At departure', precision: 'Witness and secondhand accounts',
+        id: 'phone-and-passenger-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'At departure', precision: 'Witness and secondhand accounts',
         title: 'Accounts place Nolan off the departing boat', type: 'secondhand', confidence: 'Medium', masterAnchor: 'what-gps-does-not-tell-us', location: 'hornIsland',
         summary: 'Public accounts say MI4088BU left without Nolan and carried his phone back to the mainland.',
         claims: ['This conclusion does not come from GPS.', 'The obtained official packet does not independently establish every passenger aboard at departure.'],
@@ -366,7 +366,7 @@
         ]
       },
       {
-        id: 'critical-overlap', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '3:45–4:31 PM', precision: 'Analytical window; ordering remains unresolved',
+        id: 'critical-overlap', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '3:45–4:31 PM', precision: 'Analytical window; ordering remains unresolved',
         title: 'The critical unresolved window', type: 'unknown', confidence: 'Medium', masterAnchor: 'critical-overlap', location: 'hornIsland',
         summary: 'This is the narrow period in which the public accounts of the altercation, viral video, distress call, Tracestin’s departure, Nolan remaining, and MI4088BU’s departure converge.',
         claims: ['The available public evidence does not establish the exact minute-by-minute ordering of the fight, video, and Sea Tow call.', 'This window is an analytical focus, not proof of a theory.'],
@@ -376,7 +376,7 @@
         ]
       },
       {
-        id: 'gps-normal-525', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '5:25 PM', precision: 'Minute-level GPS timestamp',
+        id: 'gps-normal-525', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '5:25 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU regains normal operation', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'return',
         summary: 'MDMR reports that the tracked vessel accelerates to approximately 30–35 knots after the period of slow movement.',
         claims: ['The slow-movement interval lasted about 53 minutes.'],
@@ -386,7 +386,7 @@
         ]
       },
       {
-        id: 'gps-return-544', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '5:44 PM', precision: 'Minute-level GPS timestamp',
+        id: 'gps-return-544', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '5:44 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU reaches El Camino Real Road', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'elCamino', route: 'return',
         summary: 'The official report places the tracked Triton back at El Camino Real Road at 5:44 PM.',
         claims: ['This site does not use the upstream 5:44 graphic because its vessel label conflicts with the obtained report.'],
@@ -396,7 +396,7 @@
         ]
       },
       {
-        id: 'family-contacted', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00 PM', precision: 'Approximate witness time',
+        id: 'family-contacted', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00 PM', precision: 'Approximate witness time',
         title: 'Friends realize Nolan has not returned', type: 'firsthand', confidence: 'Medium', masterAnchor: 'reconstruction', location: 'overview',
         summary: 'Public accounts place friends contacting Nolan’s family after realizing that he had not returned from Horn Island.',
         claims: ['The MDMR CAD entry is separately timestamped at 11:45:14 PM.'],
@@ -407,9 +407,9 @@
         ]
       },
       {
-        id: 'official-search', date: 'July 5', dateLong: 'Sunday · July 5, 2026', time: 'Morning onward', precision: 'Mixed exact and approximate operational times',
+        id: 'official-search', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Morning onward', precision: 'Mixed exact and approximate operational times',
         title: 'The official search expands', type: 'verified', confidence: 'High', masterAnchor: 'reconstruction', location: 'searchArea',
-        summary: 'MDMR narratives and CAD records document patrol-vessel, drone, and multi-agency search activity on July 5.',
+        summary: 'MDMR narratives and CAD records document patrol-vessel, drone, and multi-agency search activity on July 5, 2026.',
         claims: ['The obtained packet records an MDMR patrol-vessel launch around 8:00 AM, a drone request around 9:00 AM, and drone flights beginning at 12:40 PM.'],
         sources: [
           { label: 'MDMR report · pages 4, 10 and 12', href: `${report}#page=10` },
@@ -417,7 +417,7 @@
         ]
       },
       {
-        id: 'body-found', date: 'July 6', dateLong: 'Monday · July 6, 2026', time: 'Around 8:40 AM', precision: 'Approximate public official time',
+        id: 'body-found', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: 'Around 8:40 AM', precision: 'Approximate public official time',
         title: 'Nolan’s body is found near the northwest tip', type: 'verified', confidence: 'High', masterAnchor: 'reconstruction', location: 'recovery',
         summary: 'Public official reporting places the recovery in the water near the northwestern end of Horn Island.',
         claims: ['The available 15-page MDMR packet contains the later deceased-person CAD event but not the full recovery narrative.'],

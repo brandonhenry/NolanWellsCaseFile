@@ -98,7 +98,7 @@
       },
       {
         id: 'nolan-boat-photo',
-        title: 'Nolan on Boat · July 4',
+        title: 'Nolan on Boat · July 4, 2026',
         kind: 'Circulated photograph',
         status: 'Obtained copy',
         availability: 'Public on this site',
@@ -142,7 +142,7 @@
         id: 'nolan',
         name: 'Nolan Wells',
         role: 'Subject of the timeline',
-        summary: 'The evidence file follows Nolan’s July 3 departure from home, July 4 Horn Island trip, disappearance, search, and July 6 recovery.',
+        summary: 'The evidence file follows Nolan’s departure from home on July 3, 2026, the Horn Island trip on July 4, 2026, his disappearance, the search, and his recovery on July 6, 2026.',
         eventIds: ['last-evening-home', 'gps-departure', 'anchoring-calls', 'gps-arrival', 'early-afternoon', 'warren-last-sighting', 'nolan-nearby-account', 'accounts-nolan-stays', 'phone-and-passenger-account', 'body-found'],
         interviews: [],
         questions: ['What is the last independently corroborated sighting?', 'What were Nolan’s exact last words and who heard them?', 'What return plan did Nolan understand?']
@@ -208,7 +208,7 @@
         summary: 'Bart’s vessel MI1295CB appears through waypoints in the obtained packet, but the project does not have a continuous track or complete passenger account.',
         eventIds: ['early-afternoon', 'gps-movement-431'],
         interviews: [],
-        questions: ['What was Bart’s complete July 4 timeline?', 'Who occupied MI1295CB?', 'What do the individual waypoints represent?']
+        questions: ['What was Bart’s complete July 4, 2026 timeline?', 'Who occupied MI1295CB?', 'What do the individual waypoints represent?']
       }
     ],
 
@@ -318,7 +318,7 @@
       { id: 5, question: 'Who was aboard each vessel at 4:31 PM?', status: 'Open', evidence: 'GPS movement and incomplete public passenger accounts', needed: 'Direct passenger statements and verified manifests' },
       { id: 6, question: 'Which vessel provided private assistance to MI4088BU?', status: 'Open', evidence: 'Released call and slow GPS movement', needed: 'Assisting-vessel statement, track, and tow documentation' },
       { id: 7, question: 'What is the evidentiary basis for any 6:00 PM claim?', status: 'Open', evidence: 'No authenticated basis identified in the obtained core record', needed: 'Source publication, original timestamp, or USCG record supporting the time' },
-      { id: 8, question: 'What search coordinates and drift assumptions guided July 5 operations?', status: 'Open', evidence: 'MDMR narratives reference search and drone activity', needed: 'USCG particle drift, drone grid, flight logs, and interagency emails' }
+      { id: 8, question: 'What search coordinates and drift assumptions guided July 5, 2026 operations?', status: 'Open', evidence: 'MDMR narratives reference search and drone activity', needed: 'USCG particle drift, drone grid, flight logs, and interagency emails' }
     ],
 
     fileTree: [

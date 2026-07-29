@@ -100,7 +100,7 @@
     '/gaps.html': {
       canonical: '/gaps',
       title: 'Nolan Wells Timeline Gaps: The Unresolved 3:45–4:31 PM Window',
-      description: 'Examine the known anchors and unresolved intervals in the Nolan Wells timeline, including the central July 4 window before the 4:31 PM vessel movement.',
+      description: 'Examine the known anchors and unresolved intervals in the Nolan Wells timeline, including the central window on July 4, 2026 before the 4:31 PM vessel movement.',
       type: 'WebPage'
     },
     '/search.html': {
@@ -119,7 +119,7 @@
     '/transcripts/seatow-audio.html': {
       canonical: '/transcripts/seatow-audio.html',
       title: 'Nolan Wells Sea Tow Call Audio, Transcript & Channel Analysis',
-      description: 'Listen to the released July 4 Sea Tow call, compare isolated stereo channels, read the transcript, and review timing and speaker-identification limits.',
+      description: 'Listen to the released Sea Tow call from July 4, 2026, compare isolated stereo channels, read the transcript, and review timing and speaker-identification limits.',
       type: 'Article'
     },
     '/transcripts/tracestin-part-5.html': {
@@ -162,7 +162,7 @@
       'viral-video': ['Horn Island Viral Video Record · Nolan Wells Case', 'Provenance, public reporting, visible and audible contents, source links, and unresolved native metadata for the circulated Horn Island video.'],
       'gps-0956': ['9:56 AM GPS Graphic · Nolan Wells Boat Timeline', 'Published GPS graphic and official context for MI4088BU’s 9:56 AM mainland departure on July 4, 2026.'],
       'gps-1114': ['11:14 AM GPS Graphic · Nolan Wells Boat Timeline', 'Published GPS graphic and official context for MI4088BU’s 11:14 AM arrival at Horn Island on July 4, 2026.'],
-      'nolan-boat-photo': ['Nolan Wells Boat Photograph · July 4 Evidence Record', 'Circulated July 4 photograph, event context, provenance limitations, and missing original metadata.'],
+      'nolan-boat-photo': ['Nolan Wells Boat Photograph · July 4, 2026 Evidence Record', 'Circulated photograph from July 4, 2026, event context, provenance limitations, and missing original metadata.'],
       'warren-interviews': ['Warren Interview Transcripts · Nolan Wells Case', 'Four public interview transcript sections covering the trip, last sighting, departure accounts, phone, keys, and follow-up.'],
       'tracestin-interview': ['Tracestin Shepherd Interview · Nolan Wells Case', 'Public interview transcript covering anchoring, the afternoon, altercation, departure, and later search activity.']
     },

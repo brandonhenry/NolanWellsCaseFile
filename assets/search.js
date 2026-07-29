@@ -24,7 +24,7 @@
     add(
       'Case guide',
       'What happened to Nolan Wells?',
-      'Plain-language sourced summary of the July 4 Horn Island trip, verified 9:56, 11:14, 4:31, 5:25, and 5:44 vessel GPS milestones, witness accounts, search, recovery, and the unresolved 3:45 to 4:31 PM window.',
+      'Plain-language sourced summary of the Horn Island trip on July 4, 2026, verified 9:56, 11:14, 4:31, 5:25, and 5:44 vessel GPS milestones, witness accounts, search, recovery, and the unresolved 3:45 to 4:31 PM window.',
       './case-summary.html',
       'Case summary · Last reviewed July 28, 2026'
     );

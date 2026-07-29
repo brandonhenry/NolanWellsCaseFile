@@ -172,6 +172,85 @@ h1 {
 .xlink:hover { 
   color: #4a8a7c; 
 }
+.audio-analysis {
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(244,229,196,0.12);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.025);
+}
+.audio-analysis h2 {
+  margin-bottom: 0.45rem;
+  color: #d8dadb;
+  font-family: 'IBM Plex Mono',monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.audio-analysis-intro {
+  max-width: 70ch;
+  color: rgba(216,218,219,0.68);
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+.audio-analysis-intro strong {
+  color: #c4845a;
+  font-family: 'IBM Plex Mono',monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.audio-list {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+.audio-card {
+  display: grid;
+  grid-template-columns: minmax(190px,0.65fr) minmax(260px,1fr);
+  gap: 1rem;
+  padding: 0.75rem;
+  align-items: center;
+  border-radius: 3px;
+  background: rgba(216,218,219,0.04);
+}
+.audio-card h3 {
+  color: #d8dadb;
+  font-family: 'IBM Plex Mono',monospace;
+  font-size: 0.64rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.audio-card p {
+  margin-top: 0.25rem;
+  color: rgba(216,218,219,0.46);
+  font-family: 'IBM Plex Mono',monospace;
+  font-size: 0.52rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.audio-card audio {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+}
+.audio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.9rem;
+  font-family: 'IBM Plex Mono',monospace;
+  font-size: 0.56rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.audio-links a {
+  color: #c4845a;
+}
+.audio-links a:hover {
+  color: #d8dadb;
+}
 @media (max-width: 480px) {
   h1 { 
     font-size: 0.6rem; 
@@ -183,6 +262,15 @@ h1 {
   }
   .line, .divider { 
     grid-template-columns: 2rem 3.5rem 1fr; 
+  }
+  .audio-analysis {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    padding: 0.75rem;
+  }
+  .audio-card {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
   }
 }
 </style>
@@ -196,6 +284,57 @@ h1 {
     <b>GPS:</b> 30&deg;14.684&prime;N, 88&deg;46.79&prime;W &middot; <b>Member:</b> Jerry Atkerson
   </div>
 </div>
+
+<section class="audio-analysis" id="audio-analysis" aria-labelledby="audio-analysis-title">
+  <h2 id="audio-analysis-title">Call audio · channel analysis</h2>
+  <p class="audio-analysis-intro"><strong>Listening aid:</strong> These 3:21 excerpts were derived from the released stereo publication. Channel separation does not establish the identity of any background speaker. The enhanced version is altered for clarity and should be compared against the unaltered channel and original stereo excerpt. No audio starts automatically.</p>
+  <div class="audio-list">
+    <section class="audio-card">
+      <div>
+        <h3>Caller and boat channel — enhanced</h3>
+        <p>Recommended first listen · noise reduction, filtering, and level normalization applied</p>
+      </div>
+      <audio controls preload="none" aria-label="Caller and boat channel, enhanced">
+        <source src="../media/audio/03-caller-and-boat-channel-enhanced.mp3" type="audio/mpeg">
+        Your browser cannot play this audio. <a href="../media/audio/03-caller-and-boat-channel-enhanced.mp3">Download the MP3</a>.
+      </audio>
+    </section>
+    <section class="audio-card">
+      <div>
+        <h3>Caller and boat channel — unaltered</h3>
+        <p>Isolated source channel · no clarity processing</p>
+      </div>
+      <audio controls preload="none" aria-label="Caller and boat channel, unaltered">
+        <source src="../media/audio/02-caller-and-boat-channel-only.mp3" type="audio/mpeg">
+        Your browser cannot play this audio. <a href="../media/audio/02-caller-and-boat-channel-only.mp3">Download the MP3</a>.
+      </audio>
+    </section>
+    <section class="audio-card">
+      <div>
+        <h3>Original stereo excerpt</h3>
+        <p>First 3:21 · both original channels</p>
+      </div>
+      <audio controls preload="none" aria-label="Original stereo excerpt">
+        <source src="../media/audio/01-official-call-first-201s-stereo.mp3" type="audio/mpeg">
+        Your browser cannot play this audio. <a href="../media/audio/01-official-call-first-201s-stereo.mp3">Download the MP3</a>.
+      </audio>
+    </section>
+    <section class="audio-card">
+      <div>
+        <h3>Dispatcher channel only</h3>
+        <p>Isolated source channel</p>
+      </div>
+      <audio controls preload="none" aria-label="Dispatcher channel only">
+        <source src="../media/audio/04-dispatcher-channel-only.mp3" type="audio/mpeg">
+        Your browser cannot play this audio. <a href="../media/audio/04-dispatcher-channel-only.mp3">Download the MP3</a>.
+      </audio>
+    </section>
+  </div>
+  <p class="audio-links">
+    <a href="https://youtu.be/oshE23g-rTY" target="_blank" rel="noopener noreferrer">Full 9:46 raw publication</a>
+    <a href="https://www.wlox.com/video/2026/07/26/mdmr-releases-call-audio-boat-nolan-wells-case/" target="_blank" rel="noopener noreferrer">WLOX report</a>
+  </p>
+</section>
 
 <div class="key">
   <div class="key-item"><div class="key-dot caller"></div>Caller: (Triton)</div>

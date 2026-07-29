@@ -27,10 +27,33 @@
 
   function mediaMarkup(media) {
     if (!media) return '';
-    const icon = media.type === 'video'
-      ? '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg>'
-      : '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M9 9h.01"/></svg>';
-    return `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(media.type)}" data-media-src="${escapeHtml(media.src)}" data-media-alt="${escapeHtml(media.alt)}" data-media-caption="${escapeHtml(media.caption)}">${icon}<span>${media.type === 'video' ? 'Load evidence media' : 'View evidence image'}</span></button></div>`;
+    const icons = {
+      video: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg>',
+      audio: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9v6M9 6v12M13 8v8M17 4v16M21 10v4"/></svg>',
+      image: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M9 9h.01"/></svg>'
+    };
+    const labels = { video: 'Load evidence video', audio: 'Load full call audio', image: 'View evidence image' };
+    return `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(media.type)}" data-media-src="${escapeHtml(media.src)}" data-media-alt="${escapeHtml(media.alt)}" data-media-caption="${escapeHtml(media.caption)}">${icons[media.type] || icons.image}<span>${labels[media.type] || labels.image}</span></button></div>`;
+  }
+
+  function audioMarkup(tracks) {
+    if (!tracks || !tracks.length) return '';
+    return `<details class="audio-evidence">
+      <summary>Listen to the separated call channels <span>${tracks.length} files</span></summary>
+      <div class="audio-evidence-body">
+        <p class="audio-caution"><strong>Listening aid:</strong> Channel separation does not identify any background speaker. The enhanced file is altered for clarity; compare it with the unaltered channel and stereo excerpt.</p>
+        <div class="audio-track-list">
+          ${tracks.map(track => `<section class="audio-track">
+            <div class="audio-track-heading"><h3>${escapeHtml(track.label)}</h3><p>${escapeHtml(track.note)}</p></div>
+            <audio controls preload="none" aria-label="${escapeHtml(track.label)}">
+              <source src="${escapeHtml(track.src)}" type="audio/mpeg">
+              Your browser cannot play this audio. <a href="${escapeHtml(track.src)}">Download the MP3</a>.
+            </audio>
+          </section>`).join('')}
+        </div>
+        <a class="audio-transcript-link" href="./transcripts/seatow-audio.html#audio-analysis">Open the audio notes and full transcript →</a>
+      </div>
+    </details>`;
   }
 
   function eventMarkup(event) {
@@ -46,6 +69,7 @@
         </div>
         <p class="precision"><strong>Time precision:</strong> ${escapeHtml(event.precision)}</p>
         <ul class="claim-list">${event.claims.map(claim => `<li>${escapeHtml(claim)}</li>`).join('')}</ul>
+        ${audioMarkup(event.audioTracks)}
         ${mediaMarkup(event.media)}
         <div class="source-block">
           <p class="source-label">Sources and evidentiary basis</p>
@@ -195,6 +219,8 @@
         const mediaType = button.dataset.mediaType;
         if (mediaType === 'video') {
           container.innerHTML = `<figure class="loaded-media"><video controls playsinline preload="metadata" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
+        } else if (mediaType === 'audio') {
+          container.innerHTML = `<figure class="loaded-media loaded-audio"><audio controls preload="none" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="audio/mp4">Your browser cannot play this audio. <a href="${escapeHtml(button.dataset.mediaSrc)}">Download the file</a>.</audio><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
         } else {
           container.innerHTML = `<figure class="loaded-media"><button class="image-open" type="button" aria-label="Expand evidence image"><img src="${escapeHtml(button.dataset.mediaSrc)}" alt="${escapeHtml(button.dataset.mediaAlt)}" loading="lazy"></button><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
           const imageButton = container.querySelector('.image-open');

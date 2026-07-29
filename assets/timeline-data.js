@@ -251,9 +251,31 @@
         title: 'Sea Tow receives a distress call', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'hornIsland',
         summary: 'Released audio establishes a call about a boat taking on water after bilge-pump failure, with approximately seven people reported aboard.',
         claims: ['The caller reports that everyone aboard is okay.', 'Public labels of 3:48 PM or approximately 4:00 PM are not authenticated by released original metadata.'],
-        media: { type: 'video', src: './media/2026-07-04-full-dispatch-call.mp4', alt: 'Released Sea Tow and dispatch call media', caption: 'Released distress-call media · exact original timestamp unresolved' },
+        media: { type: 'audio', src: './media/2026-07-04-full-dispatch-call.mp4', alt: 'Full released Sea Tow and dispatch call audio', caption: 'Full released call · 9:46 · exact original timestamp unresolved' },
+        audioTracks: [
+          {
+            label: 'Caller and boat channel — enhanced',
+            src: './media/audio/03-caller-and-boat-channel-enhanced.mp3',
+            note: 'Recommended first listen · altered for clarity'
+          },
+          {
+            label: 'Caller and boat channel — unaltered',
+            src: './media/audio/02-caller-and-boat-channel-only.mp3',
+            note: 'Isolated source channel · no clarity processing'
+          },
+          {
+            label: 'Original stereo excerpt',
+            src: './media/audio/01-official-call-first-201s-stereo.mp3',
+            note: 'First 3:21 · both original channels'
+          },
+          {
+            label: 'Dispatcher channel only',
+            src: './media/audio/04-dispatcher-channel-only.mp3',
+            note: 'Isolated source channel'
+          }
+        ],
         sources: [
-          { label: 'Sea Tow call transcript', href: './transcripts/seatow-audio.html' },
+          { label: 'Audio analysis and transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
           { label: 'Master Sea Tow notes', href: `${master}#sea-tow` },
           { label: 'MDMR report · page 5', href: `${report}#page=5` }
         ]

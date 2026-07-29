@@ -2,6 +2,12 @@
   publish = "."
 
 [[redirects]]
+  from = "https://nolan-wells-case-file.netlify.app/*"
+  to = "https://justicefornolanwells.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/timeline"
   to = "/index.html"
   status = 200
@@ -127,5 +133,5 @@
 [[headers]]
   for = "/documents/MDMR-MP2607-0016-report.pdf"
   [headers.values]
-    Link = "<https://nolan-wells-case-file.netlify.app/documents/MDMR-MP2607-0016-report.pdf>; rel=\"canonical\""
+    Link = "<https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf>; rel=\"canonical\""
     X-Robots-Tag = "index, follow"

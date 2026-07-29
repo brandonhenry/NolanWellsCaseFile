@@ -4,7 +4,7 @@ A dependency-free static evidence timeline adapted from the public Subtxt Press 
 
 The project’s own Master Investigation Notes control every factual claim. Subtxt is used as a visual and media-index reference, not as the evidentiary authority.
 
-Production canonical origin: `https://nolan-wells-case-file.netlify.app`
+Production canonical origin: `https://justicefornolanwells.com`
 
 ## Run locally
 

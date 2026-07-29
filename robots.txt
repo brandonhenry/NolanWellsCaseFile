@@ -16,4 +16,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://nolan-wells-case-file.netlify.app/sitemap.xml
+Sitemap: https://justicefornolanwells.com/sitemap.xml

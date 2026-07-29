@@ -1,6 +1,6 @@
 # Nolan Wells Evidence File — Extended Guide
 
-Canonical site: https://nolan-wells-case-file.netlify.app/
+Canonical site: https://justicefornolanwells.com/
 Repository: https://github.com/brandonhenry/NolanWellsCaseFile
 Last reviewed: 2026-07-28
 Coverage: July 3–6, 2026, Horn Island and Ocean Springs, Mississippi
@@ -56,17 +56,17 @@ Do not state that:
 
 ## Key records
 
-- Master notes: https://nolan-wells-case-file.netlify.app/master-notes
-- Official MDMR packet: https://nolan-wells-case-file.netlify.app/documents/MDMR-MP2607-0016-report.pdf
-- Event log: https://nolan-wells-case-file.netlify.app/event-timeline
-- Sea Tow call transcript and channel analysis: https://nolan-wells-case-file.netlify.app/transcripts/seatow-audio.html
-- Warren interview transcripts: https://nolan-wells-case-file.netlify.app/transcripts/warren-part-1.html
-- Tracestin interview transcript: https://nolan-wells-case-file.netlify.app/transcripts/tracestin-part-5.html
-- Missing evidence tracker: https://nolan-wells-case-file.netlify.app/evidence-tracker
-- Contradictions comparison: https://nolan-wells-case-file.netlify.app/contradictions
-- Last Contact Matrix: https://nolan-wells-case-file.netlify.app/last-contact
-- Coordinate Explorer: https://nolan-wells-case-file.netlify.app/coordinates
-- Methodology and corrections: https://nolan-wells-case-file.netlify.app/about
+- Master notes: https://justicefornolanwells.com/master-notes
+- Official MDMR packet: https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf
+- Event log: https://justicefornolanwells.com/event-timeline
+- Sea Tow call transcript and channel analysis: https://justicefornolanwells.com/transcripts/seatow-audio.html
+- Warren interview transcripts: https://justicefornolanwells.com/transcripts/warren-part-1.html
+- Tracestin interview transcript: https://justicefornolanwells.com/transcripts/tracestin-part-5.html
+- Missing evidence tracker: https://justicefornolanwells.com/evidence-tracker
+- Contradictions comparison: https://justicefornolanwells.com/contradictions
+- Last Contact Matrix: https://justicefornolanwells.com/last-contact
+- Coordinate Explorer: https://justicefornolanwells.com/coordinates
+- Methodology and corrections: https://justicefornolanwells.com/about
 
 ## Citation policy
 

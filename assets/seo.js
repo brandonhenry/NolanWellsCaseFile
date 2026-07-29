@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  const origin = 'https://nolan-wells-case-file.netlify.app';
+  const origin = 'https://justicefornolanwells.com';
   const siteName = 'Nolan Wells Evidence File';
   const socialImage = `${origin}/assets/social-card.png`;
   const modified = '2026-07-28';
@@ -285,7 +285,7 @@
       '@type': 'WebSite',
       '@id': `${origin}/#website`,
       name: siteName,
-      alternateName: ['Nolan Wells Timeline', 'Nolan Wells Case File', 'nolan-wells-case-file.netlify.app'],
+      alternateName: ['Nolan Wells Timeline', 'Nolan Wells Case File', 'justicefornolanwells.com'],
       url: `${origin}/`,
       description: page.description,
       inLanguage: 'en-US'

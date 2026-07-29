@@ -8,19 +8,19 @@ Last reviewed: 2026-07-28
 
 ## Start here
 
-- [Plain-language case summary](https://nolan-wells-case-file.netlify.app/case-summary): A concise overview of what the public evidence supports and what remains unresolved.
-- [Interactive evidence timeline](https://nolan-wells-case-file.netlify.app/): Scroll-driven map chronology for July 3–6, 2026.
-- [Full event log](https://nolan-wells-case-file.netlify.app/event-timeline): Searchable event-by-event claims, confidence, known facts, unknowns, and sources.
-- [Master investigation notes](https://nolan-wells-case-file.netlify.app/master-notes): The controlling editorial evidence document.
-- [Evidence archive](https://nolan-wells-case-file.netlify.app/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
-- [Methodology and corrections](https://nolan-wells-case-file.netlify.app/about): Sourcing rules, independence statement, revision policy, and correction channel.
+- [Plain-language case summary](https://justicefornolanwells.com/case-summary): A concise overview of what the public evidence supports and what remains unresolved.
+- [Interactive evidence timeline](https://justicefornolanwells.com/): Scroll-driven map chronology for July 3–6, 2026.
+- [Full event log](https://justicefornolanwells.com/event-timeline): Searchable event-by-event claims, confidence, known facts, unknowns, and sources.
+- [Master investigation notes](https://justicefornolanwells.com/master-notes): The controlling editorial evidence document.
+- [Evidence archive](https://justicefornolanwells.com/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
+- [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
 
 ## Primary source
 
-- [MDMR RMS report MP2607-0016](https://nolan-wells-case-file.netlify.app/documents/MDMR-MP2607-0016-report.pdf): Obtained 15-page Mississippi Department of Marine Resources packet. It includes officer narratives, CAD entries, vessel information, search notes, and a summarized GPS chronology.
+- [MDMR RMS report MP2607-0016](https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf): Obtained 15-page Mississippi Department of Marine Resources packet. It includes officer narratives, CAD entries, vessel information, search notes, and a summarized GPS chronology.
 
 ## Citation guidance
 
 When citing this archive, identify the specific event or document page and preserve its evidence label and confidence. GPS establishes vessel movement, not who was aboard. Publicly reported times marked approximate or reconstructed must not be presented as authenticated timestamps.
 
-For a fuller machine-readable overview, use [llms-full.txt](https://nolan-wells-case-file.netlify.app/llms-full.txt).
+For a fuller machine-readable overview, use [llms-full.txt](https://justicefornolanwells.com/llms-full.txt).

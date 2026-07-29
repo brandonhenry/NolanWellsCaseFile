@@ -215,6 +215,30 @@
         ]
       },
       {
+        id: 'lucas-aviz-last-contact', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Probably 2:00–2:30 PM', precision: 'Apparent firsthand statement preserved only in a derivative screenshot',
+        title: 'Lucas Aviz describes a conversation and white center-console boat', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
+        summary: 'A screenshot attributes to Lucas Aviz that Nolan said “I have to leave” around 2:00–2:30 PM and that Aviz last saw him get onto an unidentified white center-console boat.',
+        claims: ['The screenshot reads as Aviz describing his own conversation and sighting.', 'The cropped parent post and direct Lucas comment permalink were not recovered.', 'The boat is unidentified and must not be equated with MI4088BU.'],
+        media: { type: 'image', src: './media/social-source-audit/2026-07-06-tonya-lucas-aviz-last-contact.jpg', alt: 'Screenshot preserving a Lucas Aviz comment about a conversation and a white center-console boat around 2 to 2:30 PM', caption: 'Derivative screenshot · apparent firsthand lead · parent post unrecovered' },
+        sources: [
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#lucas-aviz-last-contact' },
+          { label: 'Preserving Facebook comment · July 6', href: 'https://www.facebook.com/reel/895769156900111/?comment_id=2512277019214890' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
+        ]
+      },
+      {
+        id: 'stephen-ray-east-end-sighting', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Time not stated', precision: 'Tentative apparent firsthand recollection preserved in a screenshot',
+        title: 'Tentative east-end sand-dune sighting', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
+        summary: 'A screenshot preserves Stephen Ray writing that he felt they had seen Nolan at the east end standing on a sand dune on July 4.',
+        claims: ['The wording is expressly tentative.', 'No exact time, precise position, image of Nolan, or independent confirmation is provided.'],
+        media: { type: 'image', src: './media/social-source-audit/2026-07-06-sherida-stephen-ray-east-end-sighting.jpg', alt: 'Screenshot preserving Stephen Ray’s tentative east-end sighting comment', caption: 'Derivative screenshot · tentative sighting · exact time unknown' },
+        sources: [
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#stephen-ray-sighting' },
+          { label: 'Preserving Facebook comment · July 6', href: 'https://www.facebook.com/reel/895769156900111/?comment_id=1317849450563956' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
+        ]
+      },
+      {
         id: 'warren-last-sighting', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:00 PM', precision: 'Approximate witness recollection',
         title: 'Warren’s reported last personal sighting', type: 'firsthand', confidence: 'Medium', masterAnchor: 'warren', location: 'hornIsland',
         summary: 'Warren later placed his own last sighting of Nolan at about 3:00 PM and described Nolan interacting with Katie.',
@@ -304,18 +328,30 @@
       {
         id: 'anna-videographer-attribution', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Identity confirmed from the supplied profile; recording time remains unauthenticated',
         title: 'Anna C. Moore records the circulated video', type: 'firsthand', confidence: 'Medium', masterAnchor: 'anna', location: 'hornIsland',
-        summary: 'Anna C. Moore is identified as the owner of the circulated recording. TMZ reports that the original owner was on Horn Island and posted the clip hoping someone might identify Nolan.',
+        summary: 'Anna C. Moore is identified as the owner of the circulated recording. Her direct clarification says she never saw Nolan and never said the recorded argument involved him.',
         claims: [
           'The supplied Facebook profile confirms the videographer’s identity as Anna C. Moore.',
           'The original X post asks whether Nolan was arguing, establishing the uploader’s question—not that Nolan appears in the recording.',
-          'TMZ reports that the owner recorded the clip to send to a spouse and later posted it after learning Nolan was missing.',
-          'The public source chain establishes Moore’s presence on Horn Island and her belief that Nolan might be identifiable in the recording; it does not authenticate the 4:01 PM recording time or establish that Nolan appears.'
+          'Moore says a friend prompted her to review Snapchat, that she sent the clip to authorities and Nolan’s mother, and that she posted it publicly on July 6.',
+          'The public source chain establishes Moore’s presence on Horn Island and reason for reviewing the footage; it does not authenticate the 4:01 PM recording time or establish that Nolan appears.'
         ],
         sources: [
           { label: 'Anna C. Moore · supplied Facebook profile', href: 'https://www.facebook.com/share/19EttKhMgq/?mibextid=wwXIfr' },
+          { label: 'Anna C. Moore · direct July 7 clarification', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl' },
           { label: 'Original public X post · July 6, 2026', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
           { label: 'TMZ · original owner’s account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' },
           { label: 'Master Anna notes', href: `${master}#anna` }
+        ]
+      },
+      {
+        id: 'ivy-video-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Reported 4:01 PM', precision: 'Witness-reported time; native video metadata not public',
+        title: 'Ivy Elizabeth explains the video sequence', type: 'firsthand', confidence: 'Medium', masterAnchor: 'social-source-review', location: 'hornIsland',
+        summary: 'Ivy says she and her husband appear on the boat, that the yelling happened after a fight had been broken up, and that DMR arrived shortly afterward.',
+        claims: ['Ivy says a background figure resembled Nolan but explicitly says they were not 100% certain.', 'She says Nolan was not involved in the altercation she described.', 'Her 4:01 time is not authenticated by publicly available native metadata.'],
+        sources: [
+          { label: 'Ivy Elizabeth · direct Facebook reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=2130380197901966&reply_comment_id=2071292096804541' },
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#ivy-video-account' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
         ]
       },
       {
@@ -395,6 +431,17 @@
         ]
       },
       {
+        id: 'katelynn-nearby-boats-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM / until 7:30 PM', precision: 'Ambiguous firsthand reply; referents and vessel not identified',
+        title: 'Nearby-boats reply leaves its 5:00 and 7:30 referents unresolved', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
+        summary: 'Katelynn Brochard says “we were out there next to where he was until 7:30” and “they did leave around 5,” but the boat, location, and pronouns are not identified.',
+        claims: ['The reply may describe a nearby boat’s continued presence and a different boat’s departure.', 'It cannot responsibly be converted into a Nolan sighting at 5:00 or 7:30 PM.'],
+        sources: [
+          { label: 'Katelynn Brochard · direct Facebook reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392' },
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#katelynn-boats-account' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
+        ]
+      },
+      {
         id: 'gps-normal-525', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '5:25 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU regains normal operation', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'return',
         summary: 'MDMR reports that the tracked vessel accelerates to approximately 30–35 knots after the period of slow movement.',
@@ -429,9 +476,10 @@
         id: 'official-search', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Morning onward', precision: 'Mixed exact and approximate operational times',
         title: 'The official search expands', type: 'verified', confidence: 'High', masterAnchor: 'reconstruction', location: 'searchArea',
         summary: 'MDMR narratives and CAD records document patrol-vessel, drone, and multi-agency search activity on July 5, 2026.',
-        claims: ['The obtained packet records an MDMR patrol-vessel launch around 8:00 AM, a drone request around 9:00 AM, and drone flights beginning at 12:40 PM.'],
+        claims: ['The obtained packet records an MDMR patrol-vessel launch around 8:00 AM, a drone request around 9:00 AM, and drone flights beginning at 12:40 PM.', 'Contemporaneous public comments also say Nolan’s coach and friends returned to help search; those comments do not establish the complete participant list.'],
         sources: [
           { label: 'MDMR report · pages 4, 10 and 12', href: `${report}#page=10` },
+          { label: 'Social ledger · search participation', href: './social-source-ledger.html#search-participation' },
           { label: 'Master reconstruction', href: `${master}#reconstruction` }
         ]
       },
@@ -455,6 +503,18 @@
         sources: [
           { label: 'MDMR report · page 15', href: `${report}#page=15` },
           { label: 'Master reconstruction', href: `${master}#reconstruction` }
+        ]
+      },
+      {
+        id: 'anna-clarification', date: 'July 7, 2026', dateLong: 'Tuesday · July 7, 2026', time: '8:19 AM', precision: 'Visible Facebook publication time; refers to earlier media',
+        title: 'Anna C. Moore publishes a direct clarification', type: 'firsthand', confidence: 'High', masterAnchor: 'anna', location: null,
+        summary: 'Moore directly states that she never saw Nolan and never said the argument heard in her recording involved him.',
+        claims: ['She says a friend prompted her to check the Snapchat footage.', 'She says the clip was sent to authorities and Nolan’s mother before public posting.', 'Her clarification does not authenticate the video’s capture time or identify Nolan in the image.'],
+        media: { type: 'image', src: './media/social-source-audit/2026-07-07-anna-source-scene-still.jpg', alt: 'Horn Island scene still preserved from Anna C. Moore’s clarification post', caption: 'Source still preserved from direct July 7 clarification · capture metadata unavailable' },
+        sources: [
+          { label: 'Anna C. Moore · direct clarification', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl' },
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#anna-clarification' },
+          { label: 'Master Anna notes', href: `${master}#anna` }
         ]
       }
     ]
@@ -606,15 +666,50 @@
       ]
     },
     'lamp-passenger-account': {
-      confidenceReason: 'The claim is preserved in two screenshots of one public thread, but Matthew Lamp relays unnamed passengers rather than claiming a personal sighting. Duplicate screenshots do not create independent corroboration.',
+      confidenceReason: 'The claim is preserved in three screenshots of one public thread, but Matthew Lamp relays unnamed passengers rather than claiming a personal sighting. Duplicate screenshots do not create independent corroboration.',
       unknowns: ['The unnamed passengers’ identities and direct words, the original post and full thread, the precise time and location, which group was involved, the blue-top Bertram’s identity, and whether this describes the same altercation reported earlier.'],
       needed: ['Direct statements from the three passengers, the original Matthew Lamp post and images, native timestamps, and vessel identification.'],
       sourceViews: [
         { source: 'Matthew Lamp screenshot', position: 'Relays that one passenger was “pretty certain” Nolan was part of an almost-fight around 5 PM and that three passengers described it as among the group.' },
-        { source: 'Two reposts', position: 'Preserve the same thread in different screenshots; they are one source chain, not two witnesses.' },
+        { source: 'Three reposts', position: 'Preserve the same thread in different screenshots; they are one source chain, not three witnesses.' },
         { source: 'Official GPS', position: 'MI4088BU began slow movement at 4:31 PM; the approximate 5 PM claim is not reconciled to that vessel movement.' },
         { source: 'Open conflict', position: 'The reported time may be approximate, may describe another vessel or group, or may be inaccurate. The public record cannot choose among those possibilities.' }
       ]
+    },
+    'lucas-aviz-last-contact': {
+      confidenceReason: 'The words appear to be a named witness’s firsthand account, but only a cropped derivative screenshot is preserved and the parent post and direct Lucas permalink were not recovered.',
+      unknowns: ['The original comment context, exact conversation time, Nolan’s meaning, the white center-console boat’s identity, its occupants, and where it went.'],
+      needed: ['Direct Lucas Aviz statement, original parent thread, native post data, vessel identification, and corroborating witnesses.'],
+      sourceViews: [
+        { source: 'Lucas Aviz screenshot', position: 'Describes speaking with Nolan around 2:00–2:30 PM and last seeing him board a white center-console boat.' },
+        { source: 'Source limitation', position: 'Only a screenshot repost is preserved; the cropped parent post and direct Lucas permalink are unavailable.' },
+        { source: 'Official GPS', position: 'Does not identify the white boat or establish that it was MI4088BU.' }
+      ]
+    },
+    'stephen-ray-east-end-sighting': {
+      confidenceReason: 'The apparent witness uses tentative language, and the screenshot provides no exact time or corroborating image.',
+      unknowns: ['Exact time, precise dune, viewing distance, identification basis, companions, and whether the person was Nolan.'],
+      needed: ['Direct witness interview, original comment context, exact location and time, and corroborating media or witnesses.']
+    },
+    'ivy-video-account': {
+      confidenceReason: 'A named participant directly identifies herself in the scene and describes the sequence, while expressly limiting the possible Nolan identification.',
+      unknowns: ['Native video metadata, identities of all participants, exact DMR arrival time, and whether the background figure was Nolan.'],
+      needed: ['Original device file, adjacent footage, DMR time record, and complete witness statements.'],
+      sourceViews: [
+        { source: 'Ivy Elizabeth', position: 'Says the clip follows the fight, identifies herself and her husband in the boat, and says a background figure only resembled Nolan.' },
+        { source: 'Anna C. Moore', position: 'Says she never saw Nolan and never claimed the recorded argument involved him.' },
+        { source: 'Open limit', position: 'Neither account authenticates the clip’s native capture time or identifies Nolan with certainty.' }
+      ]
+    },
+    'katelynn-nearby-boats-account': {
+      confidenceReason: 'The writer appears to speak from personal presence, but the pronouns, boat, position, and relationship between the stated times are unresolved.',
+      unknowns: ['Who “we” and “they” were, which vessel left around 5:00 PM, the exact position, and what “where he was” meant.'],
+      needed: ['Clarifying statement, boat identification, source images, coordinates, and corroborating accounts.']
+    },
+    'anna-clarification': {
+      confidenceReason: 'This is Anna C. Moore’s direct public statement about what she did and did not claim; it does not independently prove the earlier scene.',
+      unknowns: ['Original capture metadata, full adjacent footage, exact boat position, and whether Nolan appears.'],
+      needed: ['Original device export, metadata, full footage, and witness identifications.']
     },
     'gps-normal-525': {
       unknowns: ['What resolved the slow movement and the identity of any assisting vessel.'],

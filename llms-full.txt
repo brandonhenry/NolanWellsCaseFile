@@ -33,10 +33,14 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - Around 3:30 PM: Tracestin says he was involved in an altercation and was then forced back aboard his family’s separate boat. This is a firsthand recollection with approximate timing.
 - Around 4:00 PM: A distress call reports bilge-pump failure, water ingress, and approximately seven people aboard a distressed vessel near Horn Island. The released publication is an official-audio source; the exact call-start metadata remains unresolved.
 - Around 4:01 PM, reported: A circulated video records Tracestin yelling. The project has not obtained the original device file or authenticated native timestamp metadata.
+- Around 2:00–2:30 PM, unverified lead: A derivative screenshot preserves Lucas Aviz saying Nolan told him “I have to leave” and that Aviz last saw Nolan board an unidentified white center-console boat. The direct Lucas comment and parent post were not recovered, and the boat is not equated with MI4088BU.
+- Time unstated, unverified lead: A screenshot preserves Stephen Ray tentatively saying he felt they saw Nolan at Horn Island’s east end standing on a sand dune. No exact time, image identification, or corroboration is provided.
+- Around 4:01 PM, witness interpretation: Ivy Elizabeth says the video was recorded after a fight, that DMR arrived shortly afterward, and that a background person only resembled Nolan; she explicitly says they were not 100% certain.
 - Around the same period: Witness accounts say Nolan remained on or near the island and chose not to leave with one group. The exact words, listener set, and time remain unresolved.
 - 4:31 PM: MDMR’s summarized GPS chronology shows MI4088BU beginning to move from Horn Island. GPS verifies vessel movement; it does not establish who was aboard or who possessed Nolan’s phone.
 - 4:31–5:24 PM: Public records describe private assistance involving the distressed vessel. Exact mechanics must be read from the linked sources and must not be inferred from GPS alone.
 - Around 5:00 PM, unverified lead: Screenshots preserve Matthew Lamp relaying that unnamed passengers believed Nolan was part of a group that was almost fighting around 5 PM and that a blue-top Bertram left shortly afterward. This is secondhand, Low confidence, and not reconciled with MI4088BU’s separately verified 4:31 PM movement. It must not be stated as a confirmed event.
+- Around 5:00 PM / until 7:30 PM, ambiguous lead: Katelynn Brochard says “we” remained near “where he was” until 7:30 and “they” left around 5. The people, boat, and place are unidentified; this is not a Nolan sighting at either time.
 - 5:25 PM: MDMR’s chronology records normal-speed movement.
 - 5:44 PM: MDMR’s chronology records the tracked vessel back at the mainland. The site excludes an upstream 5:44 graphic whose vessel labeling has not been reconciled.
 - Around 11:00 PM: Nolan’s family is contacted after friends realize he has not returned. This time remains based on reported accounts.
@@ -72,7 +76,9 @@ Do not state that:
 - Machine-readable social ledger: https://justicefornolanwells.com/documents/social-comment-ledger.json
 - Methodology and corrections: https://justicefornolanwells.com/about
 
-The social-source audit reviewed 566 loaded top-level Facebook comment blocks and selectively opened relevant reply threads. It retains case-related media and two text-only records: an unverified statement that Nolan knew how to swim and worked as a summer lifeguard, and a derivative July 6 summary useful only for tracing the public narrative. Neither is independent verification. Unrelated images, prayers, questions, unsupported theories, blame, and unauthenticated visual guesses are omitted.
+The social-source audit covers exposed comments and selected reply threads on five public Facebook sources: Christine Wonsley’s appeal (566 loaded top-level blocks), United Cajun Navy (2,253 exposed of 2,569 displayed), Will Polston (586 exposed of 856 displayed; 20 photo URLs reviewed), SMCC Athletics (10 exposed), and Anna C. Moore’s clarification (10 exposed plus selected replies). It preserves the Lucas Aviz and Stephen Ray screenshot leads; Anna Moore’s direct correction; Ivy Elizabeth’s direct video account; Katelynn Brochard’s ambiguous timing reply; search-participation comments; and the previously preserved Matthew Lamp source chain. Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks were not recovered, so those original comment trees were not audited. Unrelated images, altered accusation graphics, prayers, questions, unsupported theories, blame, and unauthenticated visual guesses are omitted.
+
+Anna C. Moore’s direct July 7 clarification is controlling for what she personally claimed: she says she never saw Nolan and never said the argument heard in the video involved him. Her post says a friend prompted her to review Snapchat footage and that she sent it to authorities and Nolan’s mother before public posting. This does not authenticate the reported 4:01 PM capture time or establish that Nolan appears.
 
 ## Citation policy
 

@@ -34,15 +34,15 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.5',
+        title: 'Master Investigation Notes · Version 1.6',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Early social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'lamp-passenger-account', 'east-tip-photo-submission'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'anna-clarification'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -53,10 +53,10 @@
         availability: 'Public on this site',
         confidence: 'Claim-specific',
         href: './social-source-ledger.html',
-        summary: 'Preserves case-related images and relevant text-only comments from Christine Wonsley’s July 5 search appeal with messages, visible timestamps, direct permalinks, local image copies, hashes, and claim-level assessments.',
-        contents: ['East Tip scene submission', 'Matthew Lamp passenger-account screenshots', 'July 4 group photo', 'Swimming/lifeguard context lead', 'July 6 public-narrative source trail', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['lamp-passenger-account', 'east-tip-photo-submission', 'early-afternoon'],
-        missingCompanions: ['Forensic export of every comment and reply', 'Original device files and metadata', 'Original Matthew Lamp post', 'Direct statements from the three unnamed passengers']
+        summary: 'Preserves case-related images and relevant text from five July 5–7 Facebook threads with visible times, permalinks where recovered, local image copies, hashes, exposed-comment counts, and claim-level assessments.',
+        contents: ['East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
+        referencedEvents: ['lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
+        missingCompanions: ['Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
         id: 'sea-tow-call',
@@ -197,10 +197,11 @@
         id: 'anna-moore',
         name: 'Anna C. Moore',
         role: 'Original videographer / uploader',
-        summary: 'Moore is identified as the owner of the circulated Horn Island video. TMZ reports that the owner recorded it for a spouse and later posted it hoping Nolan might be identifiable.',
-        eventIds: ['viral-video', 'anna-videographer-attribution'],
+        summary: 'Moore is identified as the owner of the circulated Horn Island video. In a direct July 7 clarification, she says she never saw Nolan and never claimed the recorded argument involved him.',
+        eventIds: ['viral-video', 'anna-videographer-attribution', 'anna-clarification'],
         interviews: [
           { label: 'Supplied Facebook profile', href: 'https://www.facebook.com/share/19EttKhMgq/?mibextid=wwXIfr' },
+          { label: 'Direct July 7 clarification', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl' },
           { label: 'Original X post', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
           { label: 'TMZ owner account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' }
         ],
@@ -270,9 +271,11 @@
     ],
 
     lastContacts: [
+      { witness: 'Lucas Aviz · screenshot-preserved', lastSeen: 'Says he last saw Nolan board an unidentified white center-console boat', lastWords: '“I have to leave”', time: 'Probably 2:00–2:30 PM', confidence: 'Low', heardBy: 'Lucas Aviz; direct comment and parent thread not recovered', source: './social-source-ledger.html#lucas-aviz-last-contact' },
       { witness: 'Warren', lastSeen: 'About 3:00 PM, by his later account', lastWords: 'No authenticated exact quote', time: 'Around 3:00 PM', confidence: 'Medium', heardBy: 'Warren; corroborating listeners not fully identified', source: './transcripts/warren-part-2.html' },
       { witness: 'Katie', lastSeen: 'Reported interaction during the afternoon', lastWords: 'Complete conversation not public', time: 'Afternoon · exact time unresolved', confidence: 'Low', heardBy: 'Unknown', source: './documents/master-investigation-notes.html#katie' },
       { witness: 'Tracestin Shepherd', lastSeen: 'Places Nolan in the water nearby during the altercation period', lastWords: 'No exact last words preserved', time: 'Same general period · exact time unresolved', confidence: 'Low', heardBy: 'Corroboration incomplete', source: './transcripts/tracestin-part-5.html' },
+      { witness: 'Stephen Ray · screenshot-preserved', lastSeen: 'Tentatively says they saw Nolan on an east-end sand dune', lastWords: 'None stated', time: 'July 4 · exact time not stated', confidence: 'Low', heardBy: 'Plural “we” not identified', source: './social-source-ledger.html#stephen-ray-sighting' },
       { witness: 'Friends urging departure', lastSeen: 'Accounts place Nolan at Horn Island before MI4088BU left', lastWords: 'Later summaries say Nolan chose to remain; exact words unknown', time: 'Before 4:31 PM', confidence: 'Low', heardBy: 'Complete listener list not public', source: './documents/MDMR-MP2607-0016-report.pdf#page=3' }
     ],
 

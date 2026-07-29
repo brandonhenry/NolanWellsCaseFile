@@ -1,6 +1,6 @@
 {
-  "title": "Christine Wonsley July 5, 2026 Facebook appeal — social-source ledger",
-  "version": "1.1",
+  "title": "July 5–7, 2026 Facebook search and source audit — social-source ledger",
+  "version": "1.2",
   "reviewedAt": "2026-07-29",
   "parentPost": {
     "author": "Christine Wonsley",
@@ -8,7 +8,15 @@
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The review surfaced 12 still-image attachments and one reel link. This public ledger retains the nine case-related still attachments, the case-related reel link, and two relevant text-only comments; three unrelated or purely speculative attachments were removed. The audit also reviewed 566 loaded top-level comment blocks and selectively opened relevant reply threads. Facebook totals can include replies and content the interface does not load or later removes, so this is not represented as a forensic export of every comment. Visible Facebook times authenticate publication/display time only, not when attached media was captured or when a described event occurred.",
+  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook times authenticate publication/display time only, not media capture time or the time of a described event.",
+  "reviewedThreads": [
+    {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
+    {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
+    {"source":"Will Polston active-search reel","exposed":"586 top-level comments; interface displayed 856; 20 photo URLs reviewed","url":"https://www.facebook.com/reel/895769156900111/"},
+    {"source":"SMCC Athletics appeal","exposed":"10 top-level comments; 55 engagements displayed","url":"https://www.facebook.com/smccathletics/posts/pfbid02113aFAvazJm6pgdfcXb7yotj68N7DsjFadx6H2joDsuJJin9i3xAFFVyZfqjQCw1l"},
+    {"source":"Anna C. Moore clarification","exposed":"10 top-level comments plus selected relevant replies","url":"https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl"},
+    {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
+  ],
   "records": [
     {
       "id": "ashton-east-tip",
@@ -167,6 +175,150 @@
       "grade": "D-media repost",
       "status": "Photo preserved; accusation excluded",
       "assessment": "A screenshot of one image from Christine Wonsley’s July 4 photo set. The commenter’s distrust statement supplies no factual basis and is excluded from the evidence analysis."
+    },
+    {
+      "id": "ucn-coach-search-comment",
+      "sourceType": "text-only comment",
+      "commenter": "Liz Ware",
+      "published": "2026-07-05T16:20:00-05:00",
+      "message": "The football coach is out there at horn island as well looking for him",
+      "commentUrl": "https://www.facebook.com/reel/1561236092337427/?comment_id=1351212920444884",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "C-contemporaneous search report",
+      "status": "Relevant; basis unstated",
+      "assessment": "The comment records public search status while the search was active. The commenter does not state a firsthand basis. Later reporting says Nolan’s father and coach searched on July 5, so the comment is retained as a contemporaneous source trail rather than independent verification."
+    },
+    {
+      "id": "ucn-blue-shorts-correction",
+      "sourceType": "text-only comment",
+      "commenter": "Stephanie Cook",
+      "published": "2026-07-05T16:41:00-05:00",
+      "message": "The mom updated he was wearing BLUE shorts. She has a picture on her page.",
+      "commentUrl": "https://www.facebook.com/reel/1561236092337427/?comment_id=896547232839803",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "D-public-alert correction trail",
+      "status": "Relevant correction trail; source basis attributed",
+      "assessment": "This preserves a contemporaneous clothing-description correction attributed to Nolan’s mother. It is a source trail, not independent verification; the family’s own post or official bulletin remains stronger."
+    },
+    {
+      "id": "rammy-lamp-repost",
+      "commenter": "Rammy Deal",
+      "published": "2026-07-06T09:48:00-05:00",
+      "message": "Just saw this on another post. I don't know the person who posted it or if it's true. It may or may not help.",
+      "commentUrl": "https://www.facebook.com/reel/895769156900111/?comment_id=4540276809579057",
+      "mediaUrl": "https://www.facebook.com/photo.php?fbid=27453418350935844&set=p.27453418350935844&type=3",
+      "archivePath": "/media/social-source-audit/2026-07-06-rammy-matthew-lamp-repost.jpg",
+      "sha256": "1b3f0d641a021c98a64f797c8280c379be000b35cae386237c5c6a387d820763",
+      "grade": "C",
+      "status": "Third duplicate capture of one source chain",
+      "assessment": "This independently preserves the same Matthew Lamp thread but does not independently corroborate the underlying unnamed-passenger claim."
+    },
+    {
+      "id": "julie-lahue-narrative",
+      "sourceType": "text-only comment",
+      "commenter": "Julie Lahue",
+      "published": "2026-07-06T13:00:00-05:00",
+      "message": "There were crowds and families who saw Nolan & said he was walking with a couple girls. He and his friends said ok, but they all agreed on a time to meet back at their boat. As soon as that time came and he was nowhere around, the friends contacted his mom & authorities Immediately! They were like brothers and are all devastated! Strong currants, riptides, undertows are no joke even if you’re an avid swimmer. And alcohol added to the mix is beyond risky. Takes a split second for something to happen and nobody have seen. One family in particular noticed him walking alone after walking around with the 2 girls. Him just looking at the water & boats. And the family was tending to their little kids or else they might have seen him possibly get in to cool off. This is all so terribly sad!",
+      "commentUrl": "https://www.facebook.com/reel/895769156900111/?comment_id=2409286156218073",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "D-secondhand narrative",
+      "status": "Specific but uncorroborated",
+      "assessment": "The writer does not identify the families, explain her basis, or provide exact times. The claim that family and authorities were contacted immediately conflicts with other public timing accounts. It is retained as a public-narrative lead, not a fact."
+    },
+    {
+      "id": "stephen-ray-east-end-sighting",
+      "sourceType": "screenshot-preserved comment",
+      "commenter": "Stephen Ray",
+      "published": null,
+      "message": "I feel like we seen him on the east end yesterday standing on one the sand dunes",
+      "commentUrl": "https://www.facebook.com/reel/895769156900111/?comment_id=1317849450563956",
+      "mediaUrl": "https://www.facebook.com/photo.php?fbid=10240943057968949&set=p.10240943057968949&type=3",
+      "archivePath": "/media/social-source-audit/2026-07-06-sherida-stephen-ray-east-end-sighting.jpg",
+      "sha256": "89f3e5c6c45c9b5da97dc0f82cc4f06f8753c172f3ae6f208743bf10c810972e",
+      "grade": "C-apparent firsthand lead",
+      "status": "Tentative; time and identification unverified",
+      "assessment": "The screenshot preserves tentative language and appears to describe the commenter’s own recollection of seeing Nolan on the east end on July 4. It supplies no exact time, position, image of Nolan, or independent confirmation."
+    },
+    {
+      "id": "lucas-aviz-last-contact",
+      "sourceType": "screenshot-preserved comment",
+      "commenter": "Lucas Aviz",
+      "published": null,
+      "message": "Last time I spoke to him was when he said I have to leave and it was probably 2 to 2:30 but there was a huge group of people with several boats around for all I can remember. I last saw him get on a white boat with a center console before I had left so that’s all the information I can provide",
+      "commentUrl": "https://www.facebook.com/reel/895769156900111/?comment_id=2512277019214890",
+      "mediaUrl": "https://www.facebook.com/photo.php?fbid=10226069581365621&set=p.10226069581365621&type=3",
+      "archivePath": "/media/social-source-audit/2026-07-06-tonya-lucas-aviz-last-contact.jpg",
+      "sha256": "160f4b0282361132e18c0af39fa9fa84fee73b5f4a904c251a6b4462e27bafd6",
+      "grade": "C-apparent firsthand claim",
+      "status": "Material lead; parent post and direct comment permalink unrecovered",
+      "assessment": "The screenshot presents Lucas Aviz as describing his own conversation and sighting around 2:00–2:30 PM. The cropped parent post is unidentified, the direct Lucas comment was not recovered, and no vessel identity or native timestamp is authenticated. The white center-console boat must not be equated with MI4088BU."
+    },
+    {
+      "id": "amity-search-participation",
+      "sourceType": "screenshot-preserved comment",
+      "commenter": "Amity LeBleu Thompson",
+      "published": null,
+      "message": "last night as soon as they realized he hadn’t come back on another boat the coast guard was immediately notified as well as his parents. This kid is very good friends with the people he went out with. They are devastated and have been out there all morning/afternoon helping search for him too! ... And I know for a fact that the kid he went out with yesterday has been back out there all morning/afternoon with other buddies helping to search for him, along with their other friends in other boats...",
+      "commentUrl": "https://www.facebook.com/reel/895769156900111/?comment_id=1696510681572652",
+      "mediaUrl": "https://www.facebook.com/photo.php?fbid=1770841900952582&set=p.1770841900952582&type=3",
+      "archivePath": "/media/social-source-audit/2026-07-06-chuck-amity-search-comment.jpg",
+      "sha256": "4c009d155ab93694f852117faadf57d737140938e975213c7b1fa39439cd9463",
+      "grade": "C-contextual search account",
+      "status": "Relevant; identities and basis incomplete",
+      "assessment": "The screenshot records a contemporaneous claim that friends returned to assist the search. It does not identify every person or establish the complete notification sequence, motives, or exact times."
+    },
+    {
+      "id": "anna-clarification",
+      "sourceType": "direct Facebook post",
+      "commenter": "Anna C. Moore",
+      "published": "2026-07-07T08:19:00-05:00",
+      "message": "to clarify: I never stated that I saw Nolan. I also never stated that the argument you hear on the video was directed to and/or involved Nolan. I simply posted this to see if he was spotted on camera after his last known sighting at 3pm as stated by law enforcement. *the reason this video was posted yesterday (7/6) is because like 98% of the attendees of Horn Island, I was very intoxicated. I did not even realize I had this video in my Snapchat until a friend who was also in attendance mentioned seeing this on my story and thought it would be helpful to the public when he was still labeled a missing person. This video was sent to the authorities and his mother before being posted. Please stop with the rumor mill. Let the investigators do their job.",
+      "commentUrl": "https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl",
+      "mediaUrl": "https://www.facebook.com/1737991076/videos/pcb.10215715446836008/2429098807581621",
+      "archivePath": "/media/social-source-audit/2026-07-07-anna-source-scene-still.jpg",
+      "sha256": "7139dc8d0541d331a19c5d8704fd149a75f0bb3ffec93c5e3e2015f14697de4b",
+      "additionalMedia": [
+        {"archivePath":"/media/social-source-audit/2026-07-07-anna-source-boat-still.jpg","sha256":"157eccfd9c5c0735c994929970c822a7dbe66c6e31640fc4ed92582b7d6c01a0","mediaUrl":"https://www.facebook.com/photo/?fbid=10215715446516000&set=pcb.10215715446836008"},
+        {"archivePath":"/media/social-source-audit/2026-07-07-anna-clarification-shared-misinformation.jpg","sha256":"f572e42ee1872aee68e89f9c0ca0134303ac2cc25847d89c51fbca9c1e7c2d1a","mediaUrl":"https://www.facebook.com/photo/?fbid=10215715446475999&set=pcb.10215715446836008","note":"Archived only to document the misinformation Anna corrected; not evidence that Nolan appears or fought."},
+        {"mediaUrl":"https://www.facebook.com/1737991076/videos/pcb.10215715446836008/1547998056988760","note":"Five-second source video link; no autoplay."}
+      ],
+      "grade": "B-firsthand correction",
+      "status": "Direct source for Anna’s own statements",
+      "assessment": "This directly corrects the claim that Anna saw Nolan or said the argument involved him. It supports that she found the clip in Snapchat after a friend prompted her, sent it to authorities and Nolan’s mother, and posted it publicly on July 6. It still does not authenticate capture time, identify Nolan in the image, or establish the full sequence."
+    },
+    {
+      "id": "ivy-video-account",
+      "sourceType": "direct Facebook reply",
+      "commenter": "Ivy Elizabeth",
+      "published": "2026-07-07T08:43:00-05:00",
+      "message": "you can see me and my husband standing In the back of the boat in the video. The person yelling is someone in our boat (who was a mixed guy btw. Not that race matters but to a lot of people around this case it does. Also the guy yelling is also apart of the friend group Nolan was with and had been around them all day). But the guy was yelling because he got in a fight with a white guy and we broke it up and put him on our boat. He was pissed because he wanted to fight and we wouldn’t let him. 2 other white kids ended up fighting the original fight starter white guy. But The video is taken after the fight was already over. And DMR also showed up shortly after. Video was at 4:01 I remembered seeing a video on Anna’s story and told her to look through the footage. We saw someone resembling Nolan in the background. He was not involved in anyway with the actual altercation that happened. We were just trying to help with the timeline of things and possible documented sighting. Since it was originally stated he was last seen at 3 pm but video is at 4. We weren’t 100% it was him though. It could also help if it was him to identify who was potentially last with him.",
+      "commentUrl": "https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=2130380197901966&reply_comment_id=2071292096804541",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "B-firsthand account / uncertain identification",
+      "status": "Material direct reply; identity in video explicitly uncertain",
+      "assessment": "Ivy identifies herself and her husband in the video and describes the altercation sequence from an apparent firsthand position. Her 4:01 time is not supported by native metadata in the public record, and she expressly says the person only resembled Nolan and that they were not 100% certain."
+    },
+    {
+      "id": "katelynn-nearby-boats-account",
+      "sourceType": "direct Facebook reply",
+      "commenter": "Katelynn Brochard",
+      "published": "2026-07-07T09:26:00-05:00",
+      "message": "In reference to we were out there next to where he was until 7:30 and he was not there left behind anywhere near us. And they just took it and ran. they did leave around 5 tho.",
+      "commentUrl": "https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "C-ambiguous firsthand context",
+      "status": "Relevant but referents unresolved",
+      "assessment": "The comment may describe the writer’s boat remaining near a relevant area until 7:30 PM and another boat leaving around 5 PM, but the pronouns, vessel, exact location, and meaning of ‘where he was’ are not identified. It must not be converted into a Nolan sighting at 5:00 or 7:30 PM."
     }
   ]
 }

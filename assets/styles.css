@@ -290,11 +290,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .step-time {
   margin: 0 0 11px;
   color: var(--tone, var(--accent));
-  font: 600 11px var(--mono);
+  font: 600 14px var(--mono);
   font-variant-numeric: tabular-nums;
   letter-spacing: .12em;
   text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 160ms;
+  transition-timing-function: cubic-bezier(.2, 0, 0, 1);
 }
+
+.step-content:hover .step-time,
+.step-content:focus-within .step-time { color: #fff; }
 
 .step-title {
   margin: 0 0 15px;

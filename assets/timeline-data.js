@@ -139,6 +139,12 @@
             entries: [
               { time: '12:40 PM', label: 'Recorded drone flights begin', eventId: 'official-search' }
             ]
+          },
+          {
+            hour: '6 PM',
+            entries: [
+              { time: '6:00 PM', label: 'East Tip image is submitted to the family appeal', eventId: 'east-tip-photo-submission' }
+            ]
           }
         ]
       },
@@ -376,6 +382,19 @@
         ]
       },
       {
+        id: 'lamp-passenger-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM', precision: 'Approximate secondhand account preserved in screenshots',
+        title: 'Passenger account describes an “almost” fight', type: 'secondhand', confidence: 'Low', masterAnchor: 'social-source-review', location: 'hornIsland',
+        summary: 'A screenshot of a public Matthew Lamp thread says an unnamed passenger was “pretty certain” Nolan was part of a group that was almost fighting around 5:00 PM; Lamp later says three people on his boat described it as among the group.',
+        claims: ['Lamp also wrote that a blue-top Bertram left shortly afterward and “pretty fast.”', 'The claim is not a direct statement from the unnamed passengers and the original thread has not been recovered.', 'The approximate time is not reconciled with the separate 4:31 PM GPS movement of MI4088BU and must not be treated as a verified sequence.'],
+        media: { type: 'image', src: './media/social-july-5-comments/2026-07-06-racquel-matthew-lamp-thread.jpg', alt: 'Screenshot preserving a Matthew Lamp Facebook thread about an unnamed passenger account of an almost-fight around 5 PM', caption: 'Public screenshot · secondhand passenger account · exact time and original thread unverified' },
+        sources: [
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#matthew-lamp-lead' },
+          { label: 'Latasha A Manuel comment · July 6', href: 'https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1758629241845860' },
+          { label: 'RaćQuel Kirsten comment · July 6', href: 'https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1802007094509647' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
+        ]
+      },
+      {
         id: 'gps-normal-525', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '5:25 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU regains normal operation', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'return',
         summary: 'MDMR reports that the tracked vessel accelerates to approximately 30–35 knots after the period of slow movement.',
@@ -414,6 +433,18 @@
         sources: [
           { label: 'MDMR report · pages 4, 10 and 12', href: `${report}#page=10` },
           { label: 'Master reconstruction', href: `${master}#reconstruction` }
+        ]
+      },
+      {
+        id: 'east-tip-photo-submission', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '6:00 PM', precision: 'Visible Facebook publication time; image capture time unauthenticated',
+        title: 'East Tip image is submitted to the family appeal', type: 'media', confidence: 'Medium', masterAnchor: 'social-source-review', location: 'overview',
+        summary: 'Ashton Beach Jennings publicly responds to Christine Wonsley’s missing-person appeal with a photograph captioned “East Tip. July 4.”',
+        claims: ['The image shows boats, a personal watercraft, and people in shallow water.', 'It does not identify Nolan, authenticate its capture time, or depict the northwest search and recovery area.', 'It may help identify vessels or witnesses who were at Horn Island’s east end.'],
+        media: { type: 'image', src: './media/social-july-5-comments/2026-07-05-ashton-east-tip.jpg', alt: 'Boats, a personal watercraft, and people in shallow water in an image labeled East Tip, July 4', caption: 'Public Facebook submission · posted July 5 at 6:00 PM · capture metadata unavailable' },
+        sources: [
+          { label: 'Original Facebook comment', href: 'https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1602711797954891' },
+          { label: 'Source-level social ledger', href: './social-source-ledger.html#ashton-east-tip' },
+          { label: 'Master social-source review', href: `${master}#social-source-review` }
         ]
       },
       {
@@ -574,6 +605,17 @@
         { time: '4:31 PM', state: 'MI4088BU movement begins', known: true }
       ]
     },
+    'lamp-passenger-account': {
+      confidenceReason: 'The claim is preserved in two screenshots of one public thread, but Matthew Lamp relays unnamed passengers rather than claiming a personal sighting. Duplicate screenshots do not create independent corroboration.',
+      unknowns: ['The unnamed passengers’ identities and direct words, the original post and full thread, the precise time and location, which group was involved, the blue-top Bertram’s identity, and whether this describes the same altercation reported earlier.'],
+      needed: ['Direct statements from the three passengers, the original Matthew Lamp post and images, native timestamps, and vessel identification.'],
+      sourceViews: [
+        { source: 'Matthew Lamp screenshot', position: 'Relays that one passenger was “pretty certain” Nolan was part of an almost-fight around 5 PM and that three passengers described it as among the group.' },
+        { source: 'Two reposts', position: 'Preserve the same thread in different screenshots; they are one source chain, not two witnesses.' },
+        { source: 'Official GPS', position: 'MI4088BU began slow movement at 4:31 PM; the approximate 5 PM claim is not reconciled to that vessel movement.' },
+        { source: 'Open conflict', position: 'The reported time may be approximate, may describe another vessel or group, or may be inaccurate. The public record cannot choose among those possibilities.' }
+      ]
+    },
     'gps-normal-525': {
       unknowns: ['What resolved the slow movement and the identity of any assisting vessel.'],
       needed: ['Native track, tow statement, and mechanical records.']
@@ -594,6 +636,16 @@
     'official-search': {
       unknowns: ['Complete search grids, all aircraft and vessel tracks, and the full interagency decision log.'],
       needed: ['Drone grid, USCG particle drift, vessel tracks, emails, and permission-to-search records.']
+    },
+    'east-tip-photo-submission': {
+      confidenceReason: 'The Facebook post and visible 6:00 PM publication time are directly preserved. The commenter’s location/date caption is a media lead, not authenticated capture metadata.',
+      unknowns: ['Original file and EXIF data, exact capture time and coordinates, photographer position, identities of people and vessels, and whether any depicted person had contact with Nolan.'],
+      needed: ['Original device file, photographer statement, vessel identifications, and direct accounts from people shown.'],
+      sourceViews: [
+        { source: 'Ashton Beach Jennings', position: 'Labels the submitted image “East Tip. July 4.”' },
+        { source: 'Visible image', position: 'Shows boats, a personal watercraft, and people in shallow water; it does not visibly establish Nolan’s presence.' },
+        { source: 'Geographic limit', position: 'The caption says east tip, while the family appeal requested northwest-tip media and the recovery was near the northwest end.' }
+      ]
     },
     'body-found': {
       unknowns: ['The obtained packet does not contain the complete recovery narrative or a fully authenticated public recovery coordinate.'],

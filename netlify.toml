@@ -43,6 +43,11 @@
   status = 200
 
 [[redirects]]
+  from = "/social-source-ledger"
+  to = "/social-source-ledger.html"
+  status = 200
+
+[[redirects]]
   from = "/search"
   to = "/search.html"
   status = 200

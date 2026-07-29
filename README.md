@@ -56,6 +56,8 @@ editorial methodology and corrections are available at `/about`.
 - `assets/seo.js` — unique rendered titles, descriptions, canonical URLs,
   social metadata, robots controls, and schema.org JSON-LD
 - `assets/social-card.png` — 1200×630 social search/share preview
+- `social-source-ledger.html` — source-level review of early July 2026 public comments and attached media
+- `documents/social-comment-ledger.json` — machine-readable social-source metadata, dispositions, and SHA-256 hashes
 - `llms.txt` — concise AI-readable site and citation guide
 - `llms-full.txt` — extended chronology, evidence vocabulary, source links, and
   warnings against overstating uncertain claims

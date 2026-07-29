@@ -195,7 +195,6 @@
         const mediaType = button.dataset.mediaType;
         if (mediaType === 'video') {
           container.innerHTML = `<figure class="loaded-media"><video controls playsinline preload="metadata" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
-          container.querySelector('video').play().catch(() => {});
         } else {
           container.innerHTML = `<figure class="loaded-media"><button class="image-open" type="button" aria-label="Expand evidence image"><img src="${escapeHtml(button.dataset.mediaSrc)}" alt="${escapeHtml(button.dataset.mediaAlt)}" loading="lazy"></button><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
           const imageButton = container.querySelector('.image-open');

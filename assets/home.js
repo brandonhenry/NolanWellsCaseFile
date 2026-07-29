@@ -35,7 +35,7 @@
 
   function eventMarkup(event) {
     const tone = typeMeta(event.type);
-    return `<section class="step" data-event-id="${escapeHtml(event.id)}" style="--tone:${tone.color}">
+    return `<section class="step" id="event-${escapeHtml(event.id)}" data-event-id="${escapeHtml(event.id)}" style="--tone:${tone.color}">
       <article class="step-content">
         <p class="step-time">${escapeHtml(event.time)} · ${escapeHtml(event.date)}</p>
         <h2 class="step-title">${escapeHtml(event.title)}</h2>
@@ -77,6 +77,57 @@
     story.insertAdjacentHTML('beforeend', intro + data.events.map(eventMarkup).join('') + ending);
   }
 
+  function renderTimelineMenu() {
+    document.getElementById('confirmed-times-list').innerHTML = data.confirmedTimes.map(day => {
+      const hours = day.hours.map(hour => `<div class="timeline-hour">
+        <p class="timeline-hour-label">${escapeHtml(hour.hour)}</p>
+        <div class="timeline-hour-events">${hour.entries.map(entry => `<a class="timeline-jump" href="#event-${escapeHtml(entry.eventId)}" data-timeline-jump="${escapeHtml(entry.eventId)}"><time>${escapeHtml(entry.time)}</time><span>${escapeHtml(entry.label)}</span></a>`).join('')}</div>
+      </div>`).join('');
+      const emptyState = day.note ? `<p class="timeline-empty">${escapeHtml(day.note)}</p>` : '';
+      return `<section class="timeline-date-section" aria-labelledby="timeline-date-${escapeHtml(day.date.replace(/\s+/g, '-').toLowerCase())}">
+        <h2 id="timeline-date-${escapeHtml(day.date.replace(/\s+/g, '-').toLowerCase())}">${escapeHtml(day.date)}</h2>
+        ${hours || emptyState}
+      </section>`;
+    }).join('');
+  }
+
+  function closeTimelineMenu(restoreFocus) {
+    const button = document.getElementById('timeline-menu-toggle');
+    const dropdown = document.getElementById('timeline-dropdown');
+    if (!dropdown.classList.contains('open')) return;
+    dropdown.classList.remove('open');
+    dropdown.setAttribute('aria-hidden', 'true');
+    button.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) button.focus();
+  }
+
+  function openTimelineMenu() {
+    const button = document.getElementById('timeline-menu-toggle');
+    const dropdown = document.getElementById('timeline-dropdown');
+    closePanels(false);
+    dropdown.classList.add('open');
+    dropdown.setAttribute('aria-hidden', 'false');
+    button.setAttribute('aria-expanded', 'true');
+  }
+
+  function wireTimelineMenu() {
+    const button = document.getElementById('timeline-menu-toggle');
+    const dropdown = document.getElementById('timeline-dropdown');
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      dropdown.classList.contains('open') ? closeTimelineMenu(false) : openTimelineMenu();
+    });
+    dropdown.querySelectorAll('[data-timeline-jump]').forEach(link => {
+      link.addEventListener('click', () => {
+        closeTimelineMenu(false);
+        status.textContent = `Timeline moved to ${link.querySelector('time').textContent}.`;
+      });
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.timeline-menu')) closeTimelineMenu(false);
+    });
+  }
+
   function renderPanels() {
     document.getElementById('transcripts-list').innerHTML = data.transcripts.map(item => `<div class="panel-item"><a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.label)}</a><p>${escapeHtml(item.meta)}</p></div>`).join('');
     document.getElementById('boats-list').innerHTML = data.boats.map(boat => `<div class="panel-item"><strong>${escapeHtml(boat.name)}</strong><p>${escapeHtml(boat.status)}</p><p>${escapeHtml(boat.note)}</p></div>`).join('');
@@ -94,6 +145,7 @@
 
   function openPanel(button, panel) {
     closePanels(false);
+    closeTimelineMenu(false);
     previousFocus = button;
     panel.classList.add('open');
     panel.setAttribute('aria-hidden', 'false');
@@ -235,12 +287,15 @@
 
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
+    closeTimelineMenu(true);
     closeLightbox();
     closePanels(true);
   });
 
   renderStory();
+  renderTimelineMenu();
   renderPanels();
+  wireTimelineMenu();
   wirePanels();
   wireMedia();
   initMap();

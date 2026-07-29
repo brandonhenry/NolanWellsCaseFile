@@ -67,6 +67,83 @@
         note: 'Unsupported passenger lists and inferred transfers are intentionally omitted.'
       }
     ],
+    confirmedTimes: [
+      {
+        date: 'July 3',
+        note: 'No confirmed public clock time is available.',
+        hours: []
+      },
+      {
+        date: 'July 4',
+        hours: [
+          {
+            hour: '9 AM',
+            entries: [
+              { time: '9:56 AM', label: 'MI4088BU leaves the mainland', eventId: 'gps-departure' }
+            ]
+          },
+          {
+            hour: '11 AM',
+            entries: [
+              { time: '11:14 AM', label: 'MI4088BU reaches Horn Island', eventId: 'gps-arrival' }
+            ]
+          },
+          {
+            hour: '4 PM',
+            entries: [
+              { time: '4:31 PM', label: 'MI4088BU begins slow movement', eventId: 'gps-movement-431' }
+            ]
+          },
+          {
+            hour: '5 PM',
+            entries: [
+              { time: '5:25 PM', label: 'MI4088BU resumes normal speed', eventId: 'gps-normal-525' },
+              { time: '5:44 PM', label: 'MI4088BU reaches the mainland', eventId: 'gps-return-544' }
+            ]
+          },
+          {
+            hour: '11 PM',
+            entries: [
+              { time: '11:45:14 PM', label: 'MDMR CAD entry is recorded', eventId: 'family-contacted' }
+            ]
+          }
+        ]
+      },
+      {
+        date: 'July 5',
+        hours: [
+          {
+            hour: '8 AM',
+            entries: [
+              { time: '~8:00 AM', label: 'MDMR patrol vessel launches', eventId: 'official-search' }
+            ]
+          },
+          {
+            hour: '9 AM',
+            entries: [
+              { time: '~9:00 AM', label: 'Drone assistance is requested', eventId: 'official-search' }
+            ]
+          },
+          {
+            hour: '12 PM',
+            entries: [
+              { time: '12:40 PM', label: 'Recorded drone flights begin', eventId: 'official-search' }
+            ]
+          }
+        ]
+      },
+      {
+        date: 'July 6',
+        hours: [
+          {
+            hour: '8 AM',
+            entries: [
+              { time: '~8:40 AM', label: 'Recovery is publicly reported', eventId: 'body-found' }
+            ]
+          }
+        ]
+      }
+    ],
     events: [
       {
         id: 'last-evening-home', date: 'July 3', dateLong: 'Friday · July 3, 2026', time: 'Evening', precision: 'No exact public time',

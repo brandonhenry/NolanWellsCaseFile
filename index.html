@@ -26,6 +26,19 @@
   </div>
 
   <nav class="top-controls" aria-label="Timeline resources">
+    <div class="timeline-menu">
+      <button class="control-button" id="timeline-menu-toggle" type="button" aria-controls="timeline-dropdown" aria-expanded="false" aria-haspopup="true">
+        <svg aria-hidden="true" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5"/><path d="M8 4.8V8l2.4 1.5"/></svg>
+        <span>Timeline</span>
+      </button>
+      <div class="timeline-dropdown" id="timeline-dropdown" aria-hidden="true" aria-labelledby="timeline-menu-toggle">
+        <div class="timeline-dropdown-header">
+          <p>Confirmed timeline</p>
+          <span>Official clock times grouped by hour. Approximate official times are marked with ~.</span>
+        </div>
+        <div id="confirmed-times-list"></div>
+      </div>
+    </div>
     <a class="control-link" href="./event-timeline.html" title="Open full evidence log">
       <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3 2.5h10v11H3zM5.5 5h5M5.5 8h5M5.5 11h3"/></svg>
       <span>Event log</span>

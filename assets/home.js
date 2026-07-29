@@ -7,9 +7,16 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let activeStep = null;
   let map = null;
+  let tileLayer = null;
   let activeMarker = null;
   let activeRoute = null;
+  let activeRouteId = null;
   let previousFocus = null;
+  let introMarkerTargetY = null;
+  let mapTransitionId = 0;
+  let mapSwapTimer = null;
+  let mapRevealTimer = null;
+  let mapLoadHandler = null;
 
   function escapeHtml(value) {
     return String(value || '').replace(/[&<>"']/g, character => ({
@@ -296,6 +303,9 @@
       zoomControl: false,
       attributionControl: true,
       fadeAnimation: false,
+      zoomAnimation: !reduceMotion,
+      zoomAnimationThreshold: 4,
+      preferCanvas: true,
       dragging: false,
       scrollWheelZoom: false,
       doubleClickZoom: false,
@@ -303,32 +313,112 @@
       keyboard: false
     }).setView([openingLocation.lat, openingLocation.lng], data.meta.opening.zoom || openingLocation.zoom);
     map.attributionControl.setPrefix(false);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    tileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
       subdomains: 'abcd',
-      maxZoom: 19
+      maxZoom: 19,
+      updateWhenIdle: true,
+      updateWhenZooming: false,
+      keepBuffer: 4
     }).addTo(map);
     map.getContainer().setAttribute('tabindex', '-1');
+    map.whenReady(() => requestAnimationFrame(() => map.invalidateSize({ animate: false, pan: false })));
   }
 
-  function clearMapEvidence() {
-    if (!map) return;
-    if (activeMarker) map.removeLayer(activeMarker);
+  function updateMapRoute(routeId) {
+    const nextRouteId = routeId || null;
+    if (!map || nextRouteId === activeRouteId) return;
     if (activeRoute) map.removeLayer(activeRoute);
-    activeMarker = null;
     activeRoute = null;
-  }
-
-  function showMapEvidence(event) {
-    if (!map) return;
-    clearMapEvidence();
-    const location = data.locations[event.location || 'overview'];
-    const tone = event.markerColor || typeMeta(event.type).color;
-    if (event.route && data.routes[event.route]) {
-      const route = data.routes[event.route];
+    activeRouteId = nextRouteId;
+    if (routeId && data.routes[routeId]) {
+      const route = data.routes[routeId];
       activeRoute = L.polyline(route.coords, { color: route.color, weight: 3, opacity: .8, dashArray: '7 6', lineCap: 'round' }).addTo(map);
     }
-    activeMarker = L.circleMarker([location.lat, location.lng], { radius: 8, color: tone, fillColor: tone, weight: 2, opacity: 1, fillOpacity: .72 }).addTo(map);
+  }
+
+  function introMarkerY() {
+    if (introMarkerTargetY !== null) return introMarkerTargetY;
+    const introStep = document.querySelector('.intro-step');
+    const introCard = document.querySelector('.intro-content');
+    if (!introStep || !introCard) return window.innerHeight * .68;
+    const stepRect = introStep.getBoundingClientRect();
+    const cardRect = introCard.getBoundingClientRect();
+    const cardBottomAtRest = (cardRect.top - stepRect.top) + cardRect.height;
+    introMarkerTargetY = Math.max(88, Math.min(window.innerHeight - 92, cardBottomAtRest + 54));
+    return introMarkerTargetY;
+  }
+
+  function mapCenterForEvent(event, location, zoom) {
+    if (event.mapPlacement !== 'below-intro') return L.latLng(location.lat, location.lng);
+    const markerPoint = map.project([location.lat, location.lng], zoom);
+    const centerOffsetY = (map.getSize().y / 2) - introMarkerY();
+    return map.unproject(markerPoint.add([0, centerOffsetY]), zoom);
+  }
+
+  function clearMapTransition(removeMask = true) {
+    mapTransitionId += 1;
+    if (mapSwapTimer !== null) window.clearTimeout(mapSwapTimer);
+    if (mapRevealTimer !== null) window.clearTimeout(mapRevealTimer);
+    if (tileLayer && mapLoadHandler) tileLayer.off('load', mapLoadHandler);
+    mapSwapTimer = null;
+    mapRevealTimer = null;
+    mapLoadHandler = null;
+    if (removeMask && map) map.getContainer().classList.remove('map-view-changing');
+  }
+
+  function crossfadeMap(center, zoom) {
+    clearMapTransition(false);
+    const transitionId = mapTransitionId;
+    const container = map.getContainer();
+    container.classList.add('map-view-changing');
+    mapSwapTimer = window.setTimeout(() => {
+      if (transitionId !== mapTransitionId) return;
+      mapSwapTimer = null;
+      const reveal = () => {
+        if (transitionId !== mapTransitionId) return;
+        if (tileLayer && mapLoadHandler) tileLayer.off('load', mapLoadHandler);
+        mapLoadHandler = null;
+        if (mapRevealTimer !== null) window.clearTimeout(mapRevealTimer);
+        mapRevealTimer = null;
+        container.classList.remove('map-view-changing');
+      };
+      mapLoadHandler = reveal;
+      if (tileLayer) tileLayer.once('load', mapLoadHandler);
+      map.setView(center, zoom, { animate: false });
+      mapRevealTimer = window.setTimeout(reveal, 420);
+    }, 120);
+  }
+
+  function moveMap(center, zoom, isInitial) {
+    if (!map) return;
+    map.stop();
+    if (isInitial || reduceMotion) {
+      clearMapTransition();
+      map.setView(center, zoom, { animate: false });
+      return;
+    }
+    const zoomDelta = Math.abs(map.getZoom() - zoom);
+    if (zoomDelta >= 3) {
+      crossfadeMap(center, zoom);
+      return;
+    }
+    clearMapTransition();
+    map.flyTo(center, zoom, { duration: .68, easeLinearity: .2, noMoveStart: true });
+  }
+
+  function showMapEvidence(event, options = {}) {
+    if (!map) return;
+    const location = data.locations[event.location || 'overview'];
+    const tone = event.markerColor || typeMeta(event.type).color;
+    updateMapRoute(event.route);
+    if (!activeMarker) {
+      activeMarker = L.circleMarker([location.lat, location.lng], { radius: 8, color: tone, fillColor: tone, weight: 2, opacity: 1, fillOpacity: .72 }).addTo(map);
+    } else {
+      activeMarker.setLatLng([location.lat, location.lng]);
+      activeMarker.setStyle({ color: tone, fillColor: tone });
+      activeMarker.unbindTooltip();
+    }
     const tooltipDirection = event.mapPlacement === 'below-intro' && window.innerWidth <= 340
       ? 'top'
       : (event.tooltipDirection || 'right');
@@ -339,23 +429,11 @@
       bottom: [0, 12]
     }[tooltipDirection] || [12, 0];
     activeMarker.bindTooltip(escapeHtml(event.markerLabel || location.label), { permanent: true, direction: tooltipDirection, offset: tooltipOffset, className: 'map-label' }).openTooltip();
-    const move = reduceMotion ? 'setView' : 'flyTo';
     const zoom = event.zoom || location.zoom;
-    if (event.mapPlacement === 'below-intro') {
-      const introCard = document.querySelector('.intro-content');
-      const cardBottom = introCard ? introCard.getBoundingClientRect().bottom : window.innerHeight * .55;
-      const targetY = Math.min(window.innerHeight - 92, cardBottom + 54);
-      map.setView([location.lat, location.lng], zoom, { animate: false });
-      map.panBy([
-        0,
-        -Math.round(targetY - (window.innerHeight / 2))
-      ], { animate: false });
-    } else {
-      map[move]([location.lat, location.lng], zoom, reduceMotion ? undefined : { duration: 1.1, easeLinearity: .25 });
-    }
+    moveMap(mapCenterForEvent(event, location, zoom), zoom, Boolean(options.initial));
   }
 
-  function activateStep(step) {
+  function activateStep(step, options = {}) {
     if (!step || step === activeStep) return;
     if (activeStep) activeStep.classList.remove('is-active');
     activeStep = step;
@@ -364,27 +442,57 @@
     let event = data.events.find(item => item.id === eventId);
     if (!event && eventId === 'intro') event = { ...data.meta.opening, type: 'verified' };
     if (!event) event = { location: eventId === 'ending' ? 'recovery' : 'overview', type: eventId === 'ending' ? 'verified' : 'hypothesis' };
-    showMapEvidence(event);
+    showMapEvidence(event, { initial: options.initial });
   }
 
   function wireScrollSync() {
     const steps = [...document.querySelectorAll('.step')];
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(entries => {
-        const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        if (visible[0]) activateStep(visible[0].target);
-      }, { rootMargin: '-24% 0px -50% 0px', threshold: [0, .15, .35, .6] });
-      steps.forEach(step => observer.observe(step));
-    } else {
-      const sync = () => {
-        let current = steps[0];
-        steps.forEach(step => { if (step.getBoundingClientRect().top < window.innerHeight * .42) current = step; });
-        activateStep(current);
-      };
-      window.addEventListener('scroll', sync, { passive: true });
-      sync();
+    let scrollFrame = null;
+    let resizeFrame = null;
+
+    const sync = initial => {
+      scrollFrame = null;
+      const activationLine = window.innerHeight * (window.innerWidth <= 760 ? .4 : .42);
+      let current = steps[0];
+      for (const step of steps) {
+        if (step.getBoundingClientRect().top <= activationLine) current = step;
+        else break;
+      }
+      activateStep(current, { initial });
+    };
+
+    const scheduleSync = () => {
+      if (scrollFrame !== null) return;
+      scrollFrame = requestAnimationFrame(() => sync(false));
+    };
+
+    const scheduleResize = () => {
+      if (resizeFrame !== null) cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        resizeFrame = null;
+        introMarkerTargetY = null;
+        scheduleSync();
+      });
+    };
+
+    window.addEventListener('scroll', scheduleSync, { passive: true });
+    window.addEventListener('resize', scheduleResize, { passive: true });
+    document.addEventListener('toggle', scheduleSync, true);
+    if ('ResizeObserver' in window) {
+      const layoutObserver = new ResizeObserver(scheduleSync);
+      layoutObserver.observe(story);
     }
-    activateStep(steps[0]);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        introMarkerTargetY = null;
+        if (map) map.invalidateSize({ animate: false, pan: false });
+        if (activeStep && activeStep.dataset.eventId === 'intro') {
+          showMapEvidence({ ...data.meta.opening, type: 'verified' }, { initial: true });
+        }
+        scheduleSync();
+      });
+    }
+    sync(true);
   }
 
   document.addEventListener('keydown', event => {

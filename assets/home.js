@@ -39,7 +39,7 @@
   function audioMarkup(tracks) {
     if (!tracks || !tracks.length) return '';
     return `<details class="audio-evidence">
-      <summary>Listen to the separated call channels <span>${tracks.length} files</span></summary>
+      <summary><span class="toggle-copy"><span class="toggle-copy-show">Show separated call channels</span><span class="toggle-copy-hide">Hide separated call channels</span></span><span>${tracks.length} files</span></summary>
       <div class="audio-evidence-body">
         <p class="audio-caution"><strong>Listening aid:</strong> Channel separation does not identify any background speaker. The enhanced file is altered for clarity; compare it with the unaltered channel and stereo excerpt.</p>
         <div class="audio-track-list">
@@ -73,7 +73,7 @@
     const location = data.locations[event.location];
     const coordinate = location ? `<a class="coordinate-link" href="./coordinates.html#coordinate-${escapeHtml(event.location)}"><span>Coordinate context</span><strong>${location.lat.toFixed(6)}, ${location.lng.toFixed(6)}</strong><small>${escapeHtml(location.label)} · open explorer →</small></a>` : '';
     return `<details class="event-evidence">
-      <summary><span class="drawer-caret" aria-hidden="true">›</span><span>Evidence, unknowns, and needed records</span><small>${event.sources.length} sources</small></summary>
+      <summary><span class="drawer-caret" aria-hidden="true">›</span><span class="toggle-copy"><span class="toggle-copy-show">Show evidence, unknowns, and needed records</span><span class="toggle-copy-hide">Hide evidence, unknowns, and needed records</span></span><small>${event.sources.length} sources</small></summary>
       <div class="event-evidence-body">
         <section class="drawer-section confidence-reason">
           <p class="drawer-label">Confidence · ${escapeHtml(event.confidence)}</p>
@@ -249,19 +249,36 @@
   }
 
   function wireMedia() {
-    document.querySelectorAll('.media-trigger').forEach(button => {
+    function wireMediaTrigger(button) {
       button.addEventListener('click', () => {
         const container = button.closest('[data-media-container]');
         const mediaType = button.dataset.mediaType;
+        const triggerMarkup = button.outerHTML;
+        const mediaLabel = mediaType === 'video' ? 'video' : mediaType === 'audio' ? 'audio' : 'image';
+        const hideButton = `<button class="media-hide" type="button">Hide ${mediaLabel}</button>`;
         if (mediaType === 'video') {
-          container.innerHTML = `<figure class="loaded-media"><video controls playsinline preload="metadata" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
+          container.innerHTML = `<figure class="loaded-media">${hideButton}<video controls playsinline preload="metadata" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
         } else if (mediaType === 'audio') {
-          container.innerHTML = `<figure class="loaded-media loaded-audio"><audio controls preload="none" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="audio/mp4">Your browser cannot play this audio. <a href="${escapeHtml(button.dataset.mediaSrc)}">Download the file</a>.</audio><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
+          container.innerHTML = `<figure class="loaded-media loaded-audio">${hideButton}<audio controls preload="none" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="audio/mp4">Your browser cannot play this audio. <a href="${escapeHtml(button.dataset.mediaSrc)}">Download the file</a>.</audio><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
         } else {
-          container.innerHTML = `<figure class="loaded-media"><button class="image-open" type="button" aria-label="Expand evidence image"><img src="${escapeHtml(button.dataset.mediaSrc)}" alt="${escapeHtml(button.dataset.mediaAlt)}" loading="lazy"></button><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
+          container.innerHTML = `<figure class="loaded-media">${hideButton}<button class="image-open" type="button" aria-label="Expand evidence image"><img src="${escapeHtml(button.dataset.mediaSrc)}" alt="${escapeHtml(button.dataset.mediaAlt)}" loading="lazy"></button><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
           const imageButton = container.querySelector('.image-open');
           imageButton.addEventListener('click', () => openLightbox(imageButton.querySelector('img'), button.dataset.mediaCaption));
         }
+        container.querySelector('.media-hide').addEventListener('click', () => {
+          const playback = container.querySelector('audio, video');
+          if (playback) playback.pause();
+          container.innerHTML = triggerMarkup;
+          wireMediaTrigger(container.querySelector('.media-trigger'));
+          container.querySelector('.media-trigger').focus();
+        });
+      });
+    }
+
+    document.querySelectorAll('.media-trigger').forEach(wireMediaTrigger);
+    document.querySelectorAll('.event-evidence, .audio-evidence').forEach(details => {
+      details.addEventListener('toggle', () => {
+        if (!details.open) details.querySelectorAll('audio, video').forEach(media => media.pause());
       });
     });
     document.getElementById('lightbox-close').addEventListener('click', closeLightbox);

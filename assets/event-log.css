@@ -83,6 +83,9 @@ h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.05; te
 .log-evidence[open]>summary { box-shadow:0 1px 0 rgba(255,255,255,.08); }
 .log-evidence>summary:hover { background:rgba(255,255,255,.035); color:#fff; }
 .log-evidence>summary small { margin-left:auto; color:#747d84; font-size:8px; white-space:nowrap; }
+.toggle-copy-hide { display:none; }
+.log-evidence[open] .toggle-copy-show { display:none; }
+.log-evidence[open] .toggle-copy-hide { display:inline; }
 .log-evidence-body { padding:12px; }
 .log-depth-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; margin-top:7px; }
 .log-block { padding:12px; border-radius:3px; background:rgba(255,255,255,.03); box-shadow:0 0 0 1px rgba(255,255,255,.055); }

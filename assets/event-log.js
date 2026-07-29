@@ -48,7 +48,7 @@
         <p class="precision"><strong>Time precision:</strong> ${escapeHtml(event.precision)}</p>
         <ul class="claims">${event.claims.map(claim => `<li>${escapeHtml(claim)}</li>`).join('')}</ul>
         <details class="log-evidence">
-          <summary><span>Evidence, unknowns, and needed records</span><small>${event.sources.length} sources</small></summary>
+          <summary><span class="toggle-copy"><span class="toggle-copy-show">Show evidence, unknowns, and needed records</span><span class="toggle-copy-hide">Hide evidence, unknowns, and needed records</span></span><small>${event.sources.length} sources</small></summary>
           <div class="log-evidence-body">
             <section class="log-block confidence"><p class="block-label">Confidence · ${escapeHtml(event.confidence)}</p><p>${escapeHtml(event.confidenceReason)}</p></section>
             ${gap}

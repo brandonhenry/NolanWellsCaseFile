@@ -288,7 +288,26 @@
         media: { type: 'video', src: './media/2026-07-04-tracetin-fighting.mp4', alt: 'Circulated altercation video from Horn Island', caption: 'Circulated video · reported time not authenticated' },
         sources: [
           { label: 'Tracestin interview · Part 5', href: './transcripts/tracestin-part-5.html' },
+          { label: 'Original public X post · July 6', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
+          { label: 'TMZ · original owner’s account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' },
           { label: 'Master viral-video notes', href: `${master}#viral-video` }
+        ]
+      },
+      {
+        id: 'anna-videographer-attribution', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Identity confirmed from the supplied profile; recording time remains unauthenticated',
+        title: 'Anna C. Moore records the circulated video', type: 'firsthand', confidence: 'Medium', masterAnchor: 'anna', location: 'hornIsland',
+        summary: 'Anna C. Moore is identified as the owner of the circulated recording. TMZ reports that the original owner was on Horn Island and posted the clip hoping someone might identify Nolan.',
+        claims: [
+          'The supplied Facebook profile confirms the videographer’s identity as Anna C. Moore.',
+          'The original X post asks whether Nolan was arguing, establishing the uploader’s question—not that Nolan appears in the recording.',
+          'TMZ reports that the owner recorded the clip to send to a spouse and later posted it after learning Nolan was missing.',
+          'The public source chain establishes Moore’s presence on Horn Island and her belief that Nolan might be identifiable in the recording; it does not authenticate the 4:01 PM recording time or establish that Nolan appears.'
+        ],
+        sources: [
+          { label: 'Anna C. Moore · supplied Facebook profile', href: 'https://www.facebook.com/share/19EttKhMgq/?mibextid=wwXIfr' },
+          { label: 'Original public X post · July 6', href: 'https://x.com/RIPTWITTA/status/2074205423608246317' },
+          { label: 'TMZ · original owner’s account', href: 'https://www.tmz.com/2026/07/10/photographer-who-took-viral-nolan-wells-video-says-he-didnt-fight/' },
+          { label: 'Master Anna notes', href: `${master}#anna` }
         ]
       },
       {

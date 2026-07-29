@@ -32,7 +32,8 @@
 
   function eventMarkup(event) {
     const type = data.types[event.type];
-    const mediaLink = event.media ? `<a class="source-chip media-link" href="${escapeHtml(event.media.src)}" target="_blank" rel="noopener noreferrer">${event.media.type === 'video' ? 'Open media' : 'Open image'} <span class="sr-only">(opens in a new tab)</span></a>` : '';
+    const mediaLabels = { video: 'Open video', audio: 'Open audio', image: 'Open image' };
+    const mediaLink = event.media ? `<a class="source-chip media-link" href="${escapeHtml(event.media.src)}" target="_blank" rel="noopener noreferrer">${mediaLabels[event.media.type] || 'Open media'} <span class="sr-only">(opens in a new tab)</span></a>` : '';
     const sources = event.sources.map(source => `<a class="source-chip" href="${escapeHtml(source.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} <span class="sr-only">(opens in a new tab)</span></a>`).join('');
     return `<article class="event${event.id === 'critical-overlap' ? ' critical' : ''}" id="${escapeHtml(event.id)}" style="--tone:${type.color}">
       <div class="event-time">${escapeHtml(event.time)}</div>

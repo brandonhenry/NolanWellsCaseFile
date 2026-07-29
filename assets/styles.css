@@ -669,6 +669,12 @@ h1.step-title { font-size: clamp(2.35rem, 7vw, 4.2rem); }
   .map-key { bottom: 18px; }
 }
 
+@media (max-width: 760px) and (max-height: 700px) {
+  .intro-step .intro-note,
+  .intro-step .source-block { display: none; }
+  .intro-step .step-content { padding-bottom: 20px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

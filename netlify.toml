@@ -2,7 +2,7 @@
   publish = "."
 
 [[redirects]]
-  from = "https://nolan-wells-case-file.netlify.app/*"
+  from = "https://justicefornolanwells.netlify.app/*"
   to = "https://justicefornolanwells.com/:splat"
   status = 301
   force = true

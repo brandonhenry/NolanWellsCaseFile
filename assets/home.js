@@ -61,7 +61,7 @@
         <p class="step-time">${escapeHtml(data.meta.range)}</p>
         <h1 class="step-title">${escapeHtml(data.meta.title)}</h1>
         <p class="step-summary">${escapeHtml(data.meta.description)}</p>
-        <p class="intro-note">This site does not attempt to prove a theory. Each claim is labeled by evidence type and confidence, and every timeline entry links to its stated basis.</p>
+        <p class="intro-note">The opening marker shows the approximate publicly reported recovery time. Scroll to move through the record. This site does not attempt to prove a theory; each claim is labeled by evidence type and confidence.</p>
         <div class="source-block"><p class="source-label">Start with the evidence file</p><div class="source-links"><a class="source-link" href="./documents/master-investigation-notes.html">Open master investigation notes</a><a class="source-link" href="./event-timeline.html">Open full event log</a></div></div>
       </article>
     </section>`;
@@ -213,6 +213,7 @@
       status.textContent = 'Map tiles are unavailable. The complete timeline remains readable.';
       return;
     }
+    const openingLocation = data.locations[data.meta.opening.location];
     map = L.map('map', {
       zoomControl: false,
       attributionControl: true,
@@ -222,7 +223,7 @@
       doubleClickZoom: false,
       touchZoom: false,
       keyboard: false
-    }).setView([30.30, -88.70], 11);
+    }).setView([openingLocation.lat, openingLocation.lng], data.meta.opening.zoom || openingLocation.zoom);
     map.attributionControl.setPrefix(false);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -244,15 +245,26 @@
     if (!map) return;
     clearMapEvidence();
     const location = data.locations[event.location || 'overview'];
-    const tone = typeMeta(event.type).color;
+    const tone = event.markerColor || typeMeta(event.type).color;
     if (event.route && data.routes[event.route]) {
       const route = data.routes[event.route];
       activeRoute = L.polyline(route.coords, { color: route.color, weight: 3, opacity: .8, dashArray: '7 6', lineCap: 'round' }).addTo(map);
     }
     activeMarker = L.circleMarker([location.lat, location.lng], { radius: 8, color: tone, fillColor: tone, weight: 2, opacity: 1, fillOpacity: .72 }).addTo(map);
-    activeMarker.bindTooltip(location.label, { permanent: true, direction: 'right', offset: [12, 0], className: 'map-label' }).openTooltip();
+    const tooltipDirection = event.tooltipDirection || 'right';
+    const tooltipOffset = tooltipDirection === 'left' ? [-12, 0] : [12, 0];
+    activeMarker.bindTooltip(escapeHtml(event.markerLabel || location.label), { permanent: true, direction: tooltipDirection, offset: tooltipOffset, className: 'map-label' }).openTooltip();
     const move = reduceMotion ? 'setView' : 'flyTo';
-    map[move]([location.lat, location.lng], location.zoom, reduceMotion ? undefined : { duration: 1.1, easeLinearity: .25 });
+    const zoom = event.zoom || location.zoom;
+    if (event.viewportOffset) {
+      map.setView([location.lat, location.lng], zoom, { animate: false });
+      map.panBy([
+        -Math.round(window.innerWidth * event.viewportOffset.x),
+        -Math.round(window.innerHeight * event.viewportOffset.y)
+      ], { animate: false });
+    } else {
+      map[move]([location.lat, location.lng], zoom, reduceMotion ? undefined : { duration: 1.1, easeLinearity: .25 });
+    }
   }
 
   function activateStep(step) {
@@ -261,7 +273,9 @@
     activeStep = step;
     step.classList.add('is-active');
     const eventId = step.dataset.eventId;
-    const event = data.events.find(item => item.id === eventId) || { location: eventId === 'ending' ? 'recovery' : 'overview', type: eventId === 'ending' ? 'verified' : 'hypothesis' };
+    let event = data.events.find(item => item.id === eventId);
+    if (!event && eventId === 'intro') event = { ...data.meta.opening, type: 'verified' };
+    if (!event) event = { location: eventId === 'ending' ? 'recovery' : 'overview', type: eventId === 'ending' ? 'verified' : 'hypothesis' };
     showMapEvidence(event);
   }
 

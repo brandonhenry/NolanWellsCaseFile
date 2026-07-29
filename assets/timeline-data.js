@@ -21,9 +21,11 @@
     },
     types: {
       verified: { label: 'Verified', short: 'Verified', color: '#72a860', description: 'Official record, GPS, released official audio, or authenticated media.' },
-      firsthand: { label: 'Firsthand witness', short: 'Witness', color: '#d4a574', description: 'A named person’s public account of what they personally saw or heard.' },
-      secondhand: { label: 'Secondhand', short: 'Secondhand', color: '#c9956a', description: 'A person or official record relaying another person’s account.' },
-      hypothesis: { label: 'Hypothesis', short: 'Hypothesis', color: '#c04e01', description: 'An analytical placement, open question, or unresolved reconstruction.' }
+      firsthand: { label: 'Firsthand witness', short: 'Witness', color: '#6ea7c9', description: 'A named person’s public account of what they personally saw or heard.' },
+      secondhand: { label: 'Secondhand', short: 'Secondhand', color: '#8aa0b3', description: 'A person or official record relaying another person’s account.' },
+      media: { label: 'Media record', short: 'Media', color: '#d36d2a', description: 'A public image, recording, or publication whose contents are available but whose metadata may be incomplete.' },
+      unknown: { label: 'Unresolved', short: 'Unknown', color: '#9b7bb6', description: 'A documented gap or analytical window that the available evidence does not resolve.' },
+      hypothesis: { label: 'Hypothesis', short: 'Hypothesis', color: '#7d858b', description: 'An interpretation or reconstruction that is not itself a verified event.' }
     },
     locations: {
       overview: { lat: 30.242014, lng: -88.778409, zoom: 11, label: 'Northwest Horn Island' },
@@ -282,7 +284,7 @@
       },
       {
         id: 'viral-video', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: 'Reported around 4:01 PM', precision: 'Reposted label; original metadata not obtained',
-        title: 'The circulated altercation video', type: 'firsthand', confidence: 'Medium', masterAnchor: 'viral-video', location: 'hornIsland',
+        title: 'The circulated altercation video', type: 'media', confidence: 'Medium', masterAnchor: 'viral-video', location: 'hornIsland',
         summary: 'Tracestin publicly identifies himself as the person yelling in the circulated clip and says Nolan is not visible in it.',
         claims: ['The clip’s contents are public; the reported 4:01 PM timestamp remains unauthenticated.', 'The video does not establish Nolan’s location.'],
         media: { type: 'video', src: './media/2026-07-04-tracetin-fighting.mp4', alt: 'Circulated altercation video from Horn Island', caption: 'Circulated video · reported time not authenticated' },
@@ -365,7 +367,7 @@
       },
       {
         id: 'critical-overlap', date: 'July 4', dateLong: 'Saturday · July 4, 2026', time: '3:45–4:31 PM', precision: 'Analytical window; ordering remains unresolved',
-        title: 'The critical unresolved window', type: 'hypothesis', confidence: 'Medium', masterAnchor: 'critical-overlap', location: 'hornIsland',
+        title: 'The critical unresolved window', type: 'unknown', confidence: 'Medium', masterAnchor: 'critical-overlap', location: 'hornIsland',
         summary: 'This is the narrow period in which the public accounts of the altercation, viral video, distress call, Tracestin’s departure, Nolan remaining, and MI4088BU’s departure converge.',
         claims: ['The available public evidence does not establish the exact minute-by-minute ordering of the fight, video, and Sea Tow call.', 'This window is an analytical focus, not proof of a theory.'],
         sources: [
@@ -426,4 +428,190 @@
       }
     ]
   };
+
+  const depthByType = {
+    verified: {
+      confidenceReason: 'An official record, GPS summary, released official audio, or authenticated operational record supports the core event.',
+      unknowns: ['The source establishes only the facts stated here; it does not answer every passenger, intent, or sequence question.'],
+      needed: ['Underlying native records and metadata, where they have not been publicly released.']
+    },
+    firsthand: {
+      confidenceReason: 'A named witness publicly describes this event, but recollection and exact timing are not independently fixed.',
+      unknowns: ['Exact time, exact wording, and independent corroboration remain incomplete unless stated otherwise.'],
+      needed: ['Original interview or statement, contemporaneous device records, and corroborating witness accounts.']
+    },
+    secondhand: {
+      confidenceReason: 'The claim is preserved through a later summary or another person’s account rather than a direct contemporaneous record.',
+      unknowns: ['Original speaker, exact words, exact time, and full context remain unresolved.'],
+      needed: ['A direct statement, contemporaneous message, or authenticated recording from the original source.']
+    },
+    media: {
+      confidenceReason: 'The recording is publicly available, but its original metadata and the identity or location of every person in it are incomplete.',
+      unknowns: ['Original capture metadata, unedited context, and complete visual or voice identifications remain unresolved.'],
+      needed: ['Original device file, native metadata, and any adjacent footage.']
+    },
+    unknown: {
+      confidenceReason: 'This is a documented evidence gap. Its boundaries are supported, but the events inside it are not resolved minute by minute.',
+      unknowns: ['The exact sequence, participant positions, and transitions inside this window remain unresolved.'],
+      needed: ['Original timestamped media, complete witness interviews, vessel records, and communications.']
+    },
+    hypothesis: {
+      confidenceReason: 'This is an analytical interpretation, not an independently verified occurrence.',
+      unknowns: ['The available record does not prove this interpretation.'],
+      needed: ['Independent primary evidence capable of testing the interpretation.']
+    }
+  };
+
+  const eventDepth = {
+    'last-evening-home': {
+      unknowns: ['Exact departure time, where Nolan stayed, and any contemporaneous messages about the trip.'],
+      needed: ['Contemporaneous texts, call logs, or a direct family statement with a clock time.']
+    },
+    'gps-departure': {
+      unknowns: ['The GPS does not identify every passenger or establish who controlled the vessel.'],
+      needed: ['Native Garmin export, extraction summary, and a verified passenger manifest.']
+    },
+    'anchoring-calls': {
+      unknowns: ['Exact call time, duration, device records, and the precise anchoring location discussed.'],
+      needed: ['Call-detail records or device screenshots and the original complete interview.']
+    },
+    'gps-arrival': {
+      unknowns: ['The arrival point does not establish when or where each passenger went ashore.'],
+      needed: ['Native Garmin export, extraction summary, and contemporaneous photos or videos.']
+    },
+    'early-afternoon': {
+      unknowns: ['Exact capture times, Nolan’s movements between boats, and the complete set of available media.'],
+      needed: ['Original photos and videos with metadata and witness identification of each vessel.']
+    },
+    'warren-last-sighting': {
+      unknowns: ['Warren’s exact last visual contact, Nolan’s words, and who else observed the interaction.'],
+      needed: ['Complete original interview, contemporaneous messages, and corroborating accounts.']
+    },
+    'altercation': {
+      unknowns: ['Exact start and end, the complete participant list, and whether the circulated clip overlaps the dispute.'],
+      needed: ['Original video with metadata and complete statements from direct witnesses.']
+    },
+    'forced-aboard': {
+      unknowns: ['Exact minute, vessel position, and how long elapsed before departure.'],
+      needed: ['Statements from the uncle and other passengers plus original timestamped media.']
+    },
+    'nolan-nearby-account': {
+      unknowns: ['Nolan’s precise position, whether anyone else saw him there, and the exact time of the sighting.'],
+      needed: ['Corroborating witness accounts and original media showing the surrounding area.']
+    },
+    'sea-tow-call': {
+      unknowns: ['Exact call-start time, original machine metadata, and the identity of every voice or passenger.'],
+      needed: ['Original Sea Tow system export, call metadata, and the complete dispatch record.'],
+      sourceViews: [
+        { source: 'Released call', position: 'Supports bilge-pump failure, water ingress, approximately seven aboard, and later cancellation.' },
+        { source: 'WLOX', position: 'Describes the call as occurring around 4:00 PM.' },
+        { source: 'Raw publication label', position: 'Uses 3:48 PM; original machine metadata has not authenticated that label.' }
+      ]
+    },
+    'viral-video': {
+      unknowns: ['Whether Nolan appears or can be heard, the original capture time, and what occurred immediately before and after the clip.'],
+      needed: ['Original device file, native metadata, unedited adjacent footage, and complete witness identifications.'],
+      sourceViews: [
+        { source: 'Original X post', position: 'Asks whether Nolan was arguing; it does not establish that he was.' },
+        { source: 'Tracestin', position: 'Identifies himself as the yelling voice and says Nolan is not visible.' },
+        { source: 'TMZ owner account', position: 'Says the video does not show the reported altercation.' },
+        { source: 'Official', position: 'Investigators reviewed the clip; no public finding identifies Nolan in it.' }
+      ]
+    },
+    'anna-videographer-attribution': {
+      unknowns: ['Original capture metadata, exact vessel position, complete surrounding footage, and whether Nolan appears.'],
+      needed: ['Original device file and an authenticated export preserving metadata.'],
+      sourceViews: [
+        { source: 'Anna C. Moore profile', position: 'Confirms the supplied identity of the videographer.' },
+        { source: 'TMZ owner account', position: 'Reports presence on Horn Island, purpose for recording, and later publication.' },
+        { source: 'Original X post', position: 'Shows the public question about whether Nolan was in the clip.' }
+      ]
+    },
+    'tracestin-leaves': {
+      unknowns: ['Exact departure time, route, passengers, and relationship to the Sea Tow call and video.'],
+      needed: ['Complete statements from the uncle and passengers plus vessel or device-location records.']
+    },
+    'accounts-nolan-stays': {
+      confidenceReason: 'The core claim is a later police and witness summary; Nolan’s exact words and the original listener are not preserved.',
+      unknowns: ['Who personally heard Nolan, his exact words, the exact time, and which boat he expected to use.'],
+      needed: ['Direct statements from every listener, contemporaneous messages, and original interview recordings.'],
+      sourceViews: [
+        { source: 'Official summary', position: 'Records that friends said Nolan remained with an unknown woman.' },
+        { source: 'Warren', position: 'Says friends urged Nolan to leave and that he declined.' },
+        { source: 'Katie', position: 'Reportedly believed Nolan was returning on his original boat.' },
+        { source: 'Open conflict', position: 'The exact words, speaker chain, time, and intended return boat remain unresolved.' }
+      ]
+    },
+    'private-assistance': {
+      unknowns: ['Who arranged the assistance, the assisting vessel, complete passenger transfers, and exact cancellation time.'],
+      needed: ['Full Sea Tow metadata, assisting-vessel statement, and passenger accounts.']
+    },
+    'gps-movement-431': {
+      unknowns: ['GPS cannot establish who was aboard, whether a tow line was attached, or where Nolan was.'],
+      needed: ['Native track, extraction summary, tow-vessel identification, and verified passenger statements.'],
+      sourceViews: [
+        { source: 'Official GPS', position: 'Supports movement beginning at 4:31 PM and the speed range through 5:24 PM.' },
+        { source: 'Witness accounts', position: 'Publicly place Nolan off the boat; GPS itself cannot confirm that.' },
+        { source: 'Open question', position: 'The assisting vessel and all passenger assignments remain incomplete.' }
+      ]
+    },
+    'phone-and-passenger-account': {
+      unknowns: ['Who physically had the phone, when possession changed, and the complete passenger list at departure.'],
+      needed: ['Phone extraction, chain-of-possession statements, and direct passenger interviews.']
+    },
+    'critical-overlap': {
+      unknowns: ['The minute-by-minute order of the altercation, video, Sea Tow call, departures, and Nolan’s last movements.'],
+      needed: ['Original timestamped media, Sea Tow metadata, complete witness statements, and vessel-location records.'],
+      sourceViews: [
+        { source: 'Official GPS', position: 'Fixes MI4088BU movement at 4:31 PM.' },
+        { source: 'Released call', position: 'Places the distress and cancellation before that departure, but not at an authenticated exact minute.' },
+        { source: 'Witness accounts', position: 'Place the altercation, Tracestin’s departure, and Nolan remaining in the same general period.' },
+        { source: 'Media', position: 'A reposted label places the viral clip around 4:01 PM; original metadata is absent.' }
+      ],
+      gap: [
+        { time: '3:45 PM', state: 'Unknown window opens', known: false },
+        { time: '~4:01 PM', state: 'Video time reported, not authenticated', known: false },
+        { time: '4:31 PM', state: 'MI4088BU movement begins', known: true }
+      ]
+    },
+    'gps-normal-525': {
+      unknowns: ['What resolved the slow movement and the identity of any assisting vessel.'],
+      needed: ['Native track, tow statement, and mechanical records.']
+    },
+    'gps-return-544': {
+      unknowns: ['Complete passenger list at return and the precise sequence immediately after arrival.'],
+      needed: ['Passenger statements, dock media, and native Garmin records.']
+    },
+    'family-contacted': {
+      unknowns: ['Exact first realization time, who made the first family contact, and the complete communication sequence.'],
+      needed: ['Call logs, messages, CAD intake audio, and direct statements.'],
+      sourceViews: [
+        { source: 'Witness account', position: 'Places family contact around 11:00 PM.' },
+        { source: 'MDMR CAD', position: 'Records an official entry at 11:45:14 PM.' },
+        { source: 'Open interval', position: 'The sequence between first realization, family contact, and official reporting is incomplete.' }
+      ]
+    },
+    'official-search': {
+      unknowns: ['Complete search grids, all aircraft and vessel tracks, and the full interagency decision log.'],
+      needed: ['Drone grid, USCG particle drift, vessel tracks, emails, and permission-to-search records.']
+    },
+    'body-found': {
+      unknowns: ['The obtained packet does not contain the complete recovery narrative or a fully authenticated public recovery coordinate.'],
+      needed: ['Recovery report, scene photographs, original coordinates, and complete coroner or law-enforcement narrative.']
+    }
+  };
+
+  window.NOLAN_EVIDENCE.events.forEach(event => {
+    const defaults = depthByType[event.type] || depthByType.hypothesis;
+    const depth = eventDepth[event.id] || {};
+    event.confidenceReason = depth.confidenceReason || defaults.confidenceReason;
+    event.known = depth.known || [event.summary, ...event.claims];
+    event.unknowns = depth.unknowns || defaults.unknowns;
+    event.needed = depth.needed || defaults.needed;
+    event.sourceViews = depth.sourceViews || [
+      { source: 'Primary basis', position: `${window.NOLAN_EVIDENCE.types[event.type].label}: ${event.sources.map(source => source.label).join('; ')}.` },
+      { source: 'Agreement / conflict', position: 'No additional source comparison is documented beyond the linked evidence and stated unknowns.' }
+    ];
+    if (depth.gap) event.gap = depth.gap;
+  });
 })();

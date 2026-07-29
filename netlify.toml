@@ -16,6 +16,61 @@
   to = "/documents/master-investigation-notes.html"
   status = 200
 
+[[redirects]]
+  from = "/archive"
+  to = "/archive.html"
+  status = 200
+
+[[redirects]]
+  from = "/documents"
+  to = "/documents.html"
+  status = 200
+
+[[redirects]]
+  from = "/search"
+  to = "/search.html"
+  status = 200
+
+[[redirects]]
+  from = "/people"
+  to = "/people.html"
+  status = 200
+
+[[redirects]]
+  from = "/boats"
+  to = "/boats.html"
+  status = 200
+
+[[redirects]]
+  from = "/last-contact"
+  to = "/last-contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/contradictions"
+  to = "/contradictions.html"
+  status = 200
+
+[[redirects]]
+  from = "/evidence-tracker"
+  to = "/evidence-tracker.html"
+  status = 200
+
+[[redirects]]
+  from = "/coordinates"
+  to = "/coordinates.html"
+  status = 200
+
+[[redirects]]
+  from = "/questions"
+  to = "/questions.html"
+  status = 200
+
+[[redirects]]
+  from = "/gaps"
+  to = "/gaps.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -27,7 +82,7 @@
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/media/*"

@@ -56,6 +56,47 @@
     </details>`;
   }
 
+  function listMarkup(items, className) {
+    return `<ul class="${className}">${items.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+  }
+
+  function comparisonMarkup(views) {
+    return `<div class="comparison-list">${views.map(view => `<div class="comparison-row"><strong>${escapeHtml(view.source)}</strong><span>${escapeHtml(view.position)}</span></div>`).join('')}</div>`;
+  }
+
+  function gapMarkup(gap) {
+    if (!gap) return '';
+    return `<div class="gap-track" aria-label="Known and unknown timeline anchors">${gap.map(item => `<div class="gap-node ${item.known ? 'known' : 'unknown'}"><time>${escapeHtml(item.time)}</time><span>${escapeHtml(item.state)}</span></div>`).join('')}</div>`;
+  }
+
+  function evidenceDrawerMarkup(event) {
+    const location = data.locations[event.location];
+    const coordinate = location ? `<a class="coordinate-link" href="./coordinates.html#coordinate-${escapeHtml(event.location)}"><span>Coordinate context</span><strong>${location.lat.toFixed(6)}, ${location.lng.toFixed(6)}</strong><small>${escapeHtml(location.label)} · open explorer →</small></a>` : '';
+    return `<details class="event-evidence">
+      <summary><span class="drawer-caret" aria-hidden="true">›</span><span>Evidence, unknowns, and needed records</span><small>${event.sources.length} sources</small></summary>
+      <div class="event-evidence-body">
+        <section class="drawer-section confidence-reason">
+          <p class="drawer-label">Confidence · ${escapeHtml(event.confidence)}</p>
+          <p>${escapeHtml(event.confidenceReason)}</p>
+        </section>
+        ${gapMarkup(event.gap)}
+        <div class="drawer-grid">
+          <section class="drawer-section known-section"><p class="drawer-label">Known / stated</p>${listMarkup(event.known, 'drawer-list')}</section>
+          <section class="drawer-section unknown-section"><p class="drawer-label">Unknown</p>${listMarkup(event.unknowns, 'drawer-list')}</section>
+          <section class="drawer-section needed-section"><p class="drawer-label">Needed</p>${listMarkup(event.needed, 'drawer-list')}</section>
+        </div>
+        <section class="drawer-section comparison-section"><p class="drawer-label">Source comparison</p>${comparisonMarkup(event.sourceViews)}</section>
+        ${coordinate}
+        ${audioMarkup(event.audioTracks)}
+        ${mediaMarkup(event.media)}
+        <div class="source-block">
+          <p class="source-label">Sources and evidentiary basis</p>
+          <div class="source-links">${sourceMarkup(event.sources)}</div>
+        </div>
+      </div>
+    </details>`;
+  }
+
   function eventMarkup(event) {
     const tone = typeMeta(event.type);
     return `<section class="step" id="event-${escapeHtml(event.id)}" data-event-id="${escapeHtml(event.id)}" style="--tone:${tone.color}">
@@ -69,12 +110,7 @@
         </div>
         <p class="precision"><strong>Time precision:</strong> ${escapeHtml(event.precision)}</p>
         <ul class="claim-list">${event.claims.map(claim => `<li>${escapeHtml(claim)}</li>`).join('')}</ul>
-        ${audioMarkup(event.audioTracks)}
-        ${mediaMarkup(event.media)}
-        <div class="source-block">
-          <p class="source-label">Sources and evidentiary basis</p>
-          <div class="source-links">${sourceMarkup(event.sources)}</div>
-        </div>
+        ${evidenceDrawerMarkup(event)}
       </article>
     </section>`;
   }
@@ -86,7 +122,7 @@
         <h1 class="step-title">${escapeHtml(data.meta.title)}</h1>
         <p class="step-summary">${escapeHtml(data.meta.description)}</p>
         <p class="intro-note">The opening marker shows the approximate publicly reported recovery time. Scroll to move through the record. This site does not attempt to prove a theory; each claim is labeled by evidence type and confidence.</p>
-        <div class="source-block"><p class="source-label">Start with the evidence file</p><div class="source-links"><a class="source-link" href="./documents/master-investigation-notes.html">Open master investigation notes</a><a class="source-link" href="./event-timeline.html">Open full event log</a></div></div>
+        <div class="source-block"><p class="source-label">Start with the evidence file</p><div class="source-links"><a class="source-link" href="./documents/master-investigation-notes.html">Open master investigation notes</a><a class="source-link" href="./event-timeline.html">Open full event log</a><a class="source-link" href="./archive.html">Explore the evidence archive</a><a class="source-link" href="./search.html">Search everything</a></div></div>
       </article>
     </section>`;
     const ending = `<section class="step" data-event-id="ending" style="--tone:${data.types.verified.color}">
@@ -94,7 +130,7 @@
         <p class="step-time">Living evidence file</p>
         <h2 class="step-title">What do we actually know?</h2>
         <p class="step-summary">This reconstruction should change when stronger primary evidence becomes available. The unresolved questions are part of the record—not gaps to fill with certainty.</p>
-        <div class="end-links"><a class="source-link" href="./event-timeline.html">Full evidence log →</a><a class="source-link" href="./documents/master-investigation-notes.html#documents-to-obtain">Missing records →</a></div>
+        <div class="end-links"><a class="source-link" href="./event-timeline.html">Full evidence log →</a><a class="source-link" href="./archive.html">Evidence archive →</a><a class="source-link" href="./evidence-tracker.html">Missing evidence →</a><a class="source-link" href="./questions.html">Open questions →</a></div>
         <p class="end-attribution">Visual interaction adapted from the public Subtxt Press Nolan timeline at reference commit ${escapeHtml(data.meta.referenceCommit)}. Map data © OpenStreetMap contributors © CARTO.</p>
       </article>
     </section>`;
@@ -153,8 +189,8 @@
   }
 
   function renderPanels() {
-    document.getElementById('transcripts-list').innerHTML = data.transcripts.map(item => `<div class="panel-item"><a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.label)}</a><p>${escapeHtml(item.meta)}</p></div>`).join('');
-    document.getElementById('boats-list').innerHTML = data.boats.map(boat => `<div class="panel-item"><strong>${escapeHtml(boat.name)}</strong><p>${escapeHtml(boat.status)}</p><p>${escapeHtml(boat.note)}</p></div>`).join('');
+    document.getElementById('transcripts-list').innerHTML = data.transcripts.map(item => `<div class="panel-item"><a href="${escapeHtml(item.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.label)}</a><p>${escapeHtml(item.meta)}</p></div>`).join('') + '<a class="panel-archive-link" href="./search.html">Search every transcript line →</a>';
+    document.getElementById('boats-list').innerHTML = data.boats.map(boat => `<div class="panel-item"><strong>${escapeHtml(boat.name)}</strong><p>${escapeHtml(boat.status)}</p><p>${escapeHtml(boat.note)}</p></div>`).join('') + '<a class="panel-archive-link" href="./boats.html">Open full vessel archive →</a>';
   }
 
   function closePanels(restoreFocus) {

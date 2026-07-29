@@ -113,7 +113,7 @@
     '/documents/master-investigation-notes.html': {
       canonical: '/master-notes',
       title: 'Nolan Wells Master Investigation Notes & Source Analysis',
-      description: 'Read the controlling source analysis for the Nolan Wells evidence timeline, including the defensible reconstruction, GPS limits, witness claims, and critical unresolved window.',
+      description: 'Read the controlling Nolan Wells source analysis, including the 2026 reconstruction, GPS limits, witness claims, narrative formation, possible cover-up tests, and preservation safeguards.',
       type: 'Report'
     },
     '/transcripts/seatow-audio.html': {

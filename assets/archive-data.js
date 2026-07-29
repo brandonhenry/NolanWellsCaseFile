@@ -33,14 +33,14 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.2',
+        title: 'Master Investigation Notes · Version 1.3',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Evidence gaps'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
         referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },

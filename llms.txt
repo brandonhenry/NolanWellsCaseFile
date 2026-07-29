@@ -13,7 +13,7 @@ Last reviewed: 2026-07-29
 - [Full event log](https://justicefornolanwells.com/event-timeline): Searchable event-by-event claims, confidence, known facts, unknowns, and sources.
 - [Master investigation notes](https://justicefornolanwells.com/master-notes): The controlling editorial evidence document.
 - [Evidence archive](https://justicefornolanwells.com/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
-- [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Preserved early comments and images with original messages, timestamps, permalinks, hashes, and claim-level assessments.
+- [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Retained case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and claim-level assessments. Unrelated and purely speculative submissions are omitted.
 - [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
 
 ## Primary source

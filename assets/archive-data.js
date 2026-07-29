@@ -6,7 +6,7 @@
       { id: 'case-summary', title: 'Case Summary', description: 'Start with a sourced, plain-language account of what happened, what official GPS establishes, and what remains unresolved.', href: './case-summary.html', tone: 'verified' },
       { id: 'search', title: 'Search everything', description: 'Search events, transcript lines, documents, people, boats, questions, contradictions, and master-note sections.', href: './search.html', tone: 'verified' },
       { id: 'documents', title: 'Documents', description: 'Open every obtained source as a record with its status, contents, references, and missing companion files.', href: './documents.html', tone: 'media' },
-      { id: 'social-sources', title: 'Social Source Ledger', description: 'Review contemporaneous July 5–7, 2026 comments and attached images with original messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
+      { id: 'social-sources', title: 'Social Source Ledger', description: 'Review retained July 5–7, 2026 case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
       { id: 'last-contact', title: 'Last Contact Matrix', description: 'Compare reported last sightings, last words, times, listeners, and confidence without collapsing them into one claim.', href: './last-contact.html', tone: 'firsthand' },
       { id: 'contradictions', title: 'Contradictions', description: 'Place public narratives beside supporting, conflicting, and still-missing evidence without accusing anyone.', href: './contradictions.html', tone: 'unknown' },
       { id: 'evidence-tracker', title: 'Missing Evidence Tracker', description: 'Track what is obtained, public, referenced but missing, or still needed—and whether a request status is documented.', href: './evidence-tracker.html', tone: 'media' },
@@ -34,7 +34,7 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.4',
+        title: 'Master Investigation Notes · Version 1.5',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
@@ -53,8 +53,8 @@
         availability: 'Public on this site',
         confidence: 'Claim-specific',
         href: './social-source-ledger.html',
-        summary: 'Preserves the still-image attachments and reel link surfaced in Christine Wonsley’s July 5 search appeal with original parent messages, visible timestamps, direct permalinks, local copies, hashes, and a credibility assessment.',
-        contents: ['East Tip scene submission', 'Matthew Lamp passenger-account screenshots', 'July 4 group photo', 'Derivative and excluded-item disposition', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
+        summary: 'Preserves case-related images and relevant text-only comments from Christine Wonsley’s July 5 search appeal with messages, visible timestamps, direct permalinks, local image copies, hashes, and claim-level assessments.',
+        contents: ['East Tip scene submission', 'Matthew Lamp passenger-account screenshots', 'July 4 group photo', 'Swimming/lifeguard context lead', 'July 6 public-narrative source trail', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
         referencedEvents: ['lamp-passenger-account', 'east-tip-photo-submission', 'early-afternoon'],
         missingCompanions: ['Forensic export of every comment and reply', 'Original device files and metadata', 'Original Matthew Lamp post', 'Direct statements from the three unnamed passengers']
       },

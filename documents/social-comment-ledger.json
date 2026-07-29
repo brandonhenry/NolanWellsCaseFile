@@ -1,6 +1,6 @@
 {
-  "title": "Christine Wonsley July 5, 2026 Facebook appeal — attached-media ledger",
-  "version": "1.0",
+  "title": "Christine Wonsley July 5, 2026 Facebook appeal — social-source ledger",
+  "version": "1.1",
   "reviewedAt": "2026-07-29",
   "parentPost": {
     "author": "Christine Wonsley",
@@ -8,7 +8,7 @@
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "This ledger preserves the 12 still-image attachments and one reel link surfaced in the loaded All comments view. A Facebook comment count can include replies and comments that the interface does not load or later removes; this is not represented as a forensic export of every comment. Visible Facebook times authenticate publication/display time only, not when an attached image was captured.",
+  "scopeNote": "The review surfaced 12 still-image attachments and one reel link. This public ledger retains the nine case-related still attachments, the case-related reel link, and two relevant text-only comments; three unrelated or purely speculative attachments were removed. The audit also reviewed 566 loaded top-level comment blocks and selectively opened relevant reply threads. Facebook totals can include replies and content the interface does not load or later removes, so this is not represented as a forensic export of every comment. Visible Facebook times authenticate publication/display time only, not when attached media was captured or when a described event occurred.",
   "records": [
     {
       "id": "ashton-east-tip",
@@ -35,19 +35,6 @@
       "grade": "C",
       "status": "Lead; duplicate source chain",
       "assessment": "A repost preserving the same Matthew Lamp thread later shared by other commenters. It is not independent corroboration."
-    },
-    {
-      "id": "versache-water-dot",
-      "commenter": "Versache Robinson",
-      "published": "2026-07-05T23:28:00-05:00",
-      "message": "Mane that forshow look like a person",
-      "commentUrl": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1798346218239606",
-      "mediaUrl": "https://www.facebook.com/photo.php?fbid=122179731818901895&set=p.122179731818901895&type=3",
-      "archivePath": "/media/social-july-5-comments/2026-07-05-versache-water-dot-screenshot.jpg",
-      "sha256": "2f60d75d73b6926250a85f546276b83c7f2cb1036e8af73a8ca15784f5cfa4e7",
-      "grade": "D",
-      "status": "Not probative",
-      "assessment": "A screenshot of social-media users interpreting a distant pixel or wave as a possible person. It has no authenticated time, location, scale, original file, or reliable identification."
     },
     {
       "id": "michelle-ebony-screenshot",
@@ -102,6 +89,34 @@
       "assessment": "The screenshot attributes to Matthew Lamp that one passenger was pretty certain Nolan was part of a group that was almost fighting around 5 PM, that a blue-top Bertram left shortly afterward and fast, and that three people on Lamp’s boat said the dispute was among the group. This is Lamp relaying unnamed passengers, not Lamp claiming a personal sighting. The exact event time, vessel, participants, original thread, and passenger statements remain unverified."
     },
     {
+      "id": "jerry-public-narrative-summary",
+      "sourceType": "text-only comment",
+      "commenter": "Jerry Carroll",
+      "published": "2026-07-06T10:30:00-05:00",
+      "message": "Friends state that Nolan was last seen around 3:00 p.m. on Saturday, July 4. United Cajun Navy Incident Commander Josh Gill reported that witnesses last noted Nolan ‘hanging out with a girl’ on the island. The waters there are notorious for being dangerous to swim in. Jackson County Sheriff John Ledbetter announced that a body was discovered on Horn Island. While officials are on the scene, they have not yet publicly confirmed the identity of the person found. Nolan's mother, Christine Wonsley, publicly confirmed via social media that she has personally spoken with the girl to gather details about her son's final known moments. The conversation shed light on the logistical confusion that occurred on the island. The girl reportedly stated that there was a massive misunderstanding regarding Nolan's transportation—where different factions of acquaintances mistakenly believed he had secured a boat ride back to the mainland with someone else.",
+      "commentUrl": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1925599364803702",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "D-text-only source trail",
+      "status": "Relevant narrative record; not independent evidence",
+      "assessment": "This comment compiles claims already attributed to friends, Josh Gill, Sheriff Ledbetter, Christine Wonsley, and an unnamed girl. It is useful for documenting how the public narrative was being summarized by the morning of July 6, but it is not firsthand and does not independently corroborate any of those claims."
+    },
+    {
+      "id": "carolina-swimming-lifeguard-reply",
+      "sourceType": "text-only reply",
+      "commenter": "Carolina Ruby Rebel",
+      "published": "2026-07-06T10:53:00-05:00",
+      "message": "HE ABSOLUTELY KNEW HOW TO SWIM THAT HAS ALREADY BEEN STATED AND HE DO LIFEGUARD DURING THE SUMMERS",
+      "commentUrl": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1459527565939700&reply_comment_id=1409855900973055",
+      "mediaUrl": null,
+      "archivePath": null,
+      "sha256": null,
+      "grade": "D-unverified context",
+      "status": "Relevant; source basis not stated",
+      "assessment": "The reply states that Nolan knew how to swim and worked as a lifeguard during summers. The commenter does not state a relationship to Nolan, a firsthand basis, employer, dates, or supporting record. It is preserved as a low-confidence lead and must not be treated as verified swimming or employment history without corroboration."
+    },
+    {
       "id": "nette-body-found-update",
       "commenter": "Nette Wilks",
       "published": "2026-07-06T11:03:00-05:00",
@@ -126,32 +141,6 @@
       "grade": "C",
       "status": "Duplicate capture of material lead",
       "assessment": "A second screenshot of the Matthew Lamp source chain. It gives more of the visible thread and shows Christine Wonsley being tagged, but it does not independently corroborate the underlying passenger account."
-    },
-    {
-      "id": "grant-unrelated",
-      "commenter": "Grant Terrell III",
-      "published": "2026-07-06T12:17:00-05:00",
-      "message": "Remember, if you’re gonna be the ONLY black person there, DON’T GO‼️",
-      "commentUrl": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1013431021584517",
-      "mediaUrl": "https://www.facebook.com/photo.php?fbid=122133581295219264&set=p.122133581295219264&type=3",
-      "archivePath": "/media/social-july-5-comments/2026-07-06-grant-unrelated-image.jpg",
-      "sha256": "03d7b59bafe93a0aff013a2df39b806a8ef972054da87e052ea66aac67c7bb81",
-      "grade": "Exclude",
-      "status": "Preserved but not case evidence",
-      "assessment": "The attachment is unrelated to the Horn Island chronology and is excluded from the public evidence display."
-    },
-    {
-      "id": "kaycee-unrelated",
-      "commenter": "Kay-cee Xill",
-      "published": "2026-07-06T19:39:00-05:00",
-      "message": null,
-      "commentUrl": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1008311341950802",
-      "mediaUrl": "https://www.facebook.com/photo.php?fbid=122190373490943636&set=p.122190373490943636&type=3",
-      "archivePath": "/media/social-july-5-comments/2026-07-06-kaycee-unrelated-image.jpg",
-      "sha256": "f828bba615d53c66d46d7df2566fad1135ef3e7769eab7992e7a260ec15a3ecf",
-      "grade": "Exclude",
-      "status": "Preserved but not case evidence",
-      "assessment": "The attachment is unrelated political material and is excluded from the public evidence display."
     },
     {
       "id": "tom-group-photo",

@@ -81,6 +81,8 @@ The social-source audit covers exposed comments and selected reply threads on fi
 
 The people and entity graph is a visual index of claim-level source relationships, not a complete social network. A line does not prove friendship, family relationship, attendance, responsibility, or wrongdoing beyond the narrow label and source shown. Private relatives, scraped friend lists, mutual connections, and inferred attendance are excluded.
 
+A separate, collapsed Facebook context layer records seven case-relevant profiles visibly listed on Jack Jordan’s friends page when checked on July 30, 2026: Christine Wonsley, Tracestin Shepherd, Nolan Wells, Katie McCormack, Warren Hudson, Wyatt Pyron, and Bart Edmiston. This is a hub-and-spoke platform listing through Jack—not evidence that those seven people are mutually connected, attended Horn Island, or share knowledge or responsibility. Names supported only by the friend list and not by a separate case-relevant public source are not published.
+
 Anna C. Moore’s direct July 7 clarification is controlling for what she personally claimed: she says she never saw Nolan and never said the argument heard in the video involved him. Her post says a friend prompted her to review Snapchat footage and that she sent it to authorities and Nolan’s mother before public posting. This does not authenticate the reported 4:01 PM capture time or establish that Nolan appears.
 
 ## Citation policy

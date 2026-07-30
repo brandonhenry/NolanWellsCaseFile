@@ -168,6 +168,7 @@
     },
     person: {
       nolan: ['Nolan Wells · Case Timeline and Evidence Record', 'Timeline events, known evidence, unresolved questions, and source records concerning Nolan Xavier Wells.'],
+      'christine-wonsley': ['Christine Wonsley · Nolan Wells Family and Public Appeal Record', 'Christine Wonsley’s July 2026 public missing-person appeal, linked search events, submitted-media context, and unresolved notification questions.'],
       warren: ['Warren · Nolan Wells Witness Record', 'Warren’s public interviews, linked events, reported last sighting, departure account, and unresolved questions.'],
       tracestin: ['Tracestin Shepherd · Nolan Wells Witness Record', 'Tracestin Shepherd’s public interview, linked Horn Island events, departure account, and unresolved questions.'],
       katie: ['Katie · Nolan Wells Witness Record', 'Publicly reported interactions, linked timeline events, and unresolved questions concerning Katie and Nolan Wells.'],

@@ -162,6 +162,19 @@
         questions: ['What is the last independently corroborated sighting?', 'What were Nolan’s exact last words and who heard them?', 'What return plan did Nolan understand?']
       },
       {
+        id: 'christine-wonsley',
+        name: 'Christine Wonsley',
+        role: 'Nolan’s mother and public appeal source',
+        summary: 'Wonsley published the July 5, 2026 missing-person appeal reviewed by this archive. Public records and contemporaneous reporting identify her as Nolan’s mother; her appeal became a central source for search updates and submitted media.',
+        eventIds: ['family-contacted', 'official-search', 'east-tip-photo-submission', 'body-found'],
+        interviews: [
+          { label: 'July 5 public appeal and source audit', href: './social-source-ledger.html#parent-heading' },
+          { label: 'Public Facebook profile', href: 'https://www.facebook.com/christine.wonsley' }
+        ],
+        questions: ['What is the exact authenticated family-notification time?', 'Which original media files and messages were submitted directly to the appeal?', 'Which search updates were independently confirmed before publication?'],
+        recordStatus: 'Named family and public source'
+      },
+      {
         id: 'warren',
         name: 'Warren',
         role: 'Friend and public witness',
@@ -290,6 +303,7 @@
       ],
       relationships: [
         { id: 'nolan-warren', from: 'nolan', to: 'warren', label: 'Friends / same trip group', status: 'firsthand', confidence: 'Medium', claim: 'Warren publicly describes traveling with Nolan and his own interactions with him.', sourceLabel: 'Warren interview · Part 1', source: './transcripts/warren-part-1.html' },
+        { id: 'nolan-christine', from: 'nolan', to: 'christine-wonsley', label: 'Mother / public appeal source', status: 'firsthand', confidence: 'High', claim: 'The public appeal and source record identify Wonsley as Nolan’s mother and document her role publishing the July 5 missing-person appeal.', sourceLabel: 'Christine Wonsley appeal audit', source: './social-source-ledger.html#parent-heading' },
         { id: 'nolan-tracestin', from: 'nolan', to: 'tracestin', label: 'Friends / island contact', status: 'firsthand', confidence: 'Medium', claim: 'Tracestin publicly describes anchoring calls and spending much of July 4 with Nolan.', sourceLabel: 'Tracestin interview · Part 5', source: './transcripts/tracestin-part-5.html' },
         { id: 'nolan-katie', from: 'nolan', to: 'katie', label: 'Reported afternoon interaction', status: 'reported', confidence: 'Low', claim: 'Public accounts place Nolan interacting with Katie; their exact conversation and last-contact time remain unresolved.', sourceLabel: 'Master notes · Katie', source: './documents/master-investigation-notes.html#katie' },
         { id: 'nolan-mi4088bu', from: 'nolan', to: 'mi4088bu', label: 'Reported outbound passenger', status: 'reported', confidence: 'Medium', claim: 'Witness and official-summary material associate Nolan with the outbound boat; GPS alone does not identify passengers.', sourceLabel: 'Master notes · GPS limits', source: './documents/master-investigation-notes.html#what-gps-does-not-tell-us' },
@@ -306,6 +320,26 @@
         { id: 'katelynn-horn-island', from: 'katelynn-brochard', to: 'horn-island', label: 'Describes nearby-boats context', status: 'lead', confidence: 'Low', claim: 'Her wording suggests relevant nearby-boats context, but exact vessel, location, and referents are unresolved.', sourceLabel: 'Katelynn direct reply', source: './social-source-ledger.html#katelynn-boats-account' },
         { id: 'mdmr-mi4088bu', from: 'mdmr', to: 'mi4088bu', label: 'Official GPS chronology', status: 'official', confidence: 'High', claim: 'The MDMR report publishes summarized GPS milestones for MI4088BU.', sourceLabel: 'MDMR report · pages 5 and 7', source: './documents/MDMR-MP2607-0016-report.pdf#page=5' },
         { id: 'seatow-mi4088bu', from: 'sea-tow', to: 'mi4088bu', label: 'Distress-call vessel', status: 'official', confidence: 'High', claim: 'The released call concerns the distressed vessel and reports water ingress, pump failure, and private help.', sourceLabel: 'Sea Tow call and transcript', source: './transcripts/seatow-audio.html' }
+      ]
+    },
+
+    socialContext: {
+      updated: 'July 30, 2026',
+      sourceLabel: 'Jack Jordan · visible Facebook friends page',
+      source: 'https://www.facebook.com/jack.jordan.650551/friends_all',
+      hub: {
+        id: 'jack-jordan',
+        name: 'Jack Jordan',
+        profile: 'https://www.facebook.com/jack.jordan.650551'
+      },
+      connections: [
+        { personId: 'christine-wonsley', displayName: 'Christine Wonsley', profile: 'https://www.facebook.com/christine.wonsley' },
+        { personId: 'tracestin', displayName: 'Tracestin Shepherd', profile: 'https://www.facebook.com/tracestin.shepherd' },
+        { personId: 'nolan', displayName: 'Nolan Wells', profile: 'https://www.facebook.com/nolan.wells.750' },
+        { personId: 'katie', displayName: 'Katie McCormack', profile: 'https://www.facebook.com/katie.mccormack.8' },
+        { personId: 'warren', displayName: 'Warren Hudson', profile: 'https://www.facebook.com/warren.hudson.230364' },
+        { personId: 'wyatt', displayName: 'Wyatt Pyron', profile: 'https://www.facebook.com/profile.php?id=100079782690124' },
+        { personId: 'bart', displayName: 'Bart Edmiston', profile: 'https://www.facebook.com/bart.edmiston.1' }
       ]
     },
 

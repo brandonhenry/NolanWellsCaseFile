@@ -44,7 +44,8 @@ editorial methodology and corrections are available at `/about`.
   analysis tools
 - `assets/timeline-data.js` — shared event, evidence, source, map, and media data
 - `assets/archive-data.js` — shared archive records, people/entity relationships,
-  matrices, trackers, and file tree
+  a separately labeled social-platform context layer, matrices, trackers, and
+  file tree
 - `documents/master-investigation-notes.html` — canonical working evidence file
 - `documents/MDMR-MP2607-0016-report.pdf` — obtained official MDMR report
 - `transcripts/` — bundled public interview and call transcripts

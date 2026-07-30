@@ -25,4 +25,6 @@ Last reviewed: 2026-07-30
 
 When citing this archive, identify the specific event or document page and preserve its evidence label and confidence. GPS establishes vessel movement, not who was aboard. Publicly reported times marked approximate or reconstructed must not be presented as authenticated timestamps.
 
+The People page contains a separately labeled Facebook connection layer. It records only profiles visibly listed on Jack Jordan’s friends page when checked on July 30, 2026. Those platform listings are not case evidence, do not establish attendance, and do not mean the listed people are mutually connected.
+
 For a fuller machine-readable overview, use [llms-full.txt](https://justicefornolanwells.com/llms-full.txt).

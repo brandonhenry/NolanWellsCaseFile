@@ -34,7 +34,7 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.6',
+        title: 'Master Investigation Notes · Version 1.7',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
@@ -42,21 +42,21 @@
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
         contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'anna-clarification'],
+        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'anna-clarification'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
         id: 'social-comment-ledger',
-        title: 'July 5–7, 2026 Social Comment & Media Ledger',
+        title: 'July 2026 Social Post, Comment & Media Ledger',
         kind: 'Source-preservation ledger',
         status: 'Obtained public copies',
         availability: 'Public on this site',
         confidence: 'Claim-specific',
         href: './social-source-ledger.html',
-        summary: 'Preserves case-related images and relevant text from five July 5–7 Facebook threads with visible times, permalinks where recovered, local image copies, hashes, exposed-comment counts, and claim-level assessments.',
-        contents: ['East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
-        missingCompanions: ['Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
+        summary: 'Preserves case-related material from five July 5–7 Facebook threads plus a public Boogie LowDown post containing four screenshots attributed to Katie Hudson Seymour, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
+        contents: ['Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
+        referencedEvents: ['katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
+        missingCompanions: ['Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
         id: 'sea-tow-call',
@@ -439,6 +439,13 @@
         supporting: ['The raw publication label uses 3:48 PM.', 'WLOX describes the call as occurring around 4:00 PM.'],
         contradicting: [],
         unknown: ['Original system timestamp', 'Whether public labels use call start, transfer, or publication timing']
+      },
+      {
+        id: 'five-oclock-boarding-request',
+        narrative: 'Wyatt asked Nolan to board at 5:00 PM when it was time to leave.',
+        supporting: ['Four public screenshots show a conversation labeled Katie Hudson Seymour in which the sender uses the words “at five when it was time to leave.”'],
+        contradicting: ['The official GPS summary records MI4088BU beginning movement at 4:31 PM and continuing slowly through 5:24 PM.'],
+        unknown: ['Whether the sender is authenticated', 'Whether “at five” is rounded or recalled', 'Who directly heard the requests', 'Whether the statement refers to the same vessel movement']
       }
     ],
 
@@ -454,6 +461,7 @@
       { item: 'Strickland supplement', status: 'Referenced · not obtained', public: 'No', request: 'Not documented', priority: 'Medium' },
       { item: 'Original Sea Tow machine export and metadata', status: 'Released publication found; original metadata missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './transcripts/seatow-audio.html' },
       { item: 'Original viral-video file and metadata', status: 'Circulated copy found; original missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './media/2026-07-04-tracetin-fighting.mp4' },
+      { item: 'Authenticated Katie Hudson Seymour message export', status: 'Four public screenshots found; authenticated export missing', public: 'Partial', request: 'Not documented', priority: 'High', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
       { item: 'Complete Katie interview', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' },
       { item: 'Complete Wyatt and Bart interviews', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'High' },
       { item: 'Verified passenger manifests by vessel and time', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' }

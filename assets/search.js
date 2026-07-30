@@ -80,7 +80,7 @@
       const documentCopy = new DOMParser().parseFromString(html, 'text/html');
       documentCopy.querySelectorAll('main section[id]').forEach(section => {
         const title = section.querySelector('h2')?.textContent.trim() || section.id;
-        add('Master notes', title, section.textContent.replace(/\s+/g, ' ').trim(), `${href}#${section.id}`, 'Master Investigation Notes · Version 1.6');
+        add('Master notes', title, section.textContent.replace(/\s+/g, ' ').trim(), `${href}#${section.id}`, 'Master Investigation Notes · Version 1.7');
       });
     } catch (error) {
       // Timeline and archive records remain searchable when the document fetch fails.

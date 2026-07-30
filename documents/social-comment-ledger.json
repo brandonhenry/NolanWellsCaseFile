@@ -1,20 +1,21 @@
 {
-  "title": "July 5–7, 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.2",
-  "reviewedAt": "2026-07-29",
+  "title": "July 2026 Facebook search and source audit — social-source ledger",
+  "version": "1.3",
+  "reviewedAt": "2026-07-30",
   "parentPost": {
     "author": "Christine Wonsley",
     "published": "2026-07-05T17:54:00-05:00",
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook times authenticate publication/display time only, not media capture time or the time of a described event.",
+  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It separately preserves the caption and four attachments from a Boogie LowDown public post; that post’s comments were not audited. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
     {"source":"Will Polston active-search reel","exposed":"586 top-level comments; interface displayed 856; 20 photo URLs reviewed","url":"https://www.facebook.com/reel/895769156900111/"},
     {"source":"SMCC Athletics appeal","exposed":"10 top-level comments; 55 engagements displayed","url":"https://www.facebook.com/smccathletics/posts/pfbid02113aFAvazJm6pgdfcXb7yotj68N7DsjFadx6H2joDsuJJin9i3xAFFVyZfqjQCw1l"},
     {"source":"Anna C. Moore clarification","exposed":"10 top-level comments plus selected relevant replies","url":"https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl"},
+    {"source":"Boogie LowDown attributed-message post","exposed":"Exact caption and four image attachments preserved; comments not audited","url":"https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
   "records": [
@@ -319,6 +320,50 @@
       "grade": "C-ambiguous firsthand context",
       "status": "Relevant but referents unresolved",
       "assessment": "The comment may describe the writer’s boat remaining near a relevant area until 7:30 PM and another boat leaving around 5 PM, but the pronouns, vessel, exact location, and meaning of ‘where he was’ are not identified. It must not be converted into a Nolan sighting at 5:00 or 7:30 PM."
+    },
+    {
+      "id": "katie-hudson-seymour-messages",
+      "sourceType": "public post containing attributed private-message screenshots",
+      "poster": "Boogie LowDown",
+      "profileUrl": "https://www.facebook.com/marcust.hughes.7",
+      "published": null,
+      "reviewedAt": "2026-07-30",
+      "captionExcerpt": "reached out to me on 7/5/26 at around 11:30PM",
+      "captionContext": "The poster identifies the screenshots as a conversation with Warren Hudson’s mother, Katie Hudson Seymour, concerning Warren, Nolan, Wyatt, and the Horn Island incident.",
+      "claimedConversationTime": "2026-07-05 around 23:30 Central; screenshot interface displays SUN AT 11:26 PM",
+      "postUrl": "https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/",
+      "displayedConversationIdentity": {
+        "name": "Katie Hudson Seymour",
+        "handle": "@katie.s.hudson.10",
+        "authenticationStatus": "Not independently authenticated from the screenshots alone"
+      },
+      "messageContext": [
+        "The sender identifies herself as Warren’s mother, disputes the poster’s prior information, says Warren did not ride out or return with Nolan, and says Nolan was supposed to board Wyatt’s boat.",
+        "The sender says Wyatt repeatedly asked Nolan to get on the boat ‘at five when it was time to leave,’ but Nolan wanted to stay with a girl whose boat was parked next to Wyatt’s.",
+        "The sender says Wyatt asked several times within other people’s hearing, that Wyatt’s boat began filling with water, broke down, and was towed.",
+        "The sender says Warren was not on that boat, noticed Nolan was missing after returning to a friend’s house, and called Nolan’s mother, the Coast Guard, and the sheriff’s office.",
+        "The sender says she briefly saw Warren during a short trip with another son, had spent the day looking for Nolan, and repeatedly asks the poster to remove posts and family photographs.",
+        "The final visible recipient message asks whether the information and a description of the girl had been provided to law enforcement."
+      ],
+      "timelineClaim": {
+        "displayedTime": "Around 5:00 PM (reported)",
+        "claim": "The sender says Wyatt repeatedly asked Nolan to board at five when it was time to leave, and that Nolan declined because he wanted to stay with a girl.",
+        "classification": "Secondhand",
+        "confidence": "Low",
+        "conflict": "MI4088BU’s official GPS summary records movement beginning at 4:31 PM; the screenshot’s five-o’clock wording is approximate, unauthenticated, and not reconciled to that record."
+      },
+      "mediaUrl": "https://www.facebook.com/photo/?fbid=1669989237561712&set=pcb.1669989390895030",
+      "archivePath": "/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-1.jpg",
+      "sha256": "9491f9bc790cd9d38fdc2a987a86eac1ab3b59ce7f0fde3c82c6c4c0f19f83b6",
+      "dimensions": "720x1193",
+      "additionalMedia": [
+        {"sequence":2,"archivePath":"/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-2.jpg","sha256":"d6ef42f81f2fb104b5f8ed28d48ec7ba1bad7af402baad57300f543209200546","dimensions":"720x1272","mediaUrl":"https://www.facebook.com/photo/?fbid=1669989354228367&set=pcb.1669989390895030"},
+        {"sequence":3,"archivePath":"/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-3.jpg","sha256":"cb0b67a153bea1e3c58d1cbd5ae03c0289fe0beb6bc02f76aad0b2c9fa5e8a8d","dimensions":"720x1299","mediaUrl":"https://www.facebook.com/photo/?fbid=1669989314228371&set=pcb.1669989390895030"},
+        {"sequence":4,"archivePath":"/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-4.jpg","sha256":"758a245122ceb9dda048087cbf85fed62bbfa71306b2fdcabcdf5d1cd543dfb1","dimensions":"720x1284","mediaUrl":"https://www.facebook.com/photo/?fbid=1669989274228375&set=pcb.1669989390895030"}
+      ],
+      "grade": "C-attributed message screenshots",
+      "status": "Material source lead; sender and claims not independently authenticated",
+      "assessment": "The public post, caption context, four attachments, displayed conversation name, handle, and 11:26 PM interface marker are preserved. The screenshots establish what the post publicly attributed to the displayed sender. They do not independently authenticate the account holder, sender identity, phone ownership, complete conversation, message-date year, or truth and precision of the underlying claims. The five-o’clock wording is retained as a low-confidence secondhand timeline claim and does not override the verified 4:31 PM GPS movement."
     }
   ]
 }

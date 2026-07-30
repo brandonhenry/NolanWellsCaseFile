@@ -3,19 +3,35 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://justicefornolanwells.com/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <image:image>
       <image:loc>https://justicefornolanwells.com/assets/social-card.png</image:loc>
       <image:title>Nolan Wells Evidence File and Timeline</image:title>
     </image:image>
   </url>
   <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-07-29</lastmod></url>
   <url>
-    <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-07-29</lastmod>
+    <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-07-30</lastmod>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-1.jpg</image:loc>
+      <image:title>Attributed Katie Hudson Seymour message screenshot 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-2.jpg</image:loc>
+      <image:title>Attributed Katie Hudson Seymour message screenshot 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-3.jpg</image:loc>
+      <image:title>Attributed Katie Hudson Seymour message screenshot 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-4.jpg</image:loc>
+      <image:title>Attributed Katie Hudson Seymour message screenshot 4</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://justicefornolanwells.com/media/social-july-5-comments/2026-07-05-ashton-east-tip.jpg</image:loc>
       <image:title>Horn Island East Tip scene submitted July 5, 2026</image:title>

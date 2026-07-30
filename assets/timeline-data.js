@@ -418,6 +418,19 @@
         ]
       },
       {
+        id: 'katie-five-oclock-message', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM (reported)', precision: 'Approximate wording in attributed screenshots; not an authenticated event time',
+        title: 'Attributed message says Wyatt asked Nolan to board “at five”', type: 'secondhand', confidence: 'Low', masterAnchor: 'katie-message-source', location: 'hornIsland',
+        summary: 'Four screenshots in a public Boogie LowDown post show a conversation labeled Katie Hudson Seymour in which the sender says Wyatt repeatedly asked Nolan to board “at five when it was time to leave,” but Nolan wanted to stay with a girl.',
+        claims: ['The sender says the girl’s boat was parked next to Wyatt’s and that other people heard Wyatt ask Nolan several times.', 'The sender says Wyatt’s boat began filling with water, later broke down, and was towed.', 'The sender says Warren was not on Wyatt’s boat, later noticed Nolan was missing, and contacted Nolan’s mother, the Coast Guard, and the sheriff’s office.', 'The screenshots do not independently authenticate the sender, completeness, message date, or the underlying account. The five-o’clock wording is not reconciled with MI4088BU’s verified 4:31 PM movement.'],
+        media: { type: 'image', src: './media/social-source-audit/2026-07-05-katie-hudson-seymour-message-1.jpg', alt: 'First of four public screenshots showing a Messenger conversation labeled Katie Hudson Seymour', caption: 'Publicly posted attributed message screenshots · sender and event time not independently authenticated' },
+        sources: [
+          { label: 'Four-image social-source record', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
+          { label: 'Original Boogie LowDown post', href: 'https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/' },
+          { label: 'Master source assessment', href: `${master}#katie-message-source` },
+          { label: 'MDMR GPS summary · page 5', href: `${report}#page=5` }
+        ]
+      },
+      {
         id: 'lamp-passenger-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM', precision: 'Approximate secondhand account preserved in screenshots',
         title: 'Passenger account describes an “almost” fight', type: 'secondhand', confidence: 'Low', masterAnchor: 'social-source-review', location: 'hornIsland',
         summary: 'A screenshot of a public Matthew Lamp thread says an unnamed passenger was “pretty certain” Nolan was part of a group that was almost fighting around 5:00 PM; Lamp later says three people on his boat described it as among the group.',
@@ -674,6 +687,17 @@
         { source: 'Three reposts', position: 'Preserve the same thread in different screenshots; they are one source chain, not three witnesses.' },
         { source: 'Official GPS', position: 'MI4088BU began slow movement at 4:31 PM; the approximate 5 PM claim is not reconciled to that vessel movement.' },
         { source: 'Open conflict', position: 'The reported time may be approximate, may describe another vessel or group, or may be inaccurate. The public record cannot choose among those possibilities.' }
+      ]
+    },
+    'katie-five-oclock-message': {
+      confidenceReason: 'The four screenshots preserve one continuous message chain and the public poster’s attribution, but screenshots alone do not authenticate the sender or establish that the sender personally witnessed the reported five-o’clock exchange.',
+      unknowns: ['Whether the displayed account sent the messages, whether the sequence is complete, who directly witnessed Wyatt’s requests, whether “at five” is approximate, which vessel and girl are described, and why the wording differs from MI4088BU’s verified 4:31 PM movement.'],
+      needed: ['Authenticated message export with metadata, direct statement from the displayed sender, direct statements from Wyatt and the people said to have heard the requests, and reconciliation with the official vessel track.'],
+      sourceViews: [
+        { source: 'Attributed screenshots', position: 'Show the sender saying Wyatt repeatedly asked Nolan to board at five and that Nolan wanted to stay with a girl.' },
+        { source: 'Public poster', position: 'Identifies the displayed sender as Katie Hudson Seymour and dates the conversation to July 5 around 11:30 PM.' },
+        { source: 'Official GPS', position: 'Records MI4088BU beginning movement at 4:31 PM, so the reported five-o’clock wording cannot presently be treated as a precise departure time.' },
+        { source: 'Open conflict', position: 'The time may be rounded, recalled inaccurately, refer to a different moment or vessel, or otherwise lack context; the public record cannot choose among those explanations.' }
       ]
     },
     'lucas-aviz-last-contact': {

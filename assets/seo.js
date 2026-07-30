@@ -4,7 +4,7 @@
   const origin = 'https://justicefornolanwells.com';
   const siteName = 'Nolan Wells Evidence File';
   const socialImage = `${origin}/assets/social-card.png`;
-  const modified = '2026-07-28';
+  const modified = '2026-07-30';
   const rawPath = location.pathname.replace(/\/{2,}/g, '/');
   const cleanRouteTargets = {
     '/timeline': '/index.html',
@@ -57,9 +57,9 @@
     },
     '/people.html': {
       canonical: '/people',
-      title: 'People & Witness Accounts · Nolan Wells Evidence File',
-      description: 'Compare named public witness accounts, interviews, linked timeline events, and unresolved questions in the Nolan Wells case.',
-      type: 'CollectionPage'
+      title: 'Nolan Wells People, Witnesses & Sourced Entity Graph',
+      description: 'Explore people, witnesses, boats, media, agencies, and public claims connected to the July 3–6, 2026 Nolan Wells case in a sourced, confidence-labeled entity graph.',
+      type: 'Dataset'
     },
     '/boats.html': {
       canonical: '/boats',
@@ -173,13 +173,18 @@
       katie: ['Katie · Nolan Wells Witness Record', 'Publicly reported interactions, linked timeline events, and unresolved questions concerning Katie and Nolan Wells.'],
       'anna-moore': ['Anna C. Moore · Horn Island Video Source Record', 'Source links, public reporting, video provenance, and unresolved metadata concerning the circulated Horn Island recording.'],
       wyatt: ['Wyatt · Nolan Wells Vessel Evidence Record', 'Publicly reported vessel association, linked distress-call and GPS events, and unresolved passenger questions.'],
-      bart: ['Bart · Nolan Wells Boat and Waypoint Record', 'Public boat references, MI1295CB waypoint limitations, linked timeline events, and unresolved passenger questions.']
+      bart: ['Bart · Nolan Wells Boat and Waypoint Record', 'Public boat references, MI1295CB waypoint limitations, linked timeline events, and unresolved passenger questions.'],
+      'lucas-aviz': ['Lucas Aviz · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved account of an apparent July 4, 2026 conversation and unidentified boat sighting, with source limitations.'],
+      'stephen-ray': ['Stephen Ray · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved tentative east-end sighting claim, with its missing time and corroboration clearly stated.'],
+      'ivy-elizabeth': ['Ivy Elizabeth · Nolan Wells Video Source Record', 'A named public account concerning the Horn Island video sequence, visible boat occupants, and an explicitly uncertain background identification.'],
+      'katelynn-brochard': ['Katelynn Brochard · Nolan Wells Public Source Record', 'An ambiguous firsthand public reply concerning nearby boats and unresolved 5:00 and 7:30 PM referents.'],
+      'matthew-lamp': ['Matthew Lamp · Nolan Wells Public Source Record', 'A low-confidence secondhand public account attributed to unnamed passengers, preserved with source and timing limitations.']
     },
     boat: {
       mi4088bu: ['Triton MI4088BU · Nolan Wells GPS and Boat Record', 'Officially summarized 9:56, 11:14, 4:31, 5:25, and 5:44 GPS milestones, evidence limits, and passenger unknowns.'],
       mi1295cb: ['MI1295CB · Nolan Wells Boat and Waypoint Record', 'Published waypoints and source limitations for MI1295CB; the archive does not render them as a continuous vessel track.'],
-      'family-boat': ['Tracestin’s Family Boat · Nolan Wells Case Record', 'Witness-based vessel account, linked departure events, and unresolved identification and timing questions.'],
-      'private-assistance': ['Private Assistance Vessel · Nolan Wells Case Record', 'Publicly reported private assistance, linked Sea Tow and GPS events, and unresolved vessel and participant identification.']
+      'tracestin-family-boat': ['Tracestin’s Family Boat · Nolan Wells Case Record', 'Witness-based vessel account, linked departure events, and unresolved identification and timing questions.'],
+      'assisting-vessel': ['Private Assistance Vessel · Nolan Wells Case Record', 'Publicly reported private assistance, linked Sea Tow and GPS events, and unresolved vessel and participant identification.']
     }
   };
 

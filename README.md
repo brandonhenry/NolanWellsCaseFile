@@ -37,13 +37,14 @@ editorial methodology and corrections are available at `/about`.
 - `search.html` — global search across events, transcripts, documents, people,
   boats, questions, contradictions, coordinates, and master notes
 - `documents.html`, `people.html`, and `boats.html` — record indexes with
-  linked detail pages
+  linked detail pages; the people index includes a sourced, accessible entity
+  graph and relationship ledger
 - `last-contact.html`, `contradictions.html`, `evidence-tracker.html`,
   `coordinates.html`, `questions.html`, and `gaps.html` — focused evidence
   analysis tools
 - `assets/timeline-data.js` — shared event, evidence, source, map, and media data
-- `assets/archive-data.js` — shared archive records, matrices, trackers, and
-  file tree
+- `assets/archive-data.js` — shared archive records, people/entity relationships,
+  matrices, trackers, and file tree
 - `documents/master-investigation-notes.html` — canonical working evidence file
 - `documents/MDMR-MP2607-0016-report.pdf` — obtained official MDMR report
 - `transcripts/` — bundled public interview and call transcripts

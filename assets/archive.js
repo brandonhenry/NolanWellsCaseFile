@@ -80,8 +80,138 @@
   }
 
   function renderPeople() {
-    setHeading('Witness and person index', 'People', 'Person-centered records collect public accounts, linked events, interviews, and unanswered questions without inferring responsibility.');
-    content.innerHTML = `<section class="record-grid">${archive.people.map(person => `<article class="record-card"><div class="record-meta"><span>${escapeHtml(person.role)}</span><span>${person.eventIds.length} events</span></div><h2>${escapeHtml(person.name)}</h2><p>${escapeHtml(person.summary)}</p><div class="card-actions"><a href="./person.html?id=${encodeURIComponent(person.id)}">Open person record →</a></div></article>`).join('')}</section>`;
+    const graph = archive.entityGraph;
+    const statusMeta = {
+      official: { label: 'Official record', color: '#72a860' },
+      firsthand: { label: 'Firsthand public account', color: '#6ea7c9' },
+      reported: { label: 'Reported / incomplete', color: '#d36d2a' },
+      lead: { label: 'Unresolved lead', color: '#9b7bb6' }
+    };
+    const entityTypeMeta = {
+      person: { label: 'Person', color: '#d8d4cb' },
+      vessel: { label: 'Vessel', color: '#6ea7c9' },
+      media: { label: 'Media', color: '#d36d2a' },
+      agency: { label: 'Agency', color: '#72a860' },
+      record: { label: 'Record', color: '#4a8a7c' },
+      location: { label: 'Location', color: '#9b7bb6' }
+    };
+    const positions = {
+      nolan: [500, 300], warren: [340, 210], tracestin: [660, 210], katie: [345, 385],
+      'anna-moore': [895, 250], wyatt: [390, 65], bart: [105, 115], 'lucas-aviz': [205, 300],
+      'stephen-ray': [205, 455], 'ivy-elizabeth': [895, 370], 'katelynn-brochard': [650, 535],
+      'matthew-lamp': [350, 555], mi4088bu: [500, 105], mi1295cb: [105, 220], 'family-boat': [790, 150],
+      'viral-video-record': [790, 315], mdmr: [610, 50], 'sea-tow': [735, 70], 'horn-island': [500, 500]
+    };
+    const peopleNodes = archive.people.map(person => ({
+      id: person.id, name: person.name, type: 'person', detail: person.role,
+      href: `./person.html?id=${encodeURIComponent(person.id)}`
+    }));
+    const nodes = [...peopleNodes, ...graph.entities].filter(node => positions[node.id]);
+    const nodeById = Object.fromEntries(nodes.map(node => [node.id, node]));
+    const connectionCount = id => graph.relationships.filter(item => item.from === id || item.to === id).length;
+    const nodeMarkup = nodes.map(node => {
+      const [x, y] = positions[node.id];
+      const meta = entityTypeMeta[node.type] || entityTypeMeta.record;
+      const radius = node.id === 'nolan' ? 35 : node.type === 'person' ? 26 : 29;
+      return `<g class="graph-node graph-node--${escapeHtml(node.type)}" data-node-id="${escapeHtml(node.id)}" role="button" tabindex="0" aria-label="${escapeHtml(node.name)}, ${escapeHtml(meta.label)}, ${connectionCount(node.id)} documented connections" transform="translate(${x} ${y})" style="--node-tone:${meta.color}">
+        <circle r="${radius}"></circle><text class="graph-node-name" y="${radius + 18}" text-anchor="middle">${escapeHtml(node.name)}</text><text class="graph-node-type" y="${radius + 31}" text-anchor="middle">${escapeHtml(meta.label)}</text>
+      </g>`;
+    }).join('');
+    const edgeMarkup = graph.relationships.map(relationship => {
+      const start = positions[relationship.from];
+      const end = positions[relationship.to];
+      if (!start || !end) return '';
+      const meta = statusMeta[relationship.status] || statusMeta.lead;
+      return `<line class="graph-edge graph-edge--${escapeHtml(relationship.status)}" data-edge-id="${escapeHtml(relationship.id)}" data-from="${escapeHtml(relationship.from)}" data-to="${escapeHtml(relationship.to)}" x1="${start[0]}" y1="${start[1]}" x2="${end[0]}" y2="${end[1]}" style="--edge-tone:${meta.color}"><title>${escapeHtml(relationship.label)} · ${escapeHtml(meta.label)}</title></line>`;
+    }).join('');
+    const relationshipMarkup = graph.relationships.map(relationship => {
+      const from = nodeById[relationship.from];
+      const to = nodeById[relationship.to];
+      const meta = statusMeta[relationship.status] || statusMeta.lead;
+      return `<article class="relationship-row" data-relationship-id="${escapeHtml(relationship.id)}" data-from="${escapeHtml(relationship.from)}" data-to="${escapeHtml(relationship.to)}" style="--relationship-tone:${meta.color}">
+        <div class="relationship-parties"><strong>${escapeHtml(from?.name || relationship.from)}</strong><span aria-hidden="true">↔</span><strong>${escapeHtml(to?.name || relationship.to)}</strong></div>
+        <div><span class="relationship-label">${escapeHtml(relationship.label)}</span><p>${escapeHtml(relationship.claim)}</p></div>
+        <div class="relationship-source"><span>${escapeHtml(meta.label)} · ${escapeHtml(relationship.confidence)} confidence</span>${sourceLink(relationship.source, relationship.sourceLabel, 'quiet-link')}</div>
+      </article>`;
+    }).join('');
+    const personCard = person => `<article class="record-card person-record" data-person-search="${escapeHtml(`${person.name} ${person.role} ${person.summary}`.toLowerCase())}">
+      <div class="record-meta"><span>${escapeHtml(person.recordStatus || 'Published person record')}</span><span>${person.eventIds.length} event${person.eventIds.length === 1 ? '' : 's'}</span></div>
+      <h2>${escapeHtml(person.name)}</h2><p class="person-role">${escapeHtml(person.role)}</p><p>${escapeHtml(person.summary)}</p>
+      <div class="record-stats"><span>${connectionCount(person.id)} graph connection${connectionCount(person.id) === 1 ? '' : 's'}</span><span>${person.interviews.length} source link${person.interviews.length === 1 ? '' : 's'}</span></div>
+      <div class="card-actions"><a href="./person.html?id=${encodeURIComponent(person.id)}">Open person record →</a></div>
+    </article>`;
+
+    setHeading('Sourced people and entity index', 'People & Connections', 'A claim-level map of people, vessels, records, media, agencies, and locations in the July 3–6, 2026 evidence file. Every displayed connection has a stated source and confidence.');
+    content.innerHTML = `<section class="detail-summary people-summary"><div><p class="section-label">People tracked</p><strong>${archive.people.length}</strong><span>Named public records</span></div><div><p class="section-label">Relationships tracked</p><strong>${graph.relationships.length}</strong><span>Each with a source</span></div><div><p class="section-label">Last review</p><strong>${escapeHtml(graph.updated)}</strong><span>No relationship inferred from mutuals</span></div></section>
+    <section class="graph-section" aria-labelledby="connection-graph-title"><div class="graph-heading"><div><p class="section-label">Entity graph</p><h2 id="connection-graph-title">What the public record actually connects</h2></div><button class="graph-reset" id="graph-reset" type="button" hidden>Show all connections</button></div>
+      <p class="section-intro">Select a node to isolate its sourced connections. Lines show claims in the record—not guilt, responsibility, attendance, or a complete social network.</p>
+      <div class="graph-legend" aria-label="Relationship evidence legend">${Object.entries(statusMeta).map(([key, meta]) => `<span style="--legend-tone:${meta.color}"><i aria-hidden="true"></i>${escapeHtml(meta.label)}</span>`).join('')}</div><p class="graph-swipe-hint">Swipe horizontally to explore the full graph. The complete text ledger follows below.</p>
+      <div class="entity-graph-layout"><div class="entity-graph-scroll" tabindex="0" aria-label="Scrollable entity graph"><svg class="entity-graph" viewBox="0 0 1000 620" role="img" aria-labelledby="graph-svg-title graph-svg-description"><title id="graph-svg-title">Nolan Wells evidence entity graph</title><desc id="graph-svg-description">A source-labeled network of people, vessels, records, media, agencies, and locations. Use the relationship ledger below for a complete text version.</desc><g class="graph-edges">${edgeMarkup}</g><g class="graph-nodes">${nodeMarkup}</g></svg></div>
+      <aside class="graph-inspector" id="graph-inspector" aria-live="polite"><p class="section-label">How to read this</p><h3>Select any node</h3><p>The graph will isolate direct connections and the ledger below will show the precise claim, evidence class, confidence, and source.</p><ul><li>Social proximity is not proof of case involvement.</li><li>A source claimant is not automatically a witness.</li><li>An edge is only as strong as its displayed basis.</li></ul></aside></div>
+    </section>
+    <section class="relationship-section" aria-labelledby="relationship-ledger-title"><p class="section-label">Accessible source ledger</p><h2 id="relationship-ledger-title">Every displayed connection</h2><p class="section-intro" id="relationship-status">Showing all ${graph.relationships.length} sourced connections.</p><div class="relationship-list">${relationshipMarkup}</div></section>
+    <section class="people-register" aria-labelledby="people-register-title"><div class="register-heading"><div><p class="section-label">People register</p><h2 id="people-register-title">Named records and public leads</h2></div><div class="people-search"><label class="sr-only" for="people-search">Search people</label><input id="people-search" type="search" placeholder="Search names, roles, or notes" autocomplete="off"><span id="people-count">${archive.people.length} records</span></div></div><div class="record-grid" id="people-grid">${archive.people.map(personCard).join('')}</div><p class="empty-state people-empty" id="people-empty" hidden>No people records match that search.</p></section>
+    <section class="graph-method"><p class="section-label">Inclusion rule</p><h2>Known means named in a source—not proven present.</h2><p>People enter this register only when a case-relevant public source names them. Their displayed role is limited to what that source supports. Private relatives, scraped friend lists, mutual connections, and inferred family or attendance relationships are excluded.</p></section>`;
+
+    const graphNodes = [...content.querySelectorAll('.graph-node')];
+    const graphEdges = [...content.querySelectorAll('.graph-edge')];
+    const relationshipRows = [...content.querySelectorAll('.relationship-row')];
+    const inspector = document.getElementById('graph-inspector');
+    const reset = document.getElementById('graph-reset');
+    const relationshipStatus = document.getElementById('relationship-status');
+
+    function selectNode(id) {
+      const node = nodeById[id];
+      if (!node) return;
+      const connected = graph.relationships.filter(item => item.from === id || item.to === id);
+      const neighborIds = new Set([id, ...connected.flatMap(item => [item.from, item.to])]);
+      const connectedIds = new Set(connected.map(item => item.id));
+      graphNodes.forEach(item => item.classList.toggle('is-dimmed', !neighborIds.has(item.dataset.nodeId)));
+      graphNodes.forEach(item => item.classList.toggle('is-selected', item.dataset.nodeId === id));
+      graphEdges.forEach(item => item.classList.toggle('is-dimmed', !connectedIds.has(item.dataset.edgeId)));
+      graphEdges.forEach(item => item.classList.toggle('is-selected', connectedIds.has(item.dataset.edgeId)));
+      relationshipRows.forEach(item => { item.hidden = !connectedIds.has(item.dataset.relationshipId); });
+      const meta = entityTypeMeta[node.type] || entityTypeMeta.record;
+      inspector.innerHTML = `<p class="section-label">Selected ${escapeHtml(meta.label)}</p><h3>${escapeHtml(node.name)}</h3><p>${escapeHtml(node.detail)}</p><strong class="inspector-count">${connected.length} sourced connection${connected.length === 1 ? '' : 's'}</strong><a class="archive-link" href="${escapeHtml(node.href)}">Open record →</a>`;
+      relationshipStatus.textContent = `Showing ${connected.length} direct connection${connected.length === 1 ? '' : 's'} for ${node.name}.`;
+      reset.hidden = false;
+    }
+
+    function resetGraph() {
+      graphNodes.forEach(item => item.classList.remove('is-dimmed', 'is-selected'));
+      graphEdges.forEach(item => item.classList.remove('is-dimmed', 'is-selected'));
+      relationshipRows.forEach(item => { item.hidden = false; });
+      inspector.innerHTML = '<p class="section-label">How to read this</p><h3>Select any node</h3><p>The graph will isolate direct connections and the ledger below will show the precise claim, evidence class, confidence, and source.</p><ul><li>Social proximity is not proof of case involvement.</li><li>A source claimant is not automatically a witness.</li><li>An edge is only as strong as its displayed basis.</li></ul>';
+      relationshipStatus.textContent = `Showing all ${graph.relationships.length} sourced connections.`;
+      reset.hidden = true;
+    }
+
+    graphNodes.forEach(item => {
+      item.addEventListener('click', () => selectNode(item.dataset.nodeId));
+      item.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          selectNode(item.dataset.nodeId);
+        }
+      });
+    });
+    reset.addEventListener('click', resetGraph);
+
+    const peopleSearch = document.getElementById('people-search');
+    const peopleCount = document.getElementById('people-count');
+    const peopleEmpty = document.getElementById('people-empty');
+    const personCards = [...content.querySelectorAll('.person-record')];
+    peopleSearch.addEventListener('input', () => {
+      const query = peopleSearch.value.trim().toLowerCase();
+      let visible = 0;
+      personCards.forEach(card => {
+        const matches = !query || card.dataset.personSearch.includes(query);
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      peopleCount.textContent = `${visible} record${visible === 1 ? '' : 's'}`;
+      peopleEmpty.hidden = visible !== 0;
+    });
   }
 
   function renderPerson() {
@@ -94,7 +224,18 @@
     }
     setHeading(person.role, person.name, person.summary);
     const events = person.eventIds.map(eventId => evidence.events.find(event => event.id === eventId)).filter(Boolean);
-    content.innerHTML = `<section class="two-column-detail"><div><p class="section-label">Interviews and source pages</p><h2>Available sources</h2>${person.interviews.length ? `<div class="stacked-links">${person.interviews.map(item => sourceLink(item.href, item.label)).join('')}</div>` : '<p class="muted-copy">No complete named interview is bundled.</p>'}</div><div><p class="section-label">Open questions</p><h2>Still unresolved</h2>${list(person.questions, 'plain-list missing')}</div></section><section><p class="section-label">Timeline</p><h2>Events linked to this person</h2><div class="mini-event-list">${events.map(eventCard).join('')}</div></section>`;
+    const graph = archive.entityGraph;
+    const connections = graph.relationships.filter(item => item.from === person.id || item.to === person.id);
+    const allNodes = [
+      ...archive.people.map(item => ({ id: item.id, name: item.name })),
+      ...graph.entities
+    ];
+    const nameFor = id => allNodes.find(item => item.id === id)?.name || id;
+    const connectionList = connections.map(item => {
+      const otherId = item.from === person.id ? item.to : item.from;
+      return `<article class="person-connection"><div><span>${escapeHtml(item.status)} · ${escapeHtml(item.confidence)} confidence</span><h3>${escapeHtml(nameFor(otherId))}</h3><strong>${escapeHtml(item.label)}</strong></div><p>${escapeHtml(item.claim)}</p>${sourceLink(item.source, item.sourceLabel, 'quiet-link')}</article>`;
+    }).join('');
+    content.innerHTML = `<section class="detail-summary"><div><p class="section-label">Record status</p><strong>${escapeHtml(person.recordStatus || 'Published person record')}</strong><span>Role limited to stated sources</span></div><div><p class="section-label">Timeline links</p><strong>${events.length}</strong><span>Claim-level event records</span></div><div><p class="section-label">Graph links</p><strong>${connections.length}</strong><span>Sourced direct connections</span></div></section><section class="two-column-detail"><div><p class="section-label">Interviews and source pages</p><h2>Available sources</h2>${person.interviews.length ? `<div class="stacked-links">${person.interviews.map(item => sourceLink(item.href, item.label)).join('')}</div>` : '<p class="muted-copy">No complete named interview is bundled.</p>'}</div><div><p class="section-label">Open questions</p><h2>Still unresolved</h2>${list(person.questions, 'plain-list missing')}</div></section><section><p class="section-label">Entity graph</p><h2>Direct sourced connections</h2><p class="section-intro">These links state only the narrow sourced relationship shown. They do not imply responsibility or prove attendance.</p>${connections.length ? `<div class="person-connections">${connectionList}</div>` : '<p class="empty-state">No direct graph relationship has been published for this person.</p>'}<div class="primary-action">${sourceLink('./people.html', 'Open full people and entity graph')}</div></section><section><p class="section-label">Timeline</p><h2>Events linked to this person</h2><div class="mini-event-list">${events.map(eventCard).join('')}</div></section>`;
   }
 
   function renderBoats() {

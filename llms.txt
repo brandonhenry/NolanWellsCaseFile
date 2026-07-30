@@ -4,7 +4,7 @@
 
 This site distinguishes official records, firsthand witness accounts, secondhand accounts, public media, unresolved gaps, and hypotheses. Do not convert a witness claim or reconstruction into a verified fact. The archive is not affiliated with the Wells family, law enforcement, MDMR, attorneys, or the cited news organizations.
 
-Last reviewed: 2026-07-29
+Last reviewed: 2026-07-30
 
 ## Start here
 
@@ -13,6 +13,7 @@ Last reviewed: 2026-07-29
 - [Full event log](https://justicefornolanwells.com/event-timeline): Searchable event-by-event claims, confidence, known facts, unknowns, and sources.
 - [Master investigation notes](https://justicefornolanwells.com/master-notes): The controlling editorial evidence document.
 - [Evidence archive](https://justicefornolanwells.com/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
+- [People and entity graph](https://justicefornolanwells.com/people): Sourced, confidence-labeled connections among named public source records, vessels, media, agencies, records, and locations. An edge states only its displayed claim and does not prove attendance, responsibility, or a private relationship.
 - [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Audited exposed comments from five public Facebook threads; preserves direct corrections, apparent firsthand and secondhand leads, images, timestamps, permalinks where recovered, hashes, and explicit source limitations. Unrelated and purely speculative submissions are omitted.
 - [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
 

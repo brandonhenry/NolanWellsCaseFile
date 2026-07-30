@@ -224,8 +224,90 @@
         eventIds: ['early-afternoon', 'gps-movement-431'],
         interviews: [],
         questions: ['What was Bart’s complete July 4, 2026 timeline?', 'Who occupied MI1295CB?', 'What do the individual waypoints represent?']
+      },
+      {
+        id: 'lucas-aviz',
+        name: 'Lucas Aviz',
+        role: 'Screenshot-preserved source claimant',
+        summary: 'A derivative screenshot attributes to Aviz an apparent firsthand conversation with Nolan and a later boat sighting around 2:00–2:30 PM. The parent post and direct comment permalink have not been recovered.',
+        eventIds: ['lucas-aviz-last-contact'],
+        interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#lucas-aviz-last-contact' }],
+        questions: ['Can the original parent thread and direct comment be recovered?', 'Which white center-console boat did he describe?', 'Who else heard or saw the reported interaction?'],
+        recordStatus: 'Low-confidence public lead'
+      },
+      {
+        id: 'stephen-ray',
+        name: 'Stephen Ray',
+        role: 'Screenshot-preserved source claimant',
+        summary: 'A derivative screenshot preserves Ray’s expressly tentative statement that “we” may have seen Nolan on an east-end sand dune. It contains no exact time or independent identification.',
+        eventIds: ['stephen-ray-east-end-sighting'],
+        interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#stephen-ray-sighting' }],
+        questions: ['Who did “we” refer to?', 'What was the time and precise location?', 'What observation supported the identification?'],
+        recordStatus: 'Low-confidence public lead'
+      },
+      {
+        id: 'ivy-elizabeth',
+        name: 'Ivy Elizabeth',
+        role: 'Named public source claimant',
+        summary: 'In a direct public reply, Ivy describes the altercation-video sequence, says she and her husband appear on a boat, and makes an explicitly uncertain identification of a background figure resembling Nolan.',
+        eventIds: ['ivy-video-account'],
+        interviews: [{ label: 'Direct reply and assessment', href: './social-source-ledger.html#ivy-video-account' }],
+        questions: ['Which vessel was she aboard?', 'Who was the background figure?', 'Can the original media metadata authenticate the sequence and time?'],
+        recordStatus: 'Named firsthand account'
+      },
+      {
+        id: 'katelynn-brochard',
+        name: 'Katelynn Brochard',
+        role: 'Named public source claimant',
+        summary: 'A direct public reply mentions nearby boats, approximately 5:00 PM, and 7:30 PM, but does not identify the vessel, location, or pronoun referents. It is retained as context—not a Nolan sighting.',
+        eventIds: ['katelynn-nearby-boats-account'],
+        interviews: [{ label: 'Direct reply and assessment', href: './social-source-ledger.html#katelynn-boats-account' }],
+        questions: ['What boat and location did “we” refer to?', 'Who did “they” refer to?', 'What did “where he was” mean?'],
+        recordStatus: 'Ambiguous firsthand context'
+      },
+      {
+        id: 'matthew-lamp',
+        name: 'Matthew Lamp',
+        role: 'Secondhand public source claimant',
+        summary: 'Screenshots attribute to Lamp a secondhand account from unnamed passengers about an “almost” fight and a separate boat departure. The original thread and direct passenger statements are not in the archive.',
+        eventIds: ['lamp-passenger-account'],
+        interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#matthew-lamp-lead' }],
+        questions: ['Who were the unnamed passengers?', 'What vessel were they on?', 'Can the original thread and exact event time be authenticated?'],
+        recordStatus: 'Low-confidence secondhand lead'
       }
     ],
+
+    entityGraph: {
+      updated: 'July 30, 2026',
+      entities: [
+        { id: 'mi4088bu', name: 'MI4088BU', type: 'vessel', detail: 'GPS-tracked Triton', href: './boat.html?id=mi4088bu' },
+        { id: 'mi1295cb', name: 'MI1295CB', type: 'vessel', detail: 'Waypoint-only vessel record', href: './boat.html?id=mi1295cb' },
+        { id: 'family-boat', name: 'Family boat', type: 'vessel', detail: 'Tracestin’s witness-described vessel', href: './boat.html?id=tracestin-family-boat' },
+        { id: 'viral-video-record', name: 'Viral video', type: 'media', detail: 'Circulated Horn Island clip', href: './document.html?id=viral-video' },
+        { id: 'mdmr', name: 'MDMR', type: 'agency', detail: 'Official marine-resources record', href: './document.html?id=mdmr-report' },
+        { id: 'sea-tow', name: 'Sea Tow call', type: 'record', detail: 'Released distress-call publication', href: './document.html?id=sea-tow-call' },
+        { id: 'horn-island', name: 'Horn Island', type: 'location', detail: 'July 4 gathering and search area', href: './coordinates.html' }
+      ],
+      relationships: [
+        { id: 'nolan-warren', from: 'nolan', to: 'warren', label: 'Friends / same trip group', status: 'firsthand', confidence: 'Medium', claim: 'Warren publicly describes traveling with Nolan and his own interactions with him.', sourceLabel: 'Warren interview · Part 1', source: './transcripts/warren-part-1.html' },
+        { id: 'nolan-tracestin', from: 'nolan', to: 'tracestin', label: 'Friends / island contact', status: 'firsthand', confidence: 'Medium', claim: 'Tracestin publicly describes anchoring calls and spending much of July 4 with Nolan.', sourceLabel: 'Tracestin interview · Part 5', source: './transcripts/tracestin-part-5.html' },
+        { id: 'nolan-katie', from: 'nolan', to: 'katie', label: 'Reported afternoon interaction', status: 'reported', confidence: 'Low', claim: 'Public accounts place Nolan interacting with Katie; their exact conversation and last-contact time remain unresolved.', sourceLabel: 'Master notes · Katie', source: './documents/master-investigation-notes.html#katie' },
+        { id: 'nolan-mi4088bu', from: 'nolan', to: 'mi4088bu', label: 'Reported outbound passenger', status: 'reported', confidence: 'Medium', claim: 'Witness and official-summary material associate Nolan with the outbound boat; GPS alone does not identify passengers.', sourceLabel: 'Master notes · GPS limits', source: './documents/master-investigation-notes.html#what-gps-does-not-tell-us' },
+        { id: 'warren-mi4088bu', from: 'warren', to: 'mi4088bu', label: 'Publicly described trip vessel', status: 'firsthand', confidence: 'Medium', claim: 'Warren’s public interview associates his July 4 travel account with Nolan’s original boat group.', sourceLabel: 'Warren interview · Part 1', source: './transcripts/warren-part-1.html' },
+        { id: 'tracestin-family-boat', from: 'tracestin', to: 'family-boat', label: 'Reported family travel vessel', status: 'firsthand', confidence: 'Medium', claim: 'Tracestin says he traveled with family on his uncle’s separate vessel and left on it.', sourceLabel: 'Tracestin interview · Part 5', source: './transcripts/tracestin-part-5.html' },
+        { id: 'tracestin-video', from: 'tracestin', to: 'viral-video-record', label: 'Identifies his yelling voice', status: 'firsthand', confidence: 'Medium', claim: 'Tracestin publicly identifies himself as the person yelling in the circulated clip.', sourceLabel: 'Viral-video evidence record', source: './event-timeline.html#viral-video' },
+        { id: 'anna-video', from: 'anna-moore', to: 'viral-video-record', label: 'Recorded / supplied clip', status: 'firsthand', confidence: 'High', claim: 'Moore’s direct clarification establishes her ownership and handling of the clip while denying that she saw Nolan.', sourceLabel: 'Anna C. Moore clarification', source: './social-source-ledger.html#anna-clarification' },
+        { id: 'ivy-video', from: 'ivy-elizabeth', to: 'viral-video-record', label: 'Describes scene and occupants', status: 'firsthand', confidence: 'Medium', claim: 'Ivy says she and her husband appear on a boat in the scene and describes the post-altercation sequence.', sourceLabel: 'Ivy direct reply', source: './social-source-ledger.html#ivy-video-account' },
+        { id: 'wyatt-mi4088bu', from: 'wyatt', to: 'mi4088bu', label: 'Associated with distressed vessel', status: 'reported', confidence: 'Medium', claim: 'Public accounts associate Wyatt with the distressed Triton; the complete passenger record is not public.', sourceLabel: 'Sea Tow evidence section', source: './event-timeline.html#sea-tow-call' },
+        { id: 'bart-mi1295cb', from: 'bart', to: 'mi1295cb', label: 'Named vessel owner', status: 'official', confidence: 'High', claim: 'The working official record associates Bart with MI1295CB waypoints; it does not supply a continuous track.', sourceLabel: 'MDMR report', source: './documents/MDMR-MP2607-0016-report.pdf' },
+        { id: 'lucas-nolan', from: 'lucas-aviz', to: 'nolan', label: 'Claims conversation / sighting', status: 'lead', confidence: 'Low', claim: 'A derivative screenshot attributes a 2:00–2:30 PM conversation and boat sighting to Aviz.', sourceLabel: 'Preserved Lucas Aviz record', source: './social-source-ledger.html#lucas-aviz-last-contact' },
+        { id: 'stephen-nolan', from: 'stephen-ray', to: 'nolan', label: 'Tentative sighting claim', status: 'lead', confidence: 'Low', claim: 'A screenshot preserves an expressly tentative east-end sighting statement.', sourceLabel: 'Preserved Stephen Ray record', source: './social-source-ledger.html#stephen-ray-sighting' },
+        { id: 'matthew-horn-island', from: 'matthew-lamp', to: 'horn-island', label: 'Relays unnamed-passenger account', status: 'lead', confidence: 'Low', claim: 'Lamp relays an account attributed to unnamed passengers; this does not establish his own attendance.', sourceLabel: 'Preserved Matthew Lamp record', source: './social-source-ledger.html#matthew-lamp-lead' },
+        { id: 'katelynn-horn-island', from: 'katelynn-brochard', to: 'horn-island', label: 'Describes nearby-boats context', status: 'lead', confidence: 'Low', claim: 'Her wording suggests relevant nearby-boats context, but exact vessel, location, and referents are unresolved.', sourceLabel: 'Katelynn direct reply', source: './social-source-ledger.html#katelynn-boats-account' },
+        { id: 'mdmr-mi4088bu', from: 'mdmr', to: 'mi4088bu', label: 'Official GPS chronology', status: 'official', confidence: 'High', claim: 'The MDMR report publishes summarized GPS milestones for MI4088BU.', sourceLabel: 'MDMR report · pages 5 and 7', source: './documents/MDMR-MP2607-0016-report.pdf#page=5' },
+        { id: 'seatow-mi4088bu', from: 'sea-tow', to: 'mi4088bu', label: 'Distress-call vessel', status: 'official', confidence: 'High', claim: 'The released call concerns the distressed vessel and reports water ingress, pump failure, and private help.', sourceLabel: 'Sea Tow call and transcript', source: './transcripts/seatow-audio.html' }
+      ]
+    },
 
     boats: [
       {

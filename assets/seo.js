@@ -175,6 +175,7 @@
       'anna-moore': ['Anna C. Moore · Horn Island Video Source Record', 'Source links, public reporting, video provenance, and unresolved metadata concerning the circulated Horn Island recording.'],
       wyatt: ['Wyatt · Nolan Wells Vessel Evidence Record', 'Publicly reported vessel association, linked distress-call and GPS events, and unresolved passenger questions.'],
       bart: ['Bart · Nolan Wells Boat and Waypoint Record', 'Public boat references, MI1295CB waypoint limitations, linked timeline events, and unresolved passenger questions.'],
+      'morgan-seymour': ['Morgan Seymour · Nolan Wells Reported Friend Record', 'Media reporting and a visible social-platform listing identify Morgan Seymour as a reported friend of Nolan Wells; July 4 boat and island attendance remain unverified.'],
       'lucas-aviz': ['Lucas Aviz · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved account of an apparent July 4, 2026 conversation and unidentified boat sighting, with source limitations.'],
       'stephen-ray': ['Stephen Ray · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved tentative east-end sighting claim, with its missing time and corroboration clearly stated.'],
       'ivy-elizabeth': ['Ivy Elizabeth · Nolan Wells Video Source Record', 'A named public account concerning the Horn Island video sequence, visible boat occupants, and an explicitly uncertain background identification.'],

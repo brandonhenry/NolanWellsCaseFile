@@ -239,6 +239,20 @@
         questions: ['What was Bart’s complete July 4, 2026 timeline?', 'Who occupied MI1295CB?', 'What do the individual waypoints represent?']
       },
       {
+        id: 'morgan-seymour',
+        name: 'Morgan Seymour',
+        role: 'Reported friend; July 4 attendance unresolved',
+        summary: 'Atlanta Black Star identifies Seymour among Nolan’s friends and says its reporter sought comment from him. Jack Jordan’s visible Facebook friends page also listed Seymour’s supplied profile. Neither source independently establishes that Seymour was aboard a July 4 vessel or present at Horn Island.',
+        eventIds: [],
+        interviews: [
+          { label: 'Atlanta Black Star reporting', href: 'https://atlantablackstar.com/2026/07/07/nolan-wells-grandfather-heightens-suspicions-about-foul-play-with-cryptic-social-media-posts/' },
+          { label: 'Public Facebook profile', href: 'https://www.facebook.com/profile.php?id=61559199283116' },
+          { label: 'Jack Jordan friends-page source', href: 'https://www.facebook.com/jack.jordan.650551/friends_all' }
+        ],
+        questions: ['Was Seymour aboard any vessel traveling to or from Horn Island on July 4, 2026?', 'Which boat, departure, or passenger source establishes his location?', 'Is he visible in authenticated July 4 media?', 'Did he provide a statement to investigators or news media?'],
+        recordStatus: 'Reported friend; attendance unverified'
+      },
+      {
         id: 'lucas-aviz',
         name: 'Lucas Aviz',
         role: 'Screenshot-preserved source claimant',
@@ -304,6 +318,7 @@
       relationships: [
         { id: 'nolan-warren', from: 'nolan', to: 'warren', label: 'Friends / same trip group', status: 'firsthand', confidence: 'Medium', claim: 'Warren publicly describes traveling with Nolan and his own interactions with him.', sourceLabel: 'Warren interview · Part 1', source: './transcripts/warren-part-1.html' },
         { id: 'nolan-christine', from: 'nolan', to: 'christine-wonsley', label: 'Mother / public appeal source', status: 'firsthand', confidence: 'High', claim: 'The public appeal and source record identify Wonsley as Nolan’s mother and document her role publishing the July 5 missing-person appeal.', sourceLabel: 'Christine Wonsley appeal audit', source: './social-source-ledger.html#parent-heading' },
+        { id: 'nolan-morgan', from: 'nolan', to: 'morgan-seymour', label: 'Reported friend', status: 'reported', confidence: 'Medium', claim: 'Atlanta Black Star identifies Morgan Seymour among Nolan’s friends and says its reporter sought comment; the report does not establish July 4 boat or island attendance.', sourceLabel: 'Atlanta Black Star · July 7', source: 'https://atlantablackstar.com/2026/07/07/nolan-wells-grandfather-heightens-suspicions-about-foul-play-with-cryptic-social-media-posts/' },
         { id: 'nolan-tracestin', from: 'nolan', to: 'tracestin', label: 'Friends / island contact', status: 'firsthand', confidence: 'Medium', claim: 'Tracestin publicly describes anchoring calls and spending much of July 4 with Nolan.', sourceLabel: 'Tracestin interview · Part 5', source: './transcripts/tracestin-part-5.html' },
         { id: 'nolan-katie', from: 'nolan', to: 'katie', label: 'Reported afternoon interaction', status: 'reported', confidence: 'Low', claim: 'Public accounts place Nolan interacting with Katie; their exact conversation and last-contact time remain unresolved.', sourceLabel: 'Master notes · Katie', source: './documents/master-investigation-notes.html#katie' },
         { id: 'nolan-mi4088bu', from: 'nolan', to: 'mi4088bu', label: 'Reported outbound passenger', status: 'reported', confidence: 'Medium', claim: 'Witness and official-summary material associate Nolan with the outbound boat; GPS alone does not identify passengers.', sourceLabel: 'Master notes · GPS limits', source: './documents/master-investigation-notes.html#what-gps-does-not-tell-us' },
@@ -339,7 +354,8 @@
         { personId: 'katie', displayName: 'Katie McCormack', profile: 'https://www.facebook.com/katie.mccormack.8' },
         { personId: 'warren', displayName: 'Warren Hudson', profile: 'https://www.facebook.com/warren.hudson.230364' },
         { personId: 'wyatt', displayName: 'Wyatt Pyron', profile: 'https://www.facebook.com/profile.php?id=100079782690124' },
-        { personId: 'bart', displayName: 'Bart Edmiston', profile: 'https://www.facebook.com/bart.edmiston.1' }
+        { personId: 'bart', displayName: 'Bart Edmiston', profile: 'https://www.facebook.com/bart.edmiston.1' },
+        { personId: 'morgan-seymour', displayName: 'Morgan Seymour', profile: 'https://www.facebook.com/profile.php?id=61559199283116' }
       ]
     },
 

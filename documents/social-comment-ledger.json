@@ -1,14 +1,14 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.3",
-  "reviewedAt": "2026-07-30",
+  "version": "1.4",
+  "reviewedAt": "2026-07-31",
   "parentPost": {
     "author": "Christine Wonsley",
     "published": "2026-07-05T17:54:00-05:00",
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It separately preserves the caption and four attachments from a Boogie LowDown public post; that post’s comments were not audited. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, or the time and truth of a described event.",
+  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It separately preserves the caption and four attachments from a Boogie LowDown public post and the caption and five attachments from a Natalya King public post; those two posts’ full comment trees were not audited. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
@@ -16,6 +16,7 @@
     {"source":"SMCC Athletics appeal","exposed":"10 top-level comments; 55 engagements displayed","url":"https://www.facebook.com/smccathletics/posts/pfbid02113aFAvazJm6pgdfcXb7yotj68N7DsjFadx6H2joDsuJJin9i3xAFFVyZfqjQCw1l"},
     {"source":"Anna C. Moore clarification","exposed":"10 top-level comments plus selected relevant replies","url":"https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl"},
     {"source":"Boogie LowDown attributed-message post","exposed":"Exact caption and four image attachments preserved; comments not audited","url":"https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/"},
+    {"source":"Natalya King attributed-witness post","exposed":"Exact post context and five image attachments preserved; exposed comments checked for a direct Faith Lauren reply, but the full 250-comment tree was not audited","url":"https://www.facebook.com/richedreams/posts/pfbid0cunvci1mCDcYCTVXG3smk2jQXYDR24hRV5LunmQ6kggV5UBitH9e8Dx9aPmLbopPl"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
   "records": [
@@ -320,6 +321,49 @@
       "grade": "C-ambiguous firsthand context",
       "status": "Relevant but referents unresolved",
       "assessment": "The comment may describe the writer’s boat remaining near a relevant area until 7:30 PM and another boat leaving around 5 PM, but the pronouns, vessel, exact location, and meaning of ‘where he was’ are not identified. It must not be converted into a Nolan sighting at 5:00 or 7:30 PM."
+    },
+    {
+      "id": "faith-lauren-reporting-intent",
+      "sourceType": "public post containing attributed social-media screenshots",
+      "poster": "Natalya King",
+      "profileUrl": "https://www.facebook.com/richedreams",
+      "published": null,
+      "reviewedAt": "2026-07-31",
+      "postUrl": "https://www.facebook.com/richedreams/posts/pfbid0cunvci1mCDcYCTVXG3smk2jQXYDR24hRV5LunmQ6kggV5UBitH9e8Dx9aPmLbopPl",
+      "captionContext": "The poster attributes the attached statements to Faith Lauren, describes her as a passenger on a nearby boat who witnessed an altercation involving Nolan, and summarizes alleged later contact with Erick Alcantara. The caption is a derivative characterization, not independent corroboration.",
+      "displayedAccount": {
+        "handle": "faithlaurennx",
+        "authenticationStatus": "The attached first-person statements are preserved as displayed; ownership and the speaker’s legal identity are not independently authenticated."
+      },
+      "embeddedMessageTime": "July 7 at 1:08 AM; year inferred as 2026 from case context and not displayed beside the message",
+      "messageContext": [
+        "A displayed first-person statement alleges a dispute over Nolan’s phone, an argument continuing on shore, a physical confrontation involving several people, and a young woman asking them to stop.",
+        "The displayed speaker says her group left as the situation worsened and does not claim to know what happened after leaving.",
+        "A separate Instagram message screenshot marked July 7 at 1:08 AM says the sender was on another boat, witnessed an argument, intended to contact police, and says she and her husband had limited footage showing an argument.",
+        "The message uses future-tense language about going to police and submitting information. It does not establish that a law-enforcement agency received the account or footage.",
+        "Other attachments display an unavailable recipient profile and a statement defending the displayed account’s authenticity; neither independently proves identity, control, blocking, delivery, or police receipt."
+      ],
+      "reportingStatus": {
+        "established": "A screenshot displays a written allegation and an expressed intention to report by July 7 at 1:08 AM.",
+        "notEstablished": "No preserved receipt, agency record, case supplement, submission confirmation, or authenticated native message export establishes when or whether police received it."
+      },
+      "timelineClaim": {
+        "displayedTime": "July 7, 2026 at 1:08 AM (year inferred from case context)",
+        "claim": "A screenshot records an alleged witness’s intention to provide an account and footage to police.",
+        "classification": "Media record / attributed firsthand lead",
+        "confidence": "Low",
+        "limitation": "The screenshot records intent, not confirmed police receipt, and does not authenticate the account owner, sender, recipient, delivery, or original footage."
+      },
+      "media": [
+        {"sequence":1,"description":"Portrait/source-identification image; does not prove Horn Island presence","archivePath":"/media/social-source-audit/2026-07-faith-lauren-portrait-post-image.jpg","sha256":"a11bdc9df97a671390eb170bcbe1b39c7cccaa30c485e3dca9daeda07e0dabb2","dimensions":"960x1302","mediaUrl":"https://www.facebook.com/photo/?fbid=10174940575565453&set=pcb.10174940707335453"},
+        {"sequence":2,"description":"Displayed first-person witness statement","archivePath":"/media/social-source-audit/2026-07-faith-lauren-witness-statement.jpg","sha256":"d6c77d1197b7ce5fa81aab09d80933cf30edaeee48795611bda68663f3866013","dimensions":"720x1172","mediaUrl":"https://www.facebook.com/photo/?fbid=10174940575820453&set=pcb.10174940707335453"},
+        {"sequence":3,"description":"July 7 at 1:08 AM reporting-intent message","archivePath":"/media/social-source-audit/2026-07-07-faith-lauren-erick-message-0108.jpg","sha256":"5ae9a4e2be9a63114ae80052e70312d717ded858eb003f3a39735ec92c465b9f","dimensions":"720x1278","mediaUrl":"https://www.facebook.com/photo/?fbid=10174940575895453&set=pcb.10174940707335453"},
+        {"sequence":4,"description":"Unavailable recipient profile and blocking allegation","archivePath":"/media/social-source-audit/2026-07-faith-lauren-erick-user-not-found.jpg","sha256":"b23b771802ad8db0f8c6ce50f5b067610edb7e24aeaee39d2d797a725b7dddd6","dimensions":"720x1280","mediaUrl":"https://www.facebook.com/photo/?fbid=10174940575595453&set=pcb.10174940707335453"},
+        {"sequence":5,"description":"Displayed response to account-authenticity criticism","archivePath":"/media/social-source-audit/2026-07-faith-lauren-profile-authenticity-statement.jpg","sha256":"c8f8cab1dfa4c9ab54af6809705db2e83e6a18fc1fa2c6387b434dd574101597","dimensions":"720x1227","mediaUrl":"https://www.facebook.com/photo/?fbid=10174940576040453&set=pcb.10174940707335453"}
+      ],
+      "grade": "C-attributed firsthand lead",
+      "status": "Material reporting lead; identity, underlying allegations, footage, submission, and police receipt unverified",
+      "assessment": "The public post and all five attachments are preserved. The embedded 1:08 AM message is evidence that the displayed sender expressed an intention to report information; future-tense wording does not show that police possessed it then or later. A separate displayed statement ambiguously says the account was provided or would be provided. No direct Faith Lauren comment permalink was exposed during this review, and the post’s full comment tree was not audited."
     },
     {
       "id": "katie-hudson-seymour-messages",

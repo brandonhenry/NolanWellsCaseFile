@@ -7,7 +7,7 @@
   window.NOLAN_EVIDENCE = {
     meta: {
       title: 'Nolan Wells',
-      range: 'July 3–6, 2026',
+      range: 'July 3–7, 2026',
       description: 'Nolan Wells, 18, was reported missing after a gathering at Horn Island on July 4, 2026. His body was recovered near the island’s northwest tip on the morning of July 6, 2026. This timeline follows the official GPS record, search activity, witness accounts, and the unresolved period before his boat left the island.',
       opening: {
         location: 'recovery',
@@ -519,6 +519,18 @@
         ]
       },
       {
+        id: 'faith-lauren-reporting-intent', date: 'July 7, 2026', dateLong: 'Tuesday · July 7, 2026', time: '1:08 AM (displayed)', precision: 'Screenshot-displayed time; year inferred from 2026 case context; identity, delivery, and native metadata unauthenticated',
+        title: 'Screenshot records an alleged witness’s intent to report', type: 'media', confidence: 'Low', masterAnchor: 'faith-lauren-source', location: null,
+        summary: 'A public-post attachment displays a July 7 at 1:08 AM message in which the sender says she witnessed an argument from another boat, had limited footage with her husband, and intended to take information to police.',
+        claims: ['A separate displayed first-person statement alleges a phone dispute, an argument continuing ashore, a physical confrontation involving multiple people, and a young woman asking them to stop.', 'The 1:08 AM message uses future-tense language about going to police and submitting information; it does not prove an agency had received the account or footage.', 'The displayed account, sender, recipient, message delivery, year label, underlying allegations, and footage provenance are not independently authenticated.'],
+        media: { type: 'image', src: './media/social-source-audit/2026-07-07-faith-lauren-erick-message-0108.jpg', alt: 'Publicly posted screenshot displaying July 7 at 1:08 AM and an alleged witness’s stated intention to report information', caption: 'Displayed July 7 · 1:08 AM · reporting intent preserved; police receipt unverified' },
+        sources: [
+          { label: 'Five-image social-source record', href: './social-source-ledger.html#faith-lauren-source' },
+          { label: 'Original Natalya King public post', href: 'https://www.facebook.com/richedreams/posts/pfbid0cunvci1mCDcYCTVXG3smk2jQXYDR24hRV5LunmQ6kggV5UBitH9e8Dx9aPmLbopPl' },
+          { label: 'Master source assessment', href: `${master}#faith-lauren-source` }
+        ]
+      },
+      {
         id: 'anna-clarification', date: 'July 7, 2026', dateLong: 'Tuesday · July 7, 2026', time: '8:19 AM', precision: 'Visible Facebook publication time; refers to earlier media',
         title: 'Anna C. Moore publishes a direct clarification', type: 'firsthand', confidence: 'High', masterAnchor: 'anna', location: null,
         summary: 'Moore directly states that she never saw Nolan and never said the argument heard in her recording involved him.',
@@ -729,6 +741,18 @@
       confidenceReason: 'The writer appears to speak from personal presence, but the pronouns, boat, position, and relationship between the stated times are unresolved.',
       unknowns: ['Who “we” and “they” were, which vessel left around 5:00 PM, the exact position, and what “where he was” meant.'],
       needed: ['Clarifying statement, boat identification, source images, coordinates, and corroborating accounts.']
+    },
+    'faith-lauren-reporting-intent': {
+      confidenceReason: 'The public post and five attachments preserve the displayed statements and 1:08 AM interface label, but they do not authenticate the account owner, participants, delivery, underlying events, footage, or police receipt.',
+      unknowns: ['Who controlled the displayed account and sent the message', 'Whether the recipient received or responded to it', 'Whether and when any law-enforcement agency received the account or footage', 'The original footage, native message export, metadata, and complete conversation', 'The identities of the people allegedly involved and the exact time and location of the described altercation'],
+      needed: ['An authenticated direct statement from the displayed speaker', 'Police evidence receipt, report supplement, CAD entry, or submission confirmation', 'Native message export preserving sender, recipient, year, delivery, and timestamps', 'Original video with metadata and complete surrounding footage', 'Corroborating witness interviews'],
+      sourceViews: [
+        { source: 'July 7 · 1:08 AM screenshot', position: 'Shows a sender expressing an intention to report and claiming that she and her husband had limited footage; future-tense wording does not prove submission.' },
+        { source: 'Displayed faithlaurennx statement', position: 'Presents the altercation allegations as personal observation but uses ambiguous wording about whether an account had been or would be provided to investigators.' },
+        { source: 'Natalya King caption', position: 'Summarizes the screenshots and says footage was taken to police; that later derivative claim is not a receipt record.' },
+        { source: 'Obtained official packet', position: 'The records currently bundled on this site do not establish receipt of this alleged witness account or footage.' },
+        { source: 'Open status', position: 'By the displayed time, the allegation and intent to report existed in written form; actual police possession remains unresolved.' }
+      ]
     },
     'anna-clarification': {
       confidenceReason: 'This is Anna C. Moore’s direct public statement about what she did and did not claim; it does not independently prove the earlier scene.',

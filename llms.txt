@@ -4,7 +4,7 @@
 
 This site distinguishes official records, firsthand witness accounts, secondhand accounts, public media, unresolved gaps, and hypotheses. Do not convert a witness claim or reconstruction into a verified fact. The archive is not affiliated with the Wells family, law enforcement, MDMR, attorneys, or the cited news organizations.
 
-Last reviewed: 2026-07-30
+Last reviewed: 2026-07-31
 
 ## Start here
 
@@ -14,7 +14,7 @@ Last reviewed: 2026-07-30
 - [Master investigation notes](https://justicefornolanwells.com/master-notes): The controlling editorial evidence document.
 - [Evidence archive](https://justicefornolanwells.com/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
 - [People and entity graph](https://justicefornolanwells.com/people): Sourced, confidence-labeled connections among named public source records, vessels, media, agencies, records, and locations. An edge states only its displayed claim and does not prove attendance, responsibility, or a private relationship.
-- [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Audited exposed comments from five public Facebook threads and a separate four-image public post attributed to Katie Hudson Seymour; preserves captions, direct corrections, apparent firsthand and secondhand leads, images, timestamps, permalinks, hashes, and explicit authentication limits. The attributed “at five” boarding-request claim is low-confidence and does not override MI4088BU’s verified 4:31 PM GPS movement.
+- [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Audited exposed comments from five public Facebook threads and separately preserves attributed Katie Hudson Seymour and Faith Lauren screenshot sets. The July 7 at 1:08 AM Faith source records an intention to report alleged witness information and footage; it does not prove police receipt. Every claim retains explicit identity, metadata, delivery, and authentication limits.
 - [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
 
 ## Primary source

@@ -3,19 +3,39 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://justicefornolanwells.com/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <image:image>
       <image:loc>https://justicefornolanwells.com/assets/social-card.png</image:loc>
       <image:title>Nolan Wells Evidence File and Timeline</image:title>
     </image:image>
   </url>
   <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-30</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-31</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-31</lastmod></url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-07-29</lastmod></url>
   <url>
-    <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-07-30</lastmod>
+    <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-07-31</lastmod>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-faith-lauren-portrait-post-image.jpg</image:loc>
+      <image:title>Portrait included in attributed Faith Lauren public-post source set</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-faith-lauren-witness-statement.jpg</image:loc>
+      <image:title>Attributed Faith Lauren first-person witness statement</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-07-faith-lauren-erick-message-0108.jpg</image:loc>
+      <image:title>July 7 at 1:08 AM reporting-intent message screenshot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-faith-lauren-erick-user-not-found.jpg</image:loc>
+      <image:title>Unavailable recipient profile screenshot in attributed witness source set</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-faith-lauren-profile-authenticity-statement.jpg</image:loc>
+      <image:title>Displayed account-authenticity response in attributed witness source set</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://justicefornolanwells.com/media/social-source-audit/2026-07-05-katie-hudson-seymour-message-1.jpg</image:loc>
       <image:title>Attributed Katie Hudson Seymour message screenshot 1</image:title>

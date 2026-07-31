@@ -34,7 +34,7 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.7',
+        title: 'Master Investigation Notes · Version 1.8',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
@@ -42,7 +42,7 @@
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
         contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'anna-clarification'],
+        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'faith-lauren-reporting-intent', 'anna-clarification'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -53,10 +53,10 @@
         availability: 'Public on this site',
         confidence: 'Claim-specific',
         href: './social-source-ledger.html',
-        summary: 'Preserves case-related material from five July 5–7 Facebook threads plus a public Boogie LowDown post containing four screenshots attributed to Katie Hudson Seymour, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
-        contents: ['Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
-        missingCompanions: ['Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
+        summary: 'Preserves case-related material from five July 5–7 Facebook threads plus public posts containing screenshots attributed to Katie Hudson Seymour and Faith Lauren, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
+        contents: ['Attributed Faith Lauren witness and reporting-intent screenshots', 'Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
+        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
+        missingCompanions: ['Authenticated Faith Lauren statement, native message export, original footage, and police evidence receipt', 'Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
         id: 'sea-tow-call',
@@ -446,6 +446,13 @@
         supporting: ['Four public screenshots show a conversation labeled Katie Hudson Seymour in which the sender uses the words “at five when it was time to leave.”'],
         contradicting: ['The official GPS summary records MI4088BU beginning movement at 4:31 PM and continuing slowly through 5:24 PM.'],
         unknown: ['Whether the sender is authenticated', 'Whether “at five” is rounded or recalled', 'Who directly heard the requests', 'Whether the statement refers to the same vessel movement']
+      },
+      {
+        id: 'faith-police-receipt',
+        narrative: 'Police had the alleged Faith Lauren witness information by July 7, 2026 at 1:08 AM.',
+        supporting: ['A public screenshot marked July 7 at 1:08 AM shows a written allegation and the sender’s intention to go to police.', 'The later public-post caption says the account and footage were taken to police.'],
+        contradicting: ['The 1:08 AM message uses future-tense wording about going to police and submitting information.', 'A separate displayed statement ambiguously says the account was provided, or would be provided, to investigators.'],
+        unknown: ['Whether police received the account or footage', 'Which agency, recipient, date, and time', 'Whether an evidence receipt, report supplement, CAD entry, or native submission exists', 'Whether the displayed sender and account are authentic']
       }
     ],
 
@@ -462,6 +469,7 @@
       { item: 'Original Sea Tow machine export and metadata', status: 'Released publication found; original metadata missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './transcripts/seatow-audio.html' },
       { item: 'Original viral-video file and metadata', status: 'Circulated copy found; original missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './media/2026-07-04-tracetin-fighting.mp4' },
       { item: 'Authenticated Katie Hudson Seymour message export', status: 'Four public screenshots found; authenticated export missing', public: 'Partial', request: 'Not documented', priority: 'High', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
+      { item: 'Authenticated Faith Lauren statement, original footage, and police receipt', status: 'Five public-post attachments found; identity, native records, footage, submission, and agency receipt missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './social-source-ledger.html#faith-lauren-source' },
       { item: 'Complete Katie interview', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' },
       { item: 'Complete Wyatt and Bart interviews', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'High' },
       { item: 'Verified passenger manifests by vessel and time', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' }
@@ -475,7 +483,8 @@
       { id: 5, question: 'Who was aboard each vessel at 4:31 PM?', status: 'Open', evidence: 'GPS movement and incomplete public passenger accounts', needed: 'Direct passenger statements and verified manifests' },
       { id: 6, question: 'Which vessel provided private assistance to MI4088BU?', status: 'Open', evidence: 'Released call and slow GPS movement', needed: 'Assisting-vessel statement, track, and tow documentation' },
       { id: 7, question: 'What is the evidentiary basis for any 6:00 PM claim?', status: 'Open', evidence: 'No authenticated basis identified in the obtained core record', needed: 'Source publication, original timestamp, or USCG record supporting the time' },
-      { id: 8, question: 'What search coordinates and drift assumptions guided July 5, 2026 operations?', status: 'Open', evidence: 'MDMR narratives reference search and drone activity', needed: 'USCG particle drift, drone grid, flight logs, and interagency emails' }
+      { id: 8, question: 'What search coordinates and drift assumptions guided July 5, 2026 operations?', status: 'Open', evidence: 'MDMR narratives reference search and drone activity', needed: 'USCG particle drift, drone grid, flight logs, and interagency emails' },
+      { id: 9, question: 'Did investigators receive the alleged Faith Lauren account or footage, and if so when?', status: 'Open', evidence: 'A July 7 at 1:08 AM screenshot records intent to report; a later caption claims police submission, but no receipt is preserved', needed: 'Agency evidence receipt, case supplement, CAD entry, authenticated message export, direct witness statement, and original footage' }
     ],
 
     fileTree: [

@@ -4,7 +4,7 @@
   const origin = 'https://justicefornolanwells.com';
   const siteName = 'Nolan Wells Evidence File';
   const socialImage = `${origin}/assets/social-card.png`;
-  const modified = '2026-07-30';
+  const modified = '2026-07-31';
   const rawPath = location.pathname.replace(/\/{2,}/g, '/');
   const cleanRouteTargets = {
     '/timeline': '/index.html',

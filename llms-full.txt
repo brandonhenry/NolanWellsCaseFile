@@ -31,14 +31,16 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - Early afternoon: Public accounts and a circulated photograph place Nolan socializing among the boats. The photograph’s precise capture time is not authenticated.
 - Around 3:00 PM: Warren says this was about the last time he personally saw Nolan. This is a firsthand recollection, not an authenticated timestamp.
 - Around 3:30 PM: Tracestin says he was involved in an altercation and was then forced back aboard his family’s separate boat. This is a firsthand recollection with approximate timing.
-- Around 4:00 PM: A distress call reports bilge-pump failure, water ingress, and approximately seven people aboard a distressed vessel near Horn Island. The released publication is an official-audio source; the exact call-start metadata remains unresolved.
+- Before the Sea Tow call, reconstructed: Photographs and witness descriptions place the group’s tied boats in shallow water near shore, while the later call coordinate is in open water west of Horn Island. The combined sources support newly identified intervening shoreline-to-offshore movement, but not its exact time, path, or passenger configuration. This is a reconstruction, not a raw-GPS-verified route.
+- Around 4:00 PM: A distress call reports bilge-pump failure, water ingress, approximately seven people aboard, and 30°14.684′ N, 88°46.790′ W as the vessel’s current coordinate. The caller says the vessel is not aground. The released publication is an official-audio source; the exact call-start metadata remains unresolved.
+- Around 4:00–4:31 PM, coordinate analysis: The Sea Tow coordinate and MDMR’s later Garmin anchor reference at 30°14.626′ N, 88°46.629′ W are approximately 916 feet (279 meters) apart. This supports the same general final-anchor and assistance area, not the same exact point or a verified tow-attachment coordinate.
 - Around 4:01 PM, reported: A circulated video records Tracestin yelling. The project has not obtained the original device file or authenticated native timestamp metadata.
 - Around 2:00–2:30 PM, unverified lead: A derivative screenshot preserves Lucas Aviz saying Nolan told him “I have to leave” and that Aviz last saw Nolan board an unidentified white center-console boat. The direct Lucas comment and parent post were not recovered, and the boat is not equated with MI4088BU.
 - Time unstated, unverified lead: A screenshot preserves Stephen Ray tentatively saying he felt they saw Nolan at Horn Island’s east end standing on a sand dune. No exact time, image identification, or corroboration is provided.
 - Around 4:01 PM, witness interpretation: Ivy Elizabeth says the video was recorded after a fight, that DMR arrived shortly afterward, and that a background person only resembled Nolan; she explicitly says they were not 100% certain.
 - Around the same period: Witness accounts say Nolan remained on or near the island and chose not to leave with one group. The exact words, listener set, and time remain unresolved.
 - 4:31 PM: MDMR’s summarized GPS chronology shows MI4088BU beginning to move from Horn Island. GPS verifies vessel movement; it does not establish who was aboard or who possessed Nolan’s phone.
-- 4:31–5:24 PM: Public records describe private assistance involving the distressed vessel. Exact mechanics must be read from the linked sources and must not be inferred from GPS alone.
+- 4:31–5:24 PM: MDMR verifies approximately 2.75 miles of slow movement at 0.06–4.2 knots. Read with the earlier distress call and cancellation after private help was arranged, this most likely represents the private-assistance or tow phase. GPS alone does not prove a tow line, towing configuration, assisting vessel, or passenger transfers.
 - Around 5:00 PM, unverified lead: Screenshots preserve Matthew Lamp relaying that unnamed passengers believed Nolan was part of a group that was almost fighting around 5 PM and that a blue-top Bertram left shortly afterward. This is secondhand, Low confidence, and not reconciled with MI4088BU’s separately verified 4:31 PM movement. It must not be stated as a confirmed event.
 - Around 5:00 PM / until 7:30 PM, ambiguous lead: Katelynn Brochard says “we” remained near “where he was” until 7:30 and “they” left around 5. The people, boat, and place are unidentified; this is not a Nolan sighting at either time.
 - 5:25 PM: MDMR’s chronology records normal-speed movement.
@@ -73,6 +75,10 @@ Do not state that:
 - a continuous route exists for MI1295CB;
 - the fight, video, and distress call have a verified minute-by-minute order;
 - absence of an identifiable voice on an audio channel proves a person’s presence or absence.
+- the shoreline-to-offshore repositioning has a verified minute, path, or passenger manifest;
+- the Sea Tow coordinate and Garmin anchor reference are the exact same point;
+- the public packet proves the precise place or second a tow line was attached;
+- MDMR had the later-viewed Garmin coordinate before the July 5 drone flights or used it prospectively to plan them.
 
 ## Key records
 

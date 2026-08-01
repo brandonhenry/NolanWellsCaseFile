@@ -3,15 +3,15 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://justicefornolanwells.com/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <image:image>
       <image:loc>https://justicefornolanwells.com/assets/social-card.png</image:loc>
       <image:title>Nolan Wells Evidence File and Timeline</image:title>
     </image:image>
   </url>
-  <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-31</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-31</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/plunder-archive</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-08-01</lastmod></url>
@@ -59,12 +59,12 @@
     </image:image>
   </url>
   <url><loc>https://justicefornolanwells.com/people</loc><lastmod>2026-07-30</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/boats</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/boats</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/last-contact</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/contradictions</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/evidence-tracker</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/coordinates</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/questions</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/coordinates</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/questions</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/gaps</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/about</loc><lastmod>2026-07-29</lastmod></url>
 
@@ -76,9 +76,9 @@
   <url><loc>https://justicefornolanwells.com/transcripts/warren-part-4.html</loc><lastmod>2026-07-29</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/document.html?id=mdmr-report</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/document.html?id=master-notes</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=master-notes</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=social-comment-ledger</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/document.html?id=sea-tow-call</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=sea-tow-call</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=viral-video</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=gps-0956</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=gps-1114</loc><lastmod>2026-07-29</lastmod></url>

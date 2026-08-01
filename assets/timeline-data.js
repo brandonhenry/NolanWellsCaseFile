@@ -41,6 +41,7 @@
       northSound: { lat: 30.288414, lng: -88.790442, zoom: 12, label: 'MI4088BU slow movement' },
       searchArea: { lat: 30.252, lng: -88.75, zoom: 11, label: 'Horn Island search area' },
       anchorPosition: { lat: 30.2437667, lng: -88.77715, zoom: 15, label: 'Garmin anchor coordinate' },
+      seaTowCoordinate: { lat: 30.2447333, lng: -88.7798333, zoom: 16, label: 'Sea Tow caller coordinate' },
       droneLaunchOne: { lat: 30.2433833, lng: -88.7737833, zoom: 15, label: 'First recorded drone launch' },
       recovery: { lat: 30.242014, lng: -88.778409, zoom: 14, label: 'Recovery area · northwest tip' }
     },
@@ -110,6 +111,7 @@
           {
             hour: '4 PM',
             entries: [
+              { time: '~4:00 PM', label: 'Sea Tow caller provides the vessel coordinate', eventId: 'sea-tow-call' },
               { time: '4:31 PM', label: 'MI4088BU begins slow movement', eventId: 'gps-movement-431' }
             ]
           },
@@ -374,10 +376,23 @@
         ]
       },
       {
+        id: 'shoreline-offshore-repositioning', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Before the Sea Tow call', precision: 'Reconstructed interval; exact movement time and path unavailable',
+        title: 'Newly identified movement from the shoreline gathering', type: 'hypothesis', confidence: 'Medium', masterAnchor: 'anchor-coordinate-overlap', location: 'seaTowCoordinate',
+        summary: 'Photographs and witness descriptions place the group’s boats tied together in shallow water near shore, while the later Sea Tow call is made from open water west of Horn Island. Read together, the sources support an intervening shoreline-to-offshore repositioning before the distress call.',
+        claims: ['This is a reconstruction from separate media, witness, audio, and coordinate records—not a route shown in the released GPS summary.', 'The public copies do not provide the exact departure minute, path, or passenger configuration during the movement.', 'No reconstructed route line is drawn on the map.'],
+        media: { type: 'image', src: './media/2026-07-04-Nolan-on-boat-with-bros.png', alt: 'Circulated July 4 photograph showing Nolan and friends in the nearshore boat gathering', caption: 'Nearshore gathering evidence · exact capture time and vessel position not authenticated' },
+        sources: [
+          { label: 'Nolan boat photograph record', href: './document.html?id=nolan-boat-photo' },
+          { label: 'Warren interview · tied boats and shallow-water description', href: './transcripts/warren-part-1.html' },
+          { label: 'Sea Tow call coordinate and transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
+          { label: 'Master coordinate analysis', href: `${master}#anchor-coordinate-overlap` }
+        ]
+      },
+      {
         id: 'sea-tow-call', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 4:00 PM', precision: 'Call occurred before 4:31 PM; exact start unresolved',
-        title: 'Sea Tow receives a distress call', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'hornIsland',
-        summary: 'Released audio establishes a call about a boat taking on water after bilge-pump failure, with approximately seven people reported aboard.',
-        claims: ['The caller reports that everyone aboard is okay.', 'Public labels of 3:48 PM or approximately 4:00 PM are not authenticated by released original metadata.'],
+        title: 'Sea Tow receives a distress call from west of Horn Island', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'seaTowCoordinate',
+        summary: 'Released audio establishes a call from 30°14.684′ N, 88°46.790′ W about a boat taking on water after bilge-pump failure, with approximately seven people reported aboard.',
+        claims: ['The caller reports that everyone aboard is okay.', 'The caller says the vessel is not aground and asks for it to be kept afloat and towed back.', 'The spoken coordinate is verified from the released call; its precision and the exact call-start time remain separate questions.', 'Public labels of 3:48 PM or approximately 4:00 PM are not authenticated by released original metadata.'],
         media: { type: 'audio', src: './media/2026-07-04-full-dispatch-call.mp4', alt: 'Full released Sea Tow and dispatch call audio', caption: 'Full released call · 9:46 · exact original timestamp unresolved' },
         audioTracks: [
           {
@@ -405,6 +420,18 @@
           { label: 'Audio analysis and transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
           { label: 'Master Sea Tow notes', href: `${master}#sea-tow` },
           { label: 'MDMR report · page 5', href: `${report}#page=5` }
+        ]
+      },
+      {
+        id: 'seatow-anchor-overlap', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 4:00–4:31 PM', precision: 'Coordinate comparison and sequence inference; exact call and tow-start times unresolved',
+        title: 'Sea Tow and Garmin references converge offshore', type: 'hypothesis', confidence: 'Medium', masterAnchor: 'anchor-coordinate-overlap', location: 'seaTowCoordinate',
+        summary: 'The coordinate spoken during the Sea Tow call and the Garmin point MDMR later recorded as the vessel’s last known anchor reference are approximately 916 feet (279 meters) apart, placing both records in the same general offshore area west of Horn Island.',
+        claims: ['Sea Tow coordinate: 30°14.684′ N, 88°46.790′ W.', 'Later-recorded Garmin reference: 30°14.626′ N, 88°46.629′ W.', 'The straight-line separation is approximately 916 feet; the points are close but not identical.', 'The combined sequence strongly supports the final anchorage, distress call, and start of private assistance occurring in the same general area.', 'The released packet does not identify the exact point where a tow line was attached or explicitly assign the Garmin coordinate to 4:30 PM on July 4.'],
+        sources: [
+          { label: 'Sea Tow call transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
+          { label: 'MDMR report · pages 4 and 9', href: `${report}#page=4` },
+          { label: 'Redacted GPS extraction summary', href: `${gpsSummary}#page=1` },
+          { label: 'Master coordinate analysis', href: `${master}#anchor-coordinate-overlap` }
         ]
       },
       {
@@ -484,8 +511,8 @@
       {
         id: 'gps-movement-431', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '4:31 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU begins slow movement', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'slowTow',
-        summary: 'The tracked Triton begins moving north from the west tip at approximately 0.06–4.2 knots.',
-        claims: ['MDMR summarizes approximately 2.75 miles of slow movement through 5:24 PM.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
+        summary: 'The tracked Triton begins moving north from the west tip at approximately 0.06–4.2 knots. When read with the distress call and its later cancellation after private help was arranged, this is most likely the private-assistance or tow segment.',
+        claims: ['MDMR verifies approximately 2.75 miles of slow movement through 5:24 PM.', 'The interpretation that this was the assistance or tow phase is strongly supported by sequence and speed, but GPS alone does not prove a tow line, towing configuration, or assisting vessel.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
         sources: [
           { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 5 and 7', href: `${report}#page=5` },
@@ -690,7 +717,7 @@
         id: 'drone-searches-1240', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '12:40–1:52 PM', precision: 'Minute-level official narrative and CAD times',
         title: 'Two recorded drone searches cover limited grids', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'droneLaunchOne',
         summary: 'The first successful flight launched at 12:40 PM from 30°14.603′ N, 88°46.427′ W. A second launched at 1:22 PM from 30°14.454′ N, 88°45.966′ W.',
-        claims: ['Each flight covered a recorded 0.1-square-mile parallel grid.', 'The second ended after a heat-swollen battery separated; further flights were canceled and Nolan was not found.', 'The CAD record marks the flights complete at 1:52 PM; these limited grids do not establish that every part of the island was visually cleared.'],
+        claims: ['Each flight covered a recorded 0.1-square-mile parallel grid.', 'The second ended after a heat-swollen battery separated; further flights were canceled and Nolan was not found.', 'The CAD record marks the flights complete at 1:52 PM; these limited grids do not establish that every part of the island was visually cleared.', 'The report later depicts the flight areas in relation to the vessel’s last known anchor position, but it does not establish that MDMR had the Garmin coordinate before these flights or used it prospectively to plan them.'],
         media: { type: 'image', src: droneGrid, alt: 'Released MDMR drone search grid near Horn Island', caption: 'Released search grid · coverage must not be generalized beyond the recorded flights' },
         sources: [
           { label: 'MDMR report · pages 4 and 12', href: `${report}#page=4` },
@@ -702,12 +729,12 @@
         id: 'anchor-position-1630', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Around 4:30–4:50 PM', precision: 'Approximate contact time and exact GPS power-on time',
         title: 'MDMR records the Garmin anchor coordinate', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'anchorPosition',
         summary: 'Around 4:30 PM, MDMR obtained consent to view the Garmin on MI4088BU. The extraction timeline records the GPS being powered on at 4:50 PM for a photograph of the search coordinate.',
-        claims: ['The displayed anchor coordinate was 30°14.626′ N, 88°46.629′ W.', 'The 4:30 PM narrative contact and 4:50 PM device power-on are different actions and should not be collapsed into one exact timestamp.'],
+        claims: ['The displayed anchor coordinate was 30°14.626′ N, 88°46.629′ W.', 'That point is approximately 916 feet (279 meters) from the coordinate spoken during the Sea Tow call, supporting the same general offshore-area relationship.', 'The 4:30 PM narrative contact and 4:50 PM device power-on are different actions and should not be collapsed into one exact timestamp.', 'The public packet does not explicitly assign this exact point to 4:30 PM on July 4 or identify it as the tow-line attachment point.'],
         sources: [
           { label: 'MDMR report · page 9', href: `${report}#page=9` },
           { label: 'GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'Strickland supplement', href: stricklandSupplement },
-          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+          { label: 'Master coordinate analysis', href: `${master}#anchor-coordinate-overlap` }
         ]
       },
       {
@@ -893,13 +920,35 @@
       unknowns: ['Nolan’s precise position, whether anyone else saw him there, and the exact time of the sighting.'],
       needed: ['Corroborating witness accounts and original media showing the surrounding area.']
     },
-    'sea-tow-call': {
-      unknowns: ['Exact call-start time, original machine metadata, and the identity of every voice or passenger.'],
-      needed: ['Original Sea Tow system export, call metadata, and the complete dispatch record.'],
+    'shoreline-offshore-repositioning': {
+      confidenceReason: 'Nearshore photographs and witness descriptions can be compared with the later spoken Sea Tow coordinate in open water. The intervening movement is a strong reconstruction, but the public record does not supply its exact time, path, or a native GPS segment labeled as that repositioning.',
+      unknowns: ['Exact movement time and path, whether the photographed boat is identifiable in every public copy, who was aboard during the repositioning, and why the released GPS summary does not separately describe it.'],
+      needed: ['Native photographs with metadata, photographer and passenger statements, raw Garmin GPX/ADM data, and a point-by-point photo-to-track comparison.'],
       sourceViews: [
-        { source: 'Released call', position: 'Supports bilge-pump failure, water ingress, approximately seven aboard, and later cancellation.' },
+        { source: 'Photographs', position: 'Show the group’s nearshore boat-gathering context; public copies do not supply a precise map point or capture time.' },
+        { source: 'Warren', position: 'Describes the Triton and companion boats tied together in shallow water after arrival.' },
+        { source: 'Released Sea Tow call', position: 'Later supplies a current coordinate in open water west of Horn Island and says the vessel is not aground.' },
+        { source: 'Reconstruction', position: 'The separated locations require intervening movement, but the exact route and minute remain unverified.' }
+      ]
+    },
+    'sea-tow-call': {
+      unknowns: ['Exact call-start time, original machine metadata, coordinate accuracy or rounding, and the identity of every voice or passenger.'],
+      needed: ['Original Sea Tow system export, call metadata, complete dispatch record, and any contemporaneous position log.'],
+      sourceViews: [
+        { source: 'Released call', position: 'Supports bilge-pump failure, water ingress, approximately seven aboard, the spoken coordinate, the statement that the vessel was not aground, and later cancellation.' },
         { source: 'WLOX', position: 'Describes the call as occurring around 4:00 PM.' },
         { source: 'Raw publication label', position: 'Uses 3:48 PM; original machine metadata has not authenticated that label.' }
+      ]
+    },
+    'seatow-anchor-overlap': {
+      confidenceReason: 'Both coordinates are directly preserved in released records and their approximately 916-foot separation is reproducible. Treating them as the same general final-anchor and assistance area is an inference because the packet never explicitly joins the point, time, and tow attachment in one statement.',
+      unknowns: ['Exact call-start time, exact final stationary GPS point at 4:30 PM on July 4, coordinate accuracy and rounding, tow-line attachment point, assisting vessel, and any passenger transfers.'],
+      needed: ['Native Garmin GPX/ADM export, original Sea Tow metadata, assisting-vessel track and statement, and complete passenger accounts.'],
+      sourceViews: [
+        { source: 'Released call', position: 'Provides 30°14.684′ N, 88°46.790′ W as the caller’s current coordinate.' },
+        { source: 'Official MDMR record', position: 'Later records 30°14.626′ N, 88°46.629′ W near the west tip as the Garmin reference.' },
+        { source: 'Coordinate comparison', position: 'The two points are approximately 916 feet (279 meters) apart.' },
+        { source: 'Limit', position: 'The public packet does not prove the exact tow-attachment point or explicitly timestamp the Garmin coordinate at 4:30 PM on July 4.' }
       ]
     },
     'viral-video': {
@@ -945,8 +994,9 @@
       needed: ['Native track, extraction summary, tow-vessel identification, and verified passenger statements.'],
       sourceViews: [
         { source: 'Official GPS', position: 'Supports movement beginning at 4:31 PM and the speed range through 5:24 PM.' },
+        { source: 'Sequence inference', position: 'The preceding distress call and cancellation after private help was arranged make an assistance or tow phase the strongest current explanation for the slow segment.' },
         { source: 'Witness accounts', position: 'Publicly place Nolan off the boat; GPS itself cannot confirm that.' },
-        { source: 'Open question', position: 'The assisting vessel and all passenger assignments remain incomplete.' }
+        { source: 'Open question', position: 'GPS alone cannot prove a tow line or configuration; the assisting vessel and all passenger assignments remain incomplete.' }
       ]
     },
     'phone-and-passenger-account': {
@@ -1115,12 +1165,18 @@
       needed: ['Coast Guard case file, audio, UMIB log, aircraft track, and JCSO request record.']
     },
     'drone-searches-1240': {
-      unknowns: ['Complete flight logs and imagery, actual visibility conditions, unflown planned grids, and independent review of every frame.'],
-      needed: ['Native flight telemetry, original imagery, operator logs, weather, and the complete planned-versus-flown map.']
+      unknowns: ['Complete flight logs and imagery, actual visibility conditions, unflown planned grids, independent review of every frame, and whether the Garmin coordinate was available before either flight.'],
+      needed: ['Native flight telemetry, original imagery, operator logs, weather, the complete planned-versus-flown map, and contemporaneous search-planning records.']
     },
     'anchor-position-1630': {
-      unknowns: ['Native Garmin export, who operated the device before seizure, and whether the displayed anchor point was the only relevant saved location.'],
-      needed: ['Forensic image, native GPX/ADM files, photograph metadata, chain of custody, and examiner notes.']
+      unknowns: ['Native Garmin export, who operated the device before seizure, whether the displayed anchor point was the only relevant saved location, and the exact July 4 timestamp represented by the coordinate.'],
+      needed: ['Forensic image, native GPX/ADM files, photograph metadata, chain of custody, examiner notes, and the original point-by-point track.'],
+      sourceViews: [
+        { source: 'Official narrative', position: 'Records MDMR viewing the Garmin around 4:30 PM on July 5 and observing a July 4 point near the west tip.' },
+        { source: 'Search graphic', position: 'The report later represents drone flight areas in relation to the vessel’s last known anchor position.' },
+        { source: 'Timing limit', position: 'The public packet does not establish that the Garmin coordinate was available before the earlier drone flights or used prospectively to plan them.' },
+        { source: 'Coordinate overlap', position: 'The recorded Garmin point is approximately 916 feet from the coordinate spoken in the Sea Tow call.' }
+      ]
     },
     'command-post-sonar': {
       unknowns: ['Sonar vessel track, equipment settings, coverage, weather cutoff time, and interpretation of every return.'],

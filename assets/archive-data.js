@@ -30,7 +30,7 @@
         href: './documents/MDMR-MP2607-0016-report.pdf',
         summary: 'The obtained 15-page Mississippi Department of Marine Resources packet contains officer narratives, CAD entries, vessel-registration information, search notes, and a summarized GPS chronology.',
         contents: ['GPS chronology for MI4088BU', 'Officer narratives and CAD entries', 'Vessel registrations', 'Search and drone activity', 'Later deceased-person CAD event'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'body-found', 'recovery-cad-entries'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'shoreline-offshore-repositioning', 'seatow-anchor-overlap', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'body-found', 'recovery-cad-entries'],
         missingCompanions: ['Native Garmin export', 'Native drone flight records', 'Publicly redacted permission-to-search copies']
       },
       {
@@ -56,7 +56,7 @@
         href: './documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf',
         summary: 'A two-page redacted MDMR extraction summary for MI4088BU. It supports the displayed vessel milestones but does not establish who was aboard.',
         contents: ['Extraction narrative', 'Summarized timestamp table', 'Redacted identifying fields'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'anchor-position-1630'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'shoreline-offshore-repositioning', 'seatow-anchor-overlap', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'anchor-position-1630'],
         missingCompanions: ['Native Garmin ADM / GPX export', 'Extraction software logs and methodology']
       },
       {
@@ -126,15 +126,15 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 2.0',
+        title: 'Master Investigation Notes · Version 2.1',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'faith-lauren-reporting-intent'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'New shoreline-to-offshore movement analysis', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        referencedEvents: ['critical-overlap', 'shoreline-offshore-repositioning', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'faith-lauren-reporting-intent'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -158,10 +158,10 @@
         availability: 'Public audio and transcript',
         confidence: 'High for audible contents',
         href: './transcripts/seatow-audio.html#audio-analysis',
-        summary: 'The released call records water ingress, bilge-pump failure, approximately seven people aboard, and later cancellation after private help was arranged.',
-        contents: ['Full 9:46 publication', 'First 3:21 stereo excerpt', 'Caller/boat channel', 'Dispatcher channel', 'Transcript'],
-        referencedEvents: ['sea-tow-call', 'private-assistance', 'critical-overlap'],
-        missingCompanions: ['Original Sea Tow machine export', 'Authenticated call-start metadata', 'Complete participant identification']
+        summary: 'The released call records water ingress, bilge-pump failure, approximately seven people aboard, the caller’s current coordinate west of Horn Island, and later cancellation after private help was arranged.',
+        contents: ['Full 9:46 publication', 'First 3:21 stereo excerpt', 'Caller/boat channel', 'Dispatcher channel', 'Spoken coordinate', 'Transcript'],
+        referencedEvents: ['shoreline-offshore-repositioning', 'sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'critical-overlap', 'gps-movement-431'],
+        missingCompanions: ['Original Sea Tow machine export', 'Authenticated call-start metadata', 'Contemporaneous position log', 'Complete participant identification']
       },
       {
         id: 'viral-video',
@@ -457,10 +457,10 @@
         name: 'Triton · MI4088BU',
         status: 'Official GPS chronology obtained in summarized form',
         summary: 'The vessel tied to the official 9:56, 11:14, 4:31, 5:25, and 5:44 milestones.',
-        eventIds: ['gps-departure', 'gps-arrival', 'sea-tow-call', 'private-assistance', 'gps-movement-431', 'gps-normal-525', 'gps-return-544'],
+        eventIds: ['gps-departure', 'gps-arrival', 'shoreline-offshore-repositioning', 'sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'gps-movement-431', 'gps-normal-525', 'gps-return-544'],
         passengers: 'GPS does not establish a complete passenger manifest at any moment.',
-        evidence: ['MDMR RMS report', '9:56 GPS graphic', '11:14 GPS graphic', 'Released Sea Tow call'],
-        questions: ['Who was aboard at 4:31 PM?', 'Which vessel provided assistance?', 'Was the slow movement a tow, and if so how was it configured?']
+        evidence: ['MDMR RMS report', '9:56 GPS graphic', '11:14 GPS graphic', 'Released Sea Tow call', 'Nearshore photographs and witness descriptions', 'Sea Tow / Garmin coordinate comparison'],
+        questions: ['When and along what path did the vessel reposition from the shoreline gathering?', 'Who was aboard at 4:31 PM?', 'Which vessel provided assistance?', 'Was the slow movement a tow, and if so how was it configured?']
       },
       {
         id: 'mi1295cb',
@@ -487,7 +487,7 @@
         name: 'Private assisting vessel',
         status: 'Identity unresolved in the public record used here',
         summary: 'The released call says private assistance was arranged; the complete identity, track, and participant list of the assisting vessel remain unresolved.',
-        eventIds: ['private-assistance', 'gps-movement-431', 'gps-normal-525'],
+        eventIds: ['sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'gps-movement-431', 'gps-normal-525'],
         passengers: 'Unknown.',
         evidence: ['Released Sea Tow call', 'MDMR GPS speed summary'],
         questions: ['Which vessel assisted?', 'Was a tow line used?', 'Did anyone transfer between vessels?']
@@ -582,7 +582,8 @@
       { id: 9, question: 'Did investigators receive the alleged Faith Lauren account or footage, and if so when?', status: 'Open', evidence: 'A July 7 at 1:08 AM screenshot records intent to report; a later caption claims police submission, but no receipt is preserved', needed: 'Agency evidence receipt, case supplement, CAD entry, authenticated message export, direct witness statement, and original footage' },
       { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
       { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
-      { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' }
+      { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' },
+      { id: 13, question: 'When and how did MI4088BU move from the nearshore gathering to the offshore distress area?', status: 'Partially answered', evidence: 'Nearshore photographs and witness descriptions, the Sea Tow coordinate, the later Garmin anchor reference approximately 916 feet away, and the 4:31 PM slow movement', needed: 'Native photo metadata, raw Garmin GPX/ADM track, assisting-vessel track, and point-by-point investigative reconstruction' }
     ],
 
     fileTree: [

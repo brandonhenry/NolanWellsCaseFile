@@ -5,8 +5,11 @@
   const report = './documents/MDMR-MP2607-0016-report.pdf';
   const gpsSummary = './documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf';
   const sarEmail = './documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf';
+  const stricklandSupplement = './documents/plunder/MP2607-0016-Strickland-Supplement.pdf';
   const particleDrift = './media/plunder/USCG-Particle-Drift.png';
   const droneGrid = './media/plunder/Drone-Search-Grid.jpg';
+  const wloxTimeline = 'https://www.wlox.com/2026/07/07/timeline-heres-what-we-know-about-disappearance-death-18-year-old-nolan-wells/';
+  const wloxPressConference = 'https://www.wlox.com/2026/07/10/new-details-revealed-press-conference-with-nolan-wells-family-ben-crump-rev-al-sharpton/';
 
   window.NOLAN_EVIDENCE = {
     meta: {
@@ -16,7 +19,7 @@
       opening: {
         location: 'recovery',
         zoom: 15,
-        markerLabel: 'Body found · ~8:40 AM',
+        markerLabel: 'Body reported found · ~8:45 AM',
         markerColor: '#c04e01',
         tooltipDirection: 'left',
         mapPlacement: 'below-intro'
@@ -37,6 +40,8 @@
       hornIsland: { lat: 30.243508, lng: -88.777755, zoom: 13, label: 'Horn Island · west tip' },
       northSound: { lat: 30.288414, lng: -88.790442, zoom: 12, label: 'MI4088BU slow movement' },
       searchArea: { lat: 30.252, lng: -88.75, zoom: 11, label: 'Horn Island search area' },
+      anchorPosition: { lat: 30.2437667, lng: -88.77715, zoom: 15, label: 'Garmin anchor coordinate' },
+      droneLaunchOne: { lat: 30.2433833, lng: -88.7737833, zoom: 15, label: 'First recorded drone launch' },
       recovery: { lat: 30.242014, lng: -88.778409, zoom: 14, label: 'Recovery area · northwest tip' }
     },
     routes: {
@@ -118,7 +123,10 @@
           {
             hour: '11 PM',
             entries: [
-              { time: '11:45:14 PM', label: 'MDMR CAD entry is recorded', eventId: 'family-contacted' }
+              { time: '~11:00 PM', label: 'Friend contacts the Coast Guard', eventId: 'family-contacted' },
+              { time: '~11:07 PM', label: 'Warren contacts Nolan’s mother', eventId: 'family-contacted' },
+              { time: '11:45:14 PM', label: 'MDMR missing-person CAD call is created', eventId: 'mdmr-missing-cad-1145' },
+              { time: '11:49 PM', label: 'MDMR lieutenant is advised Nolan is missing', eventId: 'mdmr-missing-cad-1145' }
             ]
           }
         ]
@@ -126,6 +134,12 @@
       {
         date: 'July 5, 2026',
         hours: [
+          {
+            hour: '1 AM',
+            entries: [
+              { time: '1:38 AM', label: 'MDMR records the JCSO working explanation', eventId: 'jcso-working-assumption-0138' }
+            ]
+          },
           {
             hour: '8 AM',
             entries: [
@@ -135,19 +149,63 @@
           {
             hour: '9 AM',
             entries: [
-              { time: '~9:00 AM', label: 'Drone assistance is requested', eventId: 'official-search' }
+              { time: '~9:00 AM', label: 'Drone assistance is requested', eventId: 'drone-request-and-failures' },
+              { time: '9:08:22 AM', label: 'MDMR port-check CAD call is created', eventId: 'drone-request-and-failures' }
+            ]
+          },
+          {
+            hour: '10 AM',
+            entries: [
+              { time: '~10:00 AM', label: 'Three drone launches fail', eventId: 'drone-request-and-failures' },
+              { time: '10:05:53 AM', label: 'MDMR assistance CAD call is created', eventId: 'drone-request-and-failures' },
+              { time: '~10:30 AM', label: 'Additional drone help is requested', eventId: 'drone-request-and-failures' }
+            ]
+          },
+          {
+            hour: '11 AM',
+            entries: [
+              { time: '11:55 AM', label: 'MDMR follows up on a reported female lead', eventId: 'female-lead-1155' }
             ]
           },
           {
             hour: '12 PM',
             entries: [
-              { time: '12:40 PM', label: 'Recorded drone flights begin', eventId: 'official-search' }
+              { time: '12:26 PM', label: 'Coast Guard receives JCSO assistance request', eventId: 'coast-guard-public-activation' },
+              { time: '12:31 PM', label: 'JCSO publishes missing-person notice', eventId: 'coast-guard-public-activation' },
+              { time: '12:40 PM', label: 'First successful drone flight begins', eventId: 'drone-searches-1240' }
+            ]
+          },
+          {
+            hour: '1 PM',
+            entries: [
+              { time: '1:22 PM', label: 'Second recorded drone flight begins', eventId: 'drone-searches-1240' },
+              { time: '1:52 PM', label: 'MDMR records drone flights complete', eventId: 'drone-searches-1240' }
+            ]
+          },
+          {
+            hour: '4 PM',
+            entries: [
+              { time: '~4:30 PM', label: 'MDMR obtains consent to view the Garmin', eventId: 'anchor-position-1630' },
+              { time: '4:50 PM', label: 'GPS is powered on for a coordinate photo', eventId: 'anchor-position-1630' }
+            ]
+          },
+          {
+            hour: '5 PM',
+            entries: [
+              { time: '5:54 PM', label: 'JCSO command post is reported at Lake Mars', eventId: 'command-post-sonar' }
             ]
           },
           {
             hour: '6 PM',
             entries: [
+              { time: '~6:00 PM', label: 'MDMR deploys a sonar vessel near the northwest tip', eventId: 'command-post-sonar' },
               { time: '6:00 PM', label: 'East Tip image is submitted to the family appeal', eventId: 'east-tip-photo-submission' }
+            ]
+          },
+          {
+            hour: '9 PM',
+            entries: [
+              { time: '9:52 PM', label: 'MDMR requests Coast Guard SAR modeling data', eventId: 'sar-model-request-2152' }
             ]
           }
         ]
@@ -156,9 +214,40 @@
         date: 'July 6, 2026',
         hours: [
           {
+            hour: '6 AM',
+            entries: [
+              { time: 'Before 6:00 AM', label: 'United Cajun Navy aircraft is reported airborne', eventId: 'ucn-aircraft-boats' }
+            ]
+          },
+          {
             hour: '8 AM',
             entries: [
-              { time: '~8:40 AM', label: 'Recovery is publicly reported', eventId: 'body-found' }
+              { time: 'Before 8:00 AM', label: 'United Cajun Navy boats finish redeploying', eventId: 'ucn-aircraft-boats' },
+              { time: '~8:45 AM', label: 'Authorities receive report that Nolan was found', eventId: 'body-found' }
+            ]
+          },
+          {
+            hour: '9 AM',
+            entries: [
+              { time: '9:11:09 AM', label: 'MDMR assistance CAD call is created', eventId: 'recovery-cad-entries' }
+            ]
+          },
+          {
+            hour: '10 AM',
+            entries: [
+              { time: '10:07:36 AM', label: 'MDMR deceased-person CAD call is created', eventId: 'recovery-cad-entries' }
+            ]
+          },
+          {
+            hour: '11 AM',
+            entries: [
+              { time: 'Just after 11:00 AM', label: 'Nolan’s body reaches the coroner', eventId: 'coroner-family-confirmation' }
+            ]
+          },
+          {
+            hour: '12 PM',
+            entries: [
+              { time: 'Before 1:00 PM', label: 'Family publicly confirms Nolan’s death', eventId: 'coroner-family-confirmation' }
             ]
           }
         ]
@@ -415,6 +504,16 @@
         ]
       },
       {
+        id: 'horn-island-overnight-presence', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '4:31 PM through the night', precision: 'Next-morning firsthand observation; exact arrival and departure times unavailable',
+        title: 'Horn Island was not necessarily deserted after the group left', type: 'firsthand', confidence: 'Medium', masterAnchor: 'overnight-island-presence', location: 'hornIsland',
+        summary: 'Attorney Phillip Elmore says that when he reached Horn Island the next morning, he saw a family that had stayed overnight and two boats still docked there.',
+        claims: ['The account challenges a blanket description of Horn Island as deserted after MI4088BU left.', 'It does not establish that the campers or boat occupants were near Nolan, could see him, or observed him alive after 4:31 PM.'],
+        sources: [
+          { label: 'WLOX · July 10 family press conference', href: wloxPressConference },
+          { label: 'Master overnight-presence analysis', href: `${master}#overnight-island-presence` }
+        ]
+      },
+      {
         id: 'critical-overlap', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '3:45–4:31 PM', precision: 'Analytical window; ordering remains unresolved',
         title: 'The critical unresolved window', type: 'unknown', confidence: 'Medium', masterAnchor: 'critical-overlap', location: 'hornIsland',
         summary: 'This is the narrow period in which the public accounts of the altercation, viral video, distress call, Tracestin’s departure, Nolan remaining, and MI4088BU’s departure converge.',
@@ -484,28 +583,142 @@
         ]
       },
       {
-        id: 'family-contacted', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00 PM', precision: 'Approximate witness time',
-        title: 'Friends realize Nolan has not returned', type: 'firsthand', confidence: 'Medium', masterAnchor: 'reconstruction', location: 'overview',
-        summary: 'Public accounts place friends contacting Nolan’s family after realizing that he had not returned from Horn Island.',
-        claims: ['The MDMR CAD entry is separately timestamped at 11:45:14 PM.'],
+        id: 'family-contacted', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00–11:07 PM', precision: 'Two approximate publicly reported times; callers may be different people',
+        title: 'Coast Guard and family contacts are reported', type: 'firsthand', confidence: 'Medium', masterAnchor: 'late-night-july-4', location: 'overview',
+        summary: 'WLOX reports that a friend contacted the Coast Guard around 11:00 PM. Christine Wonsley says Warren called her around 11:07 PM, when Life360 placed Nolan’s phone back on the mainland.',
+        claims: ['The public record does not establish whether the Coast Guard caller and Warren were the same person.', 'The Coast Guard later told WLOX that the initial call did not require Coast Guard assistance; the caller’s identity and full recording remain unreleased.', 'Life360’s phone location did not establish Nolan’s location.'],
         sources: [
-          { label: 'MDMR CAD · page 13', href: `${report}#page=13` },
-          { label: 'Warren interview · Part 1', href: './transcripts/warren-part-1.html' },
-          { label: 'Master reconstruction', href: `${master}#reconstruction` }
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'WLOX · July 10 family press conference', href: wloxPressConference },
+          { label: 'Master late-night chronology', href: `${master}#late-night-july-4` }
         ]
       },
       {
-        id: 'official-search', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Morning onward', precision: 'Mixed exact and approximate operational times',
-        title: 'The official search expands', type: 'verified', confidence: 'High', masterAnchor: 'reconstruction', location: 'searchArea',
-        summary: 'MDMR narratives and CAD records document patrol-vessel, drone, and multi-agency search activity on July 5, 2026.',
-        claims: ['The obtained packet records an MDMR patrol-vessel launch around 8:00 AM, a drone request around 9:00 AM, and drone flights beginning at 12:40 PM.', 'Contemporaneous public comments also say Nolan’s coach and friends returned to help search; those comments do not establish the complete participant list.'],
+        id: 'mdmr-missing-cad-1145', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '11:45:14–11:49 PM', precision: 'Exact CAD creation time; minute-level narrative time',
+        title: 'MDMR receives the missing-person report', type: 'verified', confidence: 'High', masterAnchor: 'late-night-july-4', location: 'overview',
+        summary: 'MDMR CAD call 2607-0196 was created at 11:45:14 PM. At 11:49 PM, Lt. Patrick Carron recorded that Christine Wonsley had reported Nolan missing.',
+        claims: ['The report relays that Nolan was last seen around 3:00 PM, his phone was in a friend’s truck, and his friends had returned.', 'Carron directed the family to JCSO and recorded that the Coast Guard had already been notified.', 'The CAD disposition “clear without a report” describes the CAD record; it does not mean the missing-person concern had been resolved.'],
         sources: [
-          { label: 'MDMR report · pages 4, 10 and 12', href: `${report}#page=10` },
-          { label: 'MDMR email requesting USCG SAR data', href: sarEmail },
-          { label: 'Released USCG particle-drift graphic', href: particleDrift },
-          { label: 'Released drone search grid', href: droneGrid },
+          { label: 'MDMR report · pages 3 and 13', href: `${report}#page=13` },
+          { label: 'Master late-night chronology', href: `${master}#late-night-july-4` }
+        ]
+      },
+      {
+        id: 'late-night-family-search', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Late night', precision: 'Firsthand family sequence; exact clock times incomplete',
+        title: 'Family members try to locate Nolan and recover his belongings', type: 'firsthand', confidence: 'Medium', masterAnchor: 'late-night-july-4', location: 'overview',
+        summary: 'Family accounts describe attempts to locate Nolan and retrieve his phone and keys after the 11:07 PM call.',
+        claims: ['The phone’s return to the mainland did not establish Nolan’s location.', 'The public record does not prove deletion or alteration of phone data; that would require forensic extraction records.'],
+        sources: [
+          { label: 'WLOX · July 10 family press conference', href: wloxPressConference },
+          { label: 'Master late-night chronology', href: `${master}#late-night-july-4` }
+        ]
+      },
+      {
+        id: 'jcso-working-assumption-0138', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '1:38 AM', precision: 'Minute-level official narrative time',
+        title: 'MDMR records JCSO’s working explanation', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'overview',
+        summary: 'Carron recorded speaking with Ocean Springs Police and JCSO Lt. Odom. The report says JCSO had spoken with friends and understood that Nolan stayed with an unknown woman and returned on another vessel.',
+        claims: ['The report says officials did not identify a water-related exigency at that time and MDMR took no further action during the shift.', 'This is proof of what officials were told and how the situation was assessed—not proof that Nolan was with a woman or returned safely.'],
+        sources: [
+          { label: 'MDMR report · page 3', href: `${report}#page=3` },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'overnight-response-gap', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '1:38 AM to dawn', precision: 'Documented gap in the obtained MDMR record',
+        title: 'The obtained MDMR record shows an overnight response gap', type: 'unknown', confidence: 'High', masterAnchor: 'search-july-5', location: 'overview',
+        summary: 'After the 1:38 AM communication, the obtained MDMR narrative says its shift took no further action until the next morning’s search response.',
+        claims: ['This documents the MDMR packet’s own response sequence.', 'It does not prove that family members, friends, JCSO, the Coast Guard, or every other person took no action during the same hours.'],
+        sources: [
+          { label: 'MDMR report · page 3', href: `${report}#page=3` },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'family-private-search-0600', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Around 6:00–8:00 AM', precision: 'Approximate family account, corroborated in part by the MDMR narrative',
+        title: 'Family and private searchers reach Horn Island before the main MDMR operation', type: 'firsthand', confidence: 'Medium', masterAnchor: 'search-july-5', location: 'searchArea',
+        summary: 'Phillip Elmore says he and former coach Les George searched the island and shoreline from a boat beginning around 6:00 AM. MDMR later recorded that they and other private citizens had already searched the northwest tip.',
+        claims: ['The exact 6:00 AM start comes from the family’s public account.', 'The MDMR narrative independently places private searchers at the northwest tip when its patrol vessel approached around 8:00 AM.'],
+        sources: [
+          { label: 'WLOX · July 10 family press conference', href: wloxPressConference },
+          { label: 'MDMR report · page 10', href: `${report}#page=10` },
           { label: 'Social ledger · search participation', href: './social-source-ledger.html#search-participation' },
-          { label: 'Master reconstruction', href: `${master}#reconstruction` }
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'official-search', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Around 8:00 AM', precision: 'Approximate official narrative time',
+        title: 'MDMR launches the Admiral Dewey and begins shoreline and water searches', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'searchArea',
+        summary: 'MDMR launched the patrol vessel Admiral Dewey, searched the southwest shoreline and dunes, and worked the waters near Horn Island’s northwest tip.',
+        claims: ['The MDMR narrative records other agencies and private vessels in the area.', 'The available packet does not provide a complete unified track or participant list for every search asset.'],
+        sources: [
+          { label: 'MDMR report · page 10', href: `${report}#page=10` },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'drone-request-and-failures', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '9:00–10:30 AM', precision: 'Mixed approximate narrative times and exact CAD creation times',
+        title: 'Drone assistance is requested, but early launch attempts fail', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'searchArea',
+        summary: 'MDMR requested drone assistance around 9:00 AM. Around 10:00 AM, three launch attempts failed because of software problems, prompting a request for additional drone support around 10:30 AM.',
+        claims: ['CAD entries at 9:08:22 AM and 10:05:53 AM are call-creation times, not necessarily the exact start of field activity.', 'The failed attempts did not produce an aerial clearance of the area.'],
+        sources: [
+          { label: 'MDMR report · pages 4, 12 and 13', href: `${report}#page=4` },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'female-lead-1155', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '11:55 AM', precision: 'Minute-level official narrative time',
+        title: 'MDMR follows up on a reported female lead', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'overview',
+        summary: 'Officer Strickland contacted Laney Naquin, who said she had been on Petit Bois Island, not Horn Island, and had not seen or spoken with Nolan in more than a year.',
+        claims: ['Naquin also denied contact with Jacob Woods and Drew Johnson.', 'The record does not establish that Naquin was the same person described earlier only as an “unknown female.”'],
+        sources: [
+          { label: 'MDMR report · page 9', href: `${report}#page=9` },
+          { label: 'Strickland supplement', href: stricklandSupplement },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'coast-guard-public-activation', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '12:26–12:31 PM', precision: 'Minute-level agency and publication times reported by WLOX',
+        title: 'Coast Guard response and public missing-person notice begin', type: 'media', confidence: 'High', masterAnchor: 'search-july-5', location: 'searchArea',
+        summary: 'WLOX reports that Coast Guard Sector Mobile received JCSO’s assistance request at 12:26 PM, issued an urgent marine information broadcast, and launched a helicopter. JCSO published its missing-person notice at 12:31 PM.',
+        claims: ['These times mark the documented federal request and public notice, not the first moment any person searched.'],
+        sources: [
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'drone-searches-1240', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '12:40–1:52 PM', precision: 'Minute-level official narrative and CAD times',
+        title: 'Two recorded drone searches cover limited grids', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'droneLaunchOne',
+        summary: 'The first successful flight launched at 12:40 PM from 30°14.603′ N, 88°46.427′ W. A second launched at 1:22 PM from 30°14.454′ N, 88°45.966′ W.',
+        claims: ['Each flight covered a recorded 0.1-square-mile parallel grid.', 'The second ended after a heat-swollen battery separated; further flights were canceled and Nolan was not found.', 'The CAD record marks the flights complete at 1:52 PM; these limited grids do not establish that every part of the island was visually cleared.'],
+        media: { type: 'image', src: droneGrid, alt: 'Released MDMR drone search grid near Horn Island', caption: 'Released search grid · coverage must not be generalized beyond the recorded flights' },
+        sources: [
+          { label: 'MDMR report · pages 4 and 12', href: `${report}#page=4` },
+          { label: 'Released drone search grid', href: droneGrid },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'anchor-position-1630', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Around 4:30–4:50 PM', precision: 'Approximate contact time and exact GPS power-on time',
+        title: 'MDMR records the Garmin anchor coordinate', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'anchorPosition',
+        summary: 'Around 4:30 PM, MDMR obtained consent to view the Garmin on MI4088BU. The extraction timeline records the GPS being powered on at 4:50 PM for a photograph of the search coordinate.',
+        claims: ['The displayed anchor coordinate was 30°14.626′ N, 88°46.629′ W.', 'The 4:30 PM narrative contact and 4:50 PM device power-on are different actions and should not be collapsed into one exact timestamp.'],
+        sources: [
+          { label: 'MDMR report · page 9', href: `${report}#page=9` },
+          { label: 'GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
+          { label: 'Strickland supplement', href: stricklandSupplement },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'command-post-sonar', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '5:54 PM through evening', precision: 'Reported command-post time; approximate sonar deployment time',
+        title: 'Command post and sonar search operate into the evening', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'searchArea',
+        summary: 'WLOX reported the JCSO command post at Lake Mars at 5:54 PM. Around 6:00 PM, MDMR sent a patrol vessel to conduct sonar work near the northwest tip.',
+        claims: ['MDMR described the sonar results as inconclusive and said the work stopped because of adverse weather.', 'An inconclusive sonar run is not a clearance of the area.'],
+        sources: [
+          { label: 'MDMR report · page 3', href: `${report}#page=3` },
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
         ]
       },
       {
@@ -521,13 +734,66 @@
         ]
       },
       {
-        id: 'body-found', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: 'Around 8:40 AM', precision: 'Approximate public official time',
-        title: 'Nolan’s body is found near the northwest tip', type: 'verified', confidence: 'High', masterAnchor: 'reconstruction', location: 'recovery',
-        summary: 'Public official reporting places the recovery in the water near the northwestern end of Horn Island.',
-        claims: ['The available 15-page MDMR packet contains the later deceased-person CAD event but not the full recovery narrative.'],
+        id: 'sar-model-request-2152', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: '9:52 PM', precision: 'Exact email timestamp',
+        title: 'MDMR requests Coast Guard search-and-rescue modeling data', type: 'verified', confidence: 'High', masterAnchor: 'search-july-5', location: 'anchorPosition',
+        summary: 'MDMR emailed the Coast Guard for SAR data to guide additional sonar planning, supplying a modeled incident time, anchor coordinate, subject description, clothing, and alcohol-use input.',
+        claims: ['The supplied 6:00 PM July 4 incident time was a modeling input, not a verified last-seen or disappearance time.', 'The word “Heavy” under alcohol was an operational input, not a toxicology result.', 'The released particle graphic models possible drift; it is not Nolan’s observed path.'],
+        media: { type: 'image', src: particleDrift, alt: 'Released Coast Guard particle-drift model for search planning', caption: 'Search-planning model · not an observed path' },
+        sources: [
+          { label: 'MDMR email requesting USCG SAR data', href: sarEmail },
+          { label: 'Released USCG particle-drift graphic', href: particleDrift },
+          { label: 'Master July 5 search chronology', href: `${master}#search-july-5` }
+        ]
+      },
+      {
+        id: 'overnight-search-mobilization', date: 'July 5, 2026', dateLong: 'Sunday · July 5, 2026', time: 'Overnight into July 6', precision: 'Publicly reported operational sequence; complete logs not obtained',
+        title: 'Search organizations prepare overnight air and boat operations', type: 'media', confidence: 'Medium', masterAnchor: 'recovery-july-6', location: 'searchArea',
+        summary: 'Public reporting describes United Cajun Navy and other search assets preparing aircraft and boats for renewed operations before dawn on July 6.',
+        claims: ['The available public record is not a complete overnight activity log for every agency and volunteer asset.'],
+        sources: [
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
+        ]
+      },
+      {
+        id: 'ucn-aircraft-boats', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: 'Before 6:00–8:00 AM', precision: 'Approximate times reported in the public operational timeline',
+        title: 'Air and boat search assets redeploy before dawn', type: 'media', confidence: 'High', masterAnchor: 'recovery-july-6', location: 'searchArea',
+        summary: 'WLOX reports that a United Cajun Navy aircraft was airborne just before 6:00 AM and that the organization’s last boat left to search before 8:00 AM.',
+        claims: ['The available reporting establishes a renewed search sequence but is not a complete flight or vessel log.'],
+        sources: [
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
+        ]
+      },
+      {
+        id: 'body-found', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: 'Around 8:45 AM', precision: 'Approximate authority-notification time; exact discovery minute not publicly fixed',
+        title: 'Authorities receive a report that Nolan was found near the northwest tip', type: 'verified', confidence: 'High', masterAnchor: 'recovery-july-6', location: 'recovery',
+        summary: 'The sheriff’s public timeline says authorities received a call around 8:45 AM that a National Park Service ranger had found Nolan near Horn Island’s northwest tip.',
+        claims: ['Around 8:45 AM is a reported notification time, not necessarily the exact minute of discovery.', 'Public descriptions alternately say the body was in the water and later “on the beach”; the difference may reflect discovery, observation, or recovery stages but remains unresolved without the ranger report and exact coordinate.', 'The 15-page MDMR packet contains later CAD entries but not a complete recovery narrative.'],
+        sources: [
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'MDMR report · page 15', href: `${report}#page=15` },
+          { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
+        ]
+      },
+      {
+        id: 'recovery-cad-entries', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: '9:11:09–10:07:36 AM', precision: 'Exact CAD call-creation times',
+        title: 'MDMR creates assistance and deceased-person CAD calls', type: 'verified', confidence: 'High', masterAnchor: 'recovery-july-6', location: 'recovery',
+        summary: 'MDMR CAD records show an assist-another-agency call created at 9:11:09 AM and a deceased-person call created at 10:07:36 AM.',
+        claims: ['These timestamps document when CAD calls were entered or created; they are not the discovery time and should not replace the sheriff’s approximately 8:45 AM notification sequence.'],
         sources: [
           { label: 'MDMR report · page 15', href: `${report}#page=15` },
-          { label: 'Master reconstruction', href: `${master}#reconstruction` }
+          { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
+        ]
+      },
+      {
+        id: 'coroner-family-confirmation', date: 'July 6, 2026', dateLong: 'Monday · July 6, 2026', time: 'Just after 11:00 AM–before 1:00 PM', precision: 'Approximate public reporting times',
+        title: 'Nolan is transferred to the coroner and his family confirms his death', type: 'media', confidence: 'High', masterAnchor: 'recovery-july-6', location: 'overview',
+        summary: 'WLOX reports that Nolan’s body arrived at the coroner’s office in Pascagoula just after 11:00 AM. His family publicly confirmed his death shortly before 1:00 PM.',
+        claims: ['Formal dental identification was reported the following day, July 7, around 2:00 PM.', 'Public family confirmation and formal forensic identification are different milestones.'],
+        sources: [
+          { label: 'WLOX · complete public timeline', href: wloxTimeline },
+          { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
         ]
       },
       {
@@ -780,17 +1046,103 @@
       needed: ['Passenger statements, dock media, and native Garmin records.']
     },
     'family-contacted': {
-      unknowns: ['Exact first realization time, who made the first family contact, and the complete communication sequence.'],
-      needed: ['Call logs, messages, CAD intake audio, and direct statements.'],
+      unknowns: ['The Coast Guard caller’s identity, whether that caller was Warren, the complete first-call recording, and the exact relationship between the 11:00 and 11:07 accounts.'],
+      needed: ['Coast Guard intake audio and log, call-detail records, messages, and direct statements from both callers.'],
       sourceViews: [
-        { source: 'Witness account', position: 'Places family contact around 11:00 PM.' },
-        { source: 'MDMR CAD', position: 'Records an official entry at 11:45:14 PM.' },
-        { source: 'Open interval', position: 'The sequence between first realization, family contact, and official reporting is incomplete.' }
+        { source: 'Coast Guard via WLOX', position: 'Confirms an around-11:00 PM friend call and says it did not require Coast Guard assistance.' },
+        { source: 'Christine Wonsley', position: 'Places Warren’s call to her around 11:07 PM and Nolan’s phone on the mainland.' },
+        { source: 'Open interval', position: 'The public record does not establish whether these were the same caller or two separate contacts.' }
       ]
+    },
+    'horn-island-overnight-presence': {
+      confidenceReason: 'Elmore describes what he says he personally observed the next morning; no full camper or boat-occupant account is public.',
+      unknowns: ['The campers’ and boat occupants’ identities, their precise positions and times, their lines of sight, and whether they observed Nolan.'],
+      needed: ['Direct statements from the overnight campers and boat occupants, photographs, vessel records, and coordinates.'],
+      sourceViews: [
+        { source: 'Phillip Elmore', position: 'Reports seeing a family that stayed overnight and two boats docked the next morning.' },
+        { source: 'What it supports', position: 'Some people and vessels remained on or near Horn Island overnight.' },
+        { source: 'What it does not support', position: 'It does not place Nolan alive after 4:31 PM or show that anyone could see him.' }
+      ]
+    },
+    'mdmr-missing-cad-1145': {
+      unknowns: ['The complete intake audio, precise source of every relayed detail, and actions taken by other agencies before 1:38 AM.'],
+      needed: ['CAD audio, Coast Guard and JCSO call logs, dispatch notes, and original caller statements.']
+    },
+    'late-night-family-search': {
+      unknowns: ['Exact route and times, who possessed each item, and the phone’s condition and data at handoff.'],
+      needed: ['Contemporaneous messages, call logs, Life360 export, and forensic chain-of-custody records.']
+    },
+    'jcso-working-assumption-0138': {
+      confidenceReason: 'The official report reliably records the interagency communication and working explanation, but it does not authenticate the underlying friends’ account.',
+      unknowns: ['Which friends were interviewed, their exact words, who originated the unknown-female theory, and why a safe return was assumed.'],
+      needed: ['JCSO interview recordings, CAD audio, officer notes, and Coast Guard communications.'],
+      sourceViews: [
+        { source: 'MDMR official narrative', position: 'Records the working explanation and no perceived water-related exigency.' },
+        { source: 'Underlying account', position: 'The friends’ original statements are not included in the obtained packet.' },
+        { source: 'Evidentiary limit', position: 'The record proves the assessment existed, not that Nolan returned on another vessel.' }
+      ]
+    },
+    'overnight-response-gap': {
+      unknowns: ['The complete actions of JCSO, the Coast Guard, family, friends, and other agencies between 1:38 AM and dawn.'],
+      needed: ['Every agency’s CAD log, call audio, dispatch notes, search tracks, and family communications.'],
+      gap: [
+        { time: '1:38 AM', state: 'MDMR records no further shift action', known: true },
+        { time: 'Overnight', state: 'Complete multi-agency activity remains unresolved', known: false },
+        { time: '~6:00 AM', state: 'Family search reportedly begins', known: false },
+        { time: '~8:00 AM', state: 'MDMR patrol vessel launches', known: true }
+      ]
+    },
+    'family-private-search-0600': {
+      unknowns: ['Exact launch time, full route, every participant, and what areas were visible from the boat versus searched on foot.'],
+      needed: ['GPS tracks, photographs, direct participant statements, and a unified search map.']
     },
     'official-search': {
       unknowns: ['Complete search grids, all aircraft and vessel tracks, and the full interagency decision log.'],
-      needed: ['Drone grid, USCG particle drift, vessel tracks, emails, and permission-to-search records.']
+      needed: ['Admiral Dewey track, agency vessel tracks, unified search assignments, radio traffic, and daily activity logs.']
+    },
+    'drone-request-and-failures': {
+      unknowns: ['Software version, detailed failure logs, planned launch coordinates, and whether other agencies flew during the same interval.'],
+      needed: ['Drone mission logs, software error records, operator notes, and interagency flight logs.']
+    },
+    'female-lead-1155': {
+      confidenceReason: 'The official supplement establishes that MDMR contacted Naquin and records her response; it does not connect her to the earlier unnamed-woman account.',
+      unknowns: ['Who identified Naquin as a lead, whether she was intended to be the unknown woman, and what other female leads were investigated.'],
+      needed: ['Source tip, JCSO interviews, call logs, and complete lead-disposition records.']
+    },
+    'coast-guard-public-activation': {
+      confidenceReason: 'A dated local-news timeline attributes these specific operational times to the Coast Guard and JCSO public notice.',
+      unknowns: ['The full request content, UMIB transmission log, helicopter mission timeline, and relationship to the prior-night call.'],
+      needed: ['Coast Guard case file, audio, UMIB log, aircraft track, and JCSO request record.']
+    },
+    'drone-searches-1240': {
+      unknowns: ['Complete flight logs and imagery, actual visibility conditions, unflown planned grids, and independent review of every frame.'],
+      needed: ['Native flight telemetry, original imagery, operator logs, weather, and the complete planned-versus-flown map.']
+    },
+    'anchor-position-1630': {
+      unknowns: ['Native Garmin export, who operated the device before seizure, and whether the displayed anchor point was the only relevant saved location.'],
+      needed: ['Forensic image, native GPX/ADM files, photograph metadata, chain of custody, and examiner notes.']
+    },
+    'command-post-sonar': {
+      unknowns: ['Sonar vessel track, equipment settings, coverage, weather cutoff time, and interpretation of every return.'],
+      needed: ['Sonar files, operator report, track log, weather data, and rescan plan.']
+    },
+    'sar-model-request-2152': {
+      confidenceReason: 'The official 9:52 PM email and released model establish the request and inputs; the model does not validate those inputs or depict an observed path.',
+      unknowns: ['Who selected the 6:00 PM incident time and alcohol input, what environmental data and model settings were used, and whether later runs changed the assumptions.'],
+      needed: ['Full Coast Guard SAR case file, input rationale, model configuration, all run outputs, and analyst notes.'],
+      sourceViews: [
+        { source: 'MDMR email', position: 'Records the 9:52 PM request and supplied search-model inputs.' },
+        { source: 'Particle graphic', position: 'Shows modeled possible movement under assumptions; it is not an observed track.' },
+        { source: 'Open issue', position: 'The public record does not authenticate 6:00 PM as an event time or “Heavy” as a toxicology finding.' }
+      ]
+    },
+    'overnight-search-mobilization': {
+      unknowns: ['Complete overnight tasking, exact departure times, all participating assets, and any areas searched before dawn.'],
+      needed: ['United Cajun Navy logs, agency incident action plans, aircraft and vessel tracks, and radio traffic.']
+    },
+    'ucn-aircraft-boats': {
+      unknowns: ['Exact airborne and boat-departure times, routes, sensor use, and full participant list.'],
+      needed: ['Aircraft and vessel tracks, mission logs, images, and direct operator statements.']
     },
     'east-tip-photo-submission': {
       confidenceReason: 'The Facebook post and visible 6:00 PM publication time are directly preserved. The commenter’s location/date caption is a media lead, not authenticated capture metadata.',
@@ -803,8 +1155,21 @@
       ]
     },
     'body-found': {
-      unknowns: ['The obtained packet does not contain the complete recovery narrative or a fully authenticated public recovery coordinate.'],
-      needed: ['Recovery report, scene photographs, original coordinates, and complete coroner or law-enforcement narrative.']
+      unknowns: ['Exact discovery minute and coordinate, whether the first observation was in water or on shore, and the sequence from discovery through recovery.'],
+      needed: ['National Park Service ranger report, dispatch audio, original coordinates, scene record, and complete coroner and law-enforcement narratives.'],
+      sourceViews: [
+        { source: 'Sheriff timeline via WLOX', position: 'Places authority notification around 8:45 AM and attributes the find to an NPS ranger.' },
+        { source: 'MDMR CAD', position: 'Shows later 9:11:09 and 10:07:36 call-creation times.' },
+        { source: 'Open discrepancy', position: 'Public “in the water” and “on the beach” descriptions cannot yet be ordered into discovery and recovery stages.' }
+      ]
+    },
+    'recovery-cad-entries': {
+      unknowns: ['What each call’s internal event time was, when MDMR was first notified, and the complete disposition narrative.'],
+      needed: ['CAD detail, dispatch audio, officer supplements, and NPS notification record.']
+    },
+    'coroner-family-confirmation': {
+      unknowns: ['Exact transfer and public-statement times and the complete identification process before July 7.'],
+      needed: ['Coroner intake record, chain of custody, family statement archive, and dental-identification report.']
     }
   };
 

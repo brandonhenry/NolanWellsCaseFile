@@ -30,7 +30,7 @@
         href: './documents/MDMR-MP2607-0016-report.pdf',
         summary: 'The obtained 15-page Mississippi Department of Marine Resources packet contains officer narratives, CAD entries, vessel-registration information, search notes, and a summarized GPS chronology.',
         contents: ['GPS chronology for MI4088BU', 'Officer narratives and CAD entries', 'Vessel registrations', 'Search and drone activity', 'Later deceased-person CAD event'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'family-contacted', 'official-search', 'body-found'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'body-found', 'recovery-cad-entries'],
         missingCompanions: ['Native Garmin export', 'Native drone flight records', 'Publicly redacted permission-to-search copies']
       },
       {
@@ -43,7 +43,7 @@
         href: './plunder-archive.html',
         summary: 'A provenance and source-file index for four PLUNDER Patreon posts containing MDMR companions, search graphics, dispatch archives, and court records.',
         contents: ['Four source posts dated July 12–28, 2026', '144 original attachments', '130 unique attachment files after duplicate-content review plus one matching embedded Sea Tow working copy', 'Six files available on this site', 'Dispatch archive counts and overlap', 'Additional source-file names and SHA-256 checksums'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'official-search', 'body-found'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'sar-model-request-2152', 'body-found'],
         missingCompanions: ['Native dispatch metadata', 'Complete official versions of every referenced companion record']
       },
       {
@@ -56,7 +56,7 @@
         href: './documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf',
         summary: 'A two-page redacted MDMR extraction summary for MI4088BU. It supports the displayed vessel milestones but does not establish who was aboard.',
         contents: ['Extraction narrative', 'Summarized timestamp table', 'Redacted identifying fields'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'anchor-position-1630'],
         missingCompanions: ['Native Garmin ADM / GPX export', 'Extraction software logs and methodology']
       },
       {
@@ -69,7 +69,7 @@
         href: './documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf',
         summary: 'An MDMR email requesting U.S. Coast Guard search-and-rescue data, preserving the request context, coordinates, and time references contained in the released record.',
         contents: ['SAR-data request', 'Published coordinates', 'Interagency context'],
-        referencedEvents: ['official-search', 'body-found'],
+        referencedEvents: ['sar-model-request-2152'],
         missingCompanions: ['Native email export and headers', 'Complete USCG response package']
       },
       {
@@ -82,7 +82,7 @@
         href: './documents/plunder/MP2607-0016-Strickland-Supplement.pdf',
         summary: 'A one-page redacted supplemental report from the MDMR case-file release, published with its original redactions intact.',
         contents: ['Officer narrative', 'Case reference', 'Released redactions'],
-        referencedEvents: ['official-search'],
+        referencedEvents: ['female-lead-1155', 'anchor-position-1630'],
         missingCompanions: ['Native records-system export and attachment history']
       },
       {
@@ -95,7 +95,7 @@
         href: './media/plunder/USCG-Particle-Drift.png',
         summary: 'The released U.S. Coast Guard particle-drift image. It is presented as a search-analysis artifact, not as proof of Nolan’s path through the water.',
         contents: ['Drift-model visualization', 'Visible search context', 'Released image'],
-        referencedEvents: ['official-search', 'body-found'],
+        referencedEvents: ['sar-model-request-2152'],
         missingCompanions: ['Native model file', 'Complete inputs, run settings, and explanatory report']
       },
       {
@@ -108,7 +108,7 @@
         href: './media/plunder/Drone-Search-Grid.jpg',
         summary: 'A released drone-search grid image associated with the MDMR case-file materials. The image documents a planned or displayed search area; native flight records remain unavailable.',
         contents: ['Search-grid image', 'Visible coordinates and area context'],
-        referencedEvents: ['official-search'],
+        referencedEvents: ['drone-searches-1240'],
         missingCompanions: ['Native flight logs', 'Drone imagery and operator report']
       },
       {
@@ -126,15 +126,15 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 1.9',
+        title: 'Master Investigation Notes · Version 2.0',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'faith-lauren-reporting-intent', 'anna-clarification'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        referencedEvents: ['critical-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'faith-lauren-reporting-intent'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -147,7 +147,7 @@
         href: './social-source-ledger.html',
         summary: 'Preserves case-related material from five July 5–7 Facebook threads plus public posts containing screenshots attributed to Katie Hudson Seymour and Faith Lauren, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
         contents: ['Attributed Faith Lauren witness and reporting-intent screenshots', 'Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'official-search', 'anna-clarification'],
+        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'family-private-search-0600', 'official-search', 'anna-clarification'],
         missingCompanions: ['Authenticated Faith Lauren statement, native message export, original footage, and police evidence receipt', 'Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
@@ -249,7 +249,7 @@
         name: 'Nolan Wells',
         role: 'Subject of the timeline',
         summary: 'The evidence file follows Nolan’s departure from home on July 3, 2026, the Horn Island trip on July 4, 2026, his disappearance, the search, and his recovery on July 6, 2026.',
-        eventIds: ['last-evening-home', 'gps-departure', 'anchoring-calls', 'gps-arrival', 'early-afternoon', 'warren-last-sighting', 'nolan-nearby-account', 'accounts-nolan-stays', 'phone-and-passenger-account', 'body-found'],
+        eventIds: ['last-evening-home', 'gps-departure', 'anchoring-calls', 'gps-arrival', 'early-afternoon', 'warren-last-sighting', 'nolan-nearby-account', 'accounts-nolan-stays', 'phone-and-passenger-account', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'family-private-search-0600', 'official-search', 'body-found', 'coroner-family-confirmation'],
         interviews: [],
         questions: ['What is the last independently corroborated sighting?', 'What were Nolan’s exact last words and who heard them?', 'What return plan did Nolan understand?']
       },
@@ -258,7 +258,7 @@
         name: 'Christine Wonsley',
         role: 'Nolan’s mother and public appeal source',
         summary: 'Wonsley published the July 5, 2026 missing-person appeal reviewed by this archive. Public records and contemporaneous reporting identify her as Nolan’s mother; her appeal became a central source for search updates and submitted media.',
-        eventIds: ['family-contacted', 'official-search', 'east-tip-photo-submission', 'body-found'],
+        eventIds: ['family-contacted', 'mdmr-missing-cad-1145', 'late-night-family-search', 'family-private-search-0600', 'official-search', 'east-tip-photo-submission', 'body-found', 'coroner-family-confirmation'],
         interviews: [
           { label: 'July 5 public appeal and source audit', href: './social-source-ledger.html#parent-heading' },
           { label: 'Public Facebook profile', href: 'https://www.facebook.com/christine.wonsley' }
@@ -271,7 +271,7 @@
         name: 'Warren',
         role: 'Friend and public witness',
         summary: 'Warren publicly discusses the trip, his reported last personal sighting, efforts to get Nolan to leave, and the phone and keys.',
-        eventIds: ['warren-last-sighting', 'accounts-nolan-stays', 'phone-and-passenger-account', 'family-contacted'],
+        eventIds: ['warren-last-sighting', 'accounts-nolan-stays', 'phone-and-passenger-account', 'family-contacted', 'late-night-family-search'],
         interviews: [
           { label: 'Part 1', href: './transcripts/warren-part-1.html' },
           { label: 'Part 2', href: './transcripts/warren-part-2.html' },
@@ -559,6 +559,9 @@
       { item: 'Permission-to-search record', status: 'Obtained in source collection', public: 'Source index only', request: 'Obtained through PLUNDER source archive', priority: 'High', href: './plunder-archive.html#additional-files' },
       { item: 'Strickland supplement', status: 'Found', public: 'Yes', request: 'Obtained through PLUNDER source archive', priority: 'Medium', href: './documents/plunder/MP2607-0016-Strickland-Supplement.pdf' },
       { item: 'Original Sea Tow machine export and metadata', status: 'Released publication found; original metadata missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './transcripts/seatow-audio.html' },
+      { item: 'July 4 late-night Coast Guard intake call and log', status: 'Call publicly acknowledged; caller and complete recording missing', public: 'Partial', request: 'Not documented', priority: 'Critical' },
+      { item: 'NPS ranger discovery and recovery report', status: 'Referenced in public authority timeline; not obtained', public: 'No', request: 'Not documented', priority: 'Critical' },
+      { item: 'Overnight Horn Island camper and remaining-vessel accounts', status: 'Potential witnesses described publicly; direct accounts missing', public: 'No', request: 'Not documented', priority: 'High' },
       { item: 'Original viral-video file and metadata', status: 'Circulated copy found; original missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './media/2026-07-04-tracetin-fighting.mp4' },
       { item: 'Authenticated Katie Hudson Seymour message export', status: 'Four public screenshots found; authenticated export missing', public: 'Partial', request: 'Not documented', priority: 'High', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
       { item: 'Authenticated Faith Lauren statement, original footage, and police receipt', status: 'Five public-post attachments found; identity, native records, footage, submission, and agency receipt missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './social-source-ledger.html#faith-lauren-source' },
@@ -574,9 +577,12 @@
       { id: 4, question: 'What is the viral video’s original capture time?', status: 'Open', evidence: 'Reported approximately 4:01 PM label', needed: 'Original device file and native metadata' },
       { id: 5, question: 'Who was aboard each vessel at 4:31 PM?', status: 'Open', evidence: 'GPS movement and incomplete public passenger accounts', needed: 'Direct passenger statements and verified manifests' },
       { id: 6, question: 'Which vessel provided private assistance to MI4088BU?', status: 'Open', evidence: 'Released call and slow GPS movement', needed: 'Assisting-vessel statement, track, and tow documentation' },
-      { id: 7, question: 'What is the evidentiary basis for any 6:00 PM claim?', status: 'Open', evidence: 'No authenticated basis identified in the obtained core record', needed: 'Source publication, original timestamp, or USCG record supporting the time' },
+      { id: 7, question: 'What is the evidentiary basis for the 6:00 PM July 4 incident time?', status: 'Partially answered', evidence: 'The 9:52 PM MDMR-to-USCG email uses 6:00 PM as a SAR-model input; the record does not authenticate it as an event time', needed: 'Source and rationale for selecting the modeling input plus complete USCG SAR case file' },
       { id: 8, question: 'What search coordinates and drift assumptions guided July 5, 2026 operations?', status: 'Partially answered', evidence: 'Released USCG particle-drift and drone-grid graphics plus the MDMR-to-USCG SAR email are now public', needed: 'Native drift-model inputs and output, complete USCG response, drone flight logs, imagery, and operator report' },
-      { id: 9, question: 'Did investigators receive the alleged Faith Lauren account or footage, and if so when?', status: 'Open', evidence: 'A July 7 at 1:08 AM screenshot records intent to report; a later caption claims police submission, but no receipt is preserved', needed: 'Agency evidence receipt, case supplement, CAD entry, authenticated message export, direct witness statement, and original footage' }
+      { id: 9, question: 'Did investigators receive the alleged Faith Lauren account or footage, and if so when?', status: 'Open', evidence: 'A July 7 at 1:08 AM screenshot records intent to report; a later caption claims police submission, but no receipt is preserved', needed: 'Agency evidence receipt, case supplement, CAD entry, authenticated message export, direct witness statement, and original footage' },
+      { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
+      { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
+      { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' }
     ],
 
     fileTree: [

@@ -419,7 +419,7 @@
       activeMarker.setStyle({ color: tone, fillColor: tone });
       activeMarker.unbindTooltip();
     }
-    const tooltipDirection = event.mapPlacement === 'below-intro' && window.innerWidth <= 340
+    const tooltipDirection = event.mapPlacement === 'below-intro' && window.innerWidth <= 600
       ? 'top'
       : (event.tooltipDirection || 'right');
     const tooltipOffset = {

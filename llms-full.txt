@@ -43,10 +43,24 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - Around 5:00 PM / until 7:30 PM, ambiguous lead: Katelynn Brochard says “we” remained near “where he was” until 7:30 and “they” left around 5. The people, boat, and place are unidentified; this is not a Nolan sighting at either time.
 - 5:25 PM: MDMR’s chronology records normal-speed movement.
 - 5:44 PM: MDMR’s chronology records the tracked vessel back at the mainland. The site excludes an upstream 5:44 graphic whose vessel labeling has not been reconciled.
-- Around 11:00 PM: Nolan’s family is contacted after friends realize he has not returned. This time remains based on reported accounts.
-- July 5, 2026: Search activity expands.
+- Around 11:00 PM: WLOX reports that a friend contacted the Coast Guard. The caller is not publicly identified and the complete call is unreleased.
+- Around 11:07 PM: Christine Wonsley says Warren called her. Life360 placed Nolan’s phone on the mainland; the phone location did not establish Nolan’s location. The public record does not show whether Warren was the approximately 11:00 PM Coast Guard caller.
+- 11:45:14–11:49 PM: MDMR creates missing-person CAD call 2607-0196 and records Christine’s report. The CAD disposition does not mean Nolan’s whereabouts had been resolved.
+- 1:38 AM, July 5, 2026: MDMR records JCSO’s working explanation that Nolan stayed with an unknown woman and returned on another vessel, and records no perceived water-related exigency. This proves the early assessment existed, not that the alternate ride occurred.
+- 1:38 AM to dawn: The obtained MDMR narrative records no further action by that shift. This does not establish that family, volunteers, JCSO, the Coast Guard, or every other person took no action.
+- Around 6:00–8:00 AM: Family and private searchers reportedly reach Horn Island before or alongside the main MDMR operation. MDMR launches the Admiral Dewey around 8:00 AM.
+- 9:00–10:30 AM: Drone assistance is requested; three early launches fail because of software problems; additional support is requested.
+- 11:55 AM: MDMR follows up with Laney Naquin, who says she was on Petit Bois Island, not Horn Island, and had not seen Nolan in more than a year. The record does not establish that she was the earlier “unknown female.”
+- 12:26–12:31 PM: Coast Guard Sector Mobile receives JCSO’s assistance request and JCSO publishes a missing-person notice.
+- 12:40–1:52 PM: Two recorded drone flights cover limited 0.1-square-mile grids. The second ends after a heat-swollen battery separates. The flights do not establish that the entire island was visually cleared.
+- Around 4:30–4:50 PM: MDMR obtains consent to view MI4088BU’s Garmin and records the anchor coordinate. The narrative contact time and exact 4:50 device power-on are separate actions.
+- 5:54 PM through evening: A command post and sonar response operate; the sonar result is inconclusive and work ends because of adverse weather.
 - 6:00 PM, July 5, 2026: Ashton Beach Jennings submits a photograph to the family’s appeal with the caption “East Tip. July 4.” The post time is preserved, but the image’s capture time and metadata are not authenticated and the photograph does not identify Nolan.
-- Morning of July 6, 2026: Nolan’s body is recovered near Horn Island’s northwestern end. The opening map marker uses an approximate publicly reported recovery time.
+- 9:52 PM: MDMR emails the Coast Guard requesting SAR modeling data. Its 6:00 PM July 4 incident time is a modeling input, not a verified event time; “Heavy” under alcohol is an operational input, not toxicology. The particle graphic is a model, not Nolan’s observed path.
+- Just before 6:00 AM through before 8:00 AM, July 6, 2026: United Cajun Navy air and boat assets reportedly redeploy.
+- Around 8:45 AM: Authorities reportedly receive a call that an NPS ranger found Nolan near Horn Island’s northwest tip. This is a notification time and may not be the exact discovery minute.
+- 9:11:09–10:07:36 AM: MDMR creates assistance and deceased-person CAD calls. These are CAD creation times, not discovery times.
+- Just after 11:00 AM through before 1:00 PM: Nolan reaches the coroner and his family publicly confirms his death. Formal dental identification is reported on July 7, 2026.
 
 ## Critical unresolved period
 

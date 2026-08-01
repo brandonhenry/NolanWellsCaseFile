@@ -64,7 +64,7 @@ Do not state that:
 
 - Master notes: https://justicefornolanwells.com/master-notes
 - Official MDMR packet: https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf
-- PLUNDER source release and privacy-review ledger: https://justicefornolanwells.com/plunder-archive
+- PLUNDER source archive and file ledger: https://justicefornolanwells.com/plunder-archive
 - Redacted MI4088BU GPS extraction summary: https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf
 - MDMR email requesting USCG SAR data: https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf
 - J. Strickland supplemental report: https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf

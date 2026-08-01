@@ -52,8 +52,8 @@
     },
     '/plunder-archive.html': {
       canonical: '/plunder-archive',
-      title: 'PLUNDER Nolan Wells Source Release: MDMR, GPS & Search Records',
-      description: 'Review the authorized PLUNDER source release for the Nolan Wells case: cleared MDMR records, GPS extraction summary, search graphics, court record, and dispatch-archive review status.',
+      title: 'PLUNDER Nolan Wells Source Archive: MDMR, GPS & Search Records',
+      description: 'Review the PLUNDER source archive for the Nolan Wells case: MDMR records, GPS extraction summary, search graphics, court records, dispatch archive, and original source posts.',
       type: 'CollectionPage'
     },
     '/documents.html': {
@@ -164,7 +164,7 @@
   const records = {
     document: {
       'mdmr-report': ['MDMR RMS Report MP2607-0016 · Nolan Wells Case', 'Official MDMR officer narratives, CAD information, vessel records, search notes, and summarized GPS chronology for the Nolan Wells case.'],
-      'plunder-release': ['PLUNDER July 2026 Source Release · Nolan Wells Case', 'Authorized-source index for PLUNDER’s Nolan Wells MDMR records, search graphics, dispatch archive, court records, and file-specific privacy review.'],
+      'plunder-release': ['PLUNDER July 2026 Source Archive · Nolan Wells Case', 'Source-post index for PLUNDER’s Nolan Wells MDMR records, search graphics, dispatch archive, and court records.'],
       'gps-extraction-summary': ['MI4088BU GPS Extraction Summary · Nolan Wells Case', 'Redacted official GPS extraction summary supporting MI4088BU vessel timestamps while preserving the distinction between vessel movement and passenger identity.'],
       'mdmr-uscg-sar-email': ['MDMR Email to USCG for SAR Data · Nolan Wells Case', 'Released interagency email requesting search-and-rescue data in the July 2026 Nolan Wells case.'],
       'strickland-supplement': ['J. Strickland Supplemental Report · Nolan Wells Case', 'Released redacted MDMR supplemental report for case MP2607-0016.'],

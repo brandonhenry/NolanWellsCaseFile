@@ -4,13 +4,14 @@
   const origin = 'https://justicefornolanwells.com';
   const siteName = 'Nolan Wells Evidence File';
   const socialImage = `${origin}/assets/social-card.png`;
-  const modified = '2026-07-31';
+  const modified = '2026-08-01';
   const rawPath = location.pathname.replace(/\/{2,}/g, '/');
   const cleanRouteTargets = {
     '/timeline': '/index.html',
     '/event-timeline': '/event-timeline.html',
     '/master-notes': '/documents/master-investigation-notes.html',
     '/archive': '/archive.html',
+    '/plunder-archive': '/plunder-archive.html',
     '/documents': '/documents.html',
     '/people': '/people.html',
     '/boats': '/boats.html',
@@ -47,6 +48,12 @@
       canonical: '/archive',
       title: 'Nolan Wells Evidence Archive: Documents, People & Boats',
       description: 'Browse the Nolan Wells evidence archive by official document, witness, vessel, coordinate, contradiction, open question, and missing record.',
+      type: 'CollectionPage'
+    },
+    '/plunder-archive.html': {
+      canonical: '/plunder-archive',
+      title: 'PLUNDER Nolan Wells Source Release: MDMR, GPS & Search Records',
+      description: 'Review the authorized PLUNDER source release for the Nolan Wells case: cleared MDMR records, GPS extraction summary, search graphics, court record, and dispatch-archive review status.',
       type: 'CollectionPage'
     },
     '/documents.html': {
@@ -157,6 +164,13 @@
   const records = {
     document: {
       'mdmr-report': ['MDMR RMS Report MP2607-0016 · Nolan Wells Case', 'Official MDMR officer narratives, CAD information, vessel records, search notes, and summarized GPS chronology for the Nolan Wells case.'],
+      'plunder-release': ['PLUNDER July 2026 Source Release · Nolan Wells Case', 'Authorized-source index for PLUNDER’s Nolan Wells MDMR records, search graphics, dispatch archive, court records, and file-specific privacy review.'],
+      'gps-extraction-summary': ['MI4088BU GPS Extraction Summary · Nolan Wells Case', 'Redacted official GPS extraction summary supporting MI4088BU vessel timestamps while preserving the distinction between vessel movement and passenger identity.'],
+      'mdmr-uscg-sar-email': ['MDMR Email to USCG for SAR Data · Nolan Wells Case', 'Released interagency email requesting search-and-rescue data in the July 2026 Nolan Wells case.'],
+      'strickland-supplement': ['J. Strickland Supplemental Report · Nolan Wells Case', 'Released redacted MDMR supplemental report for case MP2607-0016.'],
+      'uscg-particle-drift': ['USCG Particle-Drift Graphic · Nolan Wells Search', 'Released U.S. Coast Guard particle-drift search graphic, presented with model and path-of-travel limitations.'],
+      'drone-search-grid': ['Drone Search Grid · Nolan Wells Search', 'Released drone search-grid graphic with native flight records and imagery still identified as missing.'],
+      'letters-administration': ['Nolan Wells Estate Letters of Administration · Court Record', 'Released one-page court order concerning administration of Nolan Wells’s estate.'],
       'master-notes': ['Master Investigation Notes · Nolan Wells Evidence File', 'The controlling editorial evidence record for Nolan Wells timeline claims, evidence classifications, confidence, and unresolved questions.'],
       'sea-tow-call': ['Sea Tow Call Record · Nolan Wells Evidence File', 'Released Sea Tow audio, transcript, channel analysis, audible facts, timing limits, and missing original metadata.'],
       'viral-video': ['Horn Island Viral Video Record · Nolan Wells Case', 'Provenance, public reporting, visible and audible contents, source links, and unresolved native metadata for the circulated Horn Island video.'],

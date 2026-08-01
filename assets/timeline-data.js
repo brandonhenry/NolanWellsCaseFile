@@ -3,6 +3,10 @@
 
   const master = './documents/master-investigation-notes.html';
   const report = './documents/MDMR-MP2607-0016-report.pdf';
+  const gpsSummary = './documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf';
+  const sarEmail = './documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf';
+  const particleDrift = './media/plunder/USCG-Particle-Drift.png';
+  const droneGrid = './media/plunder/Drone-Search-Grid.jpg';
 
   window.NOLAN_EVIDENCE = {
     meta: {
@@ -178,6 +182,7 @@
         claims: ['The vessel identity is MI4088BU.', 'The GPS record establishes vessel movement, not the identity of every passenger.'],
         media: { type: 'image', src: './media/0956-MI4088BU-depart-from-El-Camino-Real-Rd.png', alt: 'GPS image showing MI4088BU departure from El Camino Real Road at 9:56 AM', caption: 'GPS · MI4088BU departure · 9:56 AM' },
         sources: [
+          { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 5 and 7', href: `${report}#page=5` },
           { label: 'Master GPS notes', href: `${master}#official-gps-timeline` }
         ]
@@ -199,6 +204,7 @@
         claims: ['The boat remains stationary in the GPS summary from approximately 11:15 AM until 4:30 PM.'],
         media: { type: 'image', src: './media/1114-MI4088BU-arrives-at-West-Tip-of-Horn-Island.png', alt: 'GPS image showing MI4088BU arriving at the west tip of Horn Island at 11:14 AM', caption: 'GPS · MI4088BU arrival · 11:14 AM' },
         sources: [
+          { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · page 5', href: `${report}#page=5` },
           { label: 'Master GPS notes', href: `${master}#official-gps-timeline` }
         ]
@@ -392,6 +398,7 @@
         summary: 'The tracked Triton begins moving north from the west tip at approximately 0.06–4.2 knots.',
         claims: ['MDMR summarizes approximately 2.75 miles of slow movement through 5:24 PM.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
         sources: [
+          { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 5 and 7', href: `${report}#page=5` },
           { label: 'Master GPS notes', href: `${master}#official-gps-timeline` }
         ]
@@ -460,6 +467,7 @@
         summary: 'MDMR reports that the tracked vessel accelerates to approximately 30–35 knots after the period of slow movement.',
         claims: ['The slow-movement interval lasted about 53 minutes.'],
         sources: [
+          { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · page 5', href: `${report}#page=5` },
           { label: 'Master GPS notes', href: `${master}#official-gps-timeline` }
         ]
@@ -470,6 +478,7 @@
         summary: 'The official report places the tracked Triton back at El Camino Real Road at 5:44 PM.',
         claims: ['This site does not use the upstream 5:44 graphic because its vessel label conflicts with the obtained report.'],
         sources: [
+          { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 2 and 5', href: `${report}#page=2` },
           { label: 'Master boat distinction', href: `${master}#boats` }
         ]
@@ -492,6 +501,9 @@
         claims: ['The obtained packet records an MDMR patrol-vessel launch around 8:00 AM, a drone request around 9:00 AM, and drone flights beginning at 12:40 PM.', 'Contemporaneous public comments also say Nolan’s coach and friends returned to help search; those comments do not establish the complete participant list.'],
         sources: [
           { label: 'MDMR report · pages 4, 10 and 12', href: `${report}#page=10` },
+          { label: 'MDMR email requesting USCG SAR data', href: sarEmail },
+          { label: 'Released USCG particle-drift graphic', href: particleDrift },
+          { label: 'Released drone search grid', href: droneGrid },
           { label: 'Social ledger · search participation', href: './social-source-ledger.html#search-participation' },
           { label: 'Master reconstruction', href: `${master}#reconstruction` }
         ]

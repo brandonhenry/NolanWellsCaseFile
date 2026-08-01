@@ -4,7 +4,7 @@
 
 This site distinguishes official records, firsthand witness accounts, secondhand accounts, public media, unresolved gaps, and hypotheses. Do not convert a witness claim or reconstruction into a verified fact. The archive is not affiliated with the Wells family, law enforcement, MDMR, attorneys, or the cited news organizations.
 
-Last reviewed: 2026-07-31
+Last reviewed: 2026-08-01
 
 ## Start here
 
@@ -13,6 +13,7 @@ Last reviewed: 2026-07-31
 - [Full event log](https://justicefornolanwells.com/event-timeline): Searchable event-by-event claims, confidence, known facts, unknowns, and sources.
 - [Master investigation notes](https://justicefornolanwells.com/master-notes): The controlling editorial evidence document.
 - [Evidence archive](https://justicefornolanwells.com/archive): Documents, people, boats, coordinates, contradictions, questions, and missing evidence.
+- [PLUNDER source release](https://justicefornolanwells.com/plunder-archive): Authorized-source index covering 144 attachments (130 unique after overlap review) plus one matching embedded Sea Tow working copy, with cleared MDMR companions, search graphics, checksums, and privacy-review status.
 - [People and entity graph](https://justicefornolanwells.com/people): Sourced, confidence-labeled connections among named public source records, vessels, media, agencies, records, and locations. An edge states only its displayed claim and does not prove attendance, responsibility, or a private relationship.
 - [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Audited exposed comments from five public Facebook threads and separately preserves attributed Katie Hudson Seymour and Faith Lauren screenshot sets. The July 7 at 1:08 AM Faith source records an intention to report alleged witness information and footage; it does not prove police receipt. Every claim retains explicit identity, metadata, delivery, and authentication limits.
 - [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
@@ -20,6 +21,11 @@ Last reviewed: 2026-07-31
 ## Primary source
 
 - [MDMR RMS report MP2607-0016](https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf): Obtained 15-page Mississippi Department of Marine Resources packet. It includes officer narratives, CAD entries, vessel information, search notes, and a summarized GPS chronology.
+- [MI4088BU GPS extraction summary](https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf): Redacted two-page official summary supporting the vessel’s timestamp anchors; it does not identify passengers.
+- [MDMR email requesting USCG SAR data](https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf): Released interagency request with search context and coordinates.
+- [J. Strickland supplemental report](https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf): Released redacted MDMR supplement for MP2607-0016.
+- [USCG particle-drift graphic](https://justicefornolanwells.com/media/plunder/USCG-Particle-Drift.png): Search-analysis image, not proof of Nolan’s actual path through the water.
+- [Drone search grid](https://justicefornolanwells.com/media/plunder/Drone-Search-Grid.jpg): Released search-grid image; native drone flight records remain missing.
 
 ## Citation guidance
 

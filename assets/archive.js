@@ -76,7 +76,7 @@
     </section>
     <section class="two-column-detail"><div><p class="section-label">Contents</p><h2>What this record contains</h2>${list(documentRecord.contents)}</div><div><p class="section-label">Missing companions</p><h2>What is still needed</h2>${list(documentRecord.missingCompanions, 'plain-list missing')}</div></section>
     <div class="primary-action">${sourceLink(documentRecord.href, 'Open source file or transcript')}</div>
-    <section><p class="section-label">Referenced in</p><h2>Timeline evidence</h2><div class="mini-event-list">${events.map(eventCard).join('')}</div></section>`;
+    <section><p class="section-label">Referenced in</p><h2>Timeline evidence</h2>${events.length ? `<div class="mini-event-list">${events.map(eventCard).join('')}</div>` : '<p class="empty-state">This source is preserved as a document record and is not currently assigned to a July 3–6 timeline event.</p>'}</section>`;
   }
 
   function renderPeople() {

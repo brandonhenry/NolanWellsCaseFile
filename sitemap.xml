@@ -13,7 +13,8 @@
   <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-07-31</lastmod></url>
   <url><loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-07-31</lastmod></url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-07-29</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/plunder-archive</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-08-01</lastmod></url>
   <url>
     <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-07-31</lastmod>
     <image:image>
@@ -84,6 +85,13 @@
   <url><loc>https://justicefornolanwells.com/document.html?id=nolan-boat-photo</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=warren-interviews</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=tracestin-interview</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=plunder-release</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=gps-extraction-summary</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=mdmr-uscg-sar-email</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=strickland-supplement</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=uscg-particle-drift</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=drone-search-grid</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=letters-administration</loc><lastmod>2026-08-01</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/person.html?id=nolan</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://justicefornolanwells.com/person.html?id=christine-wonsley</loc><lastmod>2026-07-30</lastmod></url>
@@ -106,4 +114,8 @@
   <url><loc>https://justicefornolanwells.com/boat.html?id=assisting-vessel</loc><lastmod>2026-07-30</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents/plunder/Nolan-Wells-Letters-of-Administration.pdf</loc><lastmod>2026-08-01</lastmod></url>
 </urlset>

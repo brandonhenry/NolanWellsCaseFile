@@ -2,7 +2,7 @@
 
 Canonical site: https://justicefornolanwells.com/
 Repository: https://github.com/brandonhenry/NolanWellsCaseFile
-Last reviewed: 2026-07-31
+Last reviewed: 2026-08-01
 Coverage: Core events July 3–6, 2026, with source-provenance records through July 7, 2026; Horn Island and Ocean Springs, Mississippi
 
 ## Scope and independence
@@ -64,6 +64,12 @@ Do not state that:
 
 - Master notes: https://justicefornolanwells.com/master-notes
 - Official MDMR packet: https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf
+- PLUNDER source release and privacy-review ledger: https://justicefornolanwells.com/plunder-archive
+- Redacted MI4088BU GPS extraction summary: https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf
+- MDMR email requesting USCG SAR data: https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf
+- J. Strickland supplemental report: https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf
+- USCG particle-drift graphic: https://justicefornolanwells.com/media/plunder/USCG-Particle-Drift.png
+- Drone search grid: https://justicefornolanwells.com/media/plunder/Drone-Search-Grid.jpg
 - Event log: https://justicefornolanwells.com/event-timeline
 - Sea Tow call transcript and channel analysis: https://justicefornolanwells.com/transcripts/seatow-audio.html
 - Warren interview transcripts: https://justicefornolanwells.com/transcripts/warren-part-1.html

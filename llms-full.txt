@@ -31,7 +31,6 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - Early afternoon: Public accounts and a circulated photograph place Nolan socializing among the boats. The photograph’s precise capture time is not authenticated.
 - Around 3:00 PM: Warren says this was about the last time he personally saw Nolan. This is a firsthand recollection, not an authenticated timestamp.
 - Around 3:30 PM: Tracestin says he was involved in an altercation and was then forced back aboard his family’s separate boat. This is a firsthand recollection with approximate timing.
-- Before the Sea Tow call, reconstructed: Photographs and witness descriptions place the group’s tied boats in shallow water near shore, while the later call coordinate is in open water west of Horn Island. The combined sources support newly identified intervening shoreline-to-offshore movement, but not its exact time, path, or passenger configuration. This is a reconstruction, not a raw-GPS-verified route.
 - Around 4:00 PM: A distress call reports bilge-pump failure, water ingress, approximately seven people aboard, and 30°14.684′ N, 88°46.790′ W as the vessel’s current coordinate. The caller says the vessel is not aground. The released publication is an official-audio source; the exact call-start metadata remains unresolved.
 - Around 4:00–4:31 PM, coordinate analysis: The Sea Tow coordinate and MDMR’s later Garmin anchor reference at 30°14.626′ N, 88°46.629′ W are approximately 916 feet (279 meters) apart. This supports the same general final-anchor and assistance area, not the same exact point or a verified tow-attachment coordinate.
 - Around 4:01 PM, reported: A circulated video records Tracestin yelling. The project has not obtained the original device file or authenticated native timestamp metadata.
@@ -75,7 +74,7 @@ Do not state that:
 - a continuous route exists for MI1295CB;
 - the fight, video, and distress call have a verified minute-by-minute order;
 - absence of an identifiable voice on an audio channel proves a person’s presence or absence.
-- the shoreline-to-offshore repositioning has a verified minute, path, or passenger manifest;
+- the nearshore photographs and later coordinate records establish a measured route, distance, or time interval between them;
 - the Sea Tow coordinate and Garmin anchor reference are the exact same point;
 - the public packet proves the precise place or second a tow line was attached;
 - MDMR had the later-viewed Garmin coordinate before the July 5 drone flights or used it prospectively to plan them.

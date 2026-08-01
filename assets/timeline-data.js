@@ -376,19 +376,6 @@
         ]
       },
       {
-        id: 'shoreline-offshore-repositioning', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Before the Sea Tow call', precision: 'Reconstructed interval; exact movement time and path unavailable',
-        title: 'Newly identified movement from the shoreline gathering', type: 'hypothesis', confidence: 'Medium', masterAnchor: 'anchor-coordinate-overlap', location: 'seaTowCoordinate',
-        summary: 'Photographs and witness descriptions place the group’s boats tied together in shallow water near shore, while the later Sea Tow call is made from open water west of Horn Island. Read together, the sources support an intervening shoreline-to-offshore repositioning before the distress call.',
-        claims: ['This is a reconstruction from separate media, witness, audio, and coordinate records—not a route shown in the released GPS summary.', 'The public copies do not provide the exact departure minute, path, or passenger configuration during the movement.', 'No reconstructed route line is drawn on the map.'],
-        media: { type: 'image', src: './media/2026-07-04-Nolan-on-boat-with-bros.png', alt: 'Circulated July 4 photograph showing Nolan and friends in the nearshore boat gathering', caption: 'Nearshore gathering evidence · exact capture time and vessel position not authenticated' },
-        sources: [
-          { label: 'Nolan boat photograph record', href: './document.html?id=nolan-boat-photo' },
-          { label: 'Warren interview · tied boats and shallow-water description', href: './transcripts/warren-part-1.html' },
-          { label: 'Sea Tow call coordinate and transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
-          { label: 'Master coordinate analysis', href: `${master}#anchor-coordinate-overlap` }
-        ]
-      },
-      {
         id: 'sea-tow-call', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 4:00 PM', precision: 'Call occurred before 4:31 PM; exact start unresolved',
         title: 'Sea Tow receives a distress call from west of Horn Island', type: 'verified', confidence: 'High', masterAnchor: 'sea-tow', location: 'seaTowCoordinate',
         summary: 'Released audio establishes a call from 30°14.684′ N, 88°46.790′ W about a boat taking on water after bilge-pump failure, with approximately seven people reported aboard.',
@@ -919,17 +906,6 @@
     'nolan-nearby-account': {
       unknowns: ['Nolan’s precise position, whether anyone else saw him there, and the exact time of the sighting.'],
       needed: ['Corroborating witness accounts and original media showing the surrounding area.']
-    },
-    'shoreline-offshore-repositioning': {
-      confidenceReason: 'Nearshore photographs and witness descriptions can be compared with the later spoken Sea Tow coordinate in open water. The intervening movement is a strong reconstruction, but the public record does not supply its exact time, path, or a native GPS segment labeled as that repositioning.',
-      unknowns: ['Exact movement time and path, whether the photographed boat is identifiable in every public copy, who was aboard during the repositioning, and why the released GPS summary does not separately describe it.'],
-      needed: ['Native photographs with metadata, photographer and passenger statements, raw Garmin GPX/ADM data, and a point-by-point photo-to-track comparison.'],
-      sourceViews: [
-        { source: 'Photographs', position: 'Show the group’s nearshore boat-gathering context; public copies do not supply a precise map point or capture time.' },
-        { source: 'Warren', position: 'Describes the Triton and companion boats tied together in shallow water after arrival.' },
-        { source: 'Released Sea Tow call', position: 'Later supplies a current coordinate in open water west of Horn Island and says the vessel is not aground.' },
-        { source: 'Reconstruction', position: 'The separated locations require intervening movement, but the exact route and minute remain unverified.' }
-      ]
     },
     'sea-tow-call': {
       unknowns: ['Exact call-start time, original machine metadata, coordinate accuracy or rounding, and the identity of every voice or passenger.'],

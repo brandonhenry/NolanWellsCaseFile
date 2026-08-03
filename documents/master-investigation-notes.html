@@ -24,6 +24,9 @@
     :root{--bg:#060b14;--surface:#0e1620;--text:#e5e2da;--muted:#9fa5aa;--dim:#747d84;--accent:#c04e01;--teal:#4a8a7c;--rule:rgba(255,255,255,.08);--mono:'IBM Plex Mono',monospace;--sans:'Inter',system-ui,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}a{color:#79b1a4}.shell{display:grid;grid-template-columns:240px minmax(0,760px);gap:64px;width:min(1100px,calc(100% - 40px));margin:0 auto;padding:48px 0 110px}.nav{position:sticky;top:28px;align-self:start;max-height:calc(100vh - 56px);overflow-y:auto;padding-right:10px}.back{display:inline-flex;min-height:40px;align-items:center;color:#d9a07a;font:600 11px var(--mono);letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.nav h2{margin:28px 0 12px;font:600 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}.nav a:not(.back){display:block;padding:6px 0;color:var(--muted);font-size:12px;text-decoration:none}.nav a:hover{color:var(--text)}header{padding-bottom:34px;border-bottom:1px solid var(--rule);margin-bottom:50px}.eyebrow,.label{font:600 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#d36d2a}h1{margin:10px 0 12px;font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.05;text-wrap:balance}.meta{font:400 12px var(--mono);color:var(--muted)}.philosophy{margin-top:28px;padding:20px 22px;border-left:3px solid var(--accent);background:var(--surface);font-size:1.05rem}.philosophy strong{display:block;margin-bottom:4px}section{padding:0 0 48px;margin:0 0 48px;border-bottom:1px solid var(--rule)}h2{margin:0 0 18px;font-size:1.55rem;line-height:1.2;text-wrap:balance}h3{margin:28px 0 8px;font-size:1rem}.lede{font-size:1.08rem;color:#d4d3ce}.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0}.evidence-card{padding:15px;border-radius:4px;background:var(--surface);box-shadow:0 8px 22px rgba(0,0,0,.12)}.evidence-card strong{display:block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase}.verified strong{color:#72a860}.firsthand strong{color:#6ea7c9}.secondhand strong{color:#8aa0b3}.media-record strong{color:#d36d2a}.unknown-record strong{color:#9b7bb6}.hypothesis strong{color:#7d858b}ul,ol{padding-left:22px}li+li{margin-top:7px}.timeline{list-style:none;padding:0;margin:24px 0}.timeline li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:13px 0;border-bottom:1px solid var(--rule)}.timeline time{font:600 13px var(--mono);color:#d4a574;font-variant-numeric:tabular-nums;transition-property:color;transition-duration:160ms;transition-timing-function:cubic-bezier(.2,0,0,1)}.timeline li:hover time,.timeline li:focus-within time{color:#fff}.callout{padding:18px 20px;border:1px solid rgba(192,78,1,.38);border-radius:4px;background:rgba(192,78,1,.08)}.callout.hypothesis-note{border-color:rgba(155,123,182,.45);background:rgba(155,123,182,.09)}.known-unknown,.audit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.known-unknown>div,.audit-grid>div{padding:18px;background:var(--surface)}.known-unknown h3,.audit-grid h3{margin-top:0}.definition-list{display:grid;gap:10px;margin:22px 0}.definition-list>div{padding:16px 18px;border-left:3px solid var(--dim);background:var(--surface)}.definition-list strong{display:block;color:#d4d3ce}.protocol{counter-reset:protocol;list-style:none;padding:0}.protocol li{position:relative;padding:14px 16px 14px 52px;background:var(--surface);border-bottom:1px solid var(--rule)}.protocol li::before{counter-increment:protocol;content:counter(protocol,decimal-leading-zero);position:absolute;left:16px;top:15px;color:#d4a574;font:600 11px var(--mono)}.priority{font-family:var(--mono);font-size:12px}.source-rank li{padding:4px 0}.footer-note{color:var(--muted);font-size:12px}code{font-family:var(--mono);font-size:.85em}@media(max-width:800px){.shell{grid-template-columns:1fr}.nav{position:static;max-height:none;overflow:visible;padding-right:0;border-bottom:1px solid var(--rule);padding-bottom:20px}.nav h2,.nav a:not(.back){display:none}.evidence-grid,.known-unknown,.audit-grid{grid-template-columns:1fr}.timeline li{grid-template-columns:1fr;gap:5px}.protocol li{padding-right:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}:focus-visible{outline:3px solid #7ab89c;outline-offset:3px}
   </style>
+  <style>
+    .source-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}.source-gallery figure{margin:0;padding:10px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}.source-gallery a{display:block;overflow:hidden;border-radius:3px;background:#05080d}.source-gallery img{display:block;width:100%;height:260px;object-fit:contain}.source-gallery figcaption{padding:10px 2px 2px;color:var(--muted);font-size:12px;line-height:1.5}.hash{display:block;margin-top:6px;color:var(--dim);font:400 9px/1.45 var(--mono);overflow-wrap:anywhere}@media(max-width:800px){.source-gallery{grid-template-columns:1fr}.source-gallery img{height:auto;max-height:70vh}}
+  </style>
   <script src="../assets/seo.js"></script>
 </head>
 <body>
@@ -43,6 +46,7 @@
       <a href="#reconstruction">Defensible reconstruction</a>
       <a href="#critical-overlap">Critical overlap</a>
       <a href="#anchor-coordinate-overlap">Photo &amp; coordinate comparison</a>
+      <a href="#ucn-august-3-release">August 3 image release</a>
       <a href="#overnight-island-presence">Island after departure</a>
       <a href="#late-night-july-4">July 4 late night</a>
       <a href="#search-july-5">July 5 search</a>
@@ -67,7 +71,7 @@
       <header>
         <p class="eyebrow">Canonical working evidence file</p>
         <h1>Nolan Wells Investigation Master Notes</h1>
-        <p class="meta">Version 2.2 · Working evidence file · August 1, 2026</p>
+        <p class="meta">Version 2.3 · Working evidence file · August 3, 2026</p>
         <div class="philosophy"><strong>Guiding question</strong>What do we actually know?</div>
       </header>
 
@@ -87,7 +91,7 @@
           <li><time>Reported 4:01 PM</time><span>The viral video is recorded from a nearby boat. Tracestin later confirms he is the person yelling. Original file metadata has not been obtained.</span></li>
           <li><time>Shortly afterward</time><span>Tracestin says he leaves with his family. Accounts during this period say friends urged Nolan to leave but that he chose to remain.</span></li>
           <li><time>Before 4:31 PM</time><span>The distressed-boat caller says private assistance has been arranged, and Sea Tow is canceled.</span></li>
-          <li><time>4:31 PM</time><span>MI4088BU begins moving from Horn Island. Public accounts say Nolan is not aboard and that his phone is.</span></li>
+          <li><time>4:31 PM</time><span>MDMR’s published sustained northbound segment begins. The UCN release and Sea Tow position establish earlier repositioning, so this marker is not the Triton’s first positional change after arrival. Public accounts say Nolan is not aboard and that his phone is.</span></li>
           <li><time>4:31–5:24 PM</time><span>The official GPS summary records approximately 2.75 miles of slow movement. Read with the distress call and cancellation after private help was arranged, this most likely represents the assistance or tow phase; GPS alone does not prove the tow configuration.</span></li>
           <li><time>Around 5:00 PM · attributed-message claim</time><span>A public post preserves four screenshots of a conversation labeled Katie Hudson Seymour. The sender says Wyatt repeatedly asked Nolan to board “at five when it was time to leave,” but that Nolan wanted to stay with a girl. Screenshot attribution, sender identity, personal basis, exact time, and completeness are not independently authenticated; the wording is not reconciled with MI4088BU’s verified 4:31 PM movement.</span></li>
           <li><time>Around 5:00 PM · unverified lead</time><span>A screenshot later preserves Matthew Lamp relaying that unnamed passengers believed Nolan was part of a group that was almost fighting around 5:00 PM and that a blue-top Bertram left shortly afterward. This is a low-confidence secondhand lead, not a verified event, and its timing is not reconciled with the 4:31 PM GPS movement.</span></li>
@@ -180,7 +184,7 @@
           <ul>
             <li>Nolan is reportedly still on the island.</li>
             <li>Tracestin is confirmed to be present; the viral video and Sea Tow call occur in this general period.</li>
-            <li>The distressed boat remains at or near Horn Island until its GPS begins moving at 4:31 PM.</li>
+            <li>MDMR’s published sustained northbound segment begins at 4:31 PM; the raw data needed to determine smaller earlier positional changes is not public.</li>
             <li>Tracestin says he leaves shortly after the altercation and video.</li>
           </ul>
           <p><strong>The exact minute-by-minute ordering of the fight, video, and Sea Tow call has not been independently established.</strong></p>
@@ -214,10 +218,74 @@
         </div>
         <div class="callout hypothesis-note">
           <p><strong>Inference limits</strong></p>
-          <p>The obtained packet does not permit a point-by-point comparison between the photograph setting and the later coordinate records, identify every passenger, explicitly assign the Garmin coordinate to 4:30 PM on July 4, or identify the exact place and second a tow line was attached. Native photographs with metadata and the raw Garmin GPX/ADM export would be required to determine whether and how much earlier positional change occurred.</p>
+          <p>The obtained packet does not permit a point-by-point comparison between the photograph setting and the later coordinate records, identify every passenger, explicitly assign the Garmin coordinate to 4:30 PM on July 4, or identify the exact place and second a tow line was attached. Native photographs with metadata and the raw Garmin GPX/ADM export are required to determine exactly when, how far, and along what path the earlier positional change occurred.</p>
         </div>
         <p>The MDMR report later represents the drone flight areas in relation to the last known anchor position. Because MDMR records viewing the Garmin after the earlier drone flights, the public packet does <strong>not</strong> establish that this coordinate was available prospectively or dictated the original flight planning.</p>
         <p>Sources: <a href="/transcripts/seatow-audio.html#audio-analysis">released Sea Tow call and transcript</a>, <a href="/documents/MDMR-MP2607-0016-report.pdf#page=4">MDMR report pages 4 and 9</a>, <a href="/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf">redacted GPS extraction summary</a>, <a href="/transcripts/warren-part-1.html">Warren’s tied-boat and shallow-water description</a>, and the <a href="/document.html?id=nolan-boat-photo">circulated boat-photograph record</a>.</p>
+      </section>
+
+      <section id="ucn-august-3-release">
+        <p class="label">New source packet · August 3, 2026</p>
+        <h2>UCN-released images establish repositioning during MDMR’s “stationary” interval</h2>
+        <p class="lede">Four Facebook-distributed JPEGs were supplied to this archive on August 3, 2026 from a newly released United Cajun Navy missing-person search report. The UCN configuration material identifies the Triton within the nearshore boat gathering, while the later Sea Tow call gives the distressed Triton’s current offshore coordinate before 4:30 PM. Taken together, those source records establish that the Triton changed position inside the same 11:15 AM–4:30 PM interval MDMR summarized as “consistent with a stationary position.” The derivative copies do not establish the exact minute, path, distance from shore, or number of repositionings.</p>
+
+        <div class="callout">
+          <p><strong>Provenance status</strong></p>
+          <p>The files were supplied as copies from the United Cajun Navy report release. The verified UCN Facebook page also published an investigation-related trailer on August 3 and announced a longer episode for Thursday. The archive has not yet recovered the direct report download or attachment permalink, and one distributed still bears <em>The Interview Room</em> watermark; the preserved JPEGs are therefore derivative release copies rather than native camera files.</p>
+          <p><a href="https://www.facebook.com/reel/1015436748151995/">Open the verified UCN trailer</a></p>
+        </div>
+
+        <div class="source-gallery" aria-label="August 3 source-image collection">
+          <figure>
+            <a href="/media/ucn-release-2026-08-03/01-interview-room-boat-still.jpg"><img src="/media/ucn-release-2026-08-03/01-interview-room-boat-still.jpg" loading="lazy" alt="Watermarked boat still showing several people aboard and multiple vessels in the background"></a>
+            <figcaption>Watermarked boat still distributed with the report material. It shows the July 4 boat gathering and additional vessels behind the foreground boat; the derivative copy does not expose a registration number, native timestamp, or original metadata.<span class="hash">SHA-256 · a5472c2da54f464be6aa5856d891478b616afd35a7e2d32ea435eea7092f73b7</span></figcaption>
+          </figure>
+          <figure>
+            <a href="/media/ucn-release-2026-08-03/02-nolan-photo-crop.jpg"><img src="/media/ucn-release-2026-08-03/02-nolan-photo-crop.jpg" loading="lazy" alt="Cropped circulated photograph showing Nolan with another person and nearby boats"></a>
+            <figcaption>Cropped report copy of a circulated Nolan photograph. It supports Nolan’s presence within the boat gathering; the cropped pixels alone do not expose the hull registration or a native capture timestamp.<span class="hash">SHA-256 · bb3ecaecd831a4a8761f51ec5ef6fd138191576a03a242f4ae097c5bed35cccc</span></figcaption>
+          </figure>
+          <figure>
+            <a href="/media/ucn-release-2026-08-03/03-seatow-coordinate-google-earth.jpg"><img src="/media/ucn-release-2026-08-03/03-seatow-coordinate-google-earth.jpg" loading="lazy" alt="Google Earth visualization of the coordinate spoken during the Sea Tow call"></a>
+            <figcaption>Derived Google Earth visualization of 30°14′41.0″ N, 88°46′47.4″ W, equivalent to the displayed Sea Tow coordinate. This is a coordinate illustration, not a photograph of the Triton at that point.<span class="hash">SHA-256 · 8eb558c03d5d62d9f8e69cee1de7bcdafe27046c5036f9976f70067d9558cbee</span></figcaption>
+          </figure>
+          <figure>
+            <a href="/media/ucn-release-2026-08-03/04-comparative-configuration-slide.jpg"><img src="/media/ucn-release-2026-08-03/04-comparative-configuration-slide.jpg" loading="lazy" alt="Comparative configuration slide labeling several boats and Warren on Palm Beach near the shoreline gathering"></a>
+            <figcaption>“7.1 Comparative configuration” slide. The source annotation labels Boat #1, Boat X, Boat #2, Boat #3, and “Warren on Palm Beach.” Those labels are preserved as source assertions; the cropped slide does not expose the underlying identification method, capture time, or coordinate.<span class="hash">SHA-256 · bd4cb770596e5fc3216b56d2408e561f333513b825f309420b68cbdf848a426b</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="known-unknown">
+          <div>
+            <h3>What the combined record now supports</h3>
+            <ul>
+              <li>The UCN report’s configuration material identifies the Triton within a shallow-water, nearshore gathering with multiple boats and at least one camera viewpoint from within or immediately beside the group.</li>
+              <li>The Sea Tow call later gives the distressed Triton’s current offshore coordinate before 4:31 PM. The nearshore and offshore placements cannot both be true without intervening vessel movement.</li>
+              <li>The Sea Tow coordinate and later-recorded Garmin reference are approximately <strong>916 feet (279 meters, 0.151 nautical mile)</strong> apart; the Sea Tow point is generally northwest of the Garmin reference.</li>
+              <li>If both coordinates are accurately transcribed and refer to MI4088BU, ordinary single-point GPS scatter is not an adequate explanation for their full separation. Garmin says consumer chartplotter GPS accuracy is generally around 3 meters, while noting that larger errors can occur.</li>
+              <li>The public record therefore establishes at least one positional change before 4:30 PM, inside MDMR’s published “stationary” interval. It establishes 4:31 PM as the beginning of the sustained northbound segment that MDMR classified as departure—not as the Triton’s first movement after arrival.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>What remains unproved</h3>
+            <ul>
+              <li>The exact capture minute of either supplied boat image, absent the native files or complete timestamp record.</li>
+              <li>The independent pixel-level basis for every report annotation identifying the Triton, Palm Beach, passengers, or camera platform.</li>
+              <li>The number, time, path, cause, or distance of any movement before 4:31 PM.</li>
+              <li>That the vessel was already under tow when the Sea Tow coordinate was spoken.</li>
+              <li>That MDMR lied, intentionally omitted movement, or that GPS data was deleted. The current public record does not establish intent, deletion, or misconduct.</li>
+              <li>Any conclusion about whether Nolan could retrieve his phone based solely on these images.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>What MDMR actually published</h3>
+        <p>MDMR says MI4088BU’s ADM file contained waypoints, tracks, and routes; that the ADM was converted to GPX; and that the GPX was placed into Google Earth to create PowerPoint slides showing dates, times, and vessel routes. Its released summary then describes 11:15 AM–4:30 PM as <strong>“GPS dropping points consistent with a stationary position and GPS on.”</strong> The combined UCN configuration and Sea Tow records show that this phrase cannot accurately be read as “the Triton never changed position.” At most, it is an analyst’s broad characterization of a clustered or non-departure point pattern. The public packet does not include the raw point table or referenced route slides needed to quantify the earlier movement or determine why MDMR condensed the interval that way.</p>
+
+        <div class="callout hypothesis-note">
+          <p><strong>Current analytical conclusion</strong></p>
+          <p>The Triton repositioned before 4:30 PM, during the period MDMR labeled “consistent with a stationary position.” That label cannot accurately mean the vessel remained fixed at one location. What remains unresolved is the exact minute, distance, path, number of repositionings, whether each change occurred under the Triton’s own power or assistance, and who was aboard during each change. The 4:31 marker should be described as the start of sustained northbound departure, not first movement. The native MI4088BU ADM/GPX point sequence and complete PowerPoint source set should answer the remaining track questions directly.</p>
+        </div>
+        <p>Sources: <a href="/documents/MDMR-MP2607-0016-report.pdf#page=5">MDMR report · page 5</a>, <a href="/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf#page=1">GPS extraction summary · page 1</a>, <a href="/transcripts/seatow-audio.html#audio-analysis">Sea Tow coordinate transcript</a>, and <a href="https://support.garmin.com/en-IN/?faq=XOg2P1n7Ji6PO7j0MH3KU7">Garmin chartplotter accuracy guidance</a>.</p>
       </section>
 
       <section id="social-source-review">
@@ -304,13 +372,13 @@
         <ul class="timeline">
           <li><time>9:56 AM</time><span>Departs El Camino Real Road.</span></li>
           <li><time>11:14 AM</time><span>Arrives at Horn Island.</span></li>
-          <li><time>11:15 AM–4:30 PM</time><span>Stationary while GPS continues logging.</span></li>
+          <li><time>11:15 AM–4:30 PM</time><span>MDMR characterizes the GPS point pattern as “consistent with a stationary position” while the GPS remains on. The UCN configuration and later Sea Tow position establish intervening repositioning, so the label cannot mean the Triton stayed fixed; the released summary does not provide the underlying point table.</span></li>
           <li><time>4:31 PM</time><span>Begins northbound movement at approximately 0.06–4.2 knots.</span></li>
           <li><time>4:31–5:24 PM</time><span>Approximately 2.75 miles of slow movement.</span></li>
           <li><time>5:25 PM</time><span>Resumes normal operation at approximately 30–35 knots.</span></li>
           <li><time>5:44 PM</time><span>Reaches El Camino Real Road.</span></li>
         </ul>
-        <p>The 4:31–5:24 PM segment is verified movement. Its interpretation as the private-assistance or tow phase is a separate, strongly supported reconstruction based on the released distress call, its cancellation after private help was arranged, and the slow speed range. GPS alone does not prove a tow line or identify the assisting vessel.</p>
+        <p>The 4:31–5:24 PM segment is verified sustained movement. Its interpretation as the private-assistance or tow phase is a separate, strongly supported reconstruction based on the released distress call, its cancellation after private help was arranged, and the slow speed range. GPS alone does not prove a tow line, identify the assisting vessel, or establish that 4:31 was the vessel’s first positional change after arrival.</p>
       </section>
 
       <section id="what-gps-does-not-tell-us">

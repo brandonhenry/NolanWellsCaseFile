@@ -112,7 +112,7 @@
             hour: '4 PM',
             entries: [
               { time: '~4:00 PM', label: 'Sea Tow caller provides the vessel coordinate', eventId: 'sea-tow-call' },
-              { time: '4:31 PM', label: 'MI4088BU begins slow movement', eventId: 'gps-movement-431' }
+              { time: '4:31 PM', label: 'Published sustained northbound segment begins', eventId: 'gps-movement-431' }
             ]
           },
           {
@@ -292,7 +292,7 @@
         id: 'gps-arrival', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '11:14 AM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU arrives at Horn Island', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'hornIsland', route: 'outbound',
         summary: 'The official GPS summary places the tracked Triton at the west tip of Horn Island at 11:14 AM.',
-        claims: ['The boat remains stationary in the GPS summary from approximately 11:15 AM until 4:30 PM.'],
+        claims: ['MDMR characterizes the 11:15 AM–4:30 PM GPS point pattern as “consistent with a stationary position.” The UCN-released nearshore configuration and later Sea Tow offshore coordinate establish at least one positional change inside that interval, so the phrase cannot accurately mean the vessel remained fixed at one location. The released GPS summary does not provide the point table needed to reconstruct that earlier movement.'],
         media: { type: 'image', src: './media/1114-MI4088BU-arrives-at-West-Tip-of-Horn-Island.png', alt: 'GPS image showing MI4088BU arriving at the west tip of Horn Island at 11:14 AM', caption: 'GPS · MI4088BU arrival · 11:14 AM' },
         sources: [
           { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
@@ -497,9 +497,9 @@
       },
       {
         id: 'gps-movement-431', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '4:31 PM', precision: 'Minute-level GPS timestamp',
-        title: 'MI4088BU begins slow movement', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'slowTow',
-        summary: 'The tracked Triton begins moving north from the west tip at approximately 0.06–4.2 knots. When read with the distress call and its later cancellation after private help was arranged, this is most likely the private-assistance or tow segment.',
-        claims: ['MDMR verifies approximately 2.75 miles of slow movement through 5:24 PM.', 'The interpretation that this was the assistance or tow phase is strongly supported by sequence and speed, but GPS alone does not prove a tow line, towing configuration, or assisting vessel.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
+        title: 'Published sustained northbound segment begins', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'slowTow',
+        summary: 'At 4:31 PM, MDMR’s released chronology begins a sustained northbound segment from the west tip at approximately 0.06–4.2 knots. When read with the distress call and its later cancellation after private help was arranged, this is most likely the private-assistance or tow segment.',
+        claims: ['MDMR verifies approximately 2.75 miles of slow movement through 5:24 PM.', 'The UCN-released nearshore configuration and Sea Tow position establish earlier repositioning; 4:31 PM marks the published sustained departure segment, not first positional change.', 'The interpretation that this was the assistance or tow phase is strongly supported by sequence and speed, but GPS alone does not prove a tow line, towing configuration, or assisting vessel.', 'GPS does not reveal who was aboard, where Nolan was, or whether passengers transferred.'],
         sources: [
           { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 5 and 7', href: `${report}#page=5` },
@@ -917,8 +917,8 @@
       ]
     },
     'seatow-anchor-overlap': {
-      confidenceReason: 'Both coordinates are directly preserved in released records and their approximately 916-foot separation is reproducible. Treating them as the same general final-anchor and assistance area is an inference because the packet never explicitly joins the point, time, and tow attachment in one statement.',
-      unknowns: ['Exact call-start time, exact final stationary GPS point at 4:30 PM on July 4, coordinate accuracy and rounding, tow-line attachment point, assisting vessel, and any passenger transfers.'],
+      confidenceReason: 'Both coordinates are preserved in released records and their approximately 916-foot separation is reproducible. Treating them as the same general final-anchor and assistance area is an inference because the packet never explicitly joins the point, time, vessel position, and tow attachment in one statement.',
+      unknowns: ['Exact call-start time, the time represented by the later Garmin reference, any pre-4:31 point-to-point changes, coordinate accuracy and rounding, tow-line attachment point, assisting vessel, and any passenger transfers.'],
       needed: ['Native Garmin GPX/ADM export, original Sea Tow metadata, assisting-vessel track and statement, and complete passenger accounts.'],
       sourceViews: [
         { source: 'Released call', position: 'Provides 30°14.684′ N, 88°46.790′ W as the caller’s current coordinate.' },

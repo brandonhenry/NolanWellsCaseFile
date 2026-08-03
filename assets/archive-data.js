@@ -126,14 +126,14 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 2.2',
+        title: 'Master Investigation Notes · Version 2.3',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'August 3 UCN image release and pre-4:31 repositioning finding', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
         referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'faith-lauren-reporting-intent'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
@@ -583,7 +583,7 @@
       { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
       { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
       { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' },
-      { id: 13, question: 'How should the nearshore photograph context be reconciled with the later offshore coordinate records?', status: 'Open', evidence: 'Nearshore photographs and witness descriptions are not precisely geolocated or timed; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Native photo metadata, raw Garmin GPX/ADM track, and a source-by-source location comparison' }
+      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The UCN-released configuration places the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Direct report download or attachment permalink, native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' }
     ],
 
     fileTree: [

@@ -30,7 +30,7 @@
         href: './documents/MDMR-MP2607-0016-report.pdf',
         summary: 'The obtained 15-page Mississippi Department of Marine Resources packet contains officer narratives, CAD entries, vessel-registration information, search notes, and a summarized GPS chronology.',
         contents: ['GPS chronology for MI4088BU', 'Officer narratives and CAD entries', 'Vessel registrations', 'Search and drone activity', 'Later deceased-person CAD event'],
-        referencedEvents: ['gps-departure', 'gps-arrival', 'seatow-anchor-overlap', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'body-found', 'recovery-cad-entries'],
+        referencedEvents: ['gps-departure', 'gps-arrival', 'triton-pre-430-repositioning', 'seatow-anchor-overlap', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'body-found', 'recovery-cad-entries'],
         missingCompanions: ['Native Garmin export', 'Native drone flight records', 'Publicly redacted permission-to-search copies']
       },
       {

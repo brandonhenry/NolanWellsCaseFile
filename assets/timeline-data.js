@@ -105,7 +105,8 @@
           {
             hour: '11 AM',
             entries: [
-              { time: '11:14 AM', label: 'MI4088BU reaches Horn Island', eventId: 'gps-arrival' }
+              { time: '11:14 AM', label: 'MI4088BU reaches Horn Island', eventId: 'gps-arrival' },
+              { time: '11:15 AM–4:30 PM', label: 'At least one Triton positional change occurs', eventId: 'triton-pre-430-repositioning' }
             ]
           },
           {
@@ -298,6 +299,19 @@
           { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · page 5', href: `${report}#page=5` },
           { label: 'Master GPS notes', href: `${master}#official-gps-timeline` }
+        ]
+      },
+      {
+        id: 'triton-pre-430-repositioning', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Between 11:14 AM and 4:31 PM', precision: 'Bounded interval; exact movement time and number of movements unresolved',
+        title: 'Triton changes position at least once', type: 'verified', confidence: 'High', masterAnchor: 'ucn-august-3-release', location: 'seaTowCoordinate',
+        summary: 'The nearshore boat configuration and the Triton’s later Sea Tow coordinate establish that MI4088BU repositioned at least once before 4:30 PM, inside the interval MDMR described as “consistent with a stationary position.”',
+        claims: ['The vessel did not remain fixed at one location throughout the 11:15 AM–4:30 PM interval.', 'The map marker uses the Sea Tow caller’s stated current GPS position: 30°14.684′ N, 88°46.790′ W.', 'The evidence establishes one or more positional changes but does not determine the exact minute, route, distance traveled, number of movements, or whether each movement occurred under the Triton’s own power or assistance. No connecting route is drawn.', 'MDMR’s 4:31 PM marker is the start of the published sustained northbound departure segment, not the vessel’s first positional change after arriving at Horn Island.'],
+        media: { type: 'image', src: './media/ucn-release-2026-08-03/04-comparative-configuration-slide.jpg', alt: 'Released comparative configuration slide showing the Triton among the nearshore boat gathering at Horn Island', caption: 'UCN-distributed comparative configuration · nearshore placement · exact capture minute unresolved' },
+        sources: [
+          { label: 'Master analysis and complete four-image gallery', href: `${master}#ucn-august-3-release` },
+          { label: 'Sea Tow coordinate transcript', href: './transcripts/seatow-audio.html#audio-analysis' },
+          { label: 'Redacted GPS extraction summary · page 1', href: `${gpsSummary}#page=1` },
+          { label: 'MDMR report · page 5', href: `${report}#page=5` }
         ]
       },
       {
@@ -886,6 +900,18 @@
     'gps-arrival': {
       unknowns: ['The arrival point does not establish when or where each passenger went ashore.'],
       needed: ['Native Garmin export, extraction summary, and contemporaneous photos or videos.']
+    },
+    'triton-pre-430-repositioning': {
+      confidenceReason: 'The released nearshore configuration and the distressed Triton’s later Sea Tow coordinate cannot both describe the vessel’s position without an intervening positional change. The sources bound the movement to the period before 4:30 PM but do not reveal its exact minute or path.',
+      known: ['MI4088BU arrived at Horn Island at 11:14 AM.', 'Released configuration evidence places the Triton in the nearshore boat gathering.', 'The Sea Tow caller later gave the distressed Triton’s current offshore coordinate as 30°14.684′ N, 88°46.790′ W before 4:30 PM.', 'The repositioning card’s map marker uses that Sea Tow coordinate.', 'At least one positional change therefore occurred before MDMR’s 4:31 PM sustained departure marker.'],
+      unknowns: ['The exact movement time, path, distance from the shoreline, number of repositionings, propulsion or assistance used, and passenger configuration during each change.'],
+      needed: ['Native Garmin ADM/GPX point sequence, the complete PowerPoint route slides, original image metadata, and any assisting-vessel track or statement.'],
+      sourceViews: [
+        { source: 'UCN-distributed configuration', position: 'Places the Triton within the nearshore Horn Island boat gathering; the exact capture minute remains unresolved.' },
+        { source: 'Released Sea Tow call', position: 'Provides the distressed Triton’s later current offshore coordinate before 4:30 PM.' },
+        { source: 'MDMR GPS summary', position: 'Labels 11:15 AM–4:30 PM “consistent with a stationary position,” but does not publish the underlying point table.' },
+        { source: 'Combined finding', position: 'The shoreline and later offshore placements establish at least one intervening positional change; they do not establish a point-by-point route.' }
+      ]
     },
     'early-afternoon': {
       unknowns: ['Exact capture times, Nolan’s movements between boats, and the complete set of available media.'],

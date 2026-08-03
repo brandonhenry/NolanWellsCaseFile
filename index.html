@@ -27,6 +27,7 @@
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://server.arcgisonline.com">
   <link rel="preconnect" href="https://basemaps.cartocdn.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
@@ -40,6 +41,14 @@
   <div id="map-fallback" aria-hidden="true">
     <div class="fallback-coast"></div>
   </div>
+
+  <button class="control-button map-style-toggle" id="map-style-toggle" type="button" aria-label="Switch map to dark basemap" data-active-style="satellite">
+    <i class="map-style-icon" aria-hidden="true">
+      <svg class="map-style-icon-satellite" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3.2"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M12.6 3.4l-1.4 1.4M4.8 11.2l-1.4 1.4"/></svg>
+      <svg class="map-style-icon-dark" viewBox="0 0 16 16"><path d="M12.8 10.6A5.6 5.6 0 0 1 5.4 3.2a5.6 5.6 0 1 0 7.4 7.4Z"/></svg>
+    </i>
+    <span class="map-style-label">Satellite</span>
+  </button>
 
   <nav class="top-controls" aria-label="Timeline resources">
     <div class="timeline-menu">
@@ -114,6 +123,6 @@
 
   <script src="./assets/timeline-data.js?v=20260803c"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
-  <script src="./assets/home.js?v=20260801b"></script>
+  <script src="./assets/home.js?v=20260803a"></script>
 </body>
 </html>

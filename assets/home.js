@@ -17,6 +17,28 @@
   let mapSwapTimer = null;
   let mapRevealTimer = null;
   let mapLoadHandler = null;
+  let activeMapStyle = 'satellite';
+  let pendingMapStyleFinish = null;
+
+  const mapStyles = {
+    satellite: {
+      label: 'Satellite',
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      options: {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+        maxZoom: 19
+      }
+    },
+    dark: {
+      label: 'Dark',
+      url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+      options: {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }
+    }
+  };
 
   function escapeHtml(value) {
     return String(value || '').replace(/[&<>"']/g, character => ({
@@ -138,7 +160,7 @@
         <h2 class="step-title">What do we actually know?</h2>
         <p class="step-summary">This reconstruction should change when stronger primary evidence becomes available. The unresolved questions are part of the record—not gaps to fill with certainty.</p>
         <div class="end-links"><a class="source-link" href="./case-summary.html">Case summary →</a><a class="source-link" href="./event-timeline.html">Full evidence log →</a><a class="source-link" href="./archive.html">Evidence archive →</a><a class="source-link" href="./evidence-tracker.html">Missing evidence →</a><a class="source-link" href="./about.html">Methodology →</a></div>
-        <p class="end-attribution">Visual interaction adapted from the public Subtxt Press Nolan timeline at reference commit ${escapeHtml(data.meta.referenceCommit)}. Map data © OpenStreetMap contributors © CARTO.</p>
+        <p class="end-attribution">Visual interaction adapted from the public Subtxt Press Nolan timeline at reference commit ${escapeHtml(data.meta.referenceCommit)}. Satellite imagery © Esri and its data providers; dark basemap © OpenStreetMap contributors © CARTO.</p>
       </article>
     </section>`;
     story.insertAdjacentHTML('beforeend', intro + data.events.map(eventMarkup).join('') + ending);
@@ -313,16 +335,86 @@
       keyboard: false
     }).setView([openingLocation.lat, openingLocation.lng], data.meta.opening.zoom || openingLocation.zoom);
     map.attributionControl.setPrefix(false);
-    tileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19,
+    try {
+      const savedStyle = window.localStorage.getItem('nolan-map-style');
+      if (mapStyles[savedStyle]) activeMapStyle = savedStyle;
+    } catch (error) {
+      activeMapStyle = 'satellite';
+    }
+    tileLayer = createMapTileLayer(activeMapStyle).addTo(map);
+    updateMapStyleUi(activeMapStyle);
+    map.getContainer().setAttribute('tabindex', '-1');
+    map.whenReady(() => requestAnimationFrame(() => map.invalidateSize({ animate: false, pan: false })));
+  }
+
+  function createMapTileLayer(styleId) {
+    const style = mapStyles[styleId] || mapStyles.satellite;
+    const layer = L.tileLayer(style.url, {
+      ...style.options,
       updateWhenIdle: true,
       updateWhenZooming: false,
       keepBuffer: 4
-    }).addTo(map);
-    map.getContainer().setAttribute('tabindex', '-1');
-    map.whenReady(() => requestAnimationFrame(() => map.invalidateSize({ animate: false, pan: false })));
+    });
+    let errors = 0;
+    layer.on('tileerror', () => {
+      errors += 1;
+      if (errors < 4 || activeMapStyle !== styleId || styleId === 'dark') return;
+      switchMapStyle('dark', { persist: false, announce: false });
+      status.textContent = 'Satellite imagery could not load. The dark map is being shown instead.';
+    });
+    return layer;
+  }
+
+  function updateMapStyleUi(styleId) {
+    const button = document.getElementById('map-style-toggle');
+    const current = mapStyles[styleId];
+    const next = styleId === 'satellite' ? mapStyles.dark : mapStyles.satellite;
+    button.dataset.activeStyle = styleId;
+    button.querySelector('.map-style-label').textContent = current.label;
+    button.setAttribute('aria-label', `Switch map to ${next.label.toLowerCase()} view`);
+    button.title = `Current map: ${current.label}. Switch to ${next.label}.`;
+    document.getElementById('map').dataset.mapStyle = styleId;
+  }
+
+  function switchMapStyle(styleId, options = {}) {
+    if (!map || !mapStyles[styleId]) return;
+    if (pendingMapStyleFinish) pendingMapStyleFinish();
+    if (styleId === activeMapStyle) return;
+
+    const previousLayer = tileLayer;
+    const nextLayer = createMapTileLayer(styleId).setOpacity(0).addTo(map);
+    const container = map.getContainer();
+    let fallbackTimer = null;
+    let finished = false;
+    container.classList.add('map-style-changing');
+    activeMapStyle = styleId;
+    tileLayer = nextLayer;
+    updateMapStyleUi(styleId);
+
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      nextLayer.off('load', finish);
+      if (fallbackTimer !== null) window.clearTimeout(fallbackTimer);
+      nextLayer.setOpacity(1);
+      if (previousLayer && map.hasLayer(previousLayer)) map.removeLayer(previousLayer);
+      pendingMapStyleFinish = null;
+      window.setTimeout(() => container.classList.remove('map-style-changing'), reduceMotion ? 0 : 90);
+    };
+
+    pendingMapStyleFinish = finish;
+    nextLayer.once('load', finish);
+    fallbackTimer = window.setTimeout(finish, 1800);
+    if (options.persist !== false) {
+      try { window.localStorage.setItem('nolan-map-style', styleId); } catch (error) { /* Preference storage is optional. */ }
+    }
+    if (options.announce !== false) status.textContent = `${mapStyles[styleId].label} map enabled.`;
+  }
+
+  function wireMapStyleToggle() {
+    document.getElementById('map-style-toggle').addEventListener('click', () => {
+      switchMapStyle(activeMapStyle === 'satellite' ? 'dark' : 'satellite');
+    });
   }
 
   function updateMapRoute(routeId) {
@@ -508,6 +600,7 @@
   wireTimelineMenu();
   wirePanels();
   wireMedia();
+  wireMapStyleToggle();
   initMap();
   wireScrollSync();
 })();

@@ -326,30 +326,6 @@
         ]
       },
       {
-        id: 'lucas-aviz-last-contact', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Probably 2:00–2:30 PM', precision: 'Apparent firsthand statement preserved only in a derivative screenshot',
-        title: 'Lucas Aviz describes a conversation and white center-console boat', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
-        summary: 'A screenshot attributes to Lucas Aviz that Nolan said “I have to leave” around 2:00–2:30 PM and that Aviz last saw him get onto an unidentified white center-console boat.',
-        claims: ['The screenshot reads as Aviz describing his own conversation and sighting.', 'The cropped parent post and direct Lucas comment permalink were not recovered.', 'The boat is unidentified and must not be equated with MI4088BU.'],
-        media: { type: 'image', src: './media/social-source-audit/2026-07-06-tonya-lucas-aviz-last-contact.jpg', alt: 'Screenshot preserving a Lucas Aviz comment about a conversation and a white center-console boat around 2 to 2:30 PM', caption: 'Derivative screenshot · apparent firsthand lead · parent post unrecovered' },
-        sources: [
-          { label: 'Source-level social ledger', href: './social-source-ledger.html#lucas-aviz-last-contact' },
-          { label: 'Preserving Facebook comment · July 6', href: 'https://www.facebook.com/reel/895769156900111/?comment_id=2512277019214890' },
-          { label: 'Master social-source review', href: `${master}#social-source-review` }
-        ]
-      },
-      {
-        id: 'stephen-ray-east-end-sighting', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Time not stated', precision: 'Tentative apparent firsthand recollection preserved in a screenshot',
-        title: 'Tentative east-end sand-dune sighting', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
-        summary: 'A screenshot preserves Stephen Ray writing that he felt they had seen Nolan at the east end standing on a sand dune on July 4.',
-        claims: ['The wording is expressly tentative.', 'No exact time, precise position, image of Nolan, or independent confirmation is provided.'],
-        media: { type: 'image', src: './media/social-source-audit/2026-07-06-sherida-stephen-ray-east-end-sighting.jpg', alt: 'Screenshot preserving Stephen Ray’s tentative east-end sighting comment', caption: 'Derivative screenshot · tentative sighting · exact time unknown' },
-        sources: [
-          { label: 'Source-level social ledger', href: './social-source-ledger.html#stephen-ray-sighting' },
-          { label: 'Preserving Facebook comment · July 6', href: 'https://www.facebook.com/reel/895769156900111/?comment_id=1317849450563956' },
-          { label: 'Master social-source review', href: `${master}#social-source-review` }
-        ]
-      },
-      {
         id: 'warren-last-sighting', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 3:00 PM', precision: 'Approximate witness recollection',
         title: 'Warren’s reported last personal sighting', type: 'firsthand', confidence: 'Medium', masterAnchor: 'warren', location: 'hornIsland',
         summary: 'Warren later placed his own last sighting of Nolan at about 3:00 PM and described Nolan interacting with Katie.',
@@ -1041,21 +1017,6 @@
         { source: 'Official GPS', position: 'Records MI4088BU beginning movement at 4:31 PM, so the reported five-o’clock wording cannot presently be treated as a precise departure time.' },
         { source: 'Open conflict', position: 'The time may be rounded, recalled inaccurately, refer to a different moment or vessel, or otherwise lack context; the public record cannot choose among those explanations.' }
       ]
-    },
-    'lucas-aviz-last-contact': {
-      confidenceReason: 'The words appear to be a named witness’s firsthand account, but only a cropped derivative screenshot is preserved and the parent post and direct Lucas permalink were not recovered.',
-      unknowns: ['The original comment context, exact conversation time, Nolan’s meaning, the white center-console boat’s identity, its occupants, and where it went.'],
-      needed: ['Direct Lucas Aviz statement, original parent thread, native post data, vessel identification, and corroborating witnesses.'],
-      sourceViews: [
-        { source: 'Lucas Aviz screenshot', position: 'Describes speaking with Nolan around 2:00–2:30 PM and last seeing him board a white center-console boat.' },
-        { source: 'Source limitation', position: 'Only a screenshot repost is preserved; the cropped parent post and direct Lucas permalink are unavailable.' },
-        { source: 'Official GPS', position: 'Does not identify the white boat or establish that it was MI4088BU.' }
-      ]
-    },
-    'stephen-ray-east-end-sighting': {
-      confidenceReason: 'The apparent witness uses tentative language, and the screenshot provides no exact time or corroborating image.',
-      unknowns: ['Exact time, precise dune, viewing distance, identification basis, companions, and whether the person was Nolan.'],
-      needed: ['Direct witness interview, original comment context, exact location and time, and corroborating media or witnesses.']
     },
     'ivy-video-account': {
       confidenceReason: 'A named participant directly identifies herself in the scene and describes the sequence, while expressly limiting the possible Nolan identification.',

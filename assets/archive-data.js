@@ -147,7 +147,7 @@
         href: './social-source-ledger.html',
         summary: 'Preserves case-related material from five July 5–7 Facebook threads plus public posts containing screenshots attributed to Katie Hudson Seymour and Faith Lauren, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
         contents: ['Attributed Faith Lauren witness and reporting-intent screenshots', 'Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'lucas-aviz-last-contact', 'stephen-ray-east-end-sighting', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'family-private-search-0600', 'official-search', 'anna-clarification'],
+        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'family-private-search-0600', 'official-search', 'anna-clarification'],
         missingCompanions: ['Authenticated Faith Lauren statement, native message export, original footage, and police evidence receipt', 'Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
@@ -349,7 +349,7 @@
         name: 'Lucas Aviz',
         role: 'Screenshot-preserved source claimant',
         summary: 'A derivative screenshot attributes to Aviz an apparent firsthand conversation with Nolan and a later boat sighting around 2:00–2:30 PM. The parent post and direct comment permalink have not been recovered.',
-        eventIds: ['lucas-aviz-last-contact'],
+        eventIds: [],
         interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#lucas-aviz-last-contact' }],
         questions: ['Can the original parent thread and direct comment be recovered?', 'Which white center-console boat did he describe?', 'Who else heard or saw the reported interaction?'],
         recordStatus: 'Low-confidence public lead'
@@ -359,7 +359,7 @@
         name: 'Stephen Ray',
         role: 'Screenshot-preserved source claimant',
         summary: 'A derivative screenshot preserves Ray’s expressly tentative statement that “we” may have seen Nolan on an east-end sand dune. It contains no exact time or independent identification.',
-        eventIds: ['stephen-ray-east-end-sighting'],
+        eventIds: [],
         interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#stephen-ray-sighting' }],
         questions: ['Who did “we” refer to?', 'What was the time and precise location?', 'What observation supported the identification?'],
         recordStatus: 'Low-confidence public lead'

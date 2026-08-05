@@ -7,6 +7,7 @@
       { id: 'search', title: 'Search everything', description: 'Search events, transcript lines, documents, people, boats, questions, contradictions, and master-note sections.', href: './search.html', tone: 'verified' },
       { id: 'documents', title: 'Documents', description: 'Open every obtained source as a record with its status, contents, references, and missing companion files.', href: './documents.html', tone: 'media' },
       { id: 'plunder-release', title: 'PLUNDER Source Archive', description: 'Review the July 2026 source-post index, MDMR records, GPS material, search graphics, dispatch archive, and court-record collection.', href: './plunder-archive.html', tone: 'media' },
+      { id: 'ucn-report', title: 'United Cajun Navy Report Review', description: 'Examine the July 31 report material, Exhibit A3, its unverified source annotation, four preserved images, and the provenance records still needed.', href: './ucn-report.html', tone: 'media' },
       { id: 'social-sources', title: 'Social Source Ledger', description: 'Review retained July 5–7, 2026 case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
       { id: 'last-contact', title: 'Last Contact Matrix', description: 'Compare reported last sightings, last words, times, listeners, and confidence without collapsing them into one claim.', href: './last-contact.html', tone: 'firsthand' },
       { id: 'contradictions', title: 'Contradictions', description: 'Place public narratives beside supporting, conflicting, and still-missing evidence without accusing anyone.', href: './contradictions.html', tone: 'unknown' },
@@ -45,6 +46,19 @@
         contents: ['Four source posts dated July 12–28, 2026', '144 original attachments', '130 unique attachment files after duplicate-content review plus one matching embedded Sea Tow working copy', 'Six files available on this site', 'Dispatch archive counts and overlap', 'Additional source-file names and SHA-256 checksums'],
         referencedEvents: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'gps-normal-525', 'gps-return-544', 'female-lead-1155', 'drone-searches-1240', 'anchor-position-1630', 'sar-model-request-2152', 'body-found'],
         missingCompanions: ['Native dispatch metadata', 'Complete official versions of every referenced companion record']
+      },
+      {
+        id: 'ucn-report-review',
+        title: 'United Cajun Navy Report · Evidence Review',
+        kind: 'Public-source report review',
+        status: 'Partial source packet',
+        availability: 'Four distributed images public on this site',
+        confidence: 'Claim-specific',
+        href: './ucn-report.html',
+        summary: 'A claim-level review of the July 31, 2026 UCN report material, including Exhibit A3 (31656.jpg), its unverified “Warren on Palm Beach” source annotation, and the records needed to test that identification.',
+        contents: ['July 31 report context', 'Exhibit A3 source-annotation analysis', 'Four-image preservation gallery with SHA-256 hashes', 'Submission chronology and independence question', 'Missing provenance and corroboration checklist'],
+        referencedEvents: ['triton-pre-430-repositioning'],
+        missingCompanions: ['Complete report and direct public-filing or attachment permalink', 'Original unannotated 31656.jpg', 'Submission date and chain of custody', 'Annotator identity, statement, and recognition basis', 'Native MP4 files and metadata', 'Authenticated occupant roster']
       },
       {
         id: 'gps-extraction-summary',
@@ -126,14 +140,14 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 2.3',
+        title: 'Master Investigation Notes · Version 2.4',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'August 3 UCN image release and pre-4:31 repositioning finding', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'August 3 UCN image release and pre-4:31 repositioning finding', 'UCN Exhibit A3 source-identification limits', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
         referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'faith-lauren-reporting-intent'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
@@ -565,6 +579,7 @@
       { item: 'Original viral-video file and metadata', status: 'Circulated copy found; original missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './media/2026-07-04-tracetin-fighting.mp4' },
       { item: 'Authenticated Katie Hudson Seymour message export', status: 'Four public screenshots found; authenticated export missing', public: 'Partial', request: 'Not documented', priority: 'High', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
       { item: 'Authenticated Faith Lauren statement, original footage, and police receipt', status: 'Five public-post attachments found; identity, native records, footage, submission, and agency receipt missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './social-source-ledger.html#faith-lauren-source' },
+      { item: 'Complete UCN report and Exhibit A3 submission trail', status: 'Four distributed images found; complete report, native A3 file, annotator, basis, receipt date, and chain of custody missing', public: 'Partial', request: 'Tracked for corroboration', priority: 'Critical', href: './ucn-report.html' },
       { item: 'Complete Katie interview', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' },
       { item: 'Complete Wyatt and Bart interviews', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'High' },
       { item: 'Verified passenger manifests by vessel and time', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' }
@@ -583,7 +598,8 @@
       { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
       { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
       { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' },
-      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The UCN-released configuration places the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Direct report download or attachment permalink, native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' }
+      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The UCN-released configuration places the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Direct report download or attachment permalink, native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' },
+      { id: 14, question: 'Who submitted and annotated UCN Exhibit A3 (31656.jpg), when, and on what basis?', status: 'Open', evidence: 'The UCN report treats “Warren on Palm Beach” as a source annotation, says it is not an independent facial identification, and describes only moderate confidence for source identification', needed: 'Named submitter and annotator statements, original unannotated file, submission record and metadata, recognition basis, independent confirmation, and authenticated occupant roster' }
     ],
 
     fileTree: [

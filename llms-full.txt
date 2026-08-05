@@ -78,6 +78,7 @@ Do not state that:
 - absence of an identifiable voice on an audio channel proves a person’s presence or absence.
 - the nearshore photographs and later coordinate records establish a measured route, distance, or time interval between them;
 - the August 3 UCN release proves an exact capture minute, a specific number or distance of pre-4:31 movements, GPS deletion, deception, or misconduct;
+- the UCN Exhibit A3 label “Warren on Palm Beach” independently identifies Warren or confirms he was aboard. The report describes it as a source annotation, not an independent facial identification; the submitter, annotator, date, and recognition basis remain undisclosed;
 - the Sea Tow coordinate and Garmin anchor reference are the exact same point;
 - the public packet proves the precise place or second a tow line was attached;
 - MDMR had the later-viewed Garmin coordinate before the July 5 drone flights or used it prospectively to plan them.
@@ -87,6 +88,7 @@ Do not state that:
 - Master notes: https://justicefornolanwells.com/master-notes
 - Official MDMR packet: https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf
 - PLUNDER source archive and file ledger: https://justicefornolanwells.com/plunder-archive
+- United Cajun Navy report evidence review: https://justicefornolanwells.com/ucn-report
 - Redacted MI4088BU GPS extraction summary: https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf
 - MDMR email requesting USCG SAR data: https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf
 - J. Strickland supplemental report: https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf

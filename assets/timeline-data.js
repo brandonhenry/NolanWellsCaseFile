@@ -528,43 +528,6 @@
         ]
       },
       {
-        id: 'katie-five-oclock-message', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM (reported)', precision: 'Approximate wording in attributed screenshots; not an authenticated event time',
-        title: 'Attributed message says Wyatt asked Nolan to board “at five”', type: 'secondhand', confidence: 'Low', masterAnchor: 'katie-message-source', location: 'hornIsland',
-        summary: 'Four screenshots in a public Boogie LowDown post show a conversation labeled Katie Hudson Seymour in which the sender says Wyatt repeatedly asked Nolan to board “at five when it was time to leave,” but Nolan wanted to stay with a girl.',
-        claims: ['The sender says the girl’s boat was parked next to Wyatt’s and that other people heard Wyatt ask Nolan several times.', 'The sender says Wyatt’s boat began filling with water, later broke down, and was towed.', 'The sender says Warren was not on Wyatt’s boat, later noticed Nolan was missing, and contacted Nolan’s mother, the Coast Guard, and the sheriff’s office.', 'The screenshots do not independently authenticate the sender, completeness, message date, or the underlying account. The five-o’clock wording is not reconciled with MI4088BU’s verified 4:31 PM movement.'],
-        media: { type: 'image', src: './media/social-source-audit/2026-07-05-katie-hudson-seymour-message-1.jpg', alt: 'First of four public screenshots showing a Messenger conversation labeled Katie Hudson Seymour', caption: 'Publicly posted attributed message screenshots · sender and event time not independently authenticated' },
-        sources: [
-          { label: 'Four-image social-source record', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
-          { label: 'Original Boogie LowDown post', href: 'https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/' },
-          { label: 'Master source assessment', href: `${master}#katie-message-source` },
-          { label: 'MDMR GPS summary · page 5', href: `${report}#page=5` }
-        ]
-      },
-      {
-        id: 'lamp-passenger-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM', precision: 'Approximate secondhand account preserved in screenshots',
-        title: 'Passenger account describes an “almost” fight', type: 'secondhand', confidence: 'Low', masterAnchor: 'social-source-review', location: 'hornIsland',
-        summary: 'A screenshot of a public Matthew Lamp thread says an unnamed passenger was “pretty certain” Nolan was part of a group that was almost fighting around 5:00 PM; Lamp later says three people on his boat described it as among the group.',
-        claims: ['Lamp also wrote that a blue-top Bertram left shortly afterward and “pretty fast.”', 'The claim is not a direct statement from the unnamed passengers and the original thread has not been recovered.', 'The approximate time is not reconciled with the separate 4:31 PM GPS movement of MI4088BU and must not be treated as a verified sequence.'],
-        media: { type: 'image', src: './media/social-july-5-comments/2026-07-06-racquel-matthew-lamp-thread.jpg', alt: 'Screenshot preserving a Matthew Lamp Facebook thread about an unnamed passenger account of an almost-fight around 5 PM', caption: 'Public screenshot · secondhand passenger account · exact time and original thread unverified' },
-        sources: [
-          { label: 'Source-level social ledger', href: './social-source-ledger.html#matthew-lamp-lead' },
-          { label: 'Latasha A Manuel comment · July 6', href: 'https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1758629241845860' },
-          { label: 'RaćQuel Kirsten comment · July 6', href: 'https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl?comment_id=1802007094509647' },
-          { label: 'Master social-source review', href: `${master}#social-source-review` }
-        ]
-      },
-      {
-        id: 'katelynn-nearby-boats-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 5:00 PM / until 7:30 PM', precision: 'Ambiguous firsthand reply; referents and vessel not identified',
-        title: 'Nearby-boats reply leaves its 5:00 and 7:30 referents unresolved', type: 'firsthand', confidence: 'Low', masterAnchor: 'social-source-review', location: null,
-        summary: 'Katelynn Brochard says “we were out there next to where he was until 7:30” and “they did leave around 5,” but the boat, location, and pronouns are not identified.',
-        claims: ['The reply may describe a nearby boat’s continued presence and a different boat’s departure.', 'It cannot responsibly be converted into a Nolan sighting at 5:00 or 7:30 PM.'],
-        sources: [
-          { label: 'Katelynn Brochard · direct Facebook reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392' },
-          { label: 'Source-level social ledger', href: './social-source-ledger.html#katelynn-boats-account' },
-          { label: 'Master social-source review', href: `${master}#social-source-review` }
-        ]
-      },
-      {
         id: 'gps-normal-525', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '5:25 PM', precision: 'Minute-level GPS timestamp',
         title: 'MI4088BU regains normal operation', type: 'verified', confidence: 'High', masterAnchor: 'official-gps-timeline', location: 'northSound', route: 'return',
         summary: 'MDMR reports that the tracked vessel accelerates to approximately 30–35 knots after the period of slow movement.',
@@ -996,28 +959,6 @@
         { time: '4:31 PM', state: 'MI4088BU movement begins', known: true }
       ]
     },
-    'lamp-passenger-account': {
-      confidenceReason: 'The claim is preserved in three screenshots of one public thread, but Matthew Lamp relays unnamed passengers rather than claiming a personal sighting. Duplicate screenshots do not create independent corroboration.',
-      unknowns: ['The unnamed passengers’ identities and direct words, the original post and full thread, the precise time and location, which group was involved, the blue-top Bertram’s identity, and whether this describes the same altercation reported earlier.'],
-      needed: ['Direct statements from the three passengers, the original Matthew Lamp post and images, native timestamps, and vessel identification.'],
-      sourceViews: [
-        { source: 'Matthew Lamp screenshot', position: 'Relays that one passenger was “pretty certain” Nolan was part of an almost-fight around 5 PM and that three passengers described it as among the group.' },
-        { source: 'Three reposts', position: 'Preserve the same thread in different screenshots; they are one source chain, not three witnesses.' },
-        { source: 'Official GPS', position: 'MI4088BU began slow movement at 4:31 PM; the approximate 5 PM claim is not reconciled to that vessel movement.' },
-        { source: 'Open conflict', position: 'The reported time may be approximate, may describe another vessel or group, or may be inaccurate. The public record cannot choose among those possibilities.' }
-      ]
-    },
-    'katie-five-oclock-message': {
-      confidenceReason: 'The four screenshots preserve one continuous message chain and the public poster’s attribution, but screenshots alone do not authenticate the sender or establish that the sender personally witnessed the reported five-o’clock exchange.',
-      unknowns: ['Whether the displayed account sent the messages, whether the sequence is complete, who directly witnessed Wyatt’s requests, whether “at five” is approximate, which vessel and girl are described, and why the wording differs from MI4088BU’s verified 4:31 PM movement.'],
-      needed: ['Authenticated message export with metadata, direct statement from the displayed sender, direct statements from Wyatt and the people said to have heard the requests, and reconciliation with the official vessel track.'],
-      sourceViews: [
-        { source: 'Attributed screenshots', position: 'Show the sender saying Wyatt repeatedly asked Nolan to board at five and that Nolan wanted to stay with a girl.' },
-        { source: 'Public poster', position: 'Identifies the displayed sender as Katie Hudson Seymour and dates the conversation to July 5 around 11:30 PM.' },
-        { source: 'Official GPS', position: 'Records MI4088BU beginning movement at 4:31 PM, so the reported five-o’clock wording cannot presently be treated as a precise departure time.' },
-        { source: 'Open conflict', position: 'The time may be rounded, recalled inaccurately, refer to a different moment or vessel, or otherwise lack context; the public record cannot choose among those explanations.' }
-      ]
-    },
     'ivy-video-account': {
       confidenceReason: 'A named participant directly identifies herself in the scene and describes the sequence, while expressly limiting the possible Nolan identification.',
       unknowns: ['Native video metadata, identities of all participants, exact DMR arrival time, and whether the background figure was Nolan.'],
@@ -1027,11 +968,6 @@
         { source: 'Anna C. Moore', position: 'Says she never saw Nolan and never claimed the recorded argument involved him.' },
         { source: 'Open limit', position: 'Neither account authenticates the clip’s native capture time or identifies Nolan with certainty.' }
       ]
-    },
-    'katelynn-nearby-boats-account': {
-      confidenceReason: 'The writer appears to speak from personal presence, but the pronouns, boat, position, and relationship between the stated times are unresolved.',
-      unknowns: ['Who “we” and “they” were, which vessel left around 5:00 PM, the exact position, and what “where he was” meant.'],
-      needed: ['Clarifying statement, boat identification, source images, coordinates, and corroborating accounts.']
     },
     'faith-lauren-reporting-intent': {
       confidenceReason: 'The public post and five attachments preserve the displayed statements and 1:08 AM interface label, but they do not authenticate the account owner, participants, delivery, underlying events, footage, or police receipt.',

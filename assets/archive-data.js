@@ -134,7 +134,7 @@
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
         contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'August 3 UCN image release and pre-4:31 repositioning finding', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'katie-five-oclock-message', 'faith-lauren-reporting-intent'],
+        referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'faith-lauren-reporting-intent'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -147,7 +147,7 @@
         href: './social-source-ledger.html',
         summary: 'Preserves case-related material from five July 5–7 Facebook threads plus public posts containing screenshots attributed to Katie Hudson Seymour and Faith Lauren, with visible times, permalinks, local copies, hashes, and claim-level assessments.',
         contents: ['Attributed Faith Lauren witness and reporting-intent screenshots', 'Attributed Katie Hudson Seymour message screenshots and 5:00 PM claim', 'East Tip scene submissions', 'Lucas Aviz apparent last-contact screenshot', 'Stephen Ray tentative sighting', 'Anna C. Moore clarification', 'Ivy Elizabeth direct reply', 'Katelynn Brochard ambiguous timing reply', 'Matthew Lamp passenger-account screenshots', 'Search-participation reports', 'Machine-readable JSON ledger', 'SHA-256 hashes'],
-        referencedEvents: ['faith-lauren-reporting-intent', 'katie-five-oclock-message', 'ivy-video-account', 'katelynn-nearby-boats-account', 'lamp-passenger-account', 'east-tip-photo-submission', 'family-private-search-0600', 'official-search', 'anna-clarification'],
+        referencedEvents: ['faith-lauren-reporting-intent', 'ivy-video-account', 'east-tip-photo-submission', 'family-private-search-0600', 'official-search', 'anna-clarification'],
         missingCompanions: ['Authenticated Faith Lauren statement, native message export, original footage, and police evidence receipt', 'Authenticated export of the attributed Katie Hudson Seymour conversation', 'Forensic export of every comment and reply', 'Direct July 2026 JCSO and Mississippi NAACP Facebook post permalinks', 'Original device files and metadata', 'Original Matthew Lamp and Lucas Aviz parent threads', 'Direct statements from the unnamed Matthew Lamp passengers']
       },
       {
@@ -379,7 +379,7 @@
         name: 'Katelynn Brochard',
         role: 'Named public source claimant',
         summary: 'A direct public reply mentions nearby boats, approximately 5:00 PM, and 7:30 PM, but does not identify the vessel, location, or pronoun referents. It is retained as context—not a Nolan sighting.',
-        eventIds: ['katelynn-nearby-boats-account'],
+        eventIds: [],
         interviews: [{ label: 'Direct reply and assessment', href: './social-source-ledger.html#katelynn-boats-account' }],
         questions: ['What boat and location did “we” refer to?', 'Who did “they” refer to?', 'What did “where he was” mean?'],
         recordStatus: 'Ambiguous firsthand context'
@@ -389,7 +389,7 @@
         name: 'Matthew Lamp',
         role: 'Secondhand public source claimant',
         summary: 'Screenshots attribute to Lamp a secondhand account from unnamed passengers about an “almost” fight and a separate boat departure. The original thread and direct passenger statements are not in the archive.',
-        eventIds: ['lamp-passenger-account'],
+        eventIds: [],
         interviews: [{ label: 'Preserved source record', href: './social-source-ledger.html#matthew-lamp-lead' }],
         questions: ['Who were the unnamed passengers?', 'What vessel were they on?', 'Can the original thread and exact event time be authenticated?'],
         recordStatus: 'Low-confidence secondhand lead'

@@ -13,7 +13,7 @@
 
   window.NOLAN_EVIDENCE = {
     meta: {
-      title: 'Nolan Wells',
+      title: 'What Happened To Nolan Wells?',
       range: 'July 3–7, 2026',
       description: 'Nolan Wells, 18, was reported missing after a gathering at Horn Island on July 4, 2026. His body was recovered near the island’s northwest tip on the morning of July 6, 2026. This timeline follows the official GPS record, search activity, witness accounts, and the unresolved period before his boat left the island.',
       opening: {

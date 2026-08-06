@@ -1,14 +1,14 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.4",
-  "reviewedAt": "2026-07-31",
+  "version": "1.5",
+  "reviewedAt": "2026-08-06",
   "parentPost": {
     "author": "Christine Wonsley",
     "published": "2026-07-05T17:54:00-05:00",
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It separately preserves the caption and four attachments from a Boogie LowDown public post and the caption and five attachments from a Natalya King public post; those two posts’ full comment trees were not audited. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
+  "scopeNote": "The audit covers the exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, and Anna C. Moore’s July 7 clarification. It separately preserves three supplemental source sets: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, and a supplied complete Katelynn Brochard reply frame plus four images from a public derivative repost. Those supplemental sources’ full comment trees were not audited. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
@@ -17,6 +17,7 @@
     {"source":"Anna C. Moore clarification","exposed":"10 top-level comments plus selected relevant replies","url":"https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl"},
     {"source":"Boogie LowDown attributed-message post","exposed":"Exact caption and four image attachments preserved; comments not audited","url":"https://www.facebook.com/marcust.hughes.7/posts/warren-hudsons-mother-katie-hudson-seymour-reached-out-to-me-on-7526-at-around-1/1669989390895030/"},
     {"source":"Natalya King attributed-witness post","exposed":"Exact post context and five image attachments preserved; exposed comments checked for a direct Faith Lauren reply, but the full 250-comment tree was not audited","url":"https://www.facebook.com/richedreams/posts/pfbid0cunvci1mCDcYCTVXG3smk2jQXYDR24hRV5LunmQ6kggV5UBitH9e8Dx9aPmLbopPl"},
+    {"source":"Katelynn Brochard supplied frame and Nicol.Everything derivative repost","exposed":"Complete supplied frame preserves the first statement, Briana May question, and Katelynn follow-up reply; public repost and four attached images preserved; native parent thread not recovered","url":"https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
   "records": [
@@ -310,17 +311,30 @@
     },
     {
       "id": "katelynn-nearby-boats-account",
-      "sourceType": "direct Facebook reply",
+      "sourceType": "named Facebook statements preserved through a direct reply, a supplied screenshot, and a public derivative repost",
       "commenter": "Katelynn Brochard",
       "published": "2026-07-07T09:26:00-05:00",
       "message": "In reference to we were out there next to where he was until 7:30 and he was not there left behind anywhere near us. And they just took it and ran. they did leave around 5 tho.",
       "commentUrl": "https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392",
-      "mediaUrl": null,
-      "archivePath": null,
-      "sha256": null,
-      "grade": "C-ambiguous firsthand context",
-      "status": "Relevant but referents unresolved",
-      "assessment": "The comment may describe the writer’s boat remaining near a relevant area until 7:30 PM and another boat leaving around 5 PM, but the pronouns, vessel, exact location, and meaning of ‘where he was’ are not identified. It must not be converted into a Nolan sighting at 5:00 or 7:30 PM."
+      "attributedScreenshotStatements": [
+        "We were parked right next to them and he was no where in sight when we left at 7:30.",
+        "He introduced himself to my husband and everything he was very respectful. The young kids just were rowdy. I didn't see them swimming to the yacht. I wish I would have been more attentive but I do know that he was on that boat with them and that he was having a good time. Prayers that answers come soon."
+      ],
+      "screenshotContext": "The supplied screenshot shows Katelynn’s first statement, Briana May asking whether this was the group throwing beer cans and whether Nolan was with them, and Katelynn’s reply. A moving-caption overlay obscures a few words near the end, but the surrounding sentence reads as ‘having a good time.’ The screenshot appears to be a frame from an edited social video; the native parent-post permalink and native comment export have not been recovered.",
+      "publicRepostUrl": "https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/",
+      "publicRepostPhotoUrl": "https://www.facebook.com/photo/?fbid=1021993340691888&set=pcb.1021993407358548",
+      "mediaUrl": "https://www.facebook.com/photo/?fbid=1021993340691888&set=pcb.1021993407358548",
+      "archivePath": "/media/social-source-audit/katelynn-brochard/comment-thread-supplied-screenshot.png",
+      "sha256": "885dab5d6c15f021ab80e8b3813186d64a807f1e08446bc2cc0b794401688c05",
+      "additionalMedia": [
+        {"archivePath":"/media/social-source-audit/katelynn-brochard/public-repost-statement-and-scene.jpg","sha256":"269fa35b91b38dcd17181fd48fa272528b535599a558e55a39bd97e9ab283d98","dimensions":"960x1280","note":"Public Nicol.Everything repost combining the 7:30 statement with a nearshore scene; it crops out Katelynn’s follow-up reply."},
+        {"archivePath":"/media/social-source-audit/katelynn-brochard/public-repost-boat-still-01.jpg","sha256":"fff4dc1cb60e27d8773c202a9cbed95e3c7ea31ddc85750cdd3b4bed458a0455","dimensions":"960x1280","note":"Second image in the same public repost; native capture time and vessel identifications are unavailable."},
+        {"archivePath":"/media/social-source-audit/katelynn-brochard/public-repost-boat-still-02.jpg","sha256":"a20d1882c6b5131022c8176d70d4658dca5cc12e9f4c5ddd14cf66141594cae5","dimensions":"960x1280","note":"Third image in the same public repost; native capture time and vessel identifications are unavailable."},
+        {"archivePath":"/media/social-source-audit/katelynn-brochard/public-repost-crop-interface.jpg","sha256":"88f6d64cc9963788f9aaa0a31c643aba8064c53ef56886a9addd1a1502fd050b","dimensions":"960x1280","note":"Fourth image in the same public repost; preserves a phone crop interface and is not native source media."}
+      ],
+      "grade": "B-named firsthand account / derivative media preservation",
+      "status": "Material firsthand account; native parent thread and media metadata remain unavailable",
+      "assessment": "The two attributed statements form a coherent firsthand account: Katelynn says Nolan introduced himself to her husband, that her group was parked directly beside the group, and that Nolan was not in sight when her group left at 7:30 PM. This supports a no-sight observation in her immediate area at her departure time; it is not a case-wide last-sighting time and does not establish where Nolan was then. The statements do not say Katelynn witnessed Nolan refuse a ride. Her separate July 7 direct reply mentions another departure around 5 PM, but the pronouns and vessel remain unresolved. The public repost corroborates that the 7:30 statement circulated under her name while cropping out the follow-up reply; it does not authenticate the native comment or the attached scene images."
     },
     {
       "id": "faith-lauren-reporting-intent",

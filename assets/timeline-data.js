@@ -563,6 +563,24 @@
         ]
       },
       {
+        id: 'katelynn-nearby-account', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'By 7:30 PM', precision: 'Witness-reported departure time; native image and comment metadata remain unavailable',
+        title: 'Nearby boater says Nolan was not in sight when her group left', type: 'firsthand', confidence: 'Medium', masterAnchor: 'social-source-review', location: 'hornIsland',
+        summary: 'Katelynn Brochard says Nolan introduced himself to her husband earlier, that her group was parked directly beside Nolan’s group, and that Nolan was nowhere in sight when her group left at 7:30 PM.',
+        claims: [
+          'Brochard’s account supports that her nearby group did not see Nolan in the immediately adjacent area when they departed.',
+          'The 7:30 PM time describes Brochard’s group leaving; it is not an authenticated last-sighting time for Nolan and does not prove nobody elsewhere saw him afterward.',
+          'The preserved scene images are consistent with the broader nearshore gathering, but their native files, capture times, exact camera position, and complete vessel identifications remain unavailable.',
+          'Brochard does not say she witnessed Nolan refuse a boat ride. That possibility is retained as an unresolved inference, not a fact.'
+        ],
+        media: { type: 'image', src: './media/social-source-audit/katelynn-brochard/comment-thread-supplied-screenshot.png', alt: 'Screenshot preserving comments attributed to Katelynn Brochard about meeting Nolan, being parked beside his group, and leaving at 7:30 PM without seeing him nearby', caption: 'Attributed Katelynn Brochard comment thread · supplied screenshot; native comment export unavailable' },
+        sources: [
+          { label: 'Preserved comment thread and scene-image record', href: './social-source-ledger.html#katelynn-boats-account' },
+          { label: 'Public Facebook repost · Nicol.Everything', href: 'https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/' },
+          { label: 'Katelynn Brochard · direct July 7 reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392' },
+          { label: 'Master social-source assessment', href: `${master}#social-source-review` }
+        ]
+      },
+      {
         id: 'family-contacted', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Around 11:00–11:07 PM', precision: 'Two approximate publicly reported times; callers may be different people',
         title: 'Coast Guard and family contacts are reported', type: 'firsthand', confidence: 'Medium', masterAnchor: 'late-night-july-4', location: 'overview',
         summary: 'WLOX reports that a friend contacted the Coast Guard around 11:00 PM. Christine Wonsley says Warren called her around 11:07 PM, when Life360 placed Nolan’s phone back on the mainland.',
@@ -1018,6 +1036,27 @@
     'gps-return-544': {
       unknowns: ['Complete passenger list at return and the precise sequence immediately after arrival.'],
       needed: ['Passenger statements, dock media, and native Garmin records.']
+    },
+    'katelynn-nearby-account': {
+      confidenceReason: 'Two statements attributed to the same named source describe a personal introduction, the adjacent position of her group, and her 7:30 PM departure. A separate direct July 7 reply is consistent with that nearby-boats context, but the native parent thread and comment export remain unavailable.',
+      known: [
+        'Brochard says Nolan introduced himself to her husband and was respectful.',
+        'She says her group was parked directly beside the relevant group.',
+        'She says Nolan was not in sight in that adjacent area when her group left at 7:30 PM.'
+      ],
+      unknowns: [
+        'When Brochard last personally saw Nolan and where Nolan was at 7:30 PM.',
+        'The exact boat, camera position, native capture times, and complete passenger list.',
+        'The identity of “they” and the vessel associated with her separate around-5:00 statement.',
+        'Whether Nolan was offered or refused a ride; Brochard’s preserved statements do not say.'
+      ],
+      needed: ['Native Facebook thread export or parent-post permalink', 'Direct recorded statement from Brochard', 'Original scene media and metadata', 'Vessel and passenger identifications'],
+      sourceViews: [
+        { source: 'Complete supplied screenshot', position: 'Preserves the 7:30 statement, Briana May’s question, and Brochard’s follow-up about meeting Nolan.' },
+        { source: 'Nicol.Everything public repost', position: 'Preserves the first statement and nearby-scene images but crops out the follow-up reply.' },
+        { source: 'Direct July 7 reply', position: 'Places Brochard’s group nearby until 7:30 and separately mentions an around-5:00 departure with unresolved referents.' },
+        { source: 'Editorial limit', position: 'The account supports a local no-sight observation, not Nolan’s whereabouts, a case-wide last sighting, or a witnessed ride refusal.' }
+      ]
     },
     'family-contacted': {
       unknowns: ['The Coast Guard caller’s identity, whether that caller was Warren, the complete first-call recording, and the exact relationship between the 11:00 and 11:07 accounts.'],

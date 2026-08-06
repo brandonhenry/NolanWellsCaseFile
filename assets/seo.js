@@ -193,7 +193,7 @@
       'lucas-aviz': ['Lucas Aviz · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved account of an apparent July 4, 2026 conversation and unidentified boat sighting, with source limitations.'],
       'stephen-ray': ['Stephen Ray · Nolan Wells Public Source Record', 'A low-confidence screenshot-preserved tentative east-end sighting claim, with its missing time and corroboration clearly stated.'],
       'ivy-elizabeth': ['Ivy Elizabeth · Nolan Wells Video Source Record', 'A named public account concerning the Horn Island video sequence, visible boat occupants, and an explicitly uncertain background identification.'],
-      'katelynn-brochard': ['Katelynn Brochard · Nolan Wells Public Source Record', 'An ambiguous firsthand public reply concerning nearby boats and unresolved 5:00 and 7:30 PM referents.'],
+      'katelynn-brochard': ['Katelynn Brochard · Nolan Wells Public Source Record', 'Preserved statements in which Katelynn Brochard says Nolan introduced himself to her husband and was not in sight beside her group when it left Horn Island at 7:30 PM on July 4, 2026.'],
       'matthew-lamp': ['Matthew Lamp · Nolan Wells Public Source Record', 'A low-confidence secondhand public account attributed to unnamed passengers, preserved with source and timing limitations.']
     },
     boat: {

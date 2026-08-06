@@ -51,14 +51,27 @@
         id: 'ucn-report-review',
         title: 'United Cajun Navy Report · Evidence Review',
         kind: 'Public-source report review',
-        status: 'Partial source packet',
-        availability: 'Four distributed images and one published panorama excerpt public on this site',
+        status: 'Complete working report obtained; native exhibits remain missing',
+        availability: '22-page report, four distributed images, and one published panorama excerpt public on this site',
         confidence: 'Claim-specific',
         href: './ucn-report.html',
-        summary: 'A claim-level review of the July 31, 2026 UCN report material, Exhibit A3, and the Nancy Grace panorama, separating direct visual observations from sourced vessel identifications and unresolved capture metadata.',
-        contents: ['July 31 report context', 'Exhibit A3 source-annotation analysis', 'Four-image preservation gallery with SHA-256 hashes', 'Nancy Grace nearshore panorama excerpt and source limits', 'Submission chronology and independence question', 'Missing provenance and corroboration checklist'],
+        summary: 'A claim-level review of the July 31, 2026 working analytical report, Exhibit A3, and the Nancy Grace panorama, separating direct visual observations from sourced vessel identifications and unresolved capture metadata. A complete 22-page copy is preserved from TMZ’s document host; the PDF itself does not name its author or submitting organization.',
+        contents: ['Complete 22-page working analytical report', 'July 31 report context', 'Exhibit A3 source-annotation analysis', 'Four-image preservation gallery with SHA-256 hashes', 'Nancy Grace nearshore panorama excerpt and source limits', 'Submission chronology and independence question', 'Missing provenance and corroboration checklist'],
         referencedEvents: ['nearshore-panorama', 'triton-pre-430-repositioning'],
-        missingCompanions: ['Complete report and direct public-filing or attachment permalink', 'Original unannotated 31656.jpg', 'Submission date and chain of custody', 'Annotator identity, statement, and recognition basis', 'Native MP4 files and metadata', 'Authenticated occupant roster']
+        missingCompanions: ['Named author and submitting-organization record', 'Original unannotated 31656.jpg', 'Submission date and chain of custody', 'Annotator identity, statement, and recognition basis', 'Native MP4 files and metadata', 'Authenticated occupant roster']
+      },
+      {
+        id: 'tmz-geospatial-report',
+        title: 'Nolan Wells · Geospatial Timeline & Vessel-Movement Analysis',
+        kind: 'Working analytical report · TMZ-hosted source',
+        status: 'Obtained',
+        availability: 'Complete 22-page PDF public on this site',
+        confidence: 'High for the document contents; claim-specific for its analysis and source annotations',
+        href: './documents/tmz/nolan-wells-geospatial-timeline-vessel-movement-analysis-2026-07-31.pdf',
+        summary: 'A 22-page working analytical report dated July 31, 2026 and preserved from TMZ’s document host. It inventories supplied media, compares coordinates and vessel configurations, presents a working timeline, and repeatedly distinguishes visual observations, source annotations, documentary statements, analytical inferences, and unresolved questions. The PDF does not name its author or submitting organization.',
+        contents: ['Investigative focus and executive findings', 'Evidence classification and source-media inventory', 'Geospatial reconstruction', 'Working timeline', 'Vessel presence, movement, and occupancy matrix', 'Video-derived timing indicators', 'Triton water-ingress question', 'Post-departure witness-statement analysis', 'Recommended evidence requests', 'Visual context plates and analytical appendix'],
+        referencedEvents: ['nearshore-panorama', 'triton-pre-430-repositioning', 'critical-overlap', 'sea-tow-call', 'gps-movement-431'],
+        missingCompanions: ['Named author and submitting-organization record', 'Native exhibits A1-A10, B1-B4, C1, and V1-V5', 'Original media metadata and platform records', 'Authenticated vessel registrations and occupant roster']
       },
       {
         id: 'nancy-grace-panorama',
@@ -592,7 +605,7 @@
       { item: 'Original viral-video file and metadata', status: 'Circulated copy found; original missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './media/2026-07-04-tracetin-fighting.mp4' },
       { item: 'Authenticated Katie Hudson Seymour message export', status: 'Four public screenshots found; authenticated export missing', public: 'Partial', request: 'Not documented', priority: 'High', href: './social-source-ledger.html#katie-hudson-seymour-messages' },
       { item: 'Authenticated Faith Lauren statement, original footage, and police receipt', status: 'Five public-post attachments found; identity, native records, footage, submission, and agency receipt missing', public: 'Partial', request: 'Not documented', priority: 'Critical', href: './social-source-ledger.html#faith-lauren-source' },
-      { item: 'Complete UCN report and Exhibit A3 submission trail', status: 'Four distributed images found; complete report, native A3 file, annotator, basis, receipt date, and chain of custody missing', public: 'Partial', request: 'Tracked for corroboration', priority: 'Critical', href: './ucn-report.html' },
+      { item: 'Working analytical report and Exhibit A3 submission trail', status: 'Complete 22-page TMZ-hosted report obtained; native A3 file, named author, submitting organization, annotator, basis, receipt date, and chain of custody remain missing', public: 'Partial', request: 'Report preserved; source trail tracked for corroboration', priority: 'Critical', href: './ucn-report.html' },
       { item: 'Complete Katie interview', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' },
       { item: 'Complete Wyatt and Bart interviews', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'High' },
       { item: 'Verified passenger manifests by vessel and time', status: 'Not obtained', public: 'No', request: 'Not documented', priority: 'Critical' }
@@ -611,7 +624,7 @@
       { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
       { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
       { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' },
-      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The UCN-released configuration places the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Direct report download or attachment permalink, native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' },
+      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The preserved 22-page working report and UCN-released configuration place the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' },
       { id: 14, question: 'Who submitted and annotated UCN Exhibit A3 (31656.jpg), when, and on what basis?', status: 'Open', evidence: 'The UCN report treats “Warren on Palm Beach” as a source annotation, says it is not an independent facial identification, and describes only moderate confidence for source identification', needed: 'Named submitter and annotator statements, original unannotated file, submission record and metadata, recognition basis, independent confirmation, and authenticated occupant roster' }
     ],
 

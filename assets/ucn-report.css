@@ -47,6 +47,10 @@
 .video-exhibit video { display: block; width: 100%; max-height: min(70vh, 720px); aspect-ratio: 16 / 9; background: #05080d; object-fit: contain; }
 .video-exhibit figcaption { padding: 18px 22px 20px; color: #aeb3b6; font-size: 12px; }
 .video-exhibit figcaption strong { color: #e3ded3; }
+.report-download { margin: 22px 0; padding: 18px 20px; border-left: 3px solid var(--teal); border-radius: 6px; background: var(--surface); box-shadow: var(--ring); }
+.report-download p { margin: 0; color: #aeb3b6; }
+.report-download p + p { margin-top: 9px; }
+.report-download strong { color: #e3ded3; }
 
 .confidence-steps { margin: 0; padding: 0; list-style: none; }
 .confidence-steps li { display: grid; grid-template-columns: 54px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--rule); }

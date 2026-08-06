@@ -25,7 +25,7 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}a{color:#79b1a4}.shell{display:grid;grid-template-columns:240px minmax(0,760px);gap:64px;width:min(1100px,calc(100% - 40px));margin:0 auto;padding:48px 0 110px}.nav{position:sticky;top:28px;align-self:start;max-height:calc(100vh - 56px);overflow-y:auto;padding-right:10px}.back{display:inline-flex;min-height:40px;align-items:center;color:#d9a07a;font:600 11px var(--mono);letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.nav h2{margin:28px 0 12px;font:600 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}.nav a:not(.back){display:block;padding:6px 0;color:var(--muted);font-size:12px;text-decoration:none}.nav a:hover{color:var(--text)}header{padding-bottom:34px;border-bottom:1px solid var(--rule);margin-bottom:50px}.eyebrow,.label{font:600 10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#d36d2a}h1{margin:10px 0 12px;font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.05;text-wrap:balance}.meta{font:400 12px var(--mono);color:var(--muted)}.philosophy{margin-top:28px;padding:20px 22px;border-left:3px solid var(--accent);background:var(--surface);font-size:1.05rem}.philosophy strong{display:block;margin-bottom:4px}section{padding:0 0 48px;margin:0 0 48px;border-bottom:1px solid var(--rule)}h2{margin:0 0 18px;font-size:1.55rem;line-height:1.2;text-wrap:balance}h3{margin:28px 0 8px;font-size:1rem}.lede{font-size:1.08rem;color:#d4d3ce}.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0}.evidence-card{padding:15px;border-radius:4px;background:var(--surface);box-shadow:0 8px 22px rgba(0,0,0,.12)}.evidence-card strong{display:block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase}.verified strong{color:#72a860}.firsthand strong{color:#6ea7c9}.secondhand strong{color:#8aa0b3}.media-record strong{color:#d36d2a}.unknown-record strong{color:#9b7bb6}.hypothesis strong{color:#7d858b}ul,ol{padding-left:22px}li+li{margin-top:7px}.timeline{list-style:none;padding:0;margin:24px 0}.timeline li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:13px 0;border-bottom:1px solid var(--rule)}.timeline time{font:600 13px var(--mono);color:#d4a574;font-variant-numeric:tabular-nums;transition-property:color;transition-duration:160ms;transition-timing-function:cubic-bezier(.2,0,0,1)}.timeline li:hover time,.timeline li:focus-within time{color:#fff}.callout{padding:18px 20px;border:1px solid rgba(192,78,1,.38);border-radius:4px;background:rgba(192,78,1,.08)}.callout.hypothesis-note{border-color:rgba(155,123,182,.45);background:rgba(155,123,182,.09)}.known-unknown,.audit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.known-unknown>div,.audit-grid>div{padding:18px;background:var(--surface)}.known-unknown h3,.audit-grid h3{margin-top:0}.definition-list{display:grid;gap:10px;margin:22px 0}.definition-list>div{padding:16px 18px;border-left:3px solid var(--dim);background:var(--surface)}.definition-list strong{display:block;color:#d4d3ce}.protocol{counter-reset:protocol;list-style:none;padding:0}.protocol li{position:relative;padding:14px 16px 14px 52px;background:var(--surface);border-bottom:1px solid var(--rule)}.protocol li::before{counter-increment:protocol;content:counter(protocol,decimal-leading-zero);position:absolute;left:16px;top:15px;color:#d4a574;font:600 11px var(--mono)}.priority{font-family:var(--mono);font-size:12px}.source-rank li{padding:4px 0}.footer-note{color:var(--muted);font-size:12px}code{font-family:var(--mono);font-size:.85em}@media(max-width:800px){.shell{grid-template-columns:1fr}.nav{position:static;max-height:none;overflow:visible;padding-right:0;border-bottom:1px solid var(--rule);padding-bottom:20px}.nav h2,.nav a:not(.back){display:none}.evidence-grid,.known-unknown,.audit-grid{grid-template-columns:1fr}.timeline li{grid-template-columns:1fr;gap:5px}.protocol li{padding-right:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}:focus-visible{outline:3px solid #7ab89c;outline-offset:3px}
   </style>
   <style>
-    .source-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}.source-gallery figure{margin:0;padding:10px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}.source-gallery a{display:block;overflow:hidden;border-radius:3px;background:#05080d}.source-gallery img{display:block;width:100%;height:260px;object-fit:contain}.source-gallery figcaption{padding:10px 2px 2px;color:var(--muted);font-size:12px;line-height:1.5}.hash{display:block;margin-top:6px;color:var(--dim);font:400 9px/1.45 var(--mono);overflow-wrap:anywhere}@media(max-width:800px){.source-gallery{grid-template-columns:1fr}.source-gallery img{height:auto;max-height:70vh}}
+    .source-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}.source-gallery figure{margin:0;padding:10px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}.source-gallery a{display:block;overflow:hidden;border-radius:3px;background:#05080d}.source-gallery img{display:block;width:100%;height:260px;object-fit:contain}.source-gallery figcaption{padding:10px 2px 2px;color:var(--muted);font-size:12px;line-height:1.5}.source-video{margin:26px 0;padding:10px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}.source-video video{display:block;width:100%;max-height:70vh;aspect-ratio:16/9;background:#05080d;object-fit:contain}.source-video figcaption{padding:12px 4px 4px;color:var(--muted);font-size:12px;line-height:1.55}.hash{display:block;margin-top:6px;color:var(--dim);font:400 9px/1.45 var(--mono);overflow-wrap:anywhere}@media(max-width:800px){.source-gallery{grid-template-columns:1fr}.source-gallery img{height:auto;max-height:70vh}.source-video{margin-inline:-4px}}
   </style>
   <script src="../assets/seo.js"></script>
 </head>
@@ -47,6 +47,7 @@
       <a href="#critical-overlap">Critical overlap</a>
       <a href="#anchor-coordinate-overlap">Photo &amp; coordinate comparison</a>
       <a href="#ucn-august-3-release">August 3 image release</a>
+      <a href="#nancy-grace-panorama">Nearshore panorama</a>
       <a href="#overnight-island-presence">Island after departure</a>
       <a href="#late-night-july-4">July 4 late night</a>
       <a href="#search-july-5">July 5 search</a>
@@ -71,7 +72,7 @@
       <header>
         <p class="eyebrow">Canonical working evidence file</p>
         <h1>Nolan Wells Investigation Master Notes</h1>
-        <p class="meta">Version 2.4 · Working evidence file · August 4, 2026</p>
+        <p class="meta">Version 2.5 · Working evidence file · August 6, 2026</p>
         <div class="philosophy"><strong>Guiding question</strong>What do we actually know?</div>
       </header>
 
@@ -291,6 +292,47 @@
           <p>The Triton repositioned before 4:30 PM, during the period MDMR labeled “consistent with a stationary position.” That label cannot accurately mean the vessel remained fixed at one location. What remains unresolved is the exact minute, distance, path, number of repositionings, whether each change occurred under the Triton’s own power or assistance, and who was aboard during each change. The 4:31 marker should be described as the start of sustained northbound departure, not first movement. The native MI4088BU ADM/GPX point sequence and complete PowerPoint source set should answer the remaining track questions directly.</p>
         </div>
         <p>Sources: <a href="/documents/MDMR-MP2607-0016-report.pdf#page=5">MDMR report · page 5</a>, <a href="/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf#page=1">GPS extraction summary · page 1</a>, <a href="/transcripts/seatow-audio.html#audio-analysis">Sea Tow coordinate transcript</a>, and <a href="https://support.garmin.com/en-IN/?faq=XOg2P1n7Ji6PO7j0MH3KU7">Garmin chartplotter accuracy guidance</a>.</p>
+      </section>
+
+      <section id="nancy-grace-panorama">
+        <p class="label">Media-source preservation · July 29, 2026 publication</p>
+        <h2>Nancy Grace panorama preserves the nearshore tied-boat scene</h2>
+        <p class="lede">The official Nancy Grace YouTube episode <em>Nolan Wells Family Hits Social Media Giants, Subpoenas Nolan’s Accounts</em> contains a clean, continuous view of the July 4 Horn Island shoreline gathering from approximately 16:18.5 through 16:48.9. The 30-second excerpt shows shallow water, a dense crowd, multiple center-console boats, the tied-boat area, and several nearby camera viewpoints.</p>
+
+        <figure class="source-video">
+          <video controls playsinline preload="metadata" poster="/media/nancy-grace-2026-07-29/horn-island-panorama-poster.jpg" aria-label="Thirty-second panorama of the crowded nearshore boat gathering at Horn Island on July 4, 2026">
+            <source src="/media/nancy-grace-2026-07-29/horn-island-panorama-16m18s-16m49s.mp4" type="video/mp4">
+            Your browser cannot play this video. <a href="/media/nancy-grace-2026-07-29/horn-island-panorama-16m18s-16m49s.mp4">Open the MP4</a>.
+          </video>
+          <figcaption><strong>Preserved excerpt.</strong> Nancy Grace official YouTube upload, July 29, 2026, episode time 16:18.5–16:48.9. Playback requires a user action; the file does not autoplay. The clip is a web-compatible excerpt of the published program, not the native phone-camera original.<span class="hash">SHA-256 · f8991948017ce89f15ea2a3250debe64c3fb7c7571ee15902c31c17f947209ee</span></figcaption>
+        </figure>
+
+        <div class="known-unknown">
+          <div>
+            <h3>What the combined record supports</h3>
+            <ul>
+              <li>The footage directly records a crowded, shallow-water gathering close to the Horn Island shoreline.</li>
+              <li>Warren’s public account identifies the group’s tied-boat order as <strong>Tideline, Palm Beach, and Triton</strong>.</li>
+              <li>The UCN comparative material separately identifies the Triton within the nearshore configuration.</li>
+              <li>MI4088BU’s official GPS arrival at 11:14 AM, this nearshore configuration evidence, and the distressed Triton’s later offshore Sea Tow coordinate support a pre-call shoreline placement followed by at least one intervening positional change.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>What the footage alone does not establish</h3>
+            <ul>
+              <li>A native capture timestamp, photographer, original post, or complete chain of custody.</li>
+              <li>Readable registration numbers independently identifying every visible boat.</li>
+              <li>That the named boats stayed continuously fixed in one shoreline position from 11:14 AM until approximately 4:00 PM.</li>
+              <li>The exact minute the Triton left the shoreline cluster or reached the coordinate spoken during the Sea Tow call.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout hypothesis-note">
+          <p><strong>Claim boundary</strong></p>
+          <p>The strong conclusion comes from combining distinct sources: official GPS fixes the 11:14 AM arrival; the panorama and UCN material preserve the nearshore configuration; Warren supplies the named three-boat order; and the released Sea Tow call supplies the distressed Triton’s later current coordinate before the 4:31 PM sustained departure. The panorama materially strengthens the shoreline evidence, but without its native metadata it should not be used as sole proof of an uninterrupted 11:14 AM–4:00 PM occupation.</p>
+        </div>
+        <p>Sources: <a href="https://www.youtube.com/watch?v=4D0uR58CjCg&amp;t=978s">Nancy Grace official upload · 16:18</a>, <a href="/transcripts/warren-part-1.html">Warren interview · tied-boat configuration</a>, <a href="/ucn-report.html#exhibit-a3">UCN comparative-configuration review</a>, <a href="/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf#page=2">GPS extraction summary · arrival</a>, and <a href="/transcripts/seatow-audio.html#audio-analysis">released Sea Tow coordinate</a>.</p>
       </section>
 
       <section id="social-source-review">

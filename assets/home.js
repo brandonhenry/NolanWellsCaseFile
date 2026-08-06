@@ -62,7 +62,7 @@
       image: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M9 9h.01"/></svg>'
     };
     const labels = { video: 'Load evidence video', audio: 'Load full call audio', image: 'View evidence image' };
-    return `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(media.type)}" data-media-src="${escapeHtml(media.src)}" data-media-alt="${escapeHtml(media.alt)}" data-media-caption="${escapeHtml(media.caption)}">${icons[media.type] || icons.image}<span>${labels[media.type] || labels.image}</span></button></div>`;
+    return `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(media.type)}" data-media-src="${escapeHtml(media.src)}" data-media-poster="${escapeHtml(media.poster || '')}" data-media-alt="${escapeHtml(media.alt)}" data-media-caption="${escapeHtml(media.caption)}">${icons[media.type] || icons.image}<span>${labels[media.type] || labels.image}</span></button></div>`;
   }
 
   function audioMarkup(tracks) {
@@ -286,7 +286,8 @@
         const mediaLabel = mediaType === 'video' ? 'video' : mediaType === 'audio' ? 'audio' : 'image';
         const hideButton = `<button class="media-hide" type="button">Hide ${mediaLabel}</button>`;
         if (mediaType === 'video') {
-          container.innerHTML = `<figure class="loaded-media">${hideButton}<video controls playsinline preload="metadata" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
+          const poster = button.dataset.mediaPoster ? ` poster="${escapeHtml(button.dataset.mediaPoster)}"` : '';
+          container.innerHTML = `<figure class="loaded-media">${hideButton}<video controls playsinline preload="metadata"${poster} aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="video/mp4">Your browser cannot play this video.</video><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
         } else if (mediaType === 'audio') {
           container.innerHTML = `<figure class="loaded-media loaded-audio">${hideButton}<audio controls preload="none" aria-label="${escapeHtml(button.dataset.mediaAlt)}"><source src="${escapeHtml(button.dataset.mediaSrc)}" type="audio/mp4">Your browser cannot play this audio. <a href="${escapeHtml(button.dataset.mediaSrc)}">Download the file</a>.</audio><figcaption>${escapeHtml(button.dataset.mediaCaption)}</figcaption></figure>`;
         } else {

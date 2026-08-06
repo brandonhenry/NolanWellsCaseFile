@@ -2,7 +2,7 @@
 
 Canonical site: https://justicefornolanwells.com/
 Repository: https://github.com/brandonhenry/NolanWellsCaseFile
-Last reviewed: 2026-08-01
+Last reviewed: 2026-08-06
 Coverage: Core events July 3–6, 2026, with source-provenance records through July 7, 2026; Horn Island and Ocean Springs, Mississippi
 
 ## Scope and independence
@@ -28,6 +28,7 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - 9:56 AM, July 4, 2026: The GPS-tracked vessel MI4088BU leaves the mainland. This is an official GPS milestone summarized by MDMR.
 - Around 11:00 AM: Tracestin Shepherd says Nolan called for help locating where to anchor. This is a firsthand public account with approximate timing.
 - 11:14 AM: MI4088BU arrives at Horn Island. This is an official GPS milestone summarized by MDMR.
+- After the 11:14 AM arrival and before the later Sea Tow position, combined media finding: A continuous panorama in Nancy Grace’s official July 29 episode visibly preserves the crowded shallow-water shoreline gathering and tied-boat area. Warren’s public account names the group’s tied-boat order as Tideline, Palm Beach, and Triton, while UCN comparison material separately identifies the Triton within the nearshore scene. The episode does not disclose the native phone file, capture timestamp, photographer, original post, or readable registrations for every hull; the clip therefore strengthens the pre-call shoreline-placement evidence but does not by itself prove continuous fixed occupation throughout 11:14 AM–approximately 4:00 PM.
 - Early afternoon: Public accounts and a circulated photograph place Nolan socializing among the boats. The photograph’s precise capture time is not authenticated.
 - Around 3:00 PM: Warren says this was about the last time he personally saw Nolan. This is a firsthand recollection, not an authenticated timestamp.
 - Around 3:30 PM: Tracestin says he was involved in an altercation and was then forced back aboard his family’s separate boat. This is a firsthand recollection with approximate timing.
@@ -79,6 +80,7 @@ Do not state that:
 - the nearshore photographs and later coordinate records establish a measured route, distance, or time interval between them;
 - the August 3 UCN release proves an exact capture minute, a specific number or distance of pre-4:31 movements, GPS deletion, deception, or misconduct;
 - the UCN Exhibit A3 label “Warren on Palm Beach” independently identifies Warren or confirms he was aboard. The report describes it as a source annotation, not an independent facial identification; the submitter, annotator, date, and recognition basis remain undisclosed;
+- the Nancy Grace panorama alone authenticates its original capture time, independently identifies every visible vessel, or proves the named boats stayed continuously fixed at the shoreline from 11:14 AM until approximately 4:00 PM;
 - the Sea Tow coordinate and Garmin anchor reference are the exact same point;
 - the public packet proves the precise place or second a tow line was attached;
 - MDMR had the later-viewed Garmin coordinate before the July 5 drone flights or used it prospectively to plan them.
@@ -89,6 +91,7 @@ Do not state that:
 - Official MDMR packet: https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf
 - PLUNDER source archive and file ledger: https://justicefornolanwells.com/plunder-archive
 - United Cajun Navy report evidence review: https://justicefornolanwells.com/ucn-report
+- Nancy Grace panorama excerpt and source limits: https://justicefornolanwells.com/ucn-report#nancy-grace-panorama
 - Redacted MI4088BU GPS extraction summary: https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf
 - MDMR email requesting USCG SAR data: https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf
 - J. Strickland supplemental report: https://justicefornolanwells.com/documents/plunder/MP2607-0016-Strickland-Supplement.pdf

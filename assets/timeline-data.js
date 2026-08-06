@@ -302,6 +302,19 @@
         ]
       },
       {
+        id: 'nearshore-panorama', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'After 11:14 AM · before the Sea Tow position', precision: 'Bounded by combined records; native camera timestamp not obtained',
+        title: 'Panorama preserves the nearshore boat gathering', type: 'media', confidence: 'Medium', masterAnchor: 'nancy-grace-panorama', location: 'hornIsland',
+        summary: 'A continuous panorama published in Nancy Grace’s July 29 episode shows the crowded shallow-water shoreline gathering and the tied-boat configuration later compared in the United Cajun Navy report material.',
+        claims: ['The pixels directly show a dense gathering in shallow water, multiple center-console boats, a Suzuki outboard, and several camera viewpoints close to shore.', 'Warren’s public account identifies the group’s tied-boat order as Tideline, Palm Beach, and Triton; the UCN configuration analysis separately identifies the Triton within this nearshore scene. Those identifications are sourced comparisons, not registration numbers readable in the clip.', 'Combined with MI4088BU’s verified 11:14 AM arrival and the distressed Triton’s later offshore Sea Tow coordinate, the footage strengthens the evidence for a pre-call nearshore configuration and an intervening repositioning.', 'The Nancy Grace upload does not expose the native phone file, capture timestamp, photographer, or original metadata. It therefore does not by itself prove that all three vessels remained continuously fixed at the shoreline for the entire 11:14 AM–approximately 4:00 PM period.'],
+        media: { type: 'video', src: './media/nancy-grace-2026-07-29/horn-island-panorama-16m18s-16m49s.mp4', poster: './media/nancy-grace-2026-07-29/horn-island-panorama-poster.jpg', alt: 'Thirty-second panorama of the crowded nearshore boat gathering at Horn Island on July 4, 2026', caption: 'Nancy Grace source upload · 16:18.5–16:48.9 excerpt · published July 29, 2026 · no autoplay · native capture time unresolved' },
+        sources: [
+          { label: 'Nancy Grace official YouTube upload · starts at 16:18', href: 'https://www.youtube.com/watch?v=4D0uR58CjCg&t=978s' },
+          { label: 'Evidence review and source limitations', href: './ucn-report.html#nancy-grace-panorama' },
+          { label: 'Warren interview · tied-boat configuration', href: './transcripts/warren-part-1.html' },
+          { label: 'Master panorama notes', href: `${master}#nancy-grace-panorama` }
+        ]
+      },
+      {
         id: 'triton-pre-430-repositioning', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: 'Between 11:14 AM and 4:31 PM', precision: 'Bounded interval; exact movement time and number of movements unresolved',
         title: 'Triton changes position at least once', type: 'verified', confidence: 'High', masterAnchor: 'ucn-august-3-release', location: 'seaTowCoordinate',
         summary: 'The nearshore boat configuration and the Triton’s later Sea Tow coordinate establish that MI4088BU repositioned at least once before 4:30 PM, inside the interval MDMR described as “consistent with a stationary position.”',
@@ -839,6 +852,18 @@
     'gps-arrival': {
       unknowns: ['The arrival point does not establish when or where each passenger went ashore.'],
       needed: ['Native Garmin export, extraction summary, and contemporaneous photos or videos.']
+    },
+    'nearshore-panorama': {
+      confidenceReason: 'The scene is directly visible in an official Nancy Grace upload, and its configuration is consistent with Warren’s tied-boat account and the UCN comparison material. Confidence is medium because the underlying phone file, native timestamp, photographer, and independently readable vessel registrations remain unavailable.',
+      known: ['The official Nancy Grace channel published the footage on July 29, 2026.', 'The clean full-screen panorama runs from approximately 16:18.5 through 16:48.9 in that episode.', 'The footage visibly records a dense shallow-water gathering and multiple boats close to the Horn Island shoreline.', 'Warren publicly described the group’s tied-boat order as Tideline, Palm Beach, and Triton.', 'The UCN configuration material separately places the Triton in the nearshore boat gathering.'],
+      unknowns: ['Native recording time, photographer, original social-post URL, unedited camera file, metadata, readable registration numbers, and whether all three named boats remained in that exact configuration continuously.'],
+      needed: ['Native phone-camera video with metadata, the original post or sender record, uncompressed frames, named vessel-identification methodology, and raw Garmin points for the 11:15 AM–4:30 PM interval.'],
+      sourceViews: [
+        { source: 'Nancy Grace upload', position: 'Preserves the panorama as published July 29; it does not disclose the native recording metadata.' },
+        { source: 'Warren', position: 'Names the tied-boat order as Tideline, Palm Beach, and Triton and describes shallow water near the shoreline.' },
+        { source: 'UCN report material', position: 'Provides a separate comparative configuration that identifies the Triton within the nearshore scene.' },
+        { source: 'Official GPS / Sea Tow', position: 'Bounds the broader sequence with MI4088BU arriving at 11:14 AM and the distressed vessel later reporting an offshore coordinate before the 4:31 PM sustained departure.' }
+      ]
     },
     'triton-pre-430-repositioning': {
       confidenceReason: 'The released nearshore configuration and the distressed Triton’s later Sea Tow coordinate cannot both describe the vessel’s position without an intervening positional change. The sources bound the movement to the period before 4:30 PM but do not reveal its exact minute or path.',

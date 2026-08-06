@@ -43,6 +43,10 @@
 .primary-exhibit figcaption { padding: 20px 22px 22px; color: #aeb3b6; font-size: 12px; }
 .primary-exhibit figcaption strong { color: #e3ded3; }
 .file-hash { display: block; margin-top: 12px; overflow-wrap: anywhere; color: var(--dim); font: 400 8px/1.55 var(--mono); text-transform: uppercase; }
+.video-exhibit { margin: 24px 0; overflow: hidden; border-radius: 7px; background: var(--surface); box-shadow: var(--ring), 0 20px 52px rgba(0,0,0,.2); }
+.video-exhibit video { display: block; width: 100%; max-height: min(70vh, 720px); aspect-ratio: 16 / 9; background: #05080d; object-fit: contain; }
+.video-exhibit figcaption { padding: 18px 22px 20px; color: #aeb3b6; font-size: 12px; }
+.video-exhibit figcaption strong { color: #e3ded3; }
 
 .confidence-steps { margin: 0; padding: 0; list-style: none; }
 .confidence-steps li { display: grid; grid-template-columns: 54px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--rule); }
@@ -87,6 +91,7 @@
   .report-gallery a { min-height: 200px; }
   .report-gallery img { height: 280px; }
   .primary-exhibit figcaption { padding: 16px; }
+  .video-exhibit figcaption { padding: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

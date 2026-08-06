@@ -569,16 +569,18 @@
         claims: [
           'Brochard’s account supports that her nearby group did not see Nolan in the immediately adjacent area when they departed.',
           'A public Allyson Lawrence Facebook post displayed the Brochard 7:30 statement and attached scene photograph on July 5, 2026. The author’s visible thread comment is timestamped 3:28 PM that day, establishing that this screenshot-and-photo combination was circulating publicly by then; it does not establish when the underlying photograph was captured.',
+          'A July 6 Jessy Wessy Facebook post preserves the complete Brochard exchange as an attached image without the later edited-video overlay. The post dates that public preservation, not the original comment or the boat photograph.',
           'A July 9 screenshot preserves Brochard saying her group stayed near where Nolan had been until 7:30 and that “they did leave around 5.” The five-o’clock wording is witness-reported; the screenshot does not resolve who “they” were or which vessel they used.',
           'The July 31 working report reuses the Brochard scene photograph in Figure 6B and applies source labels for Palm Beach, Triton, and Boat #3. Figure 10 reproduces her 7:30 statement. This strengthens the documented adjacency comparison but does not independently authenticate every vessel label.',
           'The 7:30 PM time describes Brochard’s group leaving; it is not an authenticated last-sighting time for Nolan and does not prove nobody elsewhere saw him afterward.',
           'The preserved scene images are consistent with the broader nearshore gathering, but their native files, capture times, exact camera position, and complete vessel identifications remain unavailable.',
           'Brochard’s claimed proximity makes her an important potential line-of-sight witness to ask about the fight and boarding discussion. She does not publicly say she witnessed either event, so neither is attributed to her as fact.'
         ],
-        media: { type: 'image', src: './media/social-source-audit/katelynn-brochard/comment-thread-supplied-screenshot.png', alt: 'Screenshot preserving comments attributed to Katelynn Brochard about meeting Nolan, being parked beside his group, and leaving at 7:30 PM without seeing him nearby', caption: 'Attributed Katelynn Brochard comment thread · supplied screenshot; native comment export unavailable' },
+        media: { type: 'image', src: './media/social-source-audit/katelynn-brochard/jessy-wessy-july-6/04-boat-and-comment-screenshot.jpg', alt: 'July 6 Facebook post attachment preserving comments attributed to Katelynn Brochard about meeting Nolan, being parked beside his group, and leaving at 7:30 PM without seeing him nearby', caption: 'Attributed Katelynn Brochard exchange · attached to a public July 6 Facebook post; native comment export unavailable' },
         sources: [
           { label: 'Preserved comment thread and scene-image record', href: './social-source-ledger.html#katelynn-boats-account' },
           { label: 'Allyson Lawrence · July 5 public preservation', href: 'https://www.facebook.com/allyson.lawrence.3/photos/cell-phones-in-this-age-are-good-and-badand-in-this-case-they-are-helping-out-co/10163954994904564/' },
+          { label: 'Jessy Wessy · July 6 image-set preservation', href: 'https://www.facebook.com/jessywessy615/posts/-why-isnt-more-of-the-country-talking-about-thisan-18-year-old-black-young-man-g/1536252414626271/' },
           { label: 'Public Facebook repost · Nicol.Everything', href: 'https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/' },
           { label: 'Katelynn Brochard · direct July 7 reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392' },
           { label: 'Callie Strong · clarification screenshot', href: 'https://www.facebook.com/photo.php?fbid=10163189977121712&set=p.10163189977121712&type=3' },
@@ -1060,7 +1062,7 @@
       needed: ['Native Facebook thread export or parent-post permalink', 'Direct recorded statement from Brochard', 'Original scene media and metadata', 'Vessel and passenger identifications'],
       sourceViews: [
         { source: 'Allyson Lawrence July 5 post', position: 'Publicly preserves the 7:30 statement and attached scene photograph by July 5, with an author comment timestamped 3:28 PM. This dates circulation, not image capture.' },
-        { source: 'Complete supplied screenshot', position: 'Preserves the 7:30 statement, Briana May’s question, and Brochard’s follow-up about meeting Nolan.' },
+        { source: 'Jessy Wessy July 6 post attachment', position: 'Publicly preserves the complete 7:30 statement, Briana May’s question, and Brochard’s follow-up about meeting Nolan without the later video-frame overlay. This dates the preservation, not the original comment or photograph.' },
         { source: 'Nicol.Everything public repost', position: 'Preserves the first statement and nearby-scene images but crops out the follow-up reply.' },
         { source: 'Direct July 7 reply', position: 'Places Brochard’s group nearby until 7:30 and separately mentions an around-5:00 departure with unresolved referents.' },
         { source: 'July 31 working report', position: 'Figures 6B and 10 reuse the Brochard source material for a Palm Beach/Triton/Boat #3 comparison and a conditional negative-observation analysis.' },

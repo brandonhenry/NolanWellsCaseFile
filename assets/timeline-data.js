@@ -568,6 +568,7 @@
         summary: 'Katelynn Brochard says Nolan introduced himself to her husband earlier, that her group was parked directly beside Nolan’s group, and that Nolan was nowhere in sight when her group left at 7:30 PM. A preserved clarification also says an unresolved “they” left around 5:00 PM, without identifying the vessel or every person meant by that pronoun.',
         claims: [
           'Brochard’s account supports that her nearby group did not see Nolan in the immediately adjacent area when they departed.',
+          'A public Allyson Lawrence Facebook post displayed the Brochard 7:30 statement and attached scene photograph on July 5, 2026. The author’s visible thread comment is timestamped 3:28 PM that day, establishing that this screenshot-and-photo combination was circulating publicly by then; it does not establish when the underlying photograph was captured.',
           'A July 9 screenshot preserves Brochard saying her group stayed near where Nolan had been until 7:30 and that “they did leave around 5.” The five-o’clock wording is witness-reported; the screenshot does not resolve who “they” were or which vessel they used.',
           'The July 31 working report reuses the Brochard scene photograph in Figure 6B and applies source labels for Palm Beach, Triton, and Boat #3. Figure 10 reproduces her 7:30 statement. This strengthens the documented adjacency comparison but does not independently authenticate every vessel label.',
           'The 7:30 PM time describes Brochard’s group leaving; it is not an authenticated last-sighting time for Nolan and does not prove nobody elsewhere saw him afterward.',
@@ -577,6 +578,7 @@
         media: { type: 'image', src: './media/social-source-audit/katelynn-brochard/comment-thread-supplied-screenshot.png', alt: 'Screenshot preserving comments attributed to Katelynn Brochard about meeting Nolan, being parked beside his group, and leaving at 7:30 PM without seeing him nearby', caption: 'Attributed Katelynn Brochard comment thread · supplied screenshot; native comment export unavailable' },
         sources: [
           { label: 'Preserved comment thread and scene-image record', href: './social-source-ledger.html#katelynn-boats-account' },
+          { label: 'Allyson Lawrence · July 5 public preservation', href: 'https://www.facebook.com/allyson.lawrence.3/photos/cell-phones-in-this-age-are-good-and-badand-in-this-case-they-are-helping-out-co/10163954994904564/' },
           { label: 'Public Facebook repost · Nicol.Everything', href: 'https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/' },
           { label: 'Katelynn Brochard · direct July 7 reply', href: 'https://www.facebook.com/anna.grace.cooper/posts/pfbid02bimdnAUwCFJCZJdYb8Mm5s1uqGqcMjYiA1G6yLdYnPMA8Mm8jEJYu1zoxcPVkeYdl?comment_id=1365918772272100&reply_comment_id=1052428337137392' },
           { label: 'Callie Strong · clarification screenshot', href: 'https://www.facebook.com/photo.php?fbid=10163189977121712&set=p.10163189977121712&type=3' },
@@ -1042,7 +1044,7 @@
       needed: ['Passenger statements, dock media, and native Garmin records.']
     },
     'katelynn-nearby-account': {
-      confidenceReason: 'Multiple preserved screenshots and a direct July 7 reply consistently attribute the personal introduction, adjacent position, unresolved around-5:00 departure wording, and 7:30 local no-sight observation to the same named source. The working report reuses the same scene photograph for its vessel comparison. The rating remains Medium because native thread exports, original image metadata, and independent vessel registration are unavailable.',
+      confidenceReason: 'A July 5 public Facebook post establishes that the Brochard 7:30 statement and attached scene photograph were already circulating by that afternoon. Multiple later screenshots and a direct July 7 reply consistently attribute the personal introduction, adjacent position, unresolved around-5:00 departure wording, and 7:30 local no-sight observation to the same named source. The working report reuses the same scene photograph for its vessel comparison. The rating remains Medium because the July 5 post is derivative preservation, native thread exports and original image metadata remain unavailable, and vessel registration is not independently authenticated.',
       known: [
         'Brochard says Nolan introduced himself to her husband and was respectful.',
         'She says her group was parked directly beside the relevant group.',
@@ -1057,6 +1059,7 @@
       ],
       needed: ['Native Facebook thread export or parent-post permalink', 'Direct recorded statement from Brochard', 'Original scene media and metadata', 'Vessel and passenger identifications'],
       sourceViews: [
+        { source: 'Allyson Lawrence July 5 post', position: 'Publicly preserves the 7:30 statement and attached scene photograph by July 5, with an author comment timestamped 3:28 PM. This dates circulation, not image capture.' },
         { source: 'Complete supplied screenshot', position: 'Preserves the 7:30 statement, Briana May’s question, and Brochard’s follow-up about meeting Nolan.' },
         { source: 'Nicol.Everything public repost', position: 'Preserves the first statement and nearby-scene images but crops out the follow-up reply.' },
         { source: 'Direct July 7 reply', position: 'Places Brochard’s group nearby until 7:30 and separately mentions an around-5:00 departure with unresolved referents.' },

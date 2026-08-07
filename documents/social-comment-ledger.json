@@ -1,6 +1,6 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.9",
+  "version": "1.10",
   "reviewedAt": "2026-08-07",
   "parentPost": {
     "author": "Christine Wonsley",
@@ -8,7 +8,7 @@
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves five supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, and Robbie Robertson’s direct July 5 west-end photo post. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
+  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves six supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, Robbie Robertson’s direct July 5 west-end photo post, and Tiffani Riley’s July 10 preservation of a screenshot attributed to Danny Jones. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
@@ -20,6 +20,7 @@
     {"source":"Allyson Lawrence July 5 Brochard preservation post","exposed":"Post caption, displayed Brochard statement-and-photo image, and relevant visible thread timestamps reviewed; the full comment tree was not audited","url":"https://www.facebook.com/allyson.lawrence.3/photos/cell-phones-in-this-age-are-good-and-badand-in-this-case-they-are-helping-out-co/10163954994904564/"},
     {"source":"Jessy Wessy July 6 image-set preservation post","exposed":"Six image attachments preserved, including the complete Brochard/Briana May exchange without the later video overlay; the author caption is not used as evidence and the full comment tree was not audited","url":"https://www.facebook.com/jessywessy615/posts/-why-isnt-more-of-the-country-talking-about-thisan-18-year-old-black-young-man-g/1536252414626271/"},
     {"source":"Robbie Robertson July 5 west-end photo post","exposed":"Direct post text and Facebook-served image preserved; visible publication date, author, public audience, and photo statement reviewed; full comment tree not audited","url":"https://www.facebook.com/photo.php?fbid=28511108171823416&set=p.28511108171823416&type=3"},
+    {"source":"Tiffani Riley July 10 Danny Jones screenshot preservation","exposed":"Direct preservation-post text and one Facebook-served screenshot reviewed and archived; screenshot is attributed to Danny Jones; native Jones post and full comment tree were not recovered","url":"https://www.facebook.com/photo.php?fbid=10244355907623687&set=p.10244355907623687&type=3"},
     {"source":"Katelynn Brochard Nicol.Everything derivative repost","exposed":"Public repost and four attachments preserved; All comments selected; every visible reply set expanded; 62 exposed comment/reply articles reviewed against 68 displayed; Callie Strong clarification attachment archived; no direct video file exposed; native comment export not recovered","url":"https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
@@ -412,6 +413,33 @@
       "grade": "B-named firsthand account / direct public photo",
       "status": "Material evidence of reported visitor presence after 7:30 PM; Nolan's location remains unknown",
       "assessment": "The direct post and attached image support the narrower conclusion that Robertson's party reports remaining at Horn Island at and after 7:30 PM. The image visibly records a low-light west-end scene with distant boats. The 7:17 PM capture time, boat count, approximate walk time, other-boats departure sequence, and 9:00 PM departure are supplied by the photographer's statement rather than native EXIF metadata. The two unnamed walkers' failure to see Nolan is a limited negative observation and does not establish Nolan's location, show that the entire island was searched, or establish that Nolan was alive after 4:31 PM."
+    },
+    {
+      "id": "danny-jones-three-boats",
+      "sourceType": "public Facebook photo post preserving a screenshot attributed to a firsthand observer",
+      "preservingPoster": "Tiffani Riley",
+      "attributedObserver": "Danny Jones",
+      "published": "2026-07-10T19:06:00-05:00",
+      "publishedPrecision": "Visible Facebook post time",
+      "reviewedAt": "2026-08-07",
+      "postUrl": "https://www.facebook.com/photo.php?fbid=10244355907623687&set=p.10244355907623687&type=3",
+      "preservationCaption": "Tiffani Riley says she selected a post with fewer comments and hoped it might help the family.",
+      "messageExcerpt": "Yesterday, the 4th of July, me and my granddaughter were at Horn Island…",
+      "eventDate": "2026-07-04",
+      "eventTime": null,
+      "attributedClaims": [
+        "Jones says he and his granddaughter were at Horn Island on July 4.",
+        "Jones says his party was parked beside three boats tied together.",
+        "Jones estimates each of the three boats carried at least 15 to 20 young people.",
+        "Jones describes young people consuming alcohol and repeatedly throwing cans, cups, and lids into the water.",
+        "Jones says he did not see an adult and moved his party away after becoming angry."
+      ],
+      "archivePath": "/media/social-source-audit/tiffani-riley/2026-07-10-danny-jones-screenshot.jpg",
+      "sha256": "49f1f910b56327ba9df448b2ad04959fb10f17634ca066fea91a920c2f777873",
+      "dimensions": "694x960",
+      "grade": "C-attributed firsthand lead / derivative screenshot",
+      "status": "Relevant social and vessel-configuration lead; native source and observations unverified",
+      "assessment": "The July 10 post preserves a readable screenshot attributed to Danny Jones and is evidence that this account was publicly circulated by then. If authentic, the account may help reconstruct the July 4 social setting and the existence of three tied boats. It provides no clock time, named vessels, scene photograph, or statement that Jones saw Nolan, a fight, a ride refusal, or vessel movement. The native Jones post, author identity, original publication timestamp, full context, and underlying observations have not been independently authenticated."
     },
     {
       "id": "faith-lauren-reporting-intent",

@@ -1,6 +1,6 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.10",
+  "version": "1.11",
   "reviewedAt": "2026-08-07",
   "parentPost": {
     "author": "Christine Wonsley",
@@ -8,7 +8,7 @@
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves six supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, Robbie Robertson’s direct July 5 west-end photo post, and Tiffani Riley’s July 10 preservation of a screenshot attributed to Danny Jones. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
+  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves seven supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, Robbie Robertson’s direct July 5 west-end photo post, Tiffani Riley’s July 10 preservation of a screenshot attributed to Danny Jones, and Stephanie Adams’s direct July 5 north-side location post. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
@@ -21,6 +21,7 @@
     {"source":"Jessy Wessy July 6 image-set preservation post","exposed":"Six image attachments preserved, including the complete Brochard/Briana May exchange without the later video overlay; the author caption is not used as evidence and the full comment tree was not audited","url":"https://www.facebook.com/jessywessy615/posts/-why-isnt-more-of-the-country-talking-about-thisan-18-year-old-black-young-man-g/1536252414626271/"},
     {"source":"Robbie Robertson July 5 west-end photo post","exposed":"Direct post text and Facebook-served image preserved; visible publication date, author, public audience, and photo statement reviewed; full comment tree not audited","url":"https://www.facebook.com/photo.php?fbid=28511108171823416&set=p.28511108171823416&type=3"},
     {"source":"Tiffani Riley July 10 Danny Jones screenshot preservation","exposed":"Direct preservation-post text and one Facebook-served screenshot reviewed and archived; screenshot is attributed to Danny Jones; native Jones post and full comment tree were not recovered","url":"https://www.facebook.com/photo.php?fbid=10244355907623687&set=p.10244355907623687&type=3"},
+    {"source":"Stephanie Adams July 5 north-side location post","exposed":"Direct first-person post text and one Facebook-served map screenshot preserved; visible publication date, author, public audience, location claim, and reported observation interval reviewed; full comment tree not audited","url":"https://www.facebook.com/photo.php?fbid=10101555674903949&set=p.10101555674903949&type=3"},
     {"source":"Katelynn Brochard Nicol.Everything derivative repost","exposed":"Public repost and four attachments preserved; All comments selected; every visible reply set expanded; 62 exposed comment/reply articles reviewed against 68 displayed; Callie Strong clarification attachment archived; no direct video file exposed; native comment export not recovered","url":"https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
@@ -440,6 +441,37 @@
       "grade": "C-attributed firsthand lead / derivative screenshot",
       "status": "Relevant social and vessel-configuration lead; native source and observations unverified",
       "assessment": "The July 10 post preserves a readable screenshot attributed to Danny Jones and is evidence that this account was publicly circulated by then. If authentic, the account may help reconstruct the July 4 social setting and the existence of three tied boats. It provides no clock time, named vessels, scene photograph, or statement that Jones saw Nolan, a fight, a ride refusal, or vessel movement. The native Jones post, author identity, original publication timestamp, full context, and underlying observations have not been independently authenticated."
+    },
+    {
+      "id": "stephanie-north-side-3-7",
+      "sourceType": "direct public Facebook photo post and firsthand negative observation",
+      "poster": "Stephanie Adams",
+      "profileUrl": "https://www.facebook.com/stephanie.adams.568",
+      "published": "2026-07-05",
+      "publishedPrecision": "Date visible in Facebook interface; exact publication time not recovered",
+      "reviewedAt": "2026-08-07",
+      "postUrl": "https://www.facebook.com/photo.php?fbid=10101555674903949&set=p.10101555674903949&type=3",
+      "messageExcerpt": "from 3pm-7pm and I know he never came down that way or pass by us.",
+      "messageSummary": "Adams says she sent Nolan’s mother a message and image of her exact location, that nobody came down to or passed her party, and therefore that Nolan did not walk that part of Horn Island’s north side during the reported interval.",
+      "eventDate": "2026-07-04",
+      "eventInterval": "3:00 PM–7:00 PM",
+      "eventClaims": [
+        "Adams reports being at the map-marked north-side Horn Island area from 3:00 PM until 7:00 PM.",
+        "Adams reports that nobody came down to or passed her party during the interval.",
+        "Adams says she sent Nolan’s mother the location and map image.",
+        "Adams concludes Nolan did not walk that section of the north side during the interval."
+      ],
+      "archivePath": "/media/social-source-audit/stephanie-adams/2026-07-05-north-side-location-3pm-7pm.jpg",
+      "sha256": "ee50aa0b042858274785d27e7337ab3d8fcfbb569db12c8524d19432f29c1fdb",
+      "dimensions": "690x960",
+      "mapMetadata": {
+        "visible": "A blue marker appears on Horn Island’s north side; Gulf Park Estates appears on the mainland.",
+        "notExposed": "Coordinates, native location export, map scale, screenshot capture date, and continuous-location history are not exposed.",
+        "phoneInterfaceTime": "5:46; this is not treated as an authenticated event or capture time."
+      },
+      "grade": "B-named firsthand negative observation / direct public map screenshot",
+      "status": "Material route-limited negative observation; Nolan’s location remains unknown",
+      "assessment": "The direct post supports the narrower conclusion that Adams reports occupying the marked north-side area from 3:00–7:00 PM and seeing nobody come down to or pass her party. It does not establish that Nolan was absent from Horn Island, unseen by every visitor, or unable to use another route. The reported interval, continuous attention, visibility, precise coordinate, observation radius, and delivery to Nolan’s mother are not independently authenticated by the Facebook-served image."
     },
     {
       "id": "faith-lauren-reporting-intent",

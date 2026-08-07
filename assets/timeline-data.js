@@ -538,6 +538,24 @@
         ]
       },
       {
+        id: 'stephanie-north-side-3-7', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '3:00–7:00 PM', precision: 'Witness-reported interval; map screenshot exposes no coordinates or native location metadata',
+        title: 'North-side visitor reports that nobody passed her location', type: 'firsthand', confidence: 'Medium', masterAnchor: 'stephanie-north-side-3-7', location: 'hornIsland',
+        summary: 'Stephanie Adams says she sent Nolan’s mother an image of her exact location, remained there from 3:00–7:00 PM, and saw nobody come down to or pass her party. She concludes Nolan did not walk that part of Horn Island’s north side during the interval.',
+        claims: [
+          'The direct public post supports a named, route-limited negative observation at a reported north-side location.',
+          'The attached map screenshot visibly marks a north-side area but does not expose coordinates, scale, a native location export, or continuous-location history.',
+          'The phone-interface time of 5:46 is not treated as an authenticated capture or event time.',
+          'This account does not prove Nolan was absent from Horn Island, unseen elsewhere, or unable to use another route.',
+          'The 3:00–7:00 PM interval, continuous attention, field of view, and delivery to Nolan’s mother remain witness-reported rather than independently authenticated.'
+        ],
+        media: { type: 'image', src: './media/social-source-audit/stephanie-adams/2026-07-05-north-side-location-3pm-7pm.jpg', alt: 'Map screenshot from Stephanie Adams’s Facebook post marking a north-side Horn Island location', caption: 'Stephanie Adams Facebook map screenshot · reported observation area from 3:00–7:00 PM on July 4, 2026; coordinates not exposed' },
+        sources: [
+          { label: 'Stephanie Adams · direct public Facebook photo and statement', href: 'https://www.facebook.com/photo.php?fbid=10101555674903949&set=p.10101555674903949&type=3' },
+          { label: 'Preserved source-level record', href: './social-source-ledger.html#stephanie-north-side-3-7' },
+          { label: 'Master evidence assessment', href: `${master}#stephanie-north-side-3-7` }
+        ]
+      },
+      {
         id: 'critical-overlap', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '3:45–4:31 PM', precision: 'Analytical window; ordering remains unresolved',
         title: 'The critical unresolved window', type: 'unknown', confidence: 'Medium', masterAnchor: 'critical-overlap', location: 'hornIsland',
         summary: 'This is the narrow period in which the public accounts of the altercation, viral video, distress call, Tracestin’s departure, Nolan remaining, and MI4088BU’s departure converge.',
@@ -1069,6 +1087,28 @@
     'gps-return-544': {
       unknowns: ['Complete passenger list at return and the precise sequence immediately after arrival.'],
       needed: ['Passenger statements, dock media, and native Garmin records.']
+    },
+    'stephanie-north-side-3-7': {
+      confidenceReason: 'This is a direct public post by the named speaker with an attached map screenshot. The rating remains Medium because the 3:00–7:00 PM interval, continuous presence and attention, field of view, precise coordinate, and delivery to Nolan’s mother are reported by Adams rather than independently authenticated by the Facebook-served image.',
+      known: [
+        'Adams reports being at the marked north-side location from 3:00–7:00 PM.',
+        'She reports that nobody came down to or passed her party during that interval.',
+        'She says she sent Nolan’s mother the location and map image.',
+        'The attached image visibly preserves a blue marker on Horn Island’s north side.'
+      ],
+      unknowns: [
+        'The precise coordinate, map scale, observation radius, visibility, and every route around the marked area.',
+        'Whether Adams continuously watched the area for the entire reported interval.',
+        'Native location and image metadata independently authenticating the reported interval and position.',
+        'Nolan’s location; this source does not establish island-wide absence or exclude another route.'
+      ],
+      needed: ['Native location share or device screenshot with metadata', 'Direct recorded statement from Adams and anyone with her', 'The message and image reportedly sent to Nolan’s mother', 'Independent photographs, video, or location records covering the same north-side area from 3:00–7:00 PM'],
+      sourceViews: [
+        { source: 'Stephanie Adams', position: 'Directly reports the location, 3:00–7:00 PM interval, nobody passing her party, and sending the information to Nolan’s mother.' },
+        { source: 'Attached map screenshot', position: 'Shows a north-side Horn Island marker but no coordinates, location history, date, or authenticated capture time.' },
+        { source: 'What it establishes', position: 'A named visitor reports a route-limited no-sight observation during the stated interval.' },
+        { source: 'Editorial limit', position: 'The observation cannot be converted into Nolan’s location, island-wide absence, or proof that no one elsewhere saw him.' }
+      ]
     },
     'robbie-west-end-7117': {
       confidenceReason: 'This is a direct public post by the named photographer with an attached west-end image. The rating remains Medium because the 7:17 PM capture time, 7:30 PM walk, boat count, and 9:00 PM departure come from the photographer’s statement rather than exposed native EXIF metadata or an independent record.',

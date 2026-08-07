@@ -1,6 +1,6 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.11",
+  "version": "1.12",
   "reviewedAt": "2026-08-07",
   "parentPost": {
     "author": "Christine Wonsley",
@@ -8,9 +8,10 @@
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves seven supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, Robbie Robertson’s direct July 5 west-end photo post, Tiffani Riley’s July 10 preservation of a screenshot attributed to Danny Jones, and Stephanie Adams’s direct July 5 north-side location post. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
+  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves eight supplemental source sets whose complete comment trees were not audited: Christine Wonsley’s original July 5 public-group appeal and attached image, the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, Robbie Robertson’s direct July 5 west-end photo post, Tiffani Riley’s July 10 preservation of a screenshot attributed to Danny Jones, and Stephanie Adams’s direct July 5 north-side location post. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
+    {"source":"Christine Wonsley original Horn Islands public-group appeal","exposed":"Direct post text, public-group context, attached image, visible July 5 date, and earliest exposed 12:40 AM comment reviewed; exact post time and full comment tree not recovered","url":"https://www.facebook.com/groups/266768749392186/posts/1000261322709588/"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
     {"source":"Will Polston active-search reel","exposed":"586 top-level comments; interface displayed 856; 20 photo URLs reviewed","url":"https://www.facebook.com/reel/895769156900111/"},
     {"source":"SMCC Athletics appeal","exposed":"10 top-level comments; 55 engagements displayed","url":"https://www.facebook.com/smccathletics/posts/pfbid02113aFAvazJm6pgdfcXb7yotj68N7DsjFadx6H2joDsuJJin9i3xAFFVyZfqjQCw1l"},
@@ -26,6 +27,30 @@
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
   "records": [
+    {
+      "id": "christine-original-group-appeal",
+      "sourceType": "direct family missing-person appeal in a public Facebook group",
+      "poster": "Christine Wonsley",
+      "profileUrl": "https://www.facebook.com/christine.wonsley",
+      "group": "Horn Island, Ship Island, Sand Island, Petit Bois Island, Cat Island",
+      "published": "2026-07-05",
+      "publishedPrecision": "Date visible in Facebook interface; exact publication time not exposed",
+      "earliestExposedComment": "2026-07-05T00:40:00-05:00",
+      "reviewedAt": "2026-08-07",
+      "postUrl": "https://www.facebook.com/groups/266768749392186/posts/1000261322709588/",
+      "photoUrl": "https://www.facebook.com/photo/?fbid=10174843537195076&set=gm.1000261322709588&idorvanity=266768749392186",
+      "messageExcerpt": "My son, Nolan Wells, is missing. Last seen 3 PM, west tip, north side of Horn Island…",
+      "messageSummary": "Christine identifies Nolan as missing, gives a reported 3:00 PM west-tip north-side last-seen location and clothing/physical description, says the family believed he had not left the island, says the Jackson County Sheriff’s Department, MDMR, and Coast Guard had been contacted, asks for direct messages with information, and says comments would be turned off.",
+      "reportedEventDate": "2026-07-04",
+      "reportedEventTime": "15:00",
+      "reportedEventPrecision": "Family-reported time; source and precision not identified in the post",
+      "archivePath": "/media/social-source-audit/christine-wonsley/2026-07-05-original-horn-islands-group-appeal.jpg",
+      "sha256": "6107b30277c12a0bd5b527a9325e2ec967ce231e30013666590962bf44b44f2c",
+      "dimensions": "565x2281",
+      "grade": "B-direct family search appeal",
+      "status": "Material contemporaneous public report; underlying 3:00 PM sighting and agency-notification times not independently verified",
+      "assessment": "The direct post establishes what Christine Wonsley was publicly reporting by early July 5. It does not authenticate who supplied the 3:00 PM account, prove Nolan remained on Horn Island, or establish when each named agency received notice. The earliest exposed comment supports publication by 12:40 AM, not the exact initial post time. A later sentence says comments would be turned off, but no edit history was available to determine when that sentence was added."
+    },
     {
       "id": "ashton-east-tip",
       "commenter": "Ashton Beach Jennings",

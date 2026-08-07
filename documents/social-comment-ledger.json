@@ -1,14 +1,14 @@
 {
   "title": "July 2026 Facebook search and source audit — social-source ledger",
-  "version": "1.8",
-  "reviewedAt": "2026-08-06",
+  "version": "1.9",
+  "reviewedAt": "2026-08-07",
   "parentPost": {
     "author": "Christine Wonsley",
     "published": "2026-07-05T17:54:00-05:00",
     "visibleText": "This is our Nolan Wells aka Nono. One of the sweetest and kindest souls you could ever meet. He went missing on Horn Island on July 4th. I’m looking for any pics or videos that was taken on the Northwest tip of Horn. Please help us find our sonshine.",
     "url": "https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"
   },
-  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves four supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, and the Jessy Wessy July 6 post with six attachments. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
+  "scopeNote": "The audit covers exposed comments and selected reply threads on Christine Wonsley’s July 5 appeal, a United Cajun Navy reel, Will Polston’s active-search reel, the SMCC Athletics appeal, Anna C. Moore’s July 7 clarification, and the Nicol.Everything Katelynn Brochard repost. It separately preserves five supplemental source sets whose complete comment trees were not audited: the Boogie LowDown post and four attachments, the Natalya King post and five attachments, the Allyson Lawrence July 5 post preserving the Brochard statement-and-photo screenshot, the Jessy Wessy July 6 post with six attachments, and Robbie Robertson’s direct July 5 west-end photo post. It is not a forensic export: Facebook displayed higher totals than it exposed in some threads, and direct July 2026 Jackson County Sheriff’s Office and Mississippi NAACP post permalinks were not recovered. Visible Facebook post and message times authenticate only what the interface displays, not sender identity, media capture, completeness, delivery, police receipt, or the time and truth of a described event.",
   "reviewedThreads": [
     {"source":"Christine Wonsley appeal","exposed":"566 loaded top-level comment blocks plus selected replies","url":"https://www.facebook.com/christine.wonsley/posts/pfbid0C4exFqFakf7SW625QkonBCrCjqfzKhPW71ZRG2A7cCPuZnUa3DvwVK436aDBEYEbl"},
     {"source":"United Cajun Navy reel","exposed":"2,253 top-level comments; interface displayed 2,569","url":"https://www.facebook.com/reel/1561236092337427/"},
@@ -19,6 +19,7 @@
     {"source":"Natalya King attributed-witness post","exposed":"Exact post context and five image attachments preserved; exposed comments checked for a direct Faith Lauren reply, but the full 250-comment tree was not audited","url":"https://www.facebook.com/richedreams/posts/pfbid0cunvci1mCDcYCTVXG3smk2jQXYDR24hRV5LunmQ6kggV5UBitH9e8Dx9aPmLbopPl"},
     {"source":"Allyson Lawrence July 5 Brochard preservation post","exposed":"Post caption, displayed Brochard statement-and-photo image, and relevant visible thread timestamps reviewed; the full comment tree was not audited","url":"https://www.facebook.com/allyson.lawrence.3/photos/cell-phones-in-this-age-are-good-and-badand-in-this-case-they-are-helping-out-co/10163954994904564/"},
     {"source":"Jessy Wessy July 6 image-set preservation post","exposed":"Six image attachments preserved, including the complete Brochard/Briana May exchange without the later video overlay; the author caption is not used as evidence and the full comment tree was not audited","url":"https://www.facebook.com/jessywessy615/posts/-why-isnt-more-of-the-country-talking-about-thisan-18-year-old-black-young-man-g/1536252414626271/"},
+    {"source":"Robbie Robertson July 5 west-end photo post","exposed":"Direct post text and Facebook-served image preserved; visible publication date, author, public audience, and photo statement reviewed; full comment tree not audited","url":"https://www.facebook.com/photo.php?fbid=28511108171823416&set=p.28511108171823416&type=3"},
     {"source":"Katelynn Brochard Nicol.Everything derivative repost","exposed":"Public repost and four attachments preserved; All comments selected; every visible reply set expanded; 62 exposed comment/reply articles reviewed against 68 displayed; Callie Strong clarification attachment archived; no direct video file exposed; native comment export not recovered","url":"https://www.facebook.com/100086436944537/posts/katelynn-brochard-with-some-insight-on-the-nolan-wells-situationsave-this-and-sh/1021993407358548/"},
     {"source":"JCSO and Mississippi NAACP Facebook posts","exposed":"Direct July 2026 post permalinks not recovered; original comment trees not audited","url":null}
   ],
@@ -386,6 +387,31 @@
       "grade": "B-named firsthand account / derivative media preservation",
       "status": "Material firsthand account; native parent thread and media metadata remain unavailable",
       "assessment": "The attributed statements form a coherent firsthand account: Katelynn says Nolan introduced himself to her husband, that her group was parked directly beside the group, and that Nolan was not in sight when her group left at 7:30 PM. The Allyson Lawrence post establishes that the 7:30 statement and attached scene photograph were publicly circulating by the afternoon of July 5. The Jessy Wessy July 6 post preserves the complete exchange without the later video overlay. The full exposed-comment audit recovered a second screenshot of her clarification and strengthens the source chain for the nearby-boats context. The working report's use of the same photograph in Figures 6B and 10 adds visual-comparison support for adjacency within the existing Medium rating. This remains a local no-sight observation, not a case-wide last-sighting time, and it does not establish where Nolan was then. The dated public posts do not authenticate the photograph’s capture time or recover the native Brochard comment. The statements do not say Katelynn witnessed a fight or Nolan refusing a ride. Her around-5:00 departure wording remains unresolved as to pronouns and vessel; the report's vessel labels are source annotations rather than independent registration identifications."
+    },
+    {
+      "id": "robbie-west-end-7117",
+      "sourceType": "direct public Facebook photo post and firsthand statement",
+      "poster": "Robbie Robertson",
+      "profileUrl": "https://www.facebook.com/robertson.robbie",
+      "published": "2026-07-05",
+      "publishedPrecision": "Date visible in Facebook interface; exact publication time not recovered",
+      "reviewedAt": "2026-08-07",
+      "postUrl": "https://www.facebook.com/photo.php?fbid=28511108171823416&set=p.28511108171823416&type=3",
+      "messageExcerpt": "We took this photo of the west end at 7:17 pm… We left at 9 pm.",
+      "messageSummary": "Robertson also reports that only four boats remained, that the other three left shortly afterward, and that two people with his party walked to the south side and back at about 7:30 without seeing Nolan.",
+      "eventDate": "2026-07-04",
+      "eventClaims": [
+        "The poster reports taking the attached photograph at Horn Island's west end at 7:17 PM.",
+        "The poster reports that his boat and three other boats were the only boats remaining at that time and that the other three left shortly afterward.",
+        "The poster reports that his party remained until 9:00 PM.",
+        "The poster reports that two people with his party walked around to the south side and back at about 7:30 PM and did not see Nolan."
+      ],
+      "archivePath": "/media/social-source-audit/robbie-robertson/2026-07-04-west-end-7-17pm.jpg",
+      "sha256": "ba4a67496bd3c23c73522fb0196d7c99301e9c75df45b60f578e7057859c4ca7",
+      "dimensions": "960x694",
+      "grade": "B-named firsthand account / direct public photo",
+      "status": "Material evidence of reported visitor presence after 7:30 PM; Nolan's location remains unknown",
+      "assessment": "The direct post and attached image support the narrower conclusion that Robertson's party reports remaining at Horn Island at and after 7:30 PM. The image visibly records a low-light west-end scene with distant boats. The 7:17 PM capture time, boat count, approximate walk time, other-boats departure sequence, and 9:00 PM departure are supplied by the photographer's statement rather than native EXIF metadata. The two unnamed walkers' failure to see Nolan is a limited negative observation and does not establish Nolan's location, show that the entire island was searched, or establish that Nolan was alive after 4:31 PM."
     },
     {
       "id": "faith-lauren-reporting-intent",

@@ -124,6 +124,13 @@
             ]
           },
           {
+            hour: '7 PM',
+            entries: [
+              { time: '7:17 PM', label: 'West-end photograph is reported taken', eventId: 'robbie-west-end-7117' },
+              { time: '~7:30 PM', label: 'Two late-staying visitors walk the island', eventId: 'robbie-west-end-7117' }
+            ]
+          },
+          {
             hour: '11 PM',
             entries: [
               { time: '~11:00 PM', label: 'Friend contacts the Coast Guard', eventId: 'family-contacted' },
@@ -560,6 +567,24 @@
           { label: 'Redacted GPS extraction summary · page 2', href: `${gpsSummary}#page=2` },
           { label: 'MDMR report · pages 2 and 5', href: `${report}#page=2` },
           { label: 'Master boat distinction', href: `${master}#boats` }
+        ]
+      },
+      {
+        id: 'robbie-west-end-7117', date: 'July 4, 2026', dateLong: 'Saturday · July 4, 2026', time: '7:17 PM–9:00 PM', precision: 'Times reported by the photographer; original EXIF metadata is not public',
+        title: 'West-end photo and witness account place visitors on Horn Island after 7:30', type: 'firsthand', confidence: 'Medium', masterAnchor: 'robbie-west-end-7117', location: 'hornIsland',
+        summary: 'Robbie Robertson says he photographed Horn Island’s west end at 7:17 PM, that his boat and three others were the only boats still there, and that his party remained until 9:00 PM. He says two people with his group walked around to the south side and back at about 7:30 PM and did not see Nolan.',
+        claims: [
+          'The direct public post and its attached photograph support the narrower conclusion that Robertson’s party remained at Horn Island at and after 7:30 PM.',
+          'The author reports that the other three visible boats left shortly after the 7:17 PM photograph; he does not provide their identities or exact departure times.',
+          'The approximately 7:30 PM walk is a firsthand account relayed by Robertson about two members of his party; their names, route, visibility, and exact turnaround time are not stated.',
+          'Their reported failure to see Nolan is a limited negative observation. It does not establish Nolan’s location, prove the entire island was searched, or show that Nolan was alive after 4:31 PM.',
+          'The image file available through Facebook does not expose native EXIF metadata, so 7:17 PM remains photographer-reported rather than independently authenticated from the file.'
+        ],
+        media: { type: 'image', src: './media/social-source-audit/robbie-robertson/2026-07-04-west-end-7-17pm.jpg', alt: 'Twilight photograph attributed to Robbie Robertson showing Horn Island west end and several boats offshore', caption: 'Robbie Robertson Facebook photo · reported taken at Horn Island’s west end at 7:17 PM on July 4, 2026' },
+        sources: [
+          { label: 'Robbie Robertson · direct public Facebook photo and statement', href: 'https://www.facebook.com/photo.php?fbid=28511108171823416&set=p.28511108171823416&type=3' },
+          { label: 'Preserved source-level record', href: './social-source-ledger.html#robbie-west-end-7117' },
+          { label: 'Master evidence assessment', href: `${master}#robbie-west-end-7117` }
         ]
       },
       {
@@ -1044,6 +1069,27 @@
     'gps-return-544': {
       unknowns: ['Complete passenger list at return and the precise sequence immediately after arrival.'],
       needed: ['Passenger statements, dock media, and native Garmin records.']
+    },
+    'robbie-west-end-7117': {
+      confidenceReason: 'This is a direct public post by the named photographer with an attached west-end image. The rating remains Medium because the 7:17 PM capture time, 7:30 PM walk, boat count, and 9:00 PM departure come from the photographer’s statement rather than exposed native EXIF metadata or an independent record.',
+      known: [
+        'Robertson reports taking the attached west-end photograph at 7:17 PM.',
+        'He reports that his party remained at Horn Island until 9:00 PM.',
+        'He reports that two people with his party walked around to the south side and back at about 7:30 PM without seeing Nolan.'
+      ],
+      unknowns: [
+        'The two walkers’ identities, exact route, duration, visibility, and precise turnaround time.',
+        'The identities and exact departure times of the other three boats.',
+        'Native image metadata independently confirming the reported 7:17 PM capture time.',
+        'Nolan’s location; this source does not report seeing Nolan alive after 4:31 PM.'
+      ],
+      needed: ['Original device image with EXIF metadata', 'Direct statements from the two walkers', 'Identities and statements from the remaining boat parties', 'Any additional west- and south-side photographs or video from 7:00–9:00 PM'],
+      sourceViews: [
+        { source: 'Robbie Robertson', position: 'Directly reports the photo time, late boat count, approximate walk time, no-sight result, and his party’s 9:00 PM departure.' },
+        { source: 'Attached photograph', position: 'Visibly records a low-light west-end scene with distant boats but does not itself expose a clock, identify the boats, or show Nolan.' },
+        { source: 'What it establishes', position: 'At least Robertson’s party reports remaining at Horn Island at and after 7:30 PM.' },
+        { source: 'Editorial limit', position: 'The walkers’ negative observation is route-limited and cannot be converted into Nolan’s location or a post-4:31 sighting.' }
+      ]
     },
     'katelynn-nearby-account': {
       confidenceReason: 'A July 5 public Facebook post establishes that the Brochard 7:30 statement and attached scene photograph were already circulating by that afternoon. Multiple later screenshots and a direct July 7 reply consistently attribute the personal introduction, adjacent position, unresolved around-5:00 departure wording, and 7:30 local no-sight observation to the same named source. The working report reuses the same scene photograph for its vessel comparison. The rating remains Medium because the July 5 post is derivative preservation, native thread exports and original image metadata remain unavailable, and vessel registration is not independently authenticated.',

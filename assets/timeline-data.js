@@ -64,6 +64,7 @@
     },
     transcripts: [
       { label: 'Sea Tow / Coast Guard call', meta: 'Released distress-call transcript', href: './transcripts/seatow-audio.html' },
+      { label: 'Dispatch Audio Timeline', meta: 'July 4–6 scanner clips, cautious transcripts, and source hashes', href: './dispatch-audio.html' },
       { label: 'Warren · Part 1', meta: 'Relationship, trip, and departure account', href: './transcripts/warren-part-1.html' },
       { label: 'Warren · Part 2', meta: 'Horn Island standup', href: './transcripts/warren-part-2.html' },
       { label: 'Warren · Part 3', meta: 'Departure questions', href: './transcripts/warren-part-3.html' },

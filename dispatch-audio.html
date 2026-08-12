@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-136ZM5M3LM"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-136ZM5M3LM');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A timestamped, source-linked audio timeline of Nolan Wells search-related radio traffic from the July 4–6, 2026 Jackson County Public Safety and MSWIN scanner archive.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#060b14">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nolan Wells Evidence File">
+  <meta property="og:title" content="Dispatch Audio Timeline · Nolan Wells">
+  <meta property="og:description" content="Case-relevant scanner segments from July 4–6, 2026 with archive-derived timestamps, cautious transcripts, source hashes, and non-autoplay audio.">
+  <meta property="og:url" content="https://justicefornolanwells.com/dispatch-audio">
+  <meta property="og:image" content="https://justicefornolanwells.com/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://justicefornolanwells.com/dispatch-audio">
+  <title>Dispatch Audio Timeline · Nolan Wells Evidence File</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/archive.css">
+  <link rel="stylesheet" href="./assets/dispatch-audio.css">
+  <script src="./assets/seo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#dispatch-content">Skip to dispatch timeline</a>
+  <div class="archive-shell dispatch-shell">
+    <nav class="archive-nav" aria-label="Evidence archive">
+      <a href="./archive.html">← Evidence archive</a>
+      <div class="archive-nav-links">
+        <a href="./index.html">Timeline</a>
+        <a href="./event-timeline.html">Event log</a>
+        <a href="./plunder-archive.html">Source archive</a>
+        <a href="./search.html">Search</a>
+      </div>
+    </nav>
+
+    <header class="dispatch-hero">
+      <div class="dispatch-hero-copy">
+        <p class="eyebrow">Radio archive · July 4–6, 2026</p>
+        <h1>Dispatch Audio Timeline</h1>
+        <p class="intro">Case-relevant transmissions identified after a complete transcription pass across the 115-file Jackson County Public Safety and MSWIN scanner archive, plus clearly labeled source-post excerpts not recovered in that feed. Each card pairs its stated timing basis with the supporting clip, cautious transcript, source recording, and review limits.</p>
+      </div>
+      <dl class="dispatch-stats" aria-label="Archive review status">
+        <div><dt>Files transcribed</dt><dd id="source-count">115 / 115</dd></div>
+        <div><dt>Archive coverage</dt><dd>59h 34m</dd></div>
+        <div><dt>Published segments</dt><dd id="segment-count">0</dd></div>
+        <div><dt>Autoplay</dt><dd>Never</dd></div>
+      </dl>
+    </header>
+
+    <main id="dispatch-content">
+      <section class="method-grid" aria-label="How to read this page">
+        <article>
+          <p class="section-label">What the timestamp means</p>
+          <h2>Archive-derived time</h2>
+          <p>The file name supplies the recording’s Central Daylight Time start. The displayed second is calculated from that start plus the clip offset. It is not a dispatch-system event stamp and may differ by several seconds from an agency clock.</p>
+        </article>
+        <article>
+          <p class="section-label">What the source means</p>
+          <h2>Combined scanner feed</h2>
+          <p>Broadcastify feed 9768 carries multiple Jackson County and regional public-safety channels. Unless a speaker or agency identifies itself audibly, this page does not attribute a transmission to JCSO or any single department.</p>
+        </article>
+        <article>
+          <p class="section-label">What the transcript means</p>
+          <h2>Cautious working text</h2>
+          <p>Brackets mark unclear words. A transcript records what appears audible; it does not prove the truth of a statement. The audio clip controls every quotation and never starts without a user pressing play.</p>
+        </article>
+      </section>
+
+      <section class="dispatch-controls" aria-label="Filter dispatch audio">
+        <label class="dispatch-search">
+          <span>Search clips and transcripts</span>
+          <input id="dispatch-search" type="search" placeholder="Try boat ramp, Horn Island, Lake Mars…" autocomplete="off">
+        </label>
+        <label>
+          <span>Date</span>
+          <select id="dispatch-date">
+            <option value="all">All dates</option>
+            <option value="2026-07-04">July 4</option>
+            <option value="2026-07-05">July 5</option>
+            <option value="2026-07-06">July 6</option>
+          </select>
+        </label>
+        <label>
+          <span>Review status</span>
+          <select id="dispatch-status">
+            <option value="all">All statuses</option>
+            <option value="source-reviewed">Source reviewed</option>
+            <option value="needs-listening">Needs listening review</option>
+            <option value="context-linked">Case link contextual</option>
+          </select>
+        </label>
+        <button id="pause-all" type="button">Pause all audio</button>
+      </section>
+
+      <div class="results-line" aria-live="polite">
+        <p id="dispatch-results">Loading audio timeline…</p>
+        <a href="./documents/dispatch-audio-ledger.json">Download machine-readable ledger</a>
+      </div>
+
+      <section class="dispatch-timeline" id="dispatch-timeline" aria-label="Timestamped dispatch audio segments"></section>
+      <p class="empty-state" id="dispatch-empty" hidden>No preserved segment matches these filters.</p>
+
+      <aside class="dispatch-gap" aria-labelledby="recovery-gap-title">
+        <p class="section-label">Explicit archive gap · July 6, 2026</p>
+        <h2 id="recovery-gap-title">No audible recovery announcement is published here</h2>
+        <p>The reviewed combined-feed archive does not contain a defensible body-recovery announcement or family-notification transmission. The July 6 clips preserve only contextual Lake Mars and continued-call traffic. Recovery timing remains anchored to the MDMR CAD records, sheriff’s account, and public reporting—not inferred from silence or vague radio codes.</p>
+      </aside>
+
+      <section class="archive-provenance" aria-labelledby="archive-provenance-title">
+        <div>
+          <p class="section-label">Preservation chain</p>
+          <h2 id="archive-provenance-title">Source archive and limits</h2>
+        </div>
+        <div class="provenance-copy">
+          <p>The master set contains 115 MP3 recordings covering approximately 59 hours 34 minutes from July 4 through July 6, 2026. Every recording received a full automated transcription pass, followed by keyword candidate review, source-audio listening for published clips, and direct audio matching where a source-post time needed reconciliation. PLUNDER’s July 17 source post identifies Broadcastify premium archives and CrimeRadar as its acquisition path. Fourteen recordings in an earlier July 12 post are byte-identical duplicates inside this master set.</p>
+          <p>Each published clip is a shorter derivative for focused review. Its card identifies the original file and SHA-256 checksum; the ledger identifies both the source and derived clip. The complete raw archive is retained offline and is not silently substituted for the case-specific Sea Tow publication.</p>
+          <div class="provenance-actions">
+            <a href="https://www.broadcastify.com/listen/feed/9768" rel="noopener noreferrer">Broadcastify feed 9768</a>
+            <a href="https://www.patreon.com/PaulaMooney/posts/nolan-wells-case-164095417" rel="noopener noreferrer">PLUNDER source post</a>
+            <a href="./plunder-archive.html#audio-heading">PLUNDER archive index</a>
+            <a href="./transcripts/seatow-audio.html">Separate Sea Tow call</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="archive-footer">Audio does not autoplay. Speaker identity, agency attribution, and unclear wording remain open unless the recording establishes them.</footer>
+  </div>
+
+  <template id="dispatch-card-template">
+    <article class="dispatch-card">
+      <div class="dispatch-rail" aria-hidden="true"><span></span></div>
+      <div class="dispatch-card-body">
+        <div class="dispatch-card-heading">
+          <div class="dispatch-time-wrap">
+            <time class="dispatch-time"></time>
+            <span class="dispatch-time-basis">archive-derived · CDT</span>
+          </div>
+          <div class="dispatch-badges"></div>
+        </div>
+        <h2 class="dispatch-title"></h2>
+        <p class="dispatch-summary"></p>
+        <audio class="dispatch-player" controls preload="none"></audio>
+        <p class="audio-note">Press play to listen. This clip will not start automatically.</p>
+        <details class="dispatch-evidence">
+          <summary><span class="summary-open">Open transcript &amp; source</span><span class="summary-close">Hide transcript &amp; source</span><span aria-hidden="true" class="summary-icon">+</span></summary>
+          <div class="dispatch-evidence-body">
+            <section>
+              <p class="section-label">Cautious transcript</p>
+              <blockquote class="dispatch-transcript"></blockquote>
+            </section>
+            <section class="known-unknown-grid">
+              <div><p class="section-label">What this supports</p><p class="dispatch-supports"></p></div>
+              <div><p class="section-label">What remains unknown</p><p class="dispatch-unknowns"></p></div>
+            </section>
+            <dl class="dispatch-source"></dl>
+            <div class="dispatch-actions"></div>
+          </div>
+        </details>
+      </div>
+    </article>
+  </template>
+
+  <script src="./assets/dispatch-audio-data.js?v=20260812c"></script>
+  <script src="./assets/dispatch-audio.js?v=20260812c"></script>
+</body>
+</html>

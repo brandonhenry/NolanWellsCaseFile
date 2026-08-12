@@ -43,6 +43,11 @@
   status = 200
 
 [[redirects]]
+  from = "/dispatch-audio"
+  to = "/dispatch-audio.html"
+  status = 200
+
+[[redirects]]
   from = "/ucn-report"
   to = "/ucn-report.html"
   status = 200

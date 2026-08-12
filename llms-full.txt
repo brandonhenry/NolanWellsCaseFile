@@ -2,7 +2,7 @@
 
 Canonical site: https://justicefornolanwells.com/
 Repository: https://github.com/brandonhenry/NolanWellsCaseFile
-Last reviewed: 2026-08-07
+Last reviewed: 2026-08-12
 Coverage: Core events July 3–6, 2026, with source-provenance records through July 7, 2026; Horn Island and Ocean Springs, Mississippi
 
 ## Scope and independence
@@ -12,6 +12,8 @@ The Nolan Wells Evidence File is an independent public evidence archive. It is n
 The archive’s purpose is to make the public record easier to inspect while keeping facts, reported recollections, media-derived claims, unknowns, and interpretation visibly separate.
 
 ## Evidence vocabulary
+
+The [Dispatch Audio Timeline](https://justicefornolanwells.com/dispatch-audio) is a separate source-review layer produced after a complete automated transcription pass across the 115-file July 4–6, 2026 Jackson County Public Safety and MSWIN scanner archive. Its timestamps are derived from archive file-name starts plus audible segment offsets, not agency CAD clocks. The feed combines multiple agencies, so no transmission is attributed to JCSO or another department unless the audio establishes it. Clips never autoplay, unclear words remain bracketed, and the machine-readable ledger preserves original and derivative SHA-256 checksums.
 
 - Verified: Supported by an obtained official record, official audio, authenticated primary media, or another direct authoritative source.
 - Firsthand witness: A named person’s account of what that person says they personally saw or heard.

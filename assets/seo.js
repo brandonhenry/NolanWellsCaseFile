@@ -12,6 +12,7 @@
     '/master-notes': '/documents/master-investigation-notes.html',
     '/archive': '/archive.html',
     '/plunder-archive': '/plunder-archive.html',
+    '/dispatch-audio': '/dispatch-audio.html',
     '/documents': '/documents.html',
     '/people': '/people.html',
     '/boats': '/boats.html',
@@ -54,6 +55,12 @@
       canonical: '/plunder-archive',
       title: 'PLUNDER Nolan Wells Source Archive: MDMR, GPS & Search Records',
       description: 'Review the PLUNDER source archive for the Nolan Wells case: MDMR records, GPS extraction summary, search graphics, court records, dispatch archive, and original source posts.',
+      type: 'CollectionPage'
+    },
+    '/dispatch-audio.html': {
+      canonical: '/dispatch-audio',
+      title: 'Nolan Wells Dispatch Audio Timeline · July 4–6, 2026',
+      description: 'Listen to case-relevant July 4–6, 2026 scanner segments with archive-derived timestamps, cautious transcripts, source hashes, review status, and clear agency-attribution limits.',
       type: 'CollectionPage'
     },
     '/documents.html': {

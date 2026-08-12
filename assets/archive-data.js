@@ -7,6 +7,7 @@
       { id: 'search', title: 'Search everything', description: 'Search events, transcript lines, documents, people, boats, questions, contradictions, and master-note sections.', href: './search.html', tone: 'verified' },
       { id: 'documents', title: 'Documents', description: 'Open every obtained source as a record with its status, contents, references, and missing companion files.', href: './documents.html', tone: 'media' },
       { id: 'plunder-release', title: 'PLUNDER Source Archive', description: 'Review the July 2026 source-post index, MDMR records, GPS material, search graphics, dispatch archive, and court-record collection.', href: './plunder-archive.html', tone: 'media' },
+      { id: 'dispatch-audio', title: 'Dispatch Audio Timeline', description: 'Listen to case-relevant July 4–6 scanner segments beside archive-derived times, cautious transcripts, source hashes, and explicit attribution limits.', href: './dispatch-audio.html', tone: 'verified' },
       { id: 'ucn-report', title: 'United Cajun Navy Report Review', description: 'Examine the July 31 report material, Exhibit A3, four preserved images, the Nancy Grace shoreline panorama, and the provenance records still needed.', href: './ucn-report.html', tone: 'media' },
       { id: 'social-sources', title: 'Social Source Ledger', description: 'Review retained July 5–7, 2026 case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
       { id: 'last-contact', title: 'Last Contact Matrix', description: 'Compare reported last sightings, last words, times, listeners, and confidence without collapsing them into one claim.', href: './last-contact.html', tone: 'firsthand' },
@@ -21,6 +22,19 @@
     ],
 
     documents: [
+      {
+        id: 'dispatch-audio-ledger',
+        title: 'Dispatch Audio Timeline & Source Ledger',
+        kind: 'Scanner archive review',
+        status: '115-file transcription pass complete; focused clip review ongoing',
+        availability: 'Focused audio clips and machine-readable ledger public on this site',
+        confidence: 'Claim-specific; transcripts remain review-labeled',
+        href: './dispatch-audio.html',
+        summary: 'A timestamped review of case-relevant transmissions inside the 115-file July 4–6, 2026 Jackson County Public Safety and MSWIN scanner archive, preserving each original file name, source hash, clip hash, transcript uncertainty, and agency-attribution limit.',
+        contents: ['Complete automated transcription pass across 115 recordings', '115-recording source-set provenance', 'Archive-derived Central Daylight Time stamps', 'Non-autoplay review clips', 'Cautious transcripts', 'Original and derivative SHA-256 checksums', 'Search and status filters', 'Machine-readable JSON ledger'],
+        referencedEvents: ['coast-guard-public-activation', 'official-search'],
+        missingCompanions: ['Native Broadcastify archive metadata', 'Agency talkgroup and speaker identifications', 'Complete official JCSO dispatch/CAD export', 'Human verification of every unclear phrase']
+      },
       {
         id: 'mdmr-report',
         title: 'MDMR RMS Report · MP2607-0016',

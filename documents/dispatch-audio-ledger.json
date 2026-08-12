@@ -33,22 +33,6 @@
       "clipDurationSeconds": 11.952
     },
     {
-      "id": "late-night-vehicle-key-dispute",
-      "archiveDerivedTime": null,
-      "sourceReportedTime": "2026-07-04T23:50:00-05:00",
-      "timingBasis": "PLUNDER reports approximately 11:50 p.m. from CrimeRadar but says the Broadcastify placement may be hours later",
-      "title": "A vehicle-key dispute is reported; case connection is unconfirmed",
-      "reviewStatus": "case link contextual",
-      "transcriptConfidence": "High for the audible call; low for its connection to Nolan",
-      "transcript": "[Residential address redacted]. RP said they were trying to get keys to a vehicle, but a male is refusing to give them to her and her daughter. Dispatch could hear them yelling in the background. RP did say that it is almost physical, but not physical yet.",
-      "sourceFile": "PLUNDER embedded clip 4 (1.mp3)",
-      "sourceSha256": "fc2d86fd11e9c326edede86d7b84078259422f2a001cc86cd352226c12d5aea9",
-      "relevantSourceOffsetSeconds": [11.3, 38.86],
-      "clipPath": "/media/dispatch-audio/2026-07-04-late-vehicle-key-dispute-redacted.mp3",
-      "clipSha256": "ccbf805ace1a10891b8f743eef761cdaf16f65c08aeb8a6fb0b6d863c0e94c9e",
-      "clipDurationSeconds": 38.922
-    },
-    {
       "id": "potential-missing-person-radio-context",
       "archiveDerivedTime": "2026-07-05T00:08:48-05:00",
       "title": "Unit says it is dealing with a potential missing person",

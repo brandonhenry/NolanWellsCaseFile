@@ -50,38 +50,6 @@
         ]
       },
       {
-        id: 'late-night-vehicle-key-dispute',
-        date: '2026-07-04',
-        datetime: '2026-07-04T23:50:00-05:00',
-        displayDate: 'July 4–5, 2026',
-        displayTime: 'Late night · time unresolved',
-        timeBasisLabel: 'source context · time disputed',
-        timingBasis: 'PLUNDER reports approximately 11:50 p.m. from CrimeRadar but says the Broadcastify placement may be hours later',
-        title: 'A vehicle-key dispute is reported; case connection is unconfirmed',
-        category: 'contextual call',
-        reviewStatus: 'context-linked',
-        reviewLabel: 'Case link contextual',
-        transcriptConfidence: 'High for the audible call; low for its connection to Nolan',
-        summary: 'A source-post excerpt reports that a woman and her daughter were trying to obtain vehicle keys from a man who would not provide them. The publisher discusses it beside the phone-and-keys sequence but explicitly says she cannot confirm the call is related.',
-        transcript: '“[Residential address redacted]. RP said they were trying to get keys to a vehicle, but a male is refusing to give them to her and her daughter. Dispatch could hear them yelling in the background. RP did say that it is almost physical, but not physical yet.”',
-        supports: 'The call establishes that a late-night vehicle-key dispute occurred on the monitored source; it does not establish that Nolan’s keys, friends, or family were involved.',
-        unknowns: 'The event time differs between source systems, nobody is named, and no public incident number or official record links this call to Nolan.',
-        audio: './media/dispatch-audio/2026-07-04-late-vehicle-key-dispute-redacted.mp3',
-        audioDuration: 38.922,
-        clipSha256: 'ccbf805ace1a10891b8f743eef761cdaf16f65c08aeb8a6fb0b6d863c0e94c9e',
-        sourceFile: 'PLUNDER embedded clip 4 (1.mp3)',
-        sourceFileLabel: 'Source-post excerpt',
-        sourceSha256: 'fc2d86fd11e9c326edede86d7b84078259422f2a001cc86cd352226c12d5aea9',
-        sourceOffsetStart: 0,
-        sourceOffsetEnd: 38.86,
-        relevantStart: 11.3,
-        relevantEnd: 38.86,
-        links: [
-          { label: 'PLUNDER source post', href: 'https://www.patreon.com/PaulaMooney/posts/nolan-wells-case-164095417' },
-          { label: 'Late-night chronology', href: './documents/master-investigation-notes.html#late-night-july-4' }
-        ]
-      },
-      {
         id: 'potential-missing-person-radio-context',
         date: '2026-07-05',
         datetime: '2026-07-05T00:08:48-05:00',

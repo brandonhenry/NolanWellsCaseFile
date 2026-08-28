@@ -105,7 +105,8 @@
     const records = [...document.querySelectorAll('[data-video-record]')];
     let visible = 0;
     records.forEach(record => {
-      const matchesFilter = activeFilter === 'all' || record.dataset.videoCategory === activeFilter;
+      const categories = record.dataset.videoCategory.split(/\s+/);
+      const matchesFilter = activeFilter === 'all' || categories.includes(activeFilter);
       const matchesSearch = !query || record.dataset.videoSearch.includes(query);
       record.hidden = !(matchesFilter && matchesSearch);
       if (!record.hidden) visible += 1;

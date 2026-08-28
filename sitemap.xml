@@ -60,6 +60,15 @@
       <video:publication_date>2026-08-13</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/jeanetta-brantley-seatow-enhanced-waveform-square.jpg</video:thumbnail_loc>
+      <video:title>Jeanetta Brantley-enhanced Sea Tow excerpt waveform</video:title>
+      <video:description>Thirty-seven-second square waveform preserving Jeanetta Brantley’s processed Sea Tow excerpt. The archive labels it as an interpretive listening aid and links the complete unaltered publication.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/jeanetta-brantley-seatow-enhanced-waveform-square.mp4</video:content_loc>
+      <video:duration>37</video:duration>
+      <video:publication_date>2026-07-28</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
   <url><loc>https://justicefornolanwells.com/facebook-research-audit</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/plunder-archive</loc><lastmod>2026-08-01</lastmod></url>

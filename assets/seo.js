@@ -205,7 +205,7 @@
     },
     boat: {
       mi4088bu: ['Triton MI4088BU · Nolan Wells GPS and Boat Record', 'Officially summarized 9:56, 11:14, 4:31, 5:25, and 5:44 GPS milestones, evidence limits, and passenger unknowns.'],
-      mi1295cb: ['MI1295CB · Nolan Wells Boat and Waypoint Record', 'Published waypoints and source limitations for MI1295CB; the archive does not render them as a continuous vessel track.'],
+      mi1295cb: ['Tideline MI1295CB · Nolan Wells Boat and Waypoint Record', 'Published waypoints and source limitations for the Tideline, MI1295CB; the archive does not render them as a continuous vessel track.'],
       'tracestin-family-boat': ['Tracestin’s Family Boat · Nolan Wells Case Record', 'Witness-based vessel account, linked departure events, and unresolved identification and timing questions.'],
       'assisting-vessel': ['Private Assistance Vessel · Nolan Wells Case Record', 'Publicly reported private assistance, linked Sea Tow and GPS events, and unresolved vessel and participant identification.']
     }

@@ -407,7 +407,7 @@
         id: 'bart',
         name: 'Bart',
         role: 'Boat owner / witness named in the working record',
-        summary: 'Bart’s vessel MI1295CB appears through waypoints in the obtained packet, but the project does not have a continuous track or complete passenger account.',
+        summary: 'The Tideline, MI1295CB, appears through waypoints in the obtained packet, but the project does not have a continuous track or complete passenger account.',
         eventIds: ['early-afternoon', 'gps-movement-431'],
         interviews: [],
         questions: ['What was Bart’s complete July 4, 2026 timeline?', 'Who occupied MI1295CB?', 'What do the individual waypoints represent?']
@@ -482,7 +482,7 @@
       updated: 'July 30, 2026',
       entities: [
         { id: 'mi4088bu', name: 'MI4088BU', type: 'vessel', detail: 'GPS-tracked Triton', href: './boat.html?id=mi4088bu' },
-        { id: 'mi1295cb', name: 'MI1295CB', type: 'vessel', detail: 'Waypoint-only vessel record', href: './boat.html?id=mi1295cb' },
+        { id: 'mi1295cb', name: 'Tideline · MI1295CB', type: 'vessel', detail: 'Waypoint-only vessel record', href: './boat.html?id=mi1295cb' },
         { id: 'family-boat', name: 'Family boat', type: 'vessel', detail: 'Tracestin’s witness-described vessel', href: './boat.html?id=tracestin-family-boat' },
         { id: 'viral-video-record', name: 'Viral video', type: 'media', detail: 'Circulated Horn Island clip', href: './document.html?id=viral-video' },
         { id: 'mdmr', name: 'MDMR', type: 'agency', detail: 'Official marine-resources record', href: './document.html?id=mdmr-report' },
@@ -546,7 +546,7 @@
       },
       {
         id: 'mi1295cb',
-        name: 'Bart’s boat · MI1295CB',
+        name: 'Tideline · MI1295CB',
         status: 'Waypoints obtained; no continuous track',
         summary: 'The obtained material includes MI1295CB waypoints but does not support drawing a continuous vessel route.',
         eventIds: ['early-afternoon', 'critical-overlap'],

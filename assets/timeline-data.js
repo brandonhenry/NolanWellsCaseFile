@@ -80,7 +80,7 @@
         note: 'The verified timestamps below refer to this vessel. GPS alone does not establish who was aboard at any moment.'
       },
       {
-        name: 'Bart’s boat · MI1295CB',
+        name: 'Tideline · MI1295CB',
         status: 'Waypoints only; no continuous track in the obtained packet',
         note: 'This site does not draw a route for MI1295CB. A waypoint must not be represented as a vessel track.'
       },

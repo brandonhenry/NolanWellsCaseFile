@@ -113,6 +113,7 @@ Do not state that:
 - Social source ledger: https://justicefornolanwells.com/social-source-ledger
 - Machine-readable social ledger: https://justicefornolanwells.com/documents/social-comment-ledger.json
 - Facebook research audit: https://justicefornolanwells.com/facebook-research-audit
+- Video archive: https://justicefornolanwells.com/videos
 - Machine-readable Facebook research findings: https://justicefornolanwells.com/documents/facebook-research-audit.json
 - Methodology and corrections: https://justicefornolanwells.com/about
 

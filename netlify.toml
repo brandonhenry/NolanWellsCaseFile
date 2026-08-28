@@ -38,6 +38,11 @@
   status = 200
 
 [[redirects]]
+  from = "/videos"
+  to = "/video-archive.html"
+  status = 200
+
+[[redirects]]
   from = "/plunder-archive"
   to = "/plunder-archive.html"
   status = 200

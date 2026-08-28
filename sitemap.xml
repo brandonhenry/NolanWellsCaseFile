@@ -40,6 +40,27 @@
     </video:video>
   </url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-08-28</lastmod></url>
+  <url>
+    <loc>https://justicefornolanwells.com/videos</loc><lastmod>2026-08-28</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/nancy-grace-johnny-hewett-interview-segments.jpg</video:thumbnail_loc>
+      <video:title>Nancy Grace and Johnny Hewett selected interview segments</video:title>
+      <video:description>Edited compilation of the supplied Nancy Grace program portions in which Nancy Grace addresses or speaks with Johnny Hewett. The complete original program is linked on the archive page.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/nancy-grace-johnny-hewett-interview-segments.mp4</video:content_loc>
+      <video:duration>714</video:duration>
+      <video:publication_date>2026-08-28</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/officer-tatum-boys-boat-emergency-and-tow-statements.jpg</video:thumbnail_loc>
+      <video:title>Officer Tatum interview excerpts on the boat emergency and tow</video:title>
+      <video:description>Direct interview excerpts in which the group describes Nolan boarding the Triton, the reported flooding, tow hookup, and distance sequence.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/officer-tatum-boys-boat-emergency-and-tow-statements.mp4</video:content_loc>
+      <video:duration>343</video:duration>
+      <video:publication_date>2026-08-13</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
   <url><loc>https://justicefornolanwells.com/facebook-research-audit</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/plunder-archive</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/dispatch-audio</loc><lastmod>2026-08-12</lastmod></url>

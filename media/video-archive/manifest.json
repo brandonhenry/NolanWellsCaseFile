@@ -1,0 +1,17 @@
+{
+  "created": "2026-08-28",
+  "editorialRule": "Every file is user-initiated and must not autoplay. Edited compilations document public statements but do not authenticate the statements or replace the complete linked source programs.",
+  "files": [
+    { "file": "cuomo-boat-emergency-and-tow-evidence.mp4", "bytes": 18039562, "durationSeconds": 589.041, "sha256": "d1e753f1829ff401c261a57cdafb59e2418b295eca90a1f71c8c818ffc378736" },
+    { "file": "cuomo-katie-reported-timeline-evidence.mp4", "bytes": 13695200, "durationSeconds": 459.041, "sha256": "66b43ccc98fe4735d4f59d65e45a6afdec7f9ef4238c503205f1442a4ff8c0f0" },
+    { "file": "final-sighting-and-another-ride-source-comparison.mp4", "bytes": 17777565, "durationSeconds": 691.124, "sha256": "5ef54b6e4d38e77fad9b68ddccf435b12979691cbe4e4af18e111642d21b21b3" },
+    { "file": "interview-accounts-increasing-certainty.mp4", "bytes": 13573754, "durationSeconds": 559.041, "sha256": "5a14dc350a0e80d677151fd2783fe051b8259e9a1d647a853c051999f51e0302" },
+    { "file": "jax-house-to-wyatt-house-evidence.mp4", "bytes": 13656897, "durationSeconds": 182.9, "sha256": "103828b7b0d4e66c2d4b4a0f775180cb49e1de44ef2c495dcfb17963efafda01" },
+    { "file": "katie-account-chronology-interview-evidence.mp4", "bytes": 9751549, "durationSeconds": 276.041, "sha256": "91c6ee873be4b469247718bcbe3499b1fd09244dbdfeda2b0534706825c112ea" },
+    { "file": "nancy-grace-johnny-hewett-interview-segments.mp4", "bytes": 48418082, "durationSeconds": 714.133, "sha256": "955008fd8f8492046951ff168de2a64b7900c084a1ae237cdb19cbd236b8d3ba" },
+    { "file": "officer-tatum-and-july-10-two-location-evidence.mp4", "bytes": 18308907, "durationSeconds": 302.593, "sha256": "59ab03b0feaf21b9b7b83598b424d20dfecaebc7b46aa968f2a8573956f2209e" },
+    { "file": "officer-tatum-boys-boat-emergency-and-tow-statements.mp4", "bytes": 9885800, "durationSeconds": 343.137, "sha256": "a4b7e9e5b891bb37dbb4036e5d241945c2a9f347667bf65cd2bb22511fac894e" },
+    { "file": "warren-house-dock-and-triton-evidence.mp4", "bytes": 13285555, "durationSeconds": 203.074, "sha256": "dc42ec440efbc7896ee7f9603584b25319bd59a8a1d009f52f002bc9f6e80dfb" },
+    { "file": "warren-two-boat-proximity-interview-evidence.mp4", "bytes": 14265346, "durationSeconds": 516.041, "sha256": "d49e9fa177fd28dd1a804ff5cf915b2fc9d5b60b17272793c60f2183cfc43203" }
+  ]
+}

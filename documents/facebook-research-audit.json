@@ -1,0 +1,98 @@
+{
+  "title": "Brandon Henry Facebook Research Audit",
+  "reviewed": "2026-08-28",
+  "coverage": "2026-07-06 through 2026-08-28",
+  "scope": "Brandon Henry's own Facebook posts and comments about the Nolan Wells case",
+  "collectionNote": "The Facebook activity interface virtualizes and reloads rows. Counts describe the collected review set, not a forensic Facebook export or a guarantee that every historical item was exposed.",
+  "reviewSet": {
+    "caseRelatedPosts": 154,
+    "caseRelatedComments": 1086
+  },
+  "findings": [
+    {
+      "id": "sea-tow-time",
+      "status": "incorporated",
+      "conclusion": "A reproduced phone record supplied by counsel displays the Sea Tow call at 4:48 PM on July 4, 2026.",
+      "confidence": "high for the displayed time; original Sea Tow and carrier metadata still needed",
+      "facebookSource": "https://www.facebook.com/reel/1385813290351577/",
+      "underlyingSource": "https://doxfeed.com/story/al-sharpton-hit-with-pre-lawsuit-notice/",
+      "affectedEvents": ["gps-movement-431", "departure-to-seatow-call", "sea-tow-call", "seatow-anchor-overlap", "private-assistance", "critical-overlap"]
+    },
+    {
+      "id": "position-change",
+      "status": "superseded",
+      "conclusion": "Nearshore media and the 4:48 PM offshore coordinate establish a position change by 4:48 PM, not necessarily before 4:31 PM.",
+      "confidence": "medium",
+      "facebookSource": "https://www.facebook.com/itsbhenry/posts/pfbid0YWFsPQExiNGGP3SSE1jX7SDXCBLkvf5qPVUwa3sDYyvgVAaDeVkobXt6xY3HZCrzl",
+      "supersedingSource": "https://www.facebook.com/reel/1385813290351577/",
+      "affectedEvents": ["triton-pre-430-repositioning"]
+    },
+    {
+      "id": "fort-bayou-sequence",
+      "status": "incorporated",
+      "conclusion": "Official GPS records dock at 5:44 PM, Fort Bayou departure at 5:52 PM, and dock return at 6:06 PM; a later interview appears to reverse that order.",
+      "confidence": "high for GPS order; medium for the interview conflict",
+      "facebookSource": "https://www.facebook.com/reel/803356296167947/",
+      "affectedEvents": ["gps-return-544", "gps-fort-bayou-552"]
+    },
+    {
+      "id": "refusal-source-chain",
+      "status": "qualified",
+      "conclusion": "The public record preserves a refusal narrative but does not identify every person who personally heard Nolan's alleged words.",
+      "confidence": "high that the source chain is incomplete",
+      "facebookSource": "https://www.facebook.com/reel/4432567446996017/",
+      "affectedEvents": ["accounts-nolan-stays"]
+    },
+    {
+      "id": "katie-account",
+      "status": "qualified",
+      "conclusion": "A secondhand compilation says Katie heard boarding calls, said goodbye, assumed Nolan would leave with his friends, and did not witness a refusal.",
+      "confidence": "low because the account is one step removed from Katie",
+      "facebookSource": "https://www.facebook.com/itsbhenry/posts/pfbid02934VCtgkFA3BfhFUorhBnVHsRBKhpseqEZEg3yrCUXs8aBuxTbGrpx9UHbbRNTwkl",
+      "affectedEvents": ["accounts-nolan-stays", "katie-reported-goodbye-account"]
+    },
+    {
+      "id": "katie-contact",
+      "status": "qualified",
+      "conclusion": "An attorney says the group contacted Katie before the 11:07 PM family call and attributes 'We thought he was leaving with y'all' to her.",
+      "confidence": "low until the native thread is released",
+      "facebookSource": "https://www.facebook.com/reel/1043273498591858/",
+      "affectedEvents": ["katie-contact-before-family-call"]
+    },
+    {
+      "id": "overnight-call-sequence",
+      "status": "incorporated",
+      "conclusion": "Displayed records add 11:07 PM, 11:13 PM, 11:15 PM, 11:35 PM, 12:25 AM, 1:00 AM, and 2:57 AM contact anchors.",
+      "confidence": "medium; timestamps displayed, call contents mostly not recorded",
+      "underlyingSource": "https://doxfeed.com/story/al-sharpton-hit-with-pre-lawsuit-notice/",
+      "affectedEvents": ["family-contacted", "overnight-call-log-sequence", "emergency-call-record-0257"]
+    },
+    {
+      "id": "narrative-shift",
+      "status": "incorporated",
+      "conclusion": "The record progresses from missing-person alarm after 11 PM to an alternate-ride working explanation recorded by MDMR at 1:38 AM.",
+      "confidence": "high for the documented progression; low for the truth of the alternate-ride claim",
+      "facebookSources": [
+        "https://www.facebook.com/reel/1588911686245433/",
+        "https://www.facebook.com/itsbhenry/posts/pfbid0BtWqdA1U9vF6MmS8HiE5c91PAaS7XRXwNRamw1W6FosXrnMqAAk7wZefDEkQtCbVl"
+      ],
+      "affectedEvents": ["family-contacted", "mdmr-missing-cad-1145", "jcso-working-assumption-0138"]
+    },
+    {
+      "id": "dock-staging",
+      "status": "qualified",
+      "conclusion": "Interview clips support an overnight stay, general mainland staging, a group meeting dock, and Nolan boarding the Triton outbound.",
+      "confidence": "medium",
+      "facebookSource": "https://www.facebook.com/itsbhenry/posts/pfbid0jkExjL1V5d5EnEmsVTx9hwX9Eo8GQjA3rqSvUrmfWXXxrhUdhmsgZe326brxDVKKl",
+      "privacyLimit": "Precise residential addresses and unrelated household identities are excluded."
+    }
+  ],
+  "excludedCategories": [
+    "unsupported criminal accusations or cover-up conclusions",
+    "exact probability estimates and behavioral interpretations",
+    "enhanced-audio voice identifications",
+    "unsupported post-4:31 PM Nolan sightings",
+    "private addresses and broad relationship graphs",
+    "claims superseded by later records"
+  ]
+}

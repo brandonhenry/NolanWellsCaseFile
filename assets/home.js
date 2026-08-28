@@ -56,13 +56,14 @@
 
   function mediaMarkup(media) {
     if (!media) return '';
+    const items = Array.isArray(media) ? media : [media];
     const icons = {
       video: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg>',
       audio: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9v6M9 6v12M13 8v8M17 4v16M21 10v4"/></svg>',
       image: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M9 9h.01"/></svg>'
     };
     const labels = { video: 'Load evidence video', audio: 'Load full call audio', image: 'View evidence image' };
-    return `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(media.type)}" data-media-src="${escapeHtml(media.src)}" data-media-poster="${escapeHtml(media.poster || '')}" data-media-alt="${escapeHtml(media.alt)}" data-media-caption="${escapeHtml(media.caption)}">${icons[media.type] || icons.image}<span>${labels[media.type] || labels.image}</span></button></div>`;
+    return `<div class="evidence-media-list">${items.map(item => `<div class="evidence-media" data-media-container><button class="media-trigger" type="button" data-media-type="${escapeHtml(item.type)}" data-media-src="${escapeHtml(item.src)}" data-media-poster="${escapeHtml(item.poster || '')}" data-media-alt="${escapeHtml(item.alt)}" data-media-caption="${escapeHtml(item.caption)}">${icons[item.type] || icons.image}<span>${labels[item.type] || labels.image}</span><small>${escapeHtml(item.caption)}</small></button></div>`).join('')}</div>`;
   }
 
   function audioMarkup(tracks) {

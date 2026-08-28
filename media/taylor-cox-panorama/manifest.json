@@ -1,0 +1,55 @@
+{
+  "source": {
+    "title": "Pre-Suit Demand Regarding Your Defamation of Warren Hudson, Jax Pitalo, and Morgan Seymour",
+    "date": "2026-08-21",
+    "authors": ["J. Tyler Cox", "Edward Andrew Paltzik"],
+    "sourceUrl": "https://drive.google.com/file/d/1BWR05jaWl9adOx-YDAbhjIvdLW7I43W_/view",
+    "localPdf": "/documents/taylor-cox/2026-08-21-pre-suit-demand-to-al-sharpton.pdf",
+    "pageCount": 19,
+    "sha256": "eeafa8c75f783adc5cb52974cc020492f8b6fb1b4e1b0f4cb605642dcd8c062c"
+  },
+  "timelineClaim": {
+    "displayedTime": "Approximately 1:55 PM",
+    "date": "2026-07-04",
+    "basis": "Page 6 states that the displayed pictures show Nolan amidst a large group of young people at approximately 1:55 PM.",
+    "classification": "Counsel-attributed approximate time",
+    "limit": "The PDF does not expose native camera metadata or identify the record supporting the time attribution."
+  },
+  "files": [
+    {
+      "path": "2026-07-04-1355-nearshore-frame-a-source.png",
+      "page": 6,
+      "embeddedImage": "Im7.png",
+      "dimensions": "1203x2614",
+      "sha256": "353dd9caceeaae0bcc33d20c2ac0c905d3f9346571aac77a17800427d68b023f"
+    },
+    {
+      "path": "2026-07-04-1355-nearshore-frame-a.png",
+      "derivedFrom": "2026-07-04-1355-nearshore-frame-a-source.png",
+      "transform": "lossless display crop 1203x1460+0+420",
+      "dimensions": "1203x1460",
+      "sha256": "255ca2046c0d2fa2bd41b7a8f58dcade843473b3bc6270052fb7ea89cf91bb52"
+    },
+    {
+      "path": "2026-07-04-1355-nearshore-frame-b-source.png",
+      "page": 5,
+      "embeddedImage": "Im6.png",
+      "dimensions": "1203x2614",
+      "sha256": "a55edea06a624acd3a6bf12d31af7c8693352656dc7a4fd7a5a8e1cc42c77677"
+    },
+    {
+      "path": "2026-07-04-1355-nearshore-frame-b.png",
+      "derivedFrom": "2026-07-04-1355-nearshore-frame-b-source.png",
+      "transform": "lossless display crop 1203x1500+0+465",
+      "dimensions": "1203x1500",
+      "sha256": "830b86e75b7c920d8f6f7f87794d51700f93f9db37900ff0ee089e1c5e0d3742"
+    },
+    {
+      "path": "2026-07-04-1355-nolan-detail-source.png",
+      "page": 6,
+      "embeddedImage": "Im8.png",
+      "dimensions": "1203x2614",
+      "sha256": "636286c28438ada2157e47f21f53261d9e4a5d7aad591eb3ba4edd0f6e7634cb"
+    }
+  ]
+}

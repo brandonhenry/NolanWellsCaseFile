@@ -34,7 +34,8 @@
   function eventMarkup(event) {
     const type = data.types[event.type];
     const mediaLabels = { video: 'Open video', audio: 'Open audio', image: 'Open image' };
-    const mediaLink = event.media ? `<a class="source-chip media-link" href="${escapeHtml(event.media.src)}" target="_blank" rel="noopener noreferrer">${mediaLabels[event.media.type] || 'Open media'} <span class="sr-only">(opens in a new tab)</span></a>` : '';
+    const mediaItems = event.media ? (Array.isArray(event.media) ? event.media : [event.media]) : [];
+    const mediaLink = mediaItems.map((item, index) => `<a class="source-chip media-link" href="${escapeHtml(item.src)}" target="_blank" rel="noopener noreferrer">${mediaLabels[item.type] || 'Open media'}${mediaItems.length > 1 ? ` ${index + 1}` : ''} <span class="sr-only">(opens in a new tab)</span></a>`).join('');
     const sources = event.sources.map(source => `<a class="source-chip" href="${escapeHtml(source.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)} <span class="sr-only">(opens in a new tab)</span></a>`).join('');
     const location = data.locations[event.location];
     const coordinate = location ? `<a class="log-coordinate" href="./coordinates.html#coordinate-${escapeHtml(event.location)}"><strong>${location.lat.toFixed(6)}, ${location.lng.toFixed(6)}</strong><span>${escapeHtml(location.label)} · coordinate explorer →</span></a>` : '';

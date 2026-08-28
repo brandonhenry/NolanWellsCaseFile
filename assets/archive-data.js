@@ -10,6 +10,7 @@
       { id: 'dispatch-audio', title: 'Dispatch Audio Timeline', description: 'Listen to case-relevant July 4–6 scanner segments beside archive-derived times, cautious transcripts, source hashes, and explicit attribution limits.', href: './dispatch-audio.html', tone: 'verified' },
       { id: 'ucn-report', title: 'United Cajun Navy Report Review', description: 'Examine the July 31 report material, Exhibit A3, four preserved images, the Nancy Grace shoreline panorama, and the provenance records still needed.', href: './ucn-report.html', tone: 'media' },
       { id: 'social-sources', title: 'Social Source Ledger', description: 'Review retained July 5–7, 2026 case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
+      { id: 'facebook-research-audit', title: 'Facebook Research Audit', description: 'See which findings from Brandon Henry’s July–August research were incorporated, qualified, superseded, or excluded after source-level review.', href: './facebook-research-audit.html', tone: 'media' },
       { id: 'last-contact', title: 'Last Contact Matrix', description: 'Compare reported last sightings, last words, times, listeners, and confidence without collapsing them into one claim.', href: './last-contact.html', tone: 'firsthand' },
       { id: 'contradictions', title: 'Contradictions', description: 'Place public narratives beside supporting, conflicting, and still-missing evidence without accusing anyone.', href: './contradictions.html', tone: 'unknown' },
       { id: 'evidence-tracker', title: 'Missing Evidence Tracker', description: 'Track what is obtained, public, referenced but missing, or still needed—and whether a request status is documented.', href: './evidence-tracker.html', tone: 'media' },
@@ -23,6 +24,19 @@
 
     documents: [
       {
+        id: 'facebook-research-audit',
+        title: 'Brandon Henry Facebook Research Audit · August 28, 2026',
+        kind: 'Claim-level research reconciliation',
+        status: 'Completed working audit',
+        availability: 'Public findings page and machine-readable JSON',
+        confidence: 'Finding-specific',
+        href: './facebook-research-audit.html',
+        summary: 'A review of Brandon Henry’s own July–August 2026 Facebook posts and comments, separating record-backed findings from qualified leads, superseded interpretations, unsupported accusations, and private material.',
+        contents: ['154 case-related posts in the review set', 'More than 1,000 case-related comments in the review set', '4:48 PM Sea Tow timing correction', '4:31–4:48 PM evidence gap', '5:52–6:06 PM Fort Bayou sequence', 'Overnight displayed call anchors', 'Refusal-account source-chain limits', 'Editorial exclusions and corrections', 'Machine-readable JSON findings'],
+        referencedEvents: ['accounts-nolan-stays', 'katie-reported-goodbye-account', 'gps-movement-431', 'departure-to-seatow-call', 'sea-tow-call', 'private-assistance', 'gps-fort-bayou-552', 'family-contacted', 'overnight-call-log-sequence', 'jcso-working-assumption-0138', 'emergency-call-record-0257'],
+        missingCompanions: ['Forensic Facebook account export', 'Native message threads referenced by public speakers', 'Original Sea Tow and carrier metadata']
+      },
+      {
         id: 'dispatch-audio-ledger',
         title: 'Dispatch Audio Timeline & Source Ledger',
         kind: 'Scanner archive review',
@@ -34,6 +48,19 @@
         contents: ['Complete automated transcription pass across 115 recordings', '115-recording source-set provenance', 'Archive-derived Central Daylight Time stamps', 'Non-autoplay review clips', 'Cautious transcripts', 'Original and derivative SHA-256 checksums', 'Search and status filters', 'Machine-readable JSON ledger'],
         referencedEvents: ['coast-guard-public-activation', 'official-search'],
         missingCompanions: ['Native Broadcastify archive metadata', 'Agency talkgroup and speaker identifications', 'Complete official JCSO dispatch/CAD export', 'Human verification of every unclear phrase']
+      },
+      {
+        id: 'taylor-cox-demand-letter',
+        title: 'Taylor & Cox / Taylor Dykema Pre-Suit Demand · August 21, 2026',
+        kind: 'Counsel-authored advocacy letter and exhibit set',
+        status: 'Obtained from original Google Drive source',
+        availability: 'Complete 19-page PDF and selected full-resolution embedded images public on this site',
+        confidence: 'High for document contents; claim-specific for factual assertions',
+        href: './documents/taylor-cox/2026-08-21-pre-suit-demand-to-al-sharpton.pdf',
+        summary: 'A 19-page letter by J. Tyler Cox and Edward Andrew Paltzik on behalf of Warren Hudson, Jax Pitalo, and Morgan Seymour. Page 6 publishes high-resolution scene exhibits and states that they show Nolan amidst the nearshore group at approximately 1:55 PM. Because the document is advocacy and does not disclose native image metadata or the timestamp basis, the archive separates the visible pixels from counsel’s attributed time and identification claims.',
+        contents: ['Complete August 21, 2026 letter', 'Page 6 nearshore panorama exhibits', 'Approximately 1:55 PM counsel attribution', 'Attributed Nolan detail', 'Displayed 4:48 PM Sea Tow phone record', 'Displayed overnight phone and message records', 'Source and derivative SHA-256 hashes'],
+        referencedEvents: ['nearshore-panorama', 'departure-to-seatow-call', 'sea-tow-call', 'family-contacted', 'overnight-call-log-sequence', 'emergency-call-record-0257'],
+        missingCompanions: ['Native phone-camera file and metadata', 'Record underlying the approximately 1:55 PM attribution', 'Original photographer or sender statement', 'Carrier-certified call records', 'Complete underlying message exports']
       },
       {
         id: 'mdmr-report',
@@ -93,12 +120,12 @@
         kind: 'Published media excerpt',
         status: 'Obtained from official source upload',
         availability: '30.4-second web excerpt public on this site',
-        confidence: 'High for visible content; medium for sourced vessel identification; capture time unresolved',
+        confidence: 'High for visible content; medium for counsel-attributed approximately 1:55 PM time and sourced identifications',
         href: './ucn-report.html#nancy-grace-panorama',
-        summary: 'A continuous excerpt from Nancy Grace’s July 29, 2026 YouTube episode showing the crowded shallow-water shoreline gathering and tied-boat area. The episode is preserved separately from the native phone-camera source, which has not been obtained.',
-        contents: ['Episode time 16:18.5–16:48.9', 'H.264/AAC web-compatible excerpt', 'Poster frame', 'Official YouTube source link', 'SHA-256 preservation hash', 'Claim-level identity and timing limits'],
+        summary: 'A continuous excerpt from Nancy Grace’s July 29, 2026 YouTube episode showing the crowded shallow-water shoreline gathering and tied-boat area. An August 21 counsel letter publishes higher-resolution stills and attributes its page 6 image set to approximately 1:55 PM. The native phone-camera source has not been obtained.',
+        contents: ['Episode time 16:18.5–16:48.9', 'H.264/AAC web-compatible excerpt', 'Three high-resolution counsel-letter exhibits', 'Approximately 1:55 PM counsel attribution', 'Poster frame', 'Official YouTube and Google Drive source links', 'SHA-256 preservation hashes', 'Claim-level identity and timing limits'],
         referencedEvents: ['nearshore-panorama', 'triton-pre-430-repositioning'],
-        missingCompanions: ['Native phone-camera file and metadata', 'Original social post or sender record', 'Photographer identification and statement', 'Uncompressed source media', 'Independent registration-based vessel identification']
+        missingCompanions: ['Native phone-camera file and metadata', 'Record underlying counsel’s approximately 1:55 PM attribution', 'Original social post or sender record', 'Photographer identification and statement', 'Uncompressed source media', 'Independent registration-based vessel identification']
       },
       {
         id: 'gps-extraction-summary',
@@ -180,15 +207,15 @@
       },
       {
         id: 'master-notes',
-        title: 'Master Investigation Notes · Version 2.7',
+        title: 'Master Investigation Notes · Version 3.1',
         kind: 'Working evidence synthesis',
         status: 'Obtained',
         availability: 'Public on this site',
         confidence: 'Working document',
         href: './documents/master-investigation-notes.html',
         summary: 'The canonical editorial record controlling the site’s claims, evidence classifications, confidence levels, and unresolved questions.',
-        contents: ['Defensible reconstruction', 'Critical overlap', 'Nearshore photo and offshore coordinate comparison', 'August 3 UCN image release and pre-4:31 repositioning finding', 'UCN Exhibit A3 source-identification limits', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
-        referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'viral-video', 'faith-lauren-reporting-intent', 'katelynn-nearby-account'],
+        contents: ['Defensible reconstruction', 'Corrected critical overlap', 'Nearshore photo and 4:48 PM coordinate comparison', 'UCN source limits and corrected movement inference', 'Sea Tow and Garmin coordinate comparison', 'July 4 late-night reporting', 'July 5 search chronology', 'July 6 recovery chronology', 'Official Fort Bayou sequence', 'GPS limits', 'Boat distinctions', 'Witness notes', 'Expanded social-source review', 'Facebook research audit', 'Narrative formation ledger', 'Cover-up hypothesis test', 'Anti-lock-in protocol', 'Evidence gaps'],
+        referencedEvents: ['critical-overlap', 'seatow-anchor-overlap', 'horn-island-overnight-presence', 'family-contacted', 'overnight-call-log-sequence', 'emergency-call-record-0257', 'mdmr-missing-cad-1145', 'jcso-working-assumption-0138', 'overnight-response-gap', 'family-private-search-0600', 'official-search', 'drone-request-and-failures', 'female-lead-1155', 'coast-guard-public-activation', 'drone-searches-1240', 'anchor-position-1630', 'command-post-sonar', 'sar-model-request-2152', 'overnight-search-mobilization', 'ucn-aircraft-boats', 'body-found', 'recovery-cad-entries', 'coroner-family-confirmation', 'accounts-nolan-stays', 'katie-reported-goodbye-account', 'katie-contact-before-family-call', 'departure-to-seatow-call', 'gps-fort-bayou-552', 'viral-video', 'faith-lauren-reporting-intent', 'katelynn-nearby-account'],
         missingCompanions: ['Future revisions when stronger primary evidence becomes public']
       },
       {
@@ -208,14 +235,14 @@
         id: 'sea-tow-call',
         title: 'Released Sea Tow / Dispatch Call',
         kind: 'Released official audio publication',
-        status: 'Obtained',
+        status: 'Obtained; displayed 4:48 PM phone record located separately',
         availability: 'Public audio and transcript',
         confidence: 'High for audible contents',
         href: './transcripts/seatow-audio.html#audio-analysis',
-        summary: 'The released call records water ingress, bilge-pump failure, approximately seven people aboard, the caller’s current coordinate west of Horn Island, and later cancellation after private help was arranged.',
-        contents: ['Full 9:46 publication', 'First 3:21 stereo excerpt', 'Caller/boat channel', 'Dispatcher channel', 'Spoken coordinate', 'Transcript'],
-        referencedEvents: ['sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'critical-overlap', 'gps-movement-431'],
-        missingCompanions: ['Original Sea Tow machine export', 'Authenticated call-start metadata', 'Contemporaneous position log', 'Complete participant identification']
+        summary: 'The released call records water ingress, bilge-pump failure, approximately seven people aboard, the caller’s current coordinate west of Horn Island, and cancellation after private help was arranged. A reproduced phone-log exhibit displays the call at 4:48 PM, after official movement began.',
+        contents: ['Full 9:46 publication', 'First 3:21 stereo excerpt', 'Caller/boat channel', 'Dispatcher channel', 'Spoken coordinate', 'Transcript', 'Separately reproduced 4:48 PM phone-log record'],
+        referencedEvents: ['sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'gps-movement-431', 'departure-to-seatow-call'],
+        missingCompanions: ['Original Sea Tow machine export', 'Carrier-certified call record', 'Contemporaneous position log', 'Complete participant identification']
       },
       {
         id: 'viral-video',
@@ -510,11 +537,11 @@
         id: 'mi4088bu',
         name: 'Triton · MI4088BU',
         status: 'Official GPS chronology obtained in summarized form',
-        summary: 'The vessel tied to the official 9:56, 11:14, 4:31, 5:25, and 5:44 milestones.',
-        eventIds: ['gps-departure', 'gps-arrival', 'sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'gps-movement-431', 'gps-normal-525', 'gps-return-544'],
+        summary: 'The vessel tied to the official 9:56, 11:14, 4:31, 5:25, 5:44, 5:52, and 6:06 milestones.',
+        eventIds: ['gps-departure', 'gps-arrival', 'gps-movement-431', 'departure-to-seatow-call', 'sea-tow-call', 'seatow-anchor-overlap', 'private-assistance', 'gps-normal-525', 'gps-return-544', 'gps-fort-bayou-552'],
         passengers: 'GPS does not establish a complete passenger manifest at any moment.',
         evidence: ['MDMR RMS report', '9:56 GPS graphic', '11:14 GPS graphic', 'Released Sea Tow call', 'Nearshore photographs and witness descriptions', 'Sea Tow / Garmin coordinate comparison'],
-        questions: ['How should the nearshore photograph context be reconciled with the later coordinate records?', 'Who was aboard at 4:31 PM?', 'Which vessel provided assistance?', 'Was the slow movement a tow, and if so how was it configured?']
+        questions: ['When was the nearshore panorama recorded?', 'Who was aboard at 4:31 PM?', 'Which vessel provided assistance?', 'When was the tow line attached and how was the tow configured?', 'Why does a later interview appear to reverse the official dock and Fort Bayou order?']
       },
       {
         id: 'mi1295cb',
@@ -562,8 +589,8 @@
         id: 'chose-to-stay',
         narrative: 'Nolan chose to stay on Horn Island.',
         supporting: ['The MDMR report preserves a police summary that friends said Nolan remained with an unknown woman.', 'Warren publicly says friends urged Nolan to leave and that he declined.'],
-        contradicting: ['Katie reportedly believed Nolan was returning on his original boat.'],
-        unknown: ['Nolan’s exact words', 'Who personally heard them', 'Exact time', 'Which return boat Nolan expected']
+        contradicting: ['A qualified secondhand Katie-related account says she heard friends call Nolan to board, said goodbye, and assumed he would leave with them.', 'An attorney later attributed “We thought he was leaving with y’all” to Katie.'],
+        unknown: ['Nolan’s exact words', 'Who personally heard them', 'Whether later speakers had direct or group-derived knowledge', 'Exact time', 'Which return boat Nolan expected', 'Native Katie message thread and direct statement']
       },
       {
         id: 'video-fight',
@@ -581,17 +608,17 @@
       },
       {
         id: 'sea-tow-time',
-        narrative: 'The Sea Tow call began at a precise publicly reported time.',
-        supporting: ['The raw publication label uses 3:48 PM.', 'WLOX describes the call as occurring around 4:00 PM.'],
-        contradicting: [],
-        unknown: ['Original system timestamp', 'Whether public labels use call start, transfer, or publication timing']
+        narrative: 'The Sea Tow call began at 4:48 PM.',
+        supporting: ['An August 21 counsel letter reproduces a phone-log exhibit displaying the call at 4:48 PM.'],
+        contradicting: ['The raw publication label uses 3:48 PM.', 'Earlier WLOX reporting described the call as occurring around 4:00 PM.'],
+        unknown: ['Original Sea Tow system timestamp', 'Carrier-certified call record', 'Why the earlier publication label differed']
       },
       {
-        id: 'five-oclock-boarding-request',
-        narrative: 'Wyatt asked Nolan to board at 5:00 PM when it was time to leave.',
-        supporting: ['Four public screenshots show a conversation labeled Katie Hudson Seymour in which the sender uses the words “at five when it was time to leave.”'],
-        contradicting: ['The official GPS summary records MI4088BU beginning movement at 4:31 PM and continuing slowly through 5:24 PM.'],
-        unknown: ['Whether the sender is authenticated', 'Whether “at five” is rounded or recalled', 'Who directly heard the requests', 'Whether the statement refers to the same vessel movement']
+        id: 'fort-bayou-sequence',
+        narrative: 'The Triton entered Fort Bayou to replace the drain plug before reaching the dock.',
+        supporting: ['A later group interview appears to describe a Fort Bayou drain-plug stop before the dock.'],
+        contradicting: ['The official Garmin summary records dock arrival at 5:44 PM, departure east into Fort Bayou at 5:52 PM, and dock return at 6:06 PM.'],
+        unknown: ['Whether the speakers used “dock” or “Fort Bayou” loosely', 'Native track points', 'Clarification from the vessel occupants']
       },
       {
         id: 'faith-police-receipt',
@@ -628,17 +655,17 @@
     questions: [
       { id: 1, question: 'What were Nolan’s exact last words, and who personally heard them?', status: 'Open', evidence: 'Police summary and Warren’s public account', needed: 'Direct statements, original interview audio, and contemporaneous messages' },
       { id: 2, question: 'What is the last independently corroborated sighting of Nolan?', status: 'Open', evidence: 'Warren, Tracestin, Katie-related accounts, and circulated media', needed: 'Complete witness matrix and original timestamped media' },
-      { id: 3, question: 'What is the exact Sea Tow call-start time?', status: 'Open', evidence: '3:48 PM publication label and WLOX’s “around 4 PM” description', needed: 'Original Sea Tow system export and metadata' },
+      { id: 3, question: 'Can the displayed 4:48 PM Sea Tow call time be independently authenticated?', status: 'Partially answered', evidence: 'An August 21 counsel letter reproduces a phone-log exhibit displaying 4:48 PM; earlier publication labels differ', needed: 'Original Sea Tow system export, carrier-certified call record, and metadata' },
       { id: 4, question: 'What is the viral video’s original capture time?', status: 'Open', evidence: 'Reported approximately 4:01 PM label', needed: 'Original device file and native metadata' },
       { id: 5, question: 'Who was aboard each vessel at 4:31 PM?', status: 'Open', evidence: 'GPS movement and incomplete public passenger accounts', needed: 'Direct passenger statements and verified manifests' },
       { id: 6, question: 'Which vessel provided private assistance to MI4088BU?', status: 'Open', evidence: 'Released call and slow GPS movement', needed: 'Assisting-vessel statement, track, and tow documentation' },
       { id: 7, question: 'What is the evidentiary basis for the 6:00 PM July 4 incident time?', status: 'Partially answered', evidence: 'The 9:52 PM MDMR-to-USCG email uses 6:00 PM as a SAR-model input; the record does not authenticate it as an event time', needed: 'Source and rationale for selecting the modeling input plus complete USCG SAR case file' },
       { id: 8, question: 'What search coordinates and drift assumptions guided July 5, 2026 operations?', status: 'Partially answered', evidence: 'Released USCG particle-drift and drone-grid graphics plus the MDMR-to-USCG SAR email are now public', needed: 'Native drift-model inputs and output, complete USCG response, drone flight logs, imagery, and operator report' },
       { id: 9, question: 'Did investigators receive the alleged Faith Lauren account or footage, and if so when?', status: 'Open', evidence: 'A July 7 at 1:08 AM screenshot records intent to report; a later caption claims police submission, but no receipt is preserved', needed: 'Agency evidence receipt, case supplement, CAD entry, authenticated message export, direct witness statement, and original footage' },
-      { id: 10, question: 'Who made the approximately 11:00 PM Coast Guard call, and was that caller Warren?', status: 'Open', evidence: 'WLOX reports a friend call around 11:00 PM; Christine separately places Warren’s call around 11:07 PM', needed: 'Coast Guard intake audio, call log, caller identification, and call-detail records' },
+      { id: 10, question: 'What information was exchanged during the displayed 11:13 PM Coast Guard call?', status: 'Partially answered', evidence: 'A reproduced phone record displays a 21-minute outgoing Coast Guard call at 11:13 PM; the complete audio and intake record are not public', needed: 'Coast Guard intake audio, official call log, caller identification, and carrier-certified records' },
       { id: 11, question: 'Who remained overnight on Horn Island, and what could they see or hear?', status: 'Open', evidence: 'Phillip Elmore reports a family stayed overnight and two boats remained docked', needed: 'Direct statements, vessel identification and locations, photographs, and lines-of-sight analysis' },
       { id: 12, question: 'What was the exact discovery and recovery sequence on July 6, 2026?', status: 'Open', evidence: 'Sheriff timeline uses around 8:45 AM notification; later MDMR CAD entries and differing water/beach descriptions are public', needed: 'NPS ranger report, dispatch audio, recovery narrative, authenticated coordinate, and scene record' },
-      { id: 13, question: 'When, how far, and along what path did MI4088BU reposition before the 4:31 PM sustained departure?', status: 'Partially answered', evidence: 'The preserved 22-page working report and UCN-released configuration place the Triton in the nearshore gathering; the later Sea Tow call gives its offshore position; the separate Sea Tow and Garmin coordinate records are approximately 916 feet apart', needed: 'Native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' },
+      { id: 13, question: 'Did MI4088BU make any smaller movements before the official 4:31 PM sustained departure?', status: 'Open', evidence: 'The UCN material preserves a nearshore scene; the displayed 4:48 PM Sea Tow coordinate follows official movement beginning at 4:31 PM and therefore does not prove earlier movement', needed: 'Native photo and video metadata, raw Garmin GPX/ADM point sequence, complete PowerPoint source set, and a point-by-point reconstruction' },
       { id: 14, question: 'Who submitted and annotated UCN Exhibit A3 (31656.jpg), when, and on what basis?', status: 'Open', evidence: 'The UCN report treats “Warren on Palm Beach” as a source annotation, says it is not an independent facial identification, and describes only moderate confidence for source identification', needed: 'Named submitter and annotator statements, original unannotated file, submission record and metadata, recognition basis, independent confirmation, and authenticated occupant roster' }
     ],
 

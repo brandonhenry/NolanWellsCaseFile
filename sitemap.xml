@@ -4,27 +4,31 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://justicefornolanwells.com/</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <image:image>
       <image:loc>https://justicefornolanwells.com/assets/social-card.png</image:loc>
       <image:title>Nolan Wells Evidence File and Timeline</image:title>
     </image:image>
   </url>
-  <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-08-28</lastmod></url>
   <url>
-    <loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-08-06</lastmod>
+    <loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-08-28</lastmod>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/01-interview-room-boat-still.jpg</image:loc><image:title>UCN-attributed July 4 boat still</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/02-nolan-photo-crop.jpg</image:loc><image:title>UCN-attributed cropped photograph of Nolan Wells</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/03-seatow-coordinate-google-earth.jpg</image:loc><image:title>Sea Tow coordinate visualization</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/04-comparative-configuration-slide.jpg</image:loc><image:title>UCN-attributed comparative boat configuration slide</image:title></image:image>
+    <image:image><image:loc>https://justicefornolanwells.com/media/taylor-cox-panorama/2026-07-04-1355-nearshore-frame-a.png</image:loc><image:title>Horn Island nearshore gathering at approximately 1:55 PM, counsel-attributed</image:title></image:image>
+    <image:image><image:loc>https://justicefornolanwells.com/media/taylor-cox-panorama/2026-07-04-1355-nearshore-frame-b.png</image:loc><image:title>Second nearshore Horn Island panorama exhibit</image:title></image:image>
   </url>
   <url>
-    <loc>https://justicefornolanwells.com/ucn-report</loc><lastmod>2026-08-06</lastmod>
+    <loc>https://justicefornolanwells.com/ucn-report</loc><lastmod>2026-08-28</lastmod>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/01-interview-room-boat-still.jpg</image:loc><image:title>UCN-distributed boat still</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/02-nolan-photo-crop.jpg</image:loc><image:title>UCN-distributed cropped Nolan Wells photograph</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/03-seatow-coordinate-google-earth.jpg</image:loc><image:title>Sea Tow coordinate visualization from UCN material</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/04-comparative-configuration-slide.jpg</image:loc><image:title>UCN Exhibit A3 comparative configuration slide</image:title></image:image>
+    <image:image><image:loc>https://justicefornolanwells.com/media/taylor-cox-panorama/2026-07-04-1355-nearshore-frame-a.png</image:loc><image:title>High-resolution nearshore gathering exhibit at approximately 1:55 PM</image:title></image:image>
+    <image:image><image:loc>https://justicefornolanwells.com/media/taylor-cox-panorama/2026-07-04-1355-nearshore-frame-b.png</image:loc><image:title>High-resolution second nearshore gathering exhibit</image:title></image:image>
     <video:video>
       <video:thumbnail_loc>https://justicefornolanwells.com/media/nancy-grace-2026-07-29/horn-island-panorama-poster.jpg</video:thumbnail_loc>
       <video:title>Horn Island nearshore panorama in the Nolan Wells evidence record</video:title>
@@ -35,10 +39,11 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
-  <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/facebook-research-audit</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/plunder-archive</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/dispatch-audio</loc><lastmod>2026-08-12</lastmod></url>
-  <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents</loc><lastmod>2026-08-28</lastmod></url>
   <url>
     <loc>https://justicefornolanwells.com/social-source-ledger</loc><lastmod>2026-08-07</lastmod>
     <image:image>
@@ -132,6 +137,8 @@
   <url><loc>https://justicefornolanwells.com/transcripts/warren-part-4.html</loc><lastmod>2026-07-29</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/document.html?id=mdmr-report</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=taylor-cox-demand-letter</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/document.html?id=facebook-research-audit</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=master-notes</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=ucn-report-review</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://justicefornolanwells.com/document.html?id=tmz-geospatial-report</loc><lastmod>2026-08-06</lastmod></url>
@@ -173,6 +180,7 @@
   <url><loc>https://justicefornolanwells.com/boat.html?id=assisting-vessel</loc><lastmod>2026-07-30</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://justicefornolanwells.com/documents/taylor-cox/2026-08-21-pre-suit-demand-to-al-sharpton.pdf</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents/tmz/nolan-wells-geospatial-timeline-vessel-movement-analysis-2026-07-31.pdf</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf</loc><lastmod>2026-08-01</lastmod></url>
   <url><loc>https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf</loc><lastmod>2026-08-01</lastmod></url>

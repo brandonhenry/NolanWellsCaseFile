@@ -4,7 +4,7 @@
 
 This site distinguishes official records, firsthand witness accounts, secondhand accounts, public media, unresolved gaps, and hypotheses. Do not convert a witness claim or reconstruction into a verified fact. The archive is not affiliated with the Wells family, law enforcement, MDMR, attorneys, or the cited news organizations.
 
-Last reviewed: 2026-08-12
+Last reviewed: 2026-08-28
 
 ## Start here
 
@@ -18,11 +18,13 @@ Last reviewed: 2026-08-12
 - [Working geospatial report and panorama review](https://justicefornolanwells.com/ucn-report): Claim-level review of the July 31, 2026 report material, Exhibit A3 (31656.jpg), the complete TMZ-hosted 22-page working report, four preserved images, and a 30-second nearshore panorama.
 - [People and entity graph](https://justicefornolanwells.com/people): Sourced, confidence-labeled connections among named public source records, vessels, media, agencies, records, and locations. An edge states only its displayed claim and does not prove attendance, responsibility, or a private relationship.
 - [July 2026 social source ledger](https://justicefornolanwells.com/social-source-ledger): Audited exposed comments from six public Facebook threads and separately preserves Christine Wonsley’s original July 5 public-group appeal, attributed Katie Hudson Seymour, Faith Lauren, and Katelynn Brochard source sets, Robbie Robertson’s direct west-end photograph, Tiffani Riley’s preservation of a screenshot attributed to Danny Jones, and Stephanie Adams’s direct north-side map post. Christine’s appeal documents what the family publicly reported by early July 5, including a reported 3:00 PM west-tip last-seen account and that three agencies had been contacted; it does not independently verify that event time or the agencies’ receipt times. Every claim retains explicit identity, metadata, delivery, and authentication limits.
+- [Facebook research audit](https://justicefornolanwells.com/facebook-research-audit): Claim-level reconciliation of Brandon Henry’s July–August posts and comments, including the displayed 4:48 PM Sea Tow time, the 4:31–4:48 gap, the official Fort Bayou sequence, qualified Katie-related accounts, and superseded or excluded interpretations.
 - [Methodology and corrections](https://justicefornolanwells.com/about): Sourcing rules, independence statement, revision policy, and correction channel.
 
 ## Primary source
 
 - [MDMR RMS report MP2607-0016](https://justicefornolanwells.com/documents/MDMR-MP2607-0016-report.pdf): Obtained 15-page Mississippi Department of Marine Resources packet. It includes officer narratives, CAD entries, vessel information, search notes, and a summarized GPS chronology.
+- [Taylor & Cox / Taylor Dykema August 21 counsel letter](https://justicefornolanwells.com/documents/taylor-cox/2026-08-21-pre-suit-demand-to-al-sharpton.pdf): Complete 19-page advocacy letter and exhibit set. Page 6 publishes higher-resolution nearshore stills and attributes them to approximately 1:55 PM; the document does not expose native camera metadata or its timestamp basis.
 - [Nolan Wells geospatial timeline and vessel-movement analysis](https://justicefornolanwells.com/documents/tmz/nolan-wells-geospatial-timeline-vessel-movement-analysis-2026-07-31.pdf): Preserved 22-page working analytical report from TMZ’s document host. The PDF inventories supplied media and analysis but does not name its author or submitting organization; its annotations and conclusions remain claim-specific rather than official findings.
 - [MI4088BU GPS extraction summary](https://justicefornolanwells.com/documents/plunder/MI4088BU-GPS-Extraction-Summary-Redacted.pdf): Redacted two-page official summary supporting the vessel’s timestamp anchors; it does not identify passengers.
 - [MDMR email requesting USCG SAR data](https://justicefornolanwells.com/documents/plunder/MP2607-0016-MDMR-to-USCG-SAR-Email.pdf): Released interagency request with search context and coordinates.

@@ -13,7 +13,7 @@
   <url><loc>https://justicefornolanwells.com/case-summary</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://justicefornolanwells.com/event-timeline</loc><lastmod>2026-08-28</lastmod></url>
   <url>
-    <loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-08-28</lastmod>
+    <loc>https://justicefornolanwells.com/master-notes</loc><lastmod>2026-08-31</lastmod>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/01-interview-room-boat-still.jpg</image:loc><image:title>UCN-attributed July 4 boat still</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/02-nolan-photo-crop.jpg</image:loc><image:title>UCN-attributed cropped photograph of Nolan Wells</image:title></image:image>
     <image:image><image:loc>https://justicefornolanwells.com/media/ucn-release-2026-08-03/03-seatow-coordinate-google-earth.jpg</image:loc><image:title>Sea Tow coordinate visualization</image:title></image:image>
@@ -41,7 +41,25 @@
   </url>
   <url><loc>https://justicefornolanwells.com/archive</loc><lastmod>2026-08-28</lastmod></url>
   <url>
-    <loc>https://justicefornolanwells.com/videos</loc><lastmod>2026-08-28</lastmod>
+    <loc>https://justicefornolanwells.com/videos</loc><lastmod>2026-08-31</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.jpg</video:thumbnail_loc>
+      <video:title>Josh Gill discusses a claimed contemporaneous Sea Tow video</video:title>
+      <video:description>Complete August 29 public upload in which Josh Gill says he watched a separate video while the Sea Tow call was being made and says background chatter is audible. The archive explains that he does not identify Nolan Wells by name or voice in this clip.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.mp4</video:content_loc>
+      <video:duration>278</video:duration>
+      <video:publication_date>2026-08-29</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/2026-07-04-horn-island-anonymous-submission-first-6s.jpg</video:thumbnail_loc>
+      <video:title>Horn Island scene footage from an anonymous submission</video:title>
+      <video:description>The first six seconds of a submitted vertical recording described by the anonymous submitter as Horn Island footage from July 4, 2026. The source file contains no embedded capture date or location.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/2026-07-04-horn-island-anonymous-submission-first-6s.mp4</video:content_loc>
+      <video:duration>6</video:duration>
+      <video:publication_date>2026-08-31</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
     <video:video>
       <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/nancy-grace-johnny-hewett-interview-segments.jpg</video:thumbnail_loc>
       <video:title>Nancy Grace and Johnny Hewett selected interview segments</video:title>
@@ -160,6 +178,18 @@
   <url><loc>https://justicefornolanwells.com/about</loc><lastmod>2026-07-29</lastmod></url>
 
   <url><loc>https://justicefornolanwells.com/transcripts/seatow-audio.html</loc><lastmod>2026-07-29</lastmod></url>
+  <url>
+    <loc>https://justicefornolanwells.com/transcripts/josh-gill-sea-tow-video</loc><lastmod>2026-08-31</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://justicefornolanwells.com/media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.jpg</video:thumbnail_loc>
+      <video:title>Josh Gill Sea Tow video statement with time-coded source review</video:title>
+      <video:description>Complete source upload, time-coded content log, and claim-by-claim assessment of Josh Gill's statement that he watched a separate video recorded while the Sea Tow call was being made.</video:description>
+      <video:content_loc>https://justicefornolanwells.com/media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.mp4</video:content_loc>
+      <video:duration>278</video:duration>
+      <video:publication_date>2026-08-29</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
   <url><loc>https://justicefornolanwells.com/transcripts/tracestin-part-5.html</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/transcripts/warren-part-1.html</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://justicefornolanwells.com/transcripts/warren-part-2.html</loc><lastmod>2026-07-29</lastmod></url>

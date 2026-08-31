@@ -188,6 +188,24 @@
     ],
 
     preservedClips: [
+      {
+        id: 'josh-gill-seatow-video-claim',
+        title: 'Josh Gill discusses a claimed contemporaneous Sea Tow video',
+        publisher: 'Mo_Money_0909 · public YouTube upload',
+        date: 'August 29, 2026 publication',
+        duration: '4:38',
+        category: 'witness comparison dispatch',
+        typeLabel: 'Preserved full source',
+        file: './media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.mp4',
+        poster: './media/video-archive/josh-gill-2026-08-29/josh-gill-mo-full.jpg',
+        description: 'The complete public upload in which United Cajun Navy incident commander Josh Gill says he watched a separate video while the Sea Tow call was being made and says background chatter can be heard in it.',
+        editNote: 'Full 4:38 upload with no cuts; transcoded only for browser compatibility. Gill does not say in this clip that Nolan’s name or voice is audible. He names Tyler Cox as possessing the video but presents law-enforcement possession as his belief, not confirmed firsthand knowledge.',
+        sources: [
+          { label: 'Time-coded content log and claim assessment', href: './transcripts/josh-gill-sea-tow-video.html' },
+          { label: 'Original YouTube upload', href: 'https://www.youtube.com/watch?v=F5ikDj6OzZI' }
+        ]
+      },
+      { id: 'horn-island-anonymous-july4', title: 'Horn Island scene footage · anonymous submission', publisher: 'Anonymous submitter', date: 'Reported July 4, 2026', duration: '0:06', category: 'scene', file: './media/video-archive/2026-07-04-horn-island-anonymous-submission-first-6s.mp4', poster: './media/video-archive/2026-07-04-horn-island-anonymous-submission-first-6s.jpg', description: 'The first six seconds of a 31-second vertical recording submitted to the archive and described by the submitter as Horn Island footage from July 4, 2026.', editNote: 'Trimmed to the requested opening six seconds. The file contains no embedded capture date or location; the date, location, and attribution are submitter-supplied and have not been independently authenticated.', sources: [{ label: 'Open preserved submission', href: './media/video-archive/2026-07-04-horn-island-anonymous-submission-first-6s.mp4' }] },
       { id: 'horn-panorama', title: 'Horn Island nearshore panorama', publisher: 'Nancy Grace', date: 'July 29, 2026 publication', duration: '0:30', category: 'nancy', file: './media/nancy-grace-2026-07-29/horn-island-panorama-16m18s-16m49s.mp4', poster: './media/nancy-grace-2026-07-29/horn-island-panorama-poster.jpg', description: 'A continuous source excerpt preserving the crowded shallow-water gathering and nearby boats.', editNote: 'Program excerpt; native camera metadata remains unavailable.', sources: [{ label: 'Full Nancy Grace upload', href: 'https://www.youtube.com/watch?v=4D0uR58CjCg&t=978s' }] },
       { id: 'nancy-private-tow', title: 'Private tow footage shown by Nancy Grace', publisher: 'Nancy Grace', date: 'July 29, 2026 publication', duration: '0:25', category: 'nancy', file: './media/nancy-grace-2026-07-29/private-tow-program-excerpt-08m48s-09m12s.mp4', poster: './media/nancy-grace-2026-07-29/private-tow-inset-poster.jpg', description: 'Program excerpt showing the private tow footage discussed in the Nolan Wells case.', editNote: 'This is private assistance footage, not Sea Tow performing the tow.', sources: [{ label: 'Full Nancy Grace upload', href: 'https://www.youtube.com/watch?v=4D0uR58CjCg' }] },
       { id: 'tatum-hookup-distance', title: 'Boats hooked before call and distance sequence', publisher: 'The Officer Tatum', date: 'August 13, 2026', duration: '2:10', category: 'tatum', file: './media/interviews/officer-tatum-2026-08-13/boats-hooked-before-seatow-call-and-distance-sequence-16m08s-18m18s.mp4', poster: './media/interviews/officer-tatum-2026-08-13/boats-hooked-before-seatow-call-poster.jpg', description: 'Direct group-interview excerpt describing the hookup and distance estimates.', editNote: 'Witness statements, not objective GPS measurements.', sources: [{ label: 'Full group interview', href: 'https://www.youtube.com/watch?v=UqrJPZP21WY' }] },
@@ -201,6 +219,7 @@
     ],
 
     fullPrograms: [
+      { id: 'josh-gill-mo-seatow-video', date: 'August 29, 2026', publisher: 'Mo_Money_0909', title: 'Josh Gill explains he saw video recorded while the Sea Tow call was being made', duration: '4:38', category: 'witness dispatch', href: 'https://www.youtube.com/watch?v=F5ikDj6OzZI', transcript: './transcripts/josh-gill-sea-tow-video.html' },
       { id: 'family-press-conference-july10', date: 'July 10, 2026', publisher: 'National Action Network', title: 'Family and parents press conference with attorney Ben Crump', duration: '1:14:13', category: 'family', href: 'https://www.youtube.com/watch?v=eeNAIrqv_l0' },
       { id: 'family-gma-july10', date: 'July 10, 2026', publisher: 'Good Morning America', title: 'Parents of Nolan Wells break their silence', duration: '10:24', category: 'family', href: 'https://www.youtube.com/watch?v=C9OTLp6cs48' },
       { id: 'family-cbs-july10', date: 'July 10, 2026', publisher: 'CBS Mornings', title: 'Nolan Wells’ father discusses the island account', duration: '9:12', category: 'family', href: 'https://www.youtube.com/watch?v=XrmxFdK2_Pc' },

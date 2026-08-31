@@ -43,6 +43,11 @@
   status = 200
 
 [[redirects]]
+  from = "/transcripts/josh-gill-sea-tow-video"
+  to = "/transcripts/josh-gill-sea-tow-video.html"
+  status = 200
+
+[[redirects]]
   from = "/plunder-archive"
   to = "/plunder-archive.html"
   status = 200

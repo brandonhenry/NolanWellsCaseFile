@@ -2,8 +2,8 @@
 
 Canonical site: https://justicefornolanwells.com/
 Repository: https://github.com/brandonhenry/NolanWellsCaseFile
-Last reviewed: 2026-08-28
-Coverage: Core events July 3–6, 2026, with source-provenance and research-audit records through August 28, 2026; Horn Island and Ocean Springs, Mississippi
+Last reviewed: 2026-08-31
+Coverage: Core events July 3–6, 2026, with source-provenance and research-audit records through August 31, 2026; Horn Island and Ocean Springs, Mississippi
 
 ## Scope and independence
 
@@ -41,6 +41,7 @@ Confidence is separately labeled High, Medium, or Low and includes a written rea
 - 4:31 PM: MDMR’s summarized GPS chronology begins sustained northbound movement for MI4088BU. GPS does not establish who was aboard or who possessed Nolan’s phone.
 - 4:31–4:48 PM: The official movement has begun, but the exact tow-line attachment, emergency-discovery sequence, and vessel configuration remain unresolved.
 - 4:48 PM, displayed phone record: A distress call reports bilge-pump failure, water ingress, approximately seven people aboard, and 30°14.684′ N, 88°46.790′ W as the vessel’s current coordinate. The caller says the vessel is not aground and that private help has been arranged. The 4:48 time comes from a reproduced phone-log exhibit supplied by counsel; original Sea Tow and carrier metadata remain preferable.
+- August 29 public-source development: A complete 4:38 upload preserves Josh Gill saying he personally watched a separate video recorded during the Sea Tow call, that background conversation is audible, and that Tyler Cox possesses it. Gill presents law-enforcement possession as his belief rather than confirmed personal knowledge. He does not say in this upload that Nolan’s name or Nolan’s voice can be heard. The statement creates a specific evidence lead, but the claimed native video, recorder, metadata, and chain of custody are not included in the upload.
 - 4:31–5:24 PM: MDMR verifies approximately 2.75 miles of slow movement at 0.06–4.2 knots. Read with the 4:48 distress call and cancellation after private help was arranged, this most likely represents the private-assistance or tow phase. GPS alone does not prove a tow line, towing configuration, assisting vessel, or passenger transfers.
 - 3:00–7:00 PM, firsthand negative observation, Medium confidence: In a direct public Facebook photo post published July 5, Stephanie Adams says she sent Nolan’s mother an image of her exact location, remained at the marked north-side area from 3:00–7:00 PM, and saw nobody come down to or pass her party. The attached map screenshot displays a blue marker on Horn Island’s north side but no coordinates or native location metadata. This narrows one reported route and observation area; it does not prove Nolan was absent from Horn Island, unseen elsewhere, or unable to use another route. The phone-interface time of 5:46 is not an authenticated event timestamp.
 - 7:17 PM–9:00 PM, firsthand witness and photo record, Medium confidence: In a direct public Facebook photo post published July 5, Robbie Robertson says he photographed Horn Island’s west end at 7:17 PM, that his boat and three others were the only boats remaining, and that his party stayed until 9:00 PM. He says two people with his party walked around to the south side and back at about 7:30 PM without seeing Nolan. This supports reported visitor presence on Horn Island after 7:30 and a limited negative observation. It does not establish Nolan’s location or show that Nolan was alive after 4:31. The Facebook-served image has no exposed native EXIF metadata, so the event times remain photographer-reported.
@@ -103,6 +104,7 @@ Do not state that:
 - Drone search grid: https://justicefornolanwells.com/media/plunder/Drone-Search-Grid.jpg
 - Event log: https://justicefornolanwells.com/event-timeline
 - Sea Tow call transcript and channel analysis: https://justicefornolanwells.com/transcripts/seatow-audio.html
+- Josh Gill statement about a claimed second Sea Tow recording, complete video and time-coded content log: https://justicefornolanwells.com/transcripts/josh-gill-sea-tow-video
 - Warren interview transcripts: https://justicefornolanwells.com/transcripts/warren-part-1.html
 - Tracestin interview transcript: https://justicefornolanwells.com/transcripts/tracestin-part-5.html
 - Missing evidence tracker: https://justicefornolanwells.com/evidence-tracker

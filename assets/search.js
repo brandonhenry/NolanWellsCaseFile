@@ -60,9 +60,9 @@
         const html = await response.text();
         const documentCopy = new DOMParser().parseFromString(html, 'text/html');
         documentCopy.querySelectorAll('.line').forEach((line, lineIndex) => {
-          const time = line.querySelector('.ts')?.textContent.trim() || '';
-          const speaker = line.querySelector('.sp')?.textContent.trim() || 'Speaker';
-          const quote = line.querySelector('.txt')?.textContent.trim() || '';
+          const time = (line.querySelector('.ts') || line.querySelector('.time'))?.textContent.trim() || '';
+          const speaker = (line.querySelector('.sp') || line.querySelector('.speaker'))?.textContent.trim() || 'Speaker';
+          const quote = (line.querySelector('.txt') || line.querySelector('p'))?.textContent.trim() || '';
           if (quote) add('Transcript quote', `${speaker} · ${time}`, quote, `${transcript.href}#quote-${lineIndex + 1}`, transcript.label);
         });
       } catch (error) {

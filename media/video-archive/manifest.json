@@ -1,7 +1,9 @@
 {
-  "created": "2026-08-28",
+  "created": "2026-08-31",
   "editorialRule": "Every file is user-initiated and must not autoplay. Edited compilations document public statements but do not authenticate the statements or replace the complete linked source programs.",
   "files": [
+    { "file": "josh-gill-2026-08-29/josh-gill-mo-full.mp4", "bytes": 8458208, "durationSeconds": 278.421, "sha256": "128b6ae8318d2312ebaa3daee9d9c1cbc84362b2cad5263a7c94eb78d0e60b86" },
+    { "file": "2026-07-04-horn-island-anonymous-submission-first-6s.mp4", "bytes": 4825640, "durationSeconds": 6.0, "sha256": "2c1848c5171e253952d48a56c507fcb02055a6e3fa7fca72895f1e5863abbe54" },
     { "file": "cuomo-boat-emergency-and-tow-evidence.mp4", "bytes": 18039562, "durationSeconds": 589.041, "sha256": "d1e753f1829ff401c261a57cdafb59e2418b295eca90a1f71c8c818ffc378736" },
     { "file": "cuomo-katie-reported-timeline-evidence.mp4", "bytes": 13695200, "durationSeconds": 459.041, "sha256": "66b43ccc98fe4735d4f59d65e45a6afdec7f9ef4238c503205f1442a4ff8c0f0" },
     { "file": "final-sighting-and-another-ride-source-comparison.mp4", "bytes": 17777565, "durationSeconds": 691.124, "sha256": "5ef54b6e4d38e77fad9b68ddccf435b12979691cbe4e4af18e111642d21b21b3" },

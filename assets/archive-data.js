@@ -9,6 +9,7 @@
       { id: 'videos', title: 'Video Archive', description: 'Watch family press conferences, parent and witness interviews, preserved evidence reels, and complete original programs from primary publishers.', href: './video-archive.html', tone: 'media' },
       { id: 'plunder-release', title: 'PLUNDER Source Archive', description: 'Review the July 2026 source-post index, MDMR records, GPS material, search graphics, dispatch archive, and court-record collection.', href: './plunder-archive.html', tone: 'media' },
       { id: 'dispatch-audio', title: 'Dispatch Audio Timeline', description: 'Listen to case-relevant July 4–6 scanner segments beside archive-derived times, cautious transcripts, source hashes, and explicit attribution limits.', href: './dispatch-audio.html', tone: 'verified' },
+      { id: 'body-recovery', title: 'Body Recovery', description: 'Review the July 6 discovery chronology, recovery-area aerial footage, four later source descriptions, and the unresolved water-versus-beach sequence.', href: './body-recovery.html', tone: 'verified' },
       { id: 'ucn-report', title: 'United Cajun Navy Report Review', description: 'Examine the July 31 report material, Exhibit A3, four preserved images, the Nancy Grace shoreline panorama, and the provenance records still needed.', href: './ucn-report.html', tone: 'media' },
       { id: 'social-sources', title: 'Social Source Ledger', description: 'Review retained July 5–7, 2026 case-related images and relevant text-only comments with messages, timestamps, permalinks, hashes, and credibility assessments.', href: './social-source-ledger.html', tone: 'media' },
       { id: 'facebook-research-audit', title: 'Facebook Research Audit', description: 'See which findings from Brandon Henry’s July–August research were incorporated, qualified, superseded, or excluded after source-level review.', href: './facebook-research-audit.html', tone: 'media' },
@@ -24,6 +25,19 @@
     ],
 
     documents: [
+      {
+        id: 'body-recovery',
+        title: 'Body Recovery · July 6, 2026',
+        kind: 'Recovery chronology and source-footage review',
+        status: 'Public-source chronology compiled; primary recovery narrative still missing',
+        availability: 'Dedicated evidence page and 3:33 source compilation public on this site',
+        confidence: 'High for official time anchors; source-specific for scene descriptions',
+        href: './body-recovery.html',
+        summary: 'A source-separated review of Nolan Wells’s reported discovery near Horn Island’s northwest tip, later MDMR CAD anchors, and four Nancy Grace program segments showing or discussing the recovery area. The page preserves the unresolved distinction among “in the water,” “at the shoreline,” and “on the beach.”',
+        contents: ['July 6, 2026 official and public chronology', 'Four source-footage-only Nancy Grace segments', 'Northwest-tip aerial footage', 'Exact original-program timestamps', 'Supported-versus-unresolved claim matrix', 'Video and poster SHA-256 hashes', 'Missing-record checklist'],
+        referencedEvents: ['body-found', 'recovery-cad-entries', 'coroner-family-confirmation'],
+        missingCompanions: ['National Park Service ranger report', 'Authenticated recovery coordinate', 'Complete official dispatch and notification logs', 'Original scene record and image metadata', 'Complete recovery-to-coroner chain of custody']
+      },
       {
         id: 'facebook-research-audit',
         title: 'Brandon Henry Facebook Research Audit · August 28, 2026',

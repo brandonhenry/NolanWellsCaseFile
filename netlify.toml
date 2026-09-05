@@ -58,6 +58,11 @@
   status = 200
 
 [[redirects]]
+  from = "/body-recovery"
+  to = "/body-recovery.html"
+  status = 200
+
+[[redirects]]
   from = "/ucn-report"
   to = "/ucn-report.html"
   status = 200

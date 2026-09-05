@@ -930,6 +930,7 @@
         summary: 'The sheriff’s public timeline says authorities received a call around 8:45 AM that a National Park Service ranger had found Nolan near Horn Island’s northwest tip.',
         claims: ['Around 8:45 AM is a reported notification time, not necessarily the exact minute of discovery.', 'Public descriptions alternately say the body was in the water and later “on the beach”; the difference may reflect discovery, observation, or recovery stages but remains unresolved without the ranger report and exact coordinate.', 'The 15-page MDMR packet contains later CAD entries but not a complete recovery narrative.'],
         sources: [
+          { label: 'Body Recovery evidence page and source footage', href: './body-recovery.html' },
           { label: 'WLOX · complete public timeline', href: wloxTimeline },
           { label: 'MDMR report · page 15', href: `${report}#page=15` },
           { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
@@ -941,6 +942,7 @@
         summary: 'MDMR CAD records show an assist-another-agency call created at 9:11:09 AM and a deceased-person call created at 10:07:36 AM.',
         claims: ['These timestamps document when CAD calls were entered or created; they are not the discovery time and should not replace the sheriff’s approximately 8:45 AM notification sequence.'],
         sources: [
+          { label: 'Body Recovery evidence page and source footage', href: './body-recovery.html' },
           { label: 'MDMR report · page 15', href: `${report}#page=15` },
           { label: 'Master July 6 recovery chronology', href: `${master}#recovery-july-6` }
         ]

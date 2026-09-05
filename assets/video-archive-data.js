@@ -4,6 +4,26 @@
   window.NOLAN_VIDEO_ARCHIVE = {
     editedReels: [
       {
+        id: 'nancy-grace-recovery-location',
+        title: 'Body recovery location · four Nancy Grace source segments',
+        publisher: 'Crime Stories with Nancy Grace',
+        date: 'July 20–August 28, 2026 source programs',
+        duration: '3:33',
+        category: 'nancy scene',
+        featured: true,
+        file: './media/video-archive/body-recovery/nolan-wells-recovery-location-source-montage.mp4',
+        poster: './media/video-archive/body-recovery/nolan-wells-recovery-location-source-montage.jpg',
+        description: 'Four direct program excerpts showing or discussing the reported recovery area near Horn Island’s northwest tip, the shoreline observation, and the unresolved water-versus-beach sequence.',
+        editNote: 'Source footage only with hard cuts; no added narration, captions, transitions, or claim cards. The separate close-up photograph discussed on air is excluded.',
+        sources: [
+          { label: 'Body Recovery evidence page', href: './body-recovery.html' },
+          { label: 'July 20 complete program', href: 'https://www.youtube.com/watch?v=OBKigjcCYmk&t=324s' },
+          { label: 'July 22 complete program', href: 'https://www.youtube.com/watch?v=5QyLcTu9ByQ&t=1323s' },
+          { label: 'July 23 complete program', href: 'https://www.youtube.com/watch?v=0ZmDxerREFg&t=792s' },
+          { label: 'August 28 complete program', href: 'https://www.youtube.com/watch?v=N7cjo-buG4o&t=43s' }
+        ]
+      },
+      {
         id: 'nancy-grace-johnny-hewett',
         title: 'Nancy Grace and Johnny Hewett · selected interview segments',
         publisher: 'Crime Stories with Nancy Grace',
@@ -254,7 +274,10 @@
       { id: 'family-roland-aug15', date: 'August 15, 2026', publisher: 'Roland S. Martin', title: 'Family challenges the preliminary no-foul-play framing at NABJ', duration: '35:03', category: 'family', href: 'https://www.youtube.com/watch?v=qGCjIjhipX4' },
       { id: 'family-jamal-aug20', date: 'August 20, 2026', publisher: 'The Jamal Bryant Podcast', title: 'Nolan Wells’ parents break their silence · full interview', duration: '55:53', category: 'family', href: 'https://www.youtube.com/watch?v=uVGhGrIB4Pc' },
       { id: 'nancy-july20', date: 'July 20, 2026', publisher: 'Nancy Grace', title: 'Deleted-message and recovery questions', duration: '—', category: 'nancy', href: 'https://www.youtube.com/watch?v=OBKigjcCYmk' },
+      { id: 'nancy-july22-recovery', date: 'July 22, 2026', publisher: 'Nancy Grace', title: 'Autopsy discussion and aerial recovery footage', duration: '55:06', category: 'nancy scene', href: 'https://www.youtube.com/watch?v=5QyLcTu9ByQ' },
+      { id: 'nancy-july23-recovery', date: 'July 23, 2026', publisher: 'Nancy Grace', title: 'Autopsy furor and recovery-area discussion', duration: '47:59', category: 'nancy scene', href: 'https://www.youtube.com/watch?v=0ZmDxerREFg' },
       { id: 'nancy-july29', date: 'July 29, 2026', publisher: 'Nancy Grace', title: 'Family subpoenas Nolan’s social accounts', duration: '52:36', category: 'nancy', href: 'https://www.youtube.com/watch?v=4D0uR58CjCg' },
+      { id: 'nancy-aug28-recovery', date: 'August 28, 2026', publisher: 'Nancy Grace', title: 'I was there on Horn Island · recovery-location discussion', duration: '41:47', category: 'nancy scene', href: 'https://www.youtube.com/watch?v=N7cjo-buG4o' },
       { id: 'nancy-johnny', date: 'August 2026 · exact upload date unresolved', publisher: 'Crime Stories with Nancy Grace', title: 'Nancy Grace program featuring Johnny Hewett', duration: 'Full source program', category: 'nancy', href: 'https://www.youtube.com/watch?v=5VcAseeEppE' }
     ]
   };
